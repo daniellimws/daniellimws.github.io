@@ -1,22 +1,22 @@
 # User Settings | Edit there as per required
 
 title: accent
-url: "http://ankitsultana.com"
-baseurl: "/accent"
+url: "https://daniellimws.github.io"
+baseurl: "/"
 
 # This will show up at the top of index page
 site_heading: >
-    foo <span class="faded">'s blog</span>
+    daniellimws <span class="faded">'s blog</span>
 
-email: your@email.com
-author: yourname
+email: weesoong.lim@gmail.com
+author: Daniel Lim Wee Soong
 # This description will show up in google search results
 # (for index page) etc.
 description: >
-    accent is, as Trump would put it, the best
+    bunch of stuff here
 
 # This will what will show against &copy; in the footer
-copyright: accent
+copyright: daniellimws
 # Toggle your short bio, which will displayed on your index page
 # Just toggle it and run jekyll again to see
 intro: false         # Tip: Remove the span from site_heading if intro is set to true
@@ -43,21 +43,20 @@ about_stub: >
 
 about_footer: true
 
-twitter_username: AnkitSultana
-github_username: yourgithub
-facebook_id: yourusername
+twitter_username: daniellimws
+github_username: daniellimws
 
 favicon: true
 favicon_location: "images/favicon.ico"
 
-profile_picture: images/temp.png
+profile_picture: images/profile.png
 paginate: 5
 paginate_path: "/page/:num"
 tracking_id: UA-69243698-7 # GA Tracking ID
 
 # Social Stuff | open graph and twitter cards
-og_image: "images/accent.png" # This will show in facebook thumbnails
-twitter_image: "http://ankitsultana.com/images/accent.png?1234" # This will show in twitter cards
+og_image: "images/profile.png" # This will show in facebook thumbnails
+twitter_image: "images/profile.png" # This will show in twitter cards
 
 ####################################
 ####################################
