@@ -2,7 +2,7 @@
 
 title: daniellimws
 url: "https://daniellimws.github.io"
-baseurl: "/"
+baseurl: ""
 
 # This will show up at the top of index page
 site_heading: >
@@ -34,7 +34,7 @@ comments: true
 # Note that about_footer should be true if you want
 # to see author information at the bottom of each post
 about_stub: >
-    Keep this sentence less than 13 words or it won't look good.
+    Hi, I'm Daniel!
 
 about_footer: true
 
