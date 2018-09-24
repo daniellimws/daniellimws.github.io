@@ -1,0 +1,13 @@
+pie break *0x4778
+pie run
+
+set $i = 0
+
+while ($i < 70)
+    set $start = *((long long*)($rsp+0x390+$i*32))
+    set $end = *((long long*)($rsp+0x390+$i*32))+32
+    append memory hashes.bin $start $end
+    set $i++
+    end
+
+p "[+] Done extracting hashes..."
