@@ -333,7 +333,7 @@ __int64 __fastcall sub_6232(__int64 a1)
 }
 ```
 
-This was just a very educated guess but there is no guarantee. To be safe, I should have set a breakpoint at this function (`sub_766C`) and observed the result to confirm my suspection. However, me being lazy just decided to implement the solution and worry later.
+This was just a very educated guess but there is no guarantee. To be safe, I should have set a breakpoint at this function (`sub_766C`) and observed the result to confirm my suspicion. However, me being lazy just decided to implement the solution and worry later.
 
 ## Solution
 There are 2 parts to solving this,
@@ -436,4 +436,4 @@ The flag is `DCTF{9aa149d1a8a825f582fa7684713ca64ec77ff33bda71de76b51b0a8f102630
 
 All resources can be downloaded [here](https://github.com/daniellimws/daniellimws.github.io/tree/master/_posts/dctf-quals-18/memsome).
 
-## Appendix
+***
