@@ -29,22 +29,22 @@
         font-size: 35px;
     }
     h2 {
-        font-size: 32px;
+        font-size: 31px;
     }
     h3 {
-        font-size: 29px;
+        font-size: 27px;
     }
     h4 {
-        font-size: 26px;
-    }
-    h5 {
         font-size: 23px;
     }
+    h5 {
+        font-size: 19px;
+    }
     h6 {
-        font-size: 20px;
+        font-size: 15px;
     }
     p {
-        font-size: 19px;
+        font-size: 16px;
         margin: $base-spacing/3 0;
         font-weight: lighter;
     }
@@ -119,12 +119,12 @@
         list-style-type: decimal;
     }
     li {
-      font-size: 19px;
+      font-size: 16px;
       font-weight: lighter;
       margin: 0.8em 0em 0.8em 0.5em;
     }
     li p {
-        font-size: 19px;
+        font-size: 16px;
     }
 
 }
