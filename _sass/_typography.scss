@@ -108,9 +108,10 @@
       color: $git-black-color;
       padding: 0.1em 0.1em 0.1em 0.1em;
       border-radius: 0.3em;
+      font-size: 15px;
     }
     ul, ol {
-        padding: $base-spacing/5 $base-spacing;
+        padding: 0.0em 1.5em;
     }
     ul {
         list-style-type: circle;
@@ -125,6 +126,9 @@
     }
     li p {
         font-size: 16px;
+    }
+    li > code {
+        font-size: 15px;
     }
 
 }

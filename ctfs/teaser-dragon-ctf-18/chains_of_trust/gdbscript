@@ -1,0 +1,21 @@
+gef config context.enable 0
+
+source breakpointscript.py
+
+# pie break *0x1806
+# pie run
+break *0x0000555555555806
+r < input.txt
+
+set $i = 0
+
+while ($i < 0x55)
+    break-and-dump $i
+    c
+    set $i++
+    end
+
+break-and-dump 0x55
+gef config context.enable 1
+
+p "[+] Done dumping shellcodes"
