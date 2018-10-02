@@ -1,0 +1,201 @@
+chains.of.trust.felinae.pl:7679
+
+cool_struct used to carry information after connecting to server
+
+struct coolstruct {
+    int ipaddr, // 0
+    short port, // 4
+    int a,      // 8
+    int b,      // 12
+    int mode,      // 16
+    int sockfd,      // 20
+    char[16] e,     // 24
+    char[16] f,     // 40
+    char g,     // 56
+    char h,     // 57
+}
+
+https://unix.superglobalmegacorp.com/Net2/newsrc/sys/fcntl.h.html
+set_sockfd_flags => toggles the access permission of the socket fd
+
+reads in shellcode from the server into RWX memory then executes it with arguments
+- functions_table
+- mysterious_byte
+
+functions_table = [
+    send_from_to_socket,               // 0x0
+    send_n_to_socket,               // 0x8
+    read_n_from_socket,             // 0x10
+    done_reading_shellcode,         // 0x18
+    puts,                           // 0x20
+    printf,                         // 0x28
+    read_n_minus_one_from_stdin,    // 0x30
+    fflush_stdout,                  // 0x38
+    exit,                           // 0x40
+    mmap_size_perms,                // 0x48
+    sleep_millis,                   // 0x50
+    pthread_create,                 // 0x58
+    dlsym,                          // 0x60
+    dlopen,                         // 0x68
+    dlclose                         // 0x70
+]
+
+user input written into arg+0xb
+set *(arg+9) = 1 to indicate done
+set *(arg+8) = 0 to indicate everything done
+
+validator:
+- arg+0x10
+- arg+0x18
+- arg+0x38 contains some the seed at offset 2, and booleans at 4, 5, 6
+- generates an array of 32 bytes using the seed, and compare with a pre-computed array
+
+validator(arg) {
+    *(something4a + 9) = 1
+    mfence
+    while(!*(arg + 8) && !*(arg[3]+10)
+        sleep()
+
+    for (int i = 0; i < 32; ++i) {
+        seed = get_value(functions_table, i + 64, arg+0x38)
+        generate_array(seed, generated_array)
+        for (int j = 0; j < 32; ++j) {
+            correct_or_not |= target_array[i][j] == generated_array[j]
+        }
+    } 
+}
+
+something4a(arg) {
+    while (!*(arg+0x8)) && !*(arg+0x9)) {
+        sleep()
+    }
+
+    *(arg[2]+9) = 1
+    
+    while (!*(arg+0x8)) && !*(arg[2]+10)) {
+        sleep()
+    }
+
+    for (int i = 0; i < 32; ++i) {
+        seed = get_value(functions_table, arg[i / 8 + 3], i % 8)
+        set_value(functions_table, arg+0x30, index+64, seed^0x6666)
+    }
+
+    *(arg + 10) = 1
+    *(arg + 8) = 1
+}
+
+something3f(arg) {
+    while (!*(arg+0x8)) && !*(arg+0x9)) {
+        sleep()
+    }
+
+    *(arg[2]+9) = 1
+    
+    while (!*(arg+0x8)) && !*(arg[2]+9)) {
+        sleep()
+    }
+
+    for (int i = 0; i < 32; ++i) {
+        set_value(functions_table, arg[i % 4 + 3], i / 4, arg[2][11 + i])
+    }
+    
+    for (int i = 0; i < 32; ++i) {
+        set_value(functions_table, arg[i + 3], 32, 1)
+    }
+
+    for (int i = 0; i < 4; ++i) {
+        while(!*(arg + 8) && !*(get_value(functions_table, arg[i + 3], 33))) {
+            sleep()
+        }
+    }
+
+    *(arg + 10) = 1
+    *(arg + 8) = 1
+}
+
+something31(arg) {
+    while(!*(arg + 8) && !*(get_value(functions_table, arg[i + 3], 33))) {
+        sleep()
+    }
+
+    for (int i = 0; i < 8; ++i) {
+        seed = get_value(functions_table, arg[2], i)
+        switch(*(arg + 9)) {
+        case 1:
+            seed += i + 20384
+            break;
+        case 2:
+            seed ^= 0x73AB
+            break;
+        case 3:
+            seed += 9981
+            break
+        case 0:
+            seed *= 123
+        }
+        seed %= 65536
+        set_value(functions_table, arg[2], i, seed)
+    }
+
+    set_value(functions_table, arg[2], 33, 1)
+}
+
+
+
+
+so, important thing now is to find how the seed is generated
+       
+struct buffer {
+   short index,
+   short data,
+   bool a, b, c
+}
+
+get_value(functions_table, num, buffer) {
+    buffer.b = 0;
+    buffer.c = 0;
+    buffer.index = num
+    mfence
+    buffer.a = 1;
+    mfence
+    while(!buffer.b)
+        sleep()
+    mfence
+    return buffer.data
+}
+
+set_value(functions_table, buffer, number, seed) {
+    buffer.b = 0;
+    buffer.c = 1;
+    buffer.index = number;
+    buffer.data = seed;
+    mfence
+    buffer.a = 1;
+    
+    while(!buffer.a) {
+        sleep()
+    }
+}
+
+
+references:
+validator[2] = main_menu
+validator[3] = something4a
+
+something4a[2] = something3f 
+
+something3f[2] = main_menu
+
+run order:
+something3f -> something4a -> validation
+something3f sends input to something22
+something4a retrieves processed input from something22
+validation retrieves
+
+What to do:
+1) something22 - takes a number, n, get (n & 0x7f) ^ 0x5b, this will be the index to store the value. init with 0 first. 128 shorts
+2) something3f - stores each char in the i%4th box, so their new index is i/4
+3) something31 - changes the value stored above based on the box number
+3) something4a - reads the values in a different ordering system, transpose of the previous, xor with 0x6666, and save back into only one box, index is i+64
+4) validation - reads from i+64 of the same box, use this value to generate an array, and compare with an existing one to see if it matches 
