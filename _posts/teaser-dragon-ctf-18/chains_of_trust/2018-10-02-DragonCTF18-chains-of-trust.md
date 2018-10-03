@@ -368,7 +368,10 @@ What this command does is:
 2. Searches for the `call` instruction, and sets a temporary breakpoint
 3. Calculates the address of the decrypted code, and dumps it into a file
 
-Now that I have a reliable way to dump the decrypted code, I scripted GDB to dump a couple more pieces of code to analyse.
+Now that I have a reliable way to dump the decrypted code, I scripted GDB to dump a couple more pieces of code to analyse. The main thing being done here is:
+1. Set a breakpoint at the instruction where the retrieved code is about to be executed
+2. Call the break-and-dump command
+3. Repeat step 1
 
 ```
 gef config context.enable 0
