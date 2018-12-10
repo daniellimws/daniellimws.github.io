@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Wargames.MY 2018 - faggot2.0 (pwn) - ROP with unknown file descriptors
+title: Wargames.MY 2018 - faggot2.0 (pwn) - ROP with unknown file descriptor
 ---
 
 > [challenge][file]
