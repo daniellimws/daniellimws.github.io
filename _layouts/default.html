@@ -52,6 +52,9 @@
     {% else %}
         <meta name="twitter:image" content="{{ site.profile_picture }}">
     {% endif %}
+    {% if page.math != false %}
+        {% include mathjax.html %}
+    {% endif %}
 </head>
 <body>
     <div class="wrapper">
