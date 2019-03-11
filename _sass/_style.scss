@@ -40,7 +40,7 @@ body {
     text-align: center;
     font-size: 20px;
     margin-bottom: 20px;
-    font-family: 'Roboto Mono', 'sans-serif';
+    font-family: 'Roboto Mono', 'sans-serif', -apple-system,BlinkMacSystemFont;
     @media (max-width: $break-small) {
         height: 100%;
         font-size: 17px;
