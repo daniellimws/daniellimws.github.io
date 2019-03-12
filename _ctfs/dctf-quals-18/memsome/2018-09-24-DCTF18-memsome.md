@@ -6,7 +6,7 @@ ctf: DefCamp CTF Quals 2018
 
 > I can not find my license file. Can you help me? 
 >
-> Target: [file](https://raw.githubusercontent.com/daniellimws/daniellimws.github.io/master/_posts/dctf-quals-18/memsome/memsom)
+> Target: [file](https://raw.githubusercontent.com/daniellimws/daniellimws.github.io/master/_ctfs/dctf-quals-18/memsome/memsom)
 >
 > Author: Lucian Nitescu
 
@@ -435,6 +435,6 @@ print flag
 
 The flag is `DCTF{9aa149d1a8a825f582fa7684713ca64ec77ff33bda71de76b51b0a8f1026303c}`.
 
-All resources can be downloaded [here](https://github.com/daniellimws/daniellimws.github.io/tree/master/_posts/dctf-quals-18/memsome).
+All resources can be downloaded [here](https://github.com/daniellimws/daniellimws.github.io/tree/master/_ctfs/dctf-quals-18/memsome).
 
 ***
