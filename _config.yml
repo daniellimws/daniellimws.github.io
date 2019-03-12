@@ -70,6 +70,10 @@ sass:
     style: compressed
     sass_dir: _sass
 
+collections:
+    ctfs:
+        output: "true"
+
 # Scopes
 defaults:
     -

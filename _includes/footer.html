@@ -1,20 +1,16 @@
 <footer>
     {% include paginate.html %}
     {% include suggestion.html %}
-    {% if page.url == "/about" or paginator.total_pages == 1 or page.url == "/404" %}
-        <div class="container" style="text-align: center; margin-bottom: 20px">
-            <a target="_blank" class="button" href="https://twitter.com/{{ site.twitter_username }}">
-                Find me on twitter
-            </a>
-        </div>
-    {% endif %}
     <hr />
     <div class="user-footer">
-        <div class="copyright alignable pull-left">
+        <div class="alignable pull-left">
+            Built with <a href="http://jekyllrb.com/" class="different-highlight underline">Jekyll</a> and <a href="http://ankitsultana.com/accent/" class="different-highlight underline">accent</a>
+        </div>
+        <div class="alignable">
             {% if site.copyright %}
-                <h2> &copy;{{ site.copyright }}</h2>
+                &copy; {{ site.copyright }}
             {% else %}
-                <h2> &copy;{{ site.title }}</h2>
+                &copy; {{ site.title }}
             {% endif %}
         </div>
         <div class="alignable pull-right">
@@ -28,12 +24,5 @@
                 rss
             </a>
         </div>
-    </div>
-    <div style="clear:both"></div>
-    <hr />
-    <div class="theme-footer">
-        <p class="alignable pull-left" style="display: inline-block">
-            Built with <a href="http://jekyllrb.com/" class="different-highlight underline">Jekyll</a> and <a href="http://ankitsultana.com/accent/" class="different-highlight underline">accent</a>
-        </p>
     </div>
 </footer>

@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div id="ctf-intro">
+    <div class="container">
+        <h2>CTF Writeups</h2>
+        <p>
+            I mostly participate in CTFs with <a class="underline" href="https://ctftime.org/team/58574/">HATS SG</a>, and occasionally with <a class="underline" href="https://ctftime.org/team/9135">OpenToAll</a>. Here are some writeups for challenges I have solved.
+        </p>
+    </div>
+</div>
+
+<section class="post-list">
+    <div class="container">
+        {% for ctf in site.data.ctfs %}
+            <div class="ctf-preview">
+                <div class="ctf-title">
+                    {{ ctf }}
+                </div>
+            {% for post in site.ctfs %}
+                {% if post.ctf == ctf %}
+                    <div>
+                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+                            {{ post.title }}
+                        </a>
+                        <span class="ctf-time pull-right">
+                            <time>{{ post.date | date: '%B %d, %Y '}}</time>
+                        </span>
+                    </div>
+                {% endif %}
+            {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</section>

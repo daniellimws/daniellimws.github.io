@@ -1,6 +1,7 @@
 ---
 layout: post
-title: DefCamp CTF Quals 2018 - memsome (re110)
+title: memsome (re110)
+ctf: DefCamp CTF Quals 2018
 ---
 
 > I can not find my license file. Can you help me? 

@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Teaser Dragon CTF 2018 - Chains of Trust (re391)
+title: Chains of Trust (re391)
+ctf: Teaser Dragon CTF 2018
 ---
 
 > Yet another reverse engineering challenge.
