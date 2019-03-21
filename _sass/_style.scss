@@ -10,7 +10,7 @@ html {
     padding: 0;
 }
 body {
-    font-family: $font-stack-one;
+    font-family: $font-stack-two;
     height: 100%;
     overflow: auto;
 }
@@ -59,7 +59,7 @@ body {
         margin: $base-spacing 0;
         margin-bottom: $base-spacing/1.1;
         font-size: 40px;
-        font-family: $font-stack-two;
+        font-family: $font-stack-one;
         @media (max-width: $break-small) {
             font-size: 32px;
         }
@@ -74,10 +74,14 @@ body {
 
 #ctf-intro {
     color: darken($accent-color, 40);
-    font-weight: ligher;
-    text-align: center;
+    font-weight: lighter;
     font-size: 20px;
-    font-family: $font-stack-one;
+    font-family: $font-stack-two;
+
+    .container {
+        border-left: 10px solid $accent-color;
+    }
+
     @media (max-width: $break-small) {
         font-size: 17px;
     }
@@ -94,7 +98,40 @@ body {
     h2 {
         margin-bottom: $base-spacing/3;
         font-size: 40px;
-        font-family: $font-stack-two;
+        font-family: $font-stack-one;
+        @media (max-width: $break-small) {
+            font-size: 32px;
+        }
+    }
+}
+
+#notes-intro {
+    color: darken($accent-color, 40);
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: $font-stack-two;
+
+    .container {
+        border-left: 10px solid $accent-color;
+    }
+
+    @media (max-width: $break-small) {
+        font-size: 17px;
+    }
+    span {
+        padding: 0.05em 0.5em;
+        border-radius: 15px;
+        background: $accent-color;
+        color: #fff;
+    }
+    ::selection {
+        color: #fff;
+        background: #000;
+    }
+    h2 {
+        margin-bottom: $base-spacing/3;
+        font-size: 40px;
+        font-family: $font-stack-one;
         @media (max-width: $break-small) {
             font-size: 32px;
         }
@@ -228,6 +265,7 @@ footer {
         font-size: 25px;
         margin-bottom: $base-spacing/3;
         font-weight: bold;
+        font-family: $font-stack-one;
     }
     .ctf-time {
         color: $medium-gray-color;
@@ -244,6 +282,56 @@ footer {
         }
         margin: $base-spacing*1.1 0;
     }
+}
+.note-list {
+    font-family: $font-stack-two;
+    display: block;
+    width: 100%;
+    margin-top: $base-spacing;
+    .note-group {
+        -webkit-transition: background 0.2s linear;
+        transition: background 0.2s linear;
+        // background: #f9f9f9;
+        // padding: $base-spacing;
+        // margin-bottom: $base-spacing;
+        // border-radius: $base-spacing/8;
+
+        .note-title {
+            font-family: $font-stack-one;
+            font-size: 25px;
+            margin-bottom: $base-spacing/2;
+            font-weight: bold;
+        }
+        ul {
+            // max-height: 0;
+            list-style-position: inside;
+            margin-left: $base-spacing / 2;
+            margin-top: $base-spacing / 2;
+            overflow-y: hidden;
+            transition: max-height 0.08s ease-out;
+            li {
+                padding-bottom: $base-spacing / 3;
+            }
+        }
+        @media (max-width: $break-medium) {
+            .note-title {
+                display: block;
+                float: none;
+            }
+            margin: $base-spacing*1.1 0;
+        }
+    }
+    // .note-group:hover {
+    //     background: #f9f9f9;
+    //     padding: $base-spacing;
+    //     margin-bottom: $base-spacing;
+    //     border-radius: $base-spacing/8;
+    //     ul {
+    //         max-height: 1000px;
+    //         overflow: hidden;
+    //         transition: max-height 0.4s ease-in;
+    //     }
+    // }
 }
 .alignable {
     display: inline-block;

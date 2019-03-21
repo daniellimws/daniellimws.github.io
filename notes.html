@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div id="notes-intro">
+    <div class="container">
+        <h2>Notes</h2>
+        <p>Some notes for easy reference.</p>
+    </div>
+</div>
+
+<section class="post-list">
+    <div class="container">
+        <div class="note-list">
+            {% for title in site.notes %}
+                {% if title.type == "title" %}
+                    <div class="note-group">
+                        <div class="note-title">
+                            {{ title.title }}
+                        </div>
+
+                        <ul>
+                            {% for note in site.notes %}
+                                {% if note.type == "note" %}
+                                    {% if title.alias == note.alias %}
+                                        <li><a class="underline" href="{{ note.url | prepend: site.baseurl }}">{{ note.title }}</a></li>
+                                    {% endif %}
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

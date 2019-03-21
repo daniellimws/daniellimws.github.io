@@ -6,7 +6,7 @@ baseurl: ""
 
 # This will show up at the top of index page
 site_heading: >
-    daniellimws <span class="faded">'s blog</span>
+    daniellimws
 
 email: weesoong.lim@gmail.com
 author: Daniel Lim Wee Soong
@@ -42,7 +42,7 @@ twitter_username: daniellimws
 github_username: daniellimws
 
 favicon: true
-favicon_location: "images/favicon.ico"
+favicon_location: "/images/favicon.ico"
 
 profile_picture: images/profile.png
 paginate: 5
@@ -72,6 +72,8 @@ sass:
 
 collections:
     ctfs:
+        output: "true"
+    notes:
         output: "true"
 
 # Scopes
