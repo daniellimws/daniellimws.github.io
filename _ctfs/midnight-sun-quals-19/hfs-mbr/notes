@@ -1,0 +1,11 @@
+7e86 e: index ^ c == 0x62 7
+7ecb j: index ^ c == 0x68 2
+7efa n: index ^ c == 0x68 6
+7f10 o: index ^ c == 0x6e 1
+7f24 p: index ^ c == 0x74 4
+7f4f r: index ^ c == 0x7a 8
+7f65 s: index ^ c == 0x73 0
+7f7d u: index ^ c == 0x76 3
+7f9e w: index ^ c == 0x72 5
+
+sojupwner
