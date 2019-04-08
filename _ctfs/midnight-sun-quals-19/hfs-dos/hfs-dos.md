@@ -215,3 +215,4 @@ Feel free to ask anything in the comments.
 
 [part1]:{{site.baseurl}}/ctfs/midnight-sun-quals-19/hfs-mbr/hfs-mbr
 [download]:{{site.baseurl}}/ctfs/midnight-sun-quals-19/hfs-mbr/hfs-os.tar.gz
+[gdbinit]:{{site.baseurl}}/ctfs/midnight-sun-quals-19/hfs-dos/gdbinit
