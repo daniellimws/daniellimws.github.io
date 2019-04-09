@@ -37,6 +37,8 @@ The target architecture is assumed to be i8086
 Breakpoint 1 at 0x7c00
 ```
 
+Notice the `-s` and `-S` flags passed to `QEMU` when using `./run debug`. `-s` is for starting a `gdbserver` at port 1234, while `-S` is for `QEMU` to freeze CPU at startup, only starting execution after entering `c` (continue) in GDB.
+
 Although I normally like to use GEF with `GDB`, but because `gef-remote` does not properly support x86 architectures at this point, I used this [gdbinit] script I found that is made to support real mode with `QEMU`. 
 
 This [blog](http://ternet.fr/gdb_real_mode.html) explains some things about debugging programs running in real mode and under `QEMU`.
