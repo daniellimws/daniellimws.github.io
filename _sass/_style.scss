@@ -10,6 +10,7 @@ html {
     padding: 0;
 }
 body {
+    -webkit-font-smoothing: antialiased;
     font-family: $font-stack-two;
     height: 100%;
     overflow: auto;
@@ -31,6 +32,23 @@ body {
             margin: $base-spacing 1.3px;
         }
     }
+}
+
+h2 {
+    padding-top: $base-spacing/4;
+    font-family: $font-stack-one;
+}
+h3 {
+    padding-top: $base-spacing/4;
+    font-family: $font-stack-one;
+}
+h4 {
+    margin-top: $base-spacing;
+    font-family: $font-stack-one;
+}
+h5 {
+    margin-top: $base-spacing;
+    font-family: $font-stack-one;
 }
 
 /* Intro
