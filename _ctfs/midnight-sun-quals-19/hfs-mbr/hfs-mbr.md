@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hfs-mbr (re213)
-ctf: Midnight Sun CTF 2019 Quals
+ctf: Midnight Sun CTF Quals 2019
 ---
 
 > We made a military-grade secure OS for HFS members. Feel free to beta test it for us!

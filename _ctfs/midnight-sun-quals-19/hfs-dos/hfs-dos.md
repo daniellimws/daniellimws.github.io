@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Hfs-dos (pwn350)
-ctf: Midnight Sun CTF 2019 Quals
+ctf: Midnight Sun CTF Quals 2019
 ---
 
 > You don't need a modern 'secure' language when you write bug-free code :) The flag is in FLAG2
