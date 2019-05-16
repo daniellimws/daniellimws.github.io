@@ -148,7 +148,7 @@ If an `x` greater than `array1_size` is used, the succeeding code should not be 
 
 This is a big deal, because the next time we were to load memory from `array1[x]`, it is already in the cache, so it will take a way shorter time, exposing a side-channel attack opportunity with an out-of-bounds read.
 
-But we are not interested in the time taken to load values in `array1`, so what's the use? Now extend the example code to the following,
+But we are not interested in the time taken to load values, so what's the use? Now extend the example code to the following,
 
 ```c
 if (x < array1_size)
