@@ -190,6 +190,9 @@ The second one is called "poisoning indirect branches", which allows leaking val
 
 ### Exploit code
 Once understood how Spectre works, implementing the exploit is rather simple. This code is adapted from Appendix C of the paper.
+
+There is a guide [here](https://github.com/CraneStation/wasmtime/blob/master/docs/WASI-tutorial.md) on how to set things up for compiling the exploit.
+
 ```rs
 extern "C" {
     fn get_data_size() -> u64;
