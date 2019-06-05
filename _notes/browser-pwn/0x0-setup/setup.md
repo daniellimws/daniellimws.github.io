@@ -25,10 +25,24 @@ vagrant plugin install vagrant-disksize
 
 Then open the *Vagrantfile* and add this line into the config. I decided to give it 20GB but it could be anything.
 
-```
+```rb
 Vagrant.configure('2') do |config|
   ...
   config.disksize.size = '20GB'
+end
+```
+
+The default cpu and ram settings for vagrant are quite stingy. To complete the build process successfully we need to give it more power.
+
+```rb
+Vagrant.configure('2') do |config|
+  ...
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 1024
+    v.cpus = 2
+  end
+
 end
 ```
 
@@ -96,17 +110,24 @@ cd v8
 ```
 
 ### Build v8
-There is a helper script that does all the work to build v8 in one command. However, perhaps due to CPU limitations in a VM, the build process kept erroring out and I had to change some flags given to `ninja`. To use this helper script, the steps can be found [here](https://v8.dev/docs/build-gn#gm).
+#### Using `gm`
+There is a helper script that does all the work to build v8 in one command.
 
-The steps I took were longer but was necessary to get the job done.
+```
+alias gm=~/v8/v8/tools/dev/gm.py
+gm x64.debug
+```
 
-#### Generate build files using v8gen
+#### Manual way
+The following steps may be longer but helpful if the build process above keeps failing, possibly due to insufficient RAM or CPU.
+
+##### Generate build files using `v8gen`
 ```bash
 alias v8gen=~/v8/v8/tools/dev/v8gen.py
 v8gen x64.debug
 ```
 
-#### Compile v8
+##### Compile v8
 Here is the problematic part as described earlier. I kept getting errors when using the commands in the docs. In the case where the compilation keeps failing, change the flags `-j` (number of jobs in parallel) and `-k` (number of fails before giving error). The following worked quite well for me.
 
 ```bash
@@ -138,6 +159,16 @@ With this, we can start the web server anytime and open the visualizing tool in 
 ```bash
 python -m SimpleHTTPServer
 ```
+
+Alternatively, there is also a hosted version of turbolizer [here](https://thlorenz.com/turbolizer/).
+
+---
+
+## References
+* https://v8.dev/docs/source-code
+* https://v8.dev/docs/build-gn
+* https://doar-e.github.io/blog/2019/01/28/introduction-to-turbofan/#preparing-turbolizer
+* https://thlorenz.com/turbolizer/
 
 
 [cfdisk]:{{site.baseurl}}/notes/browser-pwn/0x0-setup/cfdisk.png
