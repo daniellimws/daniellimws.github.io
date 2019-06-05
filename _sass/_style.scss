@@ -326,6 +326,7 @@ footer {
             list-style-position: inside;
             margin-left: $base-spacing / 2;
             margin-top: $base-spacing / 2;
+            margin-bottom: $base-spacing;
             overflow-y: hidden;
             transition: max-height 0.08s ease-out;
             li {

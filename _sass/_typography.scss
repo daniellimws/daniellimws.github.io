@@ -104,11 +104,11 @@
     }
 
     p > code {
-      color: $git-black-color;
-      padding: 0.1em 0.1em 0.1em 0.1em;
+      background: #eee;
+      color: #a00000;
+      padding: 0.14em 0.4em 0.14em 0.4em;
       border-radius: 0.2em;
       font-size: 15px;
-    //   background: #eee;
     }
     ul, ol {
         padding: 0.0em 1.5em 1.0em 1.5em;
