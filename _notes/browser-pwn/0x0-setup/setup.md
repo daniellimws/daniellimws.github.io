@@ -3,6 +3,7 @@ layout: post
 type: note
 title: 0x0 - Setting up
 alias: v8
+permalink: /notes/browser-pwn/0x0-setup
 ---
 
 While setting up my environment there were so many annoying problems, in contrary to just running a few commands to compile v8 as expected.
