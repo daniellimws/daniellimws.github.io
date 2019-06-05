@@ -6,7 +6,11 @@ alias: v8
 permalink: /notes/browser-pwn/0x0-setup
 ---
 
-While setting up my environment there were so many annoying problems, in contrary to just running a few commands to compile v8 as expected.
+## Table of contents
+* [Vagrant environment](#vagrant)
+* [v8](#v8)
+* [Turbolizer](#turbolizer)
+* [GDB](#gdb)
 
 ## Vagrant
 I prefer to set up my environment in a vm, specifically using Vagrant. Here is just standard vagrant stuff.
@@ -136,7 +140,7 @@ ninja -C out/x64.debug -j 2 -k 10
 
 That's it, `d8` can be found under `~/v8/v8/out/x64.debug/`.
 
-### Turbolizer
+## Turbolizer
 Turbolizer is a tool to visualize TurboFan's (v8's JIT compiler) sea-of-nodes (how TurboFan represent JS code) graph.
 
 Since turbolizer is a web app running on node.js, install nodejs first.
@@ -162,6 +166,9 @@ python -m SimpleHTTPServer
 
 Alternatively, there is also a hosted version of turbolizer [here](https://thlorenz.com/turbolizer/).
 
+## GDB
+There is a very helpful gdbinit script for v8 debugging [here](https://cs.chromium.org/chromium/src/v8/tools/gdbinit), just copy the contents into `~/.gdbinit`.
+
 ---
 
 ## References
@@ -169,6 +176,7 @@ Alternatively, there is also a hosted version of turbolizer [here](https://thlor
 * https://v8.dev/docs/build-gn
 * https://doar-e.github.io/blog/2019/01/28/introduction-to-turbofan/#preparing-turbolizer
 * https://thlorenz.com/turbolizer/
+* https://cs.chromium.org/chromium/src/v8/tools/gdbinit
 
 
 [cfdisk]:{{site.baseurl}}/notes/browser-pwn/0x0-setup/cfdisk.png
