@@ -8,9 +8,7 @@ permalink: /notes/browser-pwn/0x1-js-objects
 
 ## References
 * [Fast properties](https://v8.dev/blog/fast-properties)
-* [Element kinds](https://v8.dev/blog/elements-kinds)
 * [Shapes and Inline Caches](https://mathiasbynens.be/notes/shapes-ics)
-* [What's up with monomorphism](https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
 
 ## 1. Object structure
 A typical object in Javascript looks like in *Figure 1*, containing an `elements` and a `properties` array. Quite simple, `elements` is for indexed properties (e.g. `a[1]` and `a[100]`), whereas `properties` is for named properties (e.g. `a.apple` or `a.peanut`).
@@ -95,9 +93,12 @@ const b2 = [1.1,  , 3];  // Double Holey, b2[1] reads from the prototype
 
 <p align="center"><i>Listing 1. Source: <a href="https://v8.dev/blog/fast-properties">Fast Properties in v8</a></i></p>
 
-#### 3.4 ElementsAccessor
+#### 3.4 ElementsAccessor (Fun fact)
 As mentioned earlier, there are 20 different types of elements in v8. How this is handled under the hood is quite interesting, with the use of [CTRP](https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern), specialized versions of `Array` functions are created for the `ElementsAccessor`, instead of implementing the same function repeatedly.
 
 Whenever an `Array` function is called, v8 dispatches through the `ElementsAccessor` to the specialized version of the function.
 
 ![](https://v8.dev/_img/fast-properties/elements-accessor.png)
+
+## Additional Reading
+* [What's up with monomorphism](https://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
