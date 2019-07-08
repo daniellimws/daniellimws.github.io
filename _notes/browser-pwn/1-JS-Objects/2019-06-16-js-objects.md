@@ -1,9 +1,9 @@
 ---
 layout: post
 type: note
-title: 0x1 - JS Objects
+title: 1.1 - JS Objects
 alias: v8
-permalink: /notes/browser-pwn/0x1-js-objects
+permalink: /notes/browser-pwn/js-objects
 ---
 
 ## References
