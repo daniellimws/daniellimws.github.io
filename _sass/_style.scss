@@ -14,7 +14,7 @@ body {
     font-family: $font-stack-two;
     height: 100%;
     overflow: auto;
-    background: #ffffff;
+    background: $bg-color;
 }
 .site-name {
     color: $accent-color;

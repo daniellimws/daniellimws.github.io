@@ -65,6 +65,7 @@ markdown: kramdown
 
 plugins:
     - jekyll-paginate
+    - jekyll-target-blank
 
 sass:
     style: compressed
