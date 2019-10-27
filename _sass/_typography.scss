@@ -17,10 +17,7 @@
     }
     code {
         font-size: $base-font-size;
-
-        span {
-            line-height: $base-line-height;
-        }
+        line-height: $base-line-height * 1.1;
     }
     .post-title {
         margin-top: 0.1em;
