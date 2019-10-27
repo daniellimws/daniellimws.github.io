@@ -193,7 +193,7 @@ Once understood how Spectre works, implementing the exploit is rather simple. Th
 
 There is a guide [here](https://github.com/CraneStation/wasmtime/blob/master/docs/WASI-tutorial.md) on how to set things up for compiling the exploit.
 
-```rs
+```rust
 extern "C" {
     fn get_data_size() -> u64;
     fn get_host_info() -> u64;
