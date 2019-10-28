@@ -51,6 +51,11 @@ h5 {
     font-family: $font-stack-one;
 }
 
+pre {
+    margin-top: $base-spacing;
+    margin-bottom: $base-spacing;
+}
+
 /* Intro
 * * * * * * * * * * * */
 #intro {

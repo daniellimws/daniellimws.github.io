@@ -51,6 +51,8 @@ There are some `wasi` functions that are worth taking note of, as they will be r
 - `_data3` - an array containing bytes with values from 1 to 16
 - `_data5` - being accessed in `wasi_check_data`
 
+
+
 ```c
 void wasi_check_data(ulong index)
 {
