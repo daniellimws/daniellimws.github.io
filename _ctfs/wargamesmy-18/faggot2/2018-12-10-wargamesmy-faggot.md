@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Wargames.MY 2018 - faggot2.0 (pwn) - ROP with unknown file descriptor
+title: Wargames.MY 2018 - faggot2.0 (pwn)
+ctf: Wargames.MY 2018
+permalink: /wargamesmy-18/pwn
 ---
 
 > [challenge][file]
-
-It seems that no one solved this challenge during the competition. Due to the large amount of challenges, I also did not manage to work on this challenge, but solved it after the competition, so here's my writeup.
 
 ## Static Analysis
 The program was rather straightforward, running as a fork server with the following pseudocode.
@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-*If you are wondering how to get the enums for the socket API functions easily, I just ran `strace` on the challenge binary, which will show all system calls being called by the process.*
+To get the enums for the socket API functions easily, I ran `strace` on the challenge binary, which shows all system calls being called by the process.
 
 As we can see, we can choose how many bytes we want to read. Immediate thought is to use [ROP](http://codearcana.com/posts/2013/05/28/introduction-to-return-oriented-programming-rop.html). A good place to learn ROP would be the [ROP Emporium](https://ropemporium.com).
 
@@ -151,7 +151,7 @@ payload += p64(SYSCALL)
 
 Now we can send the payload, and get a working shell!
 
-Not quite yet. As you can see, we are duplicating the file number 4. This is based on the assumption that no other clients are connected to the server at this point in time. This is because 0, 1 and 2 are occupied by `stdin`, `stdout` and `stderr`, 3 is occupied by `socketfd`, making 4 the lowest available file number, which is assigned to the next client that connects. If say there are 5 clients connected at this time, then we will be assigned file number 9.
+Not quite yet. As you can see, we are duplicating the file number 4. This is based on the assumption that no other clients are connected to the server at this point in time. This is because 0, 1 and 2 are occupied by `stdin`, `stdout` and `stderr`, 3 is occupied by `socketfd`, making 4 the lowest available file number, which is assigned to the next client that connects. Depending on the setup of the challenge, if say there are 5 clients connected at this time, then we will be assigned file number 9.
 
 Well, with the assumption that there aren't a lot of teams in this CTF, we can run this exploit a few more times if it fails.
 

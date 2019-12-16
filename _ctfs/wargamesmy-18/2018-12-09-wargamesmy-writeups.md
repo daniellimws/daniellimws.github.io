@@ -1,16 +1,14 @@
 ---
 layout: post
 title: Wargames.MY 2018 - Challenge writeups
+ctf: Wargames.MY 2018
+permalink: /wargamesmy-18/writeups
 ---
-
-Last weekend, I took part in Wargames.MY 2018, a local online CTF in Malaysia. Funny story, I thought this was a solo competition, so I signed up alone, only to find out later that everyone else participated in teams...
-
-Many thanks to the organizers for this competition as there aren't a lot of cybersecurity related events in Malaysia yet (that I know of), and I hope that the CTF scene in Malaysia can get stronger after every year of WargamesMY.
 
 ## Table of Contents
 [**Pwn**](#pwn)
 * [babypwn2.0](#babypwn20)
-* [faggot2.0](http://daniellimws.github.io/wargamesmy-faggot.html)
+* [faggot2.0](http://daniellimws.github.io/wargamesmy-18/pwn)
 
 [**Web**](#web)
 * [PHP Sandbox](php-sandbox)
