@@ -2,7 +2,7 @@
 layout: post
 type: note
 title: 0x0 - Setting up
-alias: v8
+alias: dar
 permalink: /notes/browser-pwn/duplicate-addition-reducer
 ---
 
