@@ -2,6 +2,7 @@
 layout: post
 title: simple-machine (re333)
 ctf: CODEGATE Quals 2020
+permalink: /codegate-quals-20/simple-machine
 ---
 
 > Classic Check Flag Challenge Machine
