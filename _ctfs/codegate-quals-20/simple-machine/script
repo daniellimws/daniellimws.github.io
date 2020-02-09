@@ -1,0 +1,14 @@
+# gdb -q -ex "source script" -ex "run target < input" ./simple_machine
+set logging overwrite
+set logging file dumped.txt
+set logging redirect on
+set logging on
+gef config context.enable 0
+break *0x00005555555557c0
+commands 1
+printf "opcode: 0x%hx\n", *(char*)($rdi+48)
+printf "imm1: 0x%hx\n", *(short*)($rdi+52)
+printf "imm2: 0x%hx\n", *(short*)($rdi+54)
+printf "accum: 0x%hx\n", *(short*)($rdi+62)
+c
+end
