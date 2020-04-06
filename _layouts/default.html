@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
@@ -8,35 +9,39 @@
     <meta name="keywords" content="blog, accent, {{ site.author }}, {{ site.title }}, jekyll">
     <meta name="author" content="{{ site.author }}">
     {% if page.url == "/404.html" %}
-        <meta http-equiv="refresh" content="5; url=/">
+    <meta http-equiv="refresh" content="5; url=/">
     {% endif %}
     {% if page.description %}
-        {% assign desc = page.description %}
+    {% assign desc = page.description %}
     {% else %}
-        {% assign desc = site.description %}
+    {% assign desc = site.description %}
     {% endif %}
     {% if page.url %}
-        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% assign url = site.url | append: site.baseurl | append: page.url %}
     {% else %}
-        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% assign url = site.url | append: site.baseurl | append: page.url %}
     {% endif %}
     <meta name="description" content="{{ desc }}">
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700|Ubuntu:400,300,300italic,500,700|Montserrat' rel='stylesheet' type='text/css'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500,700|Ubuntu:400,300,300italic,500,700|Montserrat'
+        rel='stylesheet' type='text/css'>
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/vs2015.min.css">
-
+    <link rel="stylesheet" href="/css/highlightjs/night-owl.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/carousel.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     {% if site.favicon %}
-        <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
-        <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
+    <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
+    <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
     {% endif %}
     {% if site.twitter_username %}
-        <link rel="author" href="https://twitter.com/{{ site.twitter_username }}">
+    <link rel="author" href="https://twitter.com/{{ site.twitter_username }}">
     {% endif %}
     <!-- Facebook Open Graph -->
     <meta name="og:description" content="{{ desc }}">
@@ -44,10 +49,10 @@
     <meta name="og:url" content="{{ url }}">
     <meta name="og:type" content="article">
     {% if site.og_image %}
-        <meta name="og:image" content="{{ site.og_image }}">
+    <meta name="og:image" content="{{ site.og_image }}">
     {% endif %}
     {% if site.facebook_id %}
-        <meta name="fb:admins" content="{{ site.facebook_id }}">
+    <meta name="fb:admins" content="{{ site.facebook_id }}">
     {% endif %}
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
@@ -55,14 +60,15 @@
     <meta name="twitter:description" content="{{ desc }}">
     <meta name="twitter:url" content="{{ url }}">
     {% if site.twitter_image %}
-        <meta name="twitter:image" content="{{ site.twitter_image }}">
+    <meta name="twitter:image" content="{{ site.twitter_image }}">
     {% else %}
-        <meta name="twitter:image" content="{{ site.profile_picture }}">
+    <meta name="twitter:image" content="{{ site.profile_picture }}">
     {% endif %}
     {% if page.math != false %}
-        {% include mathjax.html %}
+    {% include mathjax.html %}
     {% endif %}
 </head>
+
 <body>
     <div class="wrapper">
         <div class="main">
@@ -88,7 +94,6 @@
         </div>
     </div>
     {% include footer.html %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="/js/rrssb.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
     <script src="/js/highlight.pack.js"></script>
@@ -98,15 +103,15 @@
     </script>
 
     {% if page.title %}
-        <script src="/js/anchor.min.js"></script>
-        <script>
+    <script src="/js/anchor.min.js"></script>
+    <script>
         anchors.options.placement = 'right'
         anchors.options.class = 'hide'
         anchors.add()
         anchors.remove('.post-title')
-        </script>
+    </script>
     {% endif %}
     {% if site.tracking_id %}
-        {% include analytics.html %}
+    {% include analytics.html %}
     {% endif %}
 </body>
