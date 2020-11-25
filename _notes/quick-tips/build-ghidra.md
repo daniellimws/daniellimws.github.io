@@ -9,13 +9,13 @@ alias: tips
 
 #### Clone the repo
 
-```
+```sh
 git clone https://github.com/NationalSecurityAgency/ghidra.git
 ```
 
 #### Fetch dependencies
 
-```
+```sh
 gradle --init-script gradle/support/fetchDependencies.gradle init
 ```
 
@@ -24,7 +24,7 @@ This is because sometimes `gradle clean` is needed when checking out to a differ
 
 #### Build Ghidra
 
-```
+```sh
 gradle buildGhidra
 ````
 
@@ -34,7 +34,7 @@ This should take about 10 minutes.
 
 There are a couple of things that aren't needed when just building Ghidra for development purposes. The following build command skips the unneeded steps.
 
-```
+```sh
 gradle buildGhidra -x ip -x createJavadocs -x createJsondocs -x zipJavadocs -x sleighCompile
 ```
 
