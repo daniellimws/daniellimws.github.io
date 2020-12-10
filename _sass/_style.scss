@@ -192,12 +192,12 @@ a:hover {
     border-bottom: 2px solid $accent-color;
 }
 .button {
-    font-weight: lighter;
-    font-size: 13px;
-    border-radius: 20px;
-    background: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 4px;
+    background: transparent;
     padding: $base-spacing/4 $base-spacing;
-    color: $medium-gray-color;
+    color: $normal-text-color;
 }
 .button:hover {
     background: $accent-color;
@@ -237,7 +237,7 @@ footer {
         font-size: 20px;
         font-weight: lighter;
     }
-    color: $medium-gray-color;
+    color: $normal-text-color;
 }
 
 .site-name {
@@ -426,7 +426,7 @@ footer {
 
 .post-date {
     font-family: $font-stack-two;
-    font-weight: lighter;
+    font-weight: semibold;
 }
 
 /* Styling

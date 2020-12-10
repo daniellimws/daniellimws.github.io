@@ -2,6 +2,8 @@
 @import "table";
 
 .content {
+    color: $normal-text-color;
+
     hr {
         margin: $base-spacing 0;
     }
@@ -25,24 +27,34 @@
         margin-bottom: $base-spacing;
         font-family: $font-stack-one;
         color: $accent-color;
+        font-weight: 700;
+    }
+    .post-date {
+        font-weight: 500;
     }
     h1 {
         font-size: 35px;
+        color: $header-text-color;
     }
     h2 {
         font-size: 31px;
+        color: $header-text-color;
     }
     h3 {
         font-size: 27px;
+        color: $header-text-color;
     }
     h4 {
         font-size: 23px;
+        color: $header-text-color;
     }
     h5 {
         font-size: 19px;
+        color: $header-text-color;
     }
     h6 {
         font-size: 15px;
+        color: $header-text-color;
     }
     p {
         font-size: 16px;
@@ -105,11 +117,16 @@
     }
 
     p > code {
-      background: #eee;
-      color: #a00000;
+      background: #D8DEE9;
+      color: $normal-text-color;
       padding: 0.14em 0.4em 0.14em 0.4em;
       border-radius: 0.2em;
-      font-size: 15px;
+      font-size: 0.85em;
+      font-family: $code-font;
+      font-weight: 500;
+    }
+    code {
+        font-family: $code-font;
     }
     ul, ol {
         padding: 0.0em 1.5em 0.0em 1.5em;
