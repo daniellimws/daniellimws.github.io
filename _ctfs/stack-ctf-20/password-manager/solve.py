@@ -104,4 +104,4 @@ for i in range(32):
     d = model[password_bvs[i]].as_long()
     flag.append(d)
 
-print("".join(flag))
+print("".join("{:c}".format(s) for s in flag))
