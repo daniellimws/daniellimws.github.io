@@ -139,20 +139,20 @@ internal unsafe static int main(int argc, sbyte** argv)
 ```
 
 The code is long, but could be summarized as follows:
-* **[1]** Get the password from program arguments, and check if it is 32-bytes long.
-* **[2]** Copy the password into another array data structure. Also saves the pointer to the password in `g_INPUT`.
-* **[3]** Again copy the password into another array.
-* **[4]** Compute the SHA256 of the password 2000000 times.
-* **[5]** Compare the first 2 bytes of the hash, to determine whether to continue with the password checking.
-* **[6]** Call `func1()`, `func(2)`, `func4()`, which probably does something with the password.
+* **[1]** Get the input from program arguments, and check if it is 32-bytes long.
+* **[2]** Copy the input into another array data structure. Also saves the pointer to the input in `g_INPUT`.
+* **[3]** Again copy the input into another array.
+* **[4]** Compute the SHA256 of the input 2000000 times.
+* **[5]** Compare the first 2 bytes of the hash, to determine whether to continue with the input validation.
+* **[6]** Call `func1()`, `func(2)`, `func4()`, which probably does something with the input.
 * **[7]** Compare `__imp_result` with `g_INPUT`.
   * The code in the do-while loop may seem complicated, but actually it just compares the bytes between the 2 arrays, like a `memcmp`.
-  * Knowing that the code does this, we can speculate that our password (which `g_INPUT` points to) has been modified in **[6]**, then compared with `__imp_result` which is the target array of bytes obtained when the password is correct.
+  * Knowing that the code does this, we can speculate that our input (which `g_INPUT` points to) has been modified in **[6]**, then compared with `__imp_result` which is the target array of bytes obtained when the input is correct.
 * **[8]** Prints the success or failure messages depending on the result of **[7]**.
 
-So, the important parts of the program is **[6]**, where the password is most likely transformed, before it is checked in **[7]**.
+So, the important parts of the program is **[6]**, where the input is most likely transformed, before it is checked in **[7]**.
 
-**[4]** and **[5]** might look scary, as we need to make sure the first 2 bytes of the SHA256 hash of the password matches some values. However, it is actually not a big concern. It could be possible that there are many possible passwords that satisfy step **[7]**, and step **[5]** is just to narrow them down to only one case. We shall only worry about this after reversing step **[6]**.
+**[4]** and **[5]** might look scary, as we need to make sure the first 2 bytes of the SHA256 hash of the input matches some values. However, it is actually not a big concern. It could be possible that there are many possible inputs that satisfy step **[7]**, and step **[5]** is just to narrow them down to only one case. We shall only worry about this after reversing step **[6]**.
 
 #### `func1`
 
@@ -186,7 +186,7 @@ internal unsafe static void func1()
 }
 ```
 
-In this function, each byte of the password is added with an offset, obtained from a global array `key`. We shall revisit this function later when writing the script to find the password.
+In this function, each byte of the input is added with an offset, obtained from a global array `key`. We shall revisit this function later when writing the script to find the correct password.
 
 #### `func2`
 
@@ -223,7 +223,7 @@ internal unsafe static void func2()
 }
 ```
 
-This function takes the password array as an array of `uint` (4-byte) values, i.e. consider 4 bytes as one block. Each block is xored with the one before it, then [rotated right](https://en.wikipedia.org/wiki/Circular_shift#Implementing_circular_shifts) by 12 bytes.
+This function takes the input as an array of `uint` (4-byte) values, i.e. consider 4 bytes as one block. Each block is xored with the one before it, then [rotated right](https://en.wikipedia.org/wiki/Circular_shift#Implementing_circular_shifts) by 12 bytes.
 
 We shall revisit this function later when writing the script to find the password.
 
@@ -249,7 +249,7 @@ Token: 0x06000047 RID: 71 RVA: 0x00001090 File Offset: 0x00000490
 So, we do know the offset of the function in the binary. In particular `0x1090`, as given by `RVA: 0x00001090`. Navigating to `0x401090` in Ghidra (`0x400000` is the starting address assumed by Ghidra), I managed to obtain the decompilation of `func4`.
 
 ```c
-uint func4(char *password, uint start)
+uint func4(char *input, uint start)
 {
     indices[32] = {0x1d, 0xd, 0x10, 0x14, /* and more */};
     counter = 0x10;
@@ -260,13 +260,13 @@ uint func4(char *password, uint start)
             index = (index - 1 | 0xffffffe0) + 1;
         }
 
-        c2 = (byte *)(password + indices[index]);
+        c2 = (byte *)(input + indices[index]);
         index = start & 0x8000001f;
         if ((int)index < 0) {
             index = (index - 1 | 0xffffffe0) + 1;
         }
 
-        c1 = (byte *)(password + indices[index]);
+        c1 = (byte *)(input + indices[index]);
         start = start + 2;
 
         *c1 = *c1 ^ *c2;
@@ -293,13 +293,13 @@ uint func4(char *password, uint start)
 
 Here we see that the program
 1. Takes 2 indices from the `indices` array
-2. Swaps the values at those indices of the `password` array
+2. Swaps the values at those indices of the `input` array
 3. Performs some operations (addition and modulus) on these values
-4. Saves them back into the `password` array
+4. Saves them back into the `input` array
 
 #### `__imp_result`
 
-Lastly, I need to know the values that the program is comparing the transformed password with, i.e. `__imp_result`. Similar to `func4`, the values of `__imp_result` cannot be found in the decompilation. Only the following declaration exists.
+Lastly, I need to know the values that the program is comparing the transformed input with, i.e. `__imp_result`. Similar to `func4`, the values of `__imp_result` cannot be found in the decompilation. Only the following declaration exists.
 
 ```cs
 // Token: 0x04000037 RID: 55 RVA: 0x00004504 File Offset: 0x00002D04
@@ -463,7 +463,7 @@ def func4(arr, start):
     return res
 ```
 
-With the functions defined, I replicate the part where the password is transformed.
+With the functions defined, I replicate the part where the input is transformed.
 
 ```py
 password_bvs = []
