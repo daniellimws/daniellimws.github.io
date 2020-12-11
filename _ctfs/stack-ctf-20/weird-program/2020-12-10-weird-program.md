@@ -20,7 +20,7 @@ Pasting the given code into Google search tells us that it is possibly the APL (
 
 ![tio][tio]
 
-The syntax looks so weird, just like any programming language. It would be helpful to have some sense of how the syntax works. So I went to look at this [tutorial](https://tutorial.dyalog.com/next.html).
+The syntax looks so weird, just like any esoteric programming language. It would be helpful to have some sense of how the syntax works. So I went to look at this [tutorial](https://tutorial.dyalog.com/next.html).
 
 After 5 mins of looking at the tutorial, I decided that I do not want to reverse this at all.
 
