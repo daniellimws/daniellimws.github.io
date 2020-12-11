@@ -361,7 +361,7 @@ Quick recap of the password checking routine:
 memcmp(<Module>.g_INPUT, <Module>.__imp_result, 32);
 ```
 
-Now that I briefly know what each of `func1`, `func2` and `func4` does, I can write a z3 script to find the password.
+Now that I briefly know what each of `func1`, `func2` and `func4` does, I can write a z3 script to find the password. I can reimplement the program in Python, then let the z3 solver solve for inputs that satisfy the checks.
 
 First, I made some helper functions, to convert between blocks of 4 bytes and a single byte. This is to support the operations of `func2` as seen earlier.
 
