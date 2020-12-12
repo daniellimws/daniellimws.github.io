@@ -69,8 +69,8 @@ internal unsafe static int main(int argc, sbyte** argv)
             int count = 0;
             do
             {
-                hash[num4] = <Module>.g_INPUT[num4];
-                num4++;
+                hash[count] = <Module>.g_INPUT[count];
+                count++;
             }
             while (count < 32);
 
