@@ -39,6 +39,7 @@
     h2 {
         font-size: 31px;
         color: $header-text-color;
+        text-decoration: underline;
     }
     h3 {
         font-size: 27px;
@@ -46,10 +47,12 @@
     }
     h4 {
         font-size: 23px;
+        font-weight: 500;
         color: $header-text-color;
     }
     h5 {
         font-size: 19px;
+        font-weight: 500;
         color: $header-text-color;
     }
     h6 {

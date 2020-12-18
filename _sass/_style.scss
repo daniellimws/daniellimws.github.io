@@ -16,6 +16,11 @@ body {
     overflow: auto;
     background: $bg-color;
 }
+img[alt="smallimg"] {
+    max-width: 600px;
+    margin: auto;
+    display: block;
+}
 .site-name {
     color: $accent-color;
 }
