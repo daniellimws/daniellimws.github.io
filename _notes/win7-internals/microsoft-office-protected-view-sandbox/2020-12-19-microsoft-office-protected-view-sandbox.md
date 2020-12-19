@@ -163,7 +163,7 @@ Sandbox-SID restricts access to **%UserProfile%\AppData\Local\Packages\<sandbox-
 
 #### Registry
 
-![][registry.png]
+![][registry]
 
 Sandbox-SID restricts access to sandbox-related keys. Mostly with `KEY_ALL_ACCESS` access.
 
