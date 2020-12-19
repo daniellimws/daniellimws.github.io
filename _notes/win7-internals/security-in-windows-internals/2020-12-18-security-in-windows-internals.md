@@ -229,5 +229,5 @@ So, `GET \hidden~1.txt HTTP/1.0` can be used to get **hiddenfile.txt**.
 This is still relevant in modern Windows systems (need to verify this on Windows 10).
 
 
-[arch]:{{site.baseurl}}/notes/win7-internals/overview/images/arch.png
-[object-types]:{{site.baseurl}}/notes/win7-internals/overview/images/object-types.png
+[arch]:{{site.baseurl}}/notes/win7-internals/security-in-windows-internals/images/arch.png
+[object-types]:{{site.baseurl}}/notes/win7-internals/security-in-windows-internals/images/object-types.png
