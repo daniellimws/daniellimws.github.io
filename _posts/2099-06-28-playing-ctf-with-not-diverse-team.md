@@ -8,9 +8,9 @@ Last week, I played a local CTF with my friends [Akash](http://enigmatrix.me/), 
 * Me (**Reversing**)
 * Akash (**Pwn**)
 * Lord Idiot (**Pwn**)
-* 4yn (**Crypto**/**Programming**/**sysadmin?**)
+* 4yn (**Web**/**Crypto**/**Programming**/**sysadmin?**)
 
-??? who is gonna do **Web** or **Forensics**? Also, as we were informed that the CTF also has a **Pentest** category, we collaborated on a retired HackTheBox machine just 2 days before the CTF. Other than that, just the day before the CTF, we also tried the [Defcon DFIR CTF 2019](https://defcon2019.ctfd.io/challenges). Very well prepared, I suppose. Typically, one wouldn't expect such a team to perform well in a CTF with a diverse set of challenges.
+3 of us are bad at everything else :D. Also, as we were informed that the CTF also has a **Pentest** category, we collaborated on a retired HackTheBox machine just 2 days before the CTF. Other than that, just the day before the CTF, we also tried the [Defcon DFIR CTF 2019](https://defcon2019.ctfd.io/challenges). Very well prepared, I suppose. Typically, one wouldn't expect such a team to perform well in a CTF with a diverse set of challenges.
 
 That being said, all of us have been playing CTFs for some years (at least 4). So, we all do have some knowledge about each category, and are still aiming for the win.
 
@@ -24,7 +24,7 @@ Our teamwork was great, best I have experienced so far (which is mainly why I wr
 
 #### Peer Programming (but CTF instead of programming)
 
-It took us than 10% of our time to finish the **reverse engineering**, **pwn**, and **crypto** challenges. And we spent the remaining time on other categories. Since none of us specialize at these categories, we split into pairs to work on a challenge. It is generally not done this way, as usually each person is assigned to one challenge at a time, to maximize throughput.
+It took us less than 10% of our time to finish the **reverse engineering**, **pwn**, and **crypto** challenges. And we spent the remaining time on other categories. Since none of us specialize at these categories, we split into pairs to work on a challenge. It is generally not done this way, as usually each person is assigned to one challenge at a time, to maximize throughput.
 
 It was really helpful though, and might even be more effective, at least in our situation. For those challenges with a lot of options to try, with 2 people working on 1 challenge at a time, it gave us the space to go deep and go broad on our ideas at the same time. In particular, one person could be quickly verifying the viability of various ideas, while another person does deeper exploration into a certain possibly working idea.
 
