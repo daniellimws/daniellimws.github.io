@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Playing CTF with a not diverse team
+hidden: true
 ---
 
 Last week, I played a local CTF with my friends [Akash](http://enigmatrix.me/), [Lord Idiot](https://blog.idiot.sg/), and [4yn](https://imp.ress.me/). Usually, for local CTFs with a limited number of 4 members per team, I always end up in a team with diverse skillsets, enough to cover the various categories. This time, however, our team composition consists of:
