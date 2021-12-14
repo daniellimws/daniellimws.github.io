@@ -5,7 +5,7 @@ ctf: Wargames.MY 2021
 permalink: /wargamesmy-21/forensics
 ---
 
-This was a series of challenges based on a malware sample. Very cool challenge by [NetSecByte](http://www.netbytesec.com/). I really loved it.
+This was a series of challenges based on a malware sample. Very cool challenge by [NetByteSec](http://www.netbytesec.com/). I really loved it.
 
 We were first given a [zip file][challenge], which contains an `.eml` file.
 
