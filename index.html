@@ -12,9 +12,13 @@ layout: default
                     <time>{{ post.date | date: '%B %d, %Y '}}</time>
                 </div>
                 <div class="post-title">
+                  {% if post.external_url %}
+                  <a class="post-link" href="{{ post.external_url }}"> {{ post.title }}</a>
+                  {% else %}
                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
                         {{ post.title }}
                     </a>
+                  {% endif %}
                 </div>
                 <!-- <div style="clear:both"></div> -->
             </div>
