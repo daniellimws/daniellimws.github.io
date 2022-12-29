@@ -1,0 +1,139 @@
+00007ffb`72940b40 55              push    rbp
+00007ffb`72940b41 57              push    rdi
+00007ffb`72940b42 56              push    rsi
+00007ffb`72940b43 4883ec70        sub     rsp,70h
+00007ffb`72940b47 488dac2480000000 lea     rbp,[rsp+80h]
+00007ffb`72940b4f 488bf1          mov     rsi,rcx
+00007ffb`72940b52 488d7da8        lea     rdi,[rbp-58h]
+00007ffb`72940b56 b912000000      mov     ecx,12h
+00007ffb`72940b5b 33c0            xor     eax,eax
+00007ffb`72940b5d f3ab            rep stos dword ptr [rdi]
+00007ffb`72940b5f 488bce          mov     rcx,rsi
+00007ffb`72940b62 894d10          mov     dword ptr [rbp+10h],ecx
+00007ffb`72940b65 833d543ad6ff00  cmp     dword ptr [00007ffb`726a45c0],0
+00007ffb`72940b6c 7405            je      00007ffb`72940b73
+00007ffb`72940b6e e83d2d915f      call    clr!JIT_DbgIsJustMyCode (00007ffb`d22538b0)
+00007ffb`72940b73 90              nop
+00007ffb`72940b74 48b9326d81d0fb7f0000 mov rcx,offset mscorlib_ni!System.Collections.IStructuralComparable.CompareTo+0x10d (00007ffb`d0816d32)
+00007ffb`72940b7e ba70020000      mov     edx,270h
+00007ffb`72940b83 e8c8f0615f      call    clr!JIT_NewArr1VC_MP_InlineGetThread (00007ffb`d1f5fc50)
+00007ffb`72940b88 488945c8        mov     qword ptr [rbp-38h],rax
+00007ffb`72940b8c 48b9705b0899d9010000 mov rcx,1D999085B70h
+00007ffb`72940b96 488b55c8        mov     rdx,qword ptr [rbp-38h]
+00007ffb`72940b9a e841cc615f      call    clr!JIT_CheckedWriteBarrier (00007ffb`d1f5d7e0)
+00007ffb`72940b9f c705c73dd6ff6589076c mov dword ptr [00007ffb`726a4970],6C078965h
+00007ffb`72940ba9 c705c13dd6ff8d010000 mov dword ptr [00007ffb`726a4974],18Dh
+00007ffb`72940bb3 c705bb3dd6ff0b000000 mov dword ptr [00007ffb`726a4978],0Bh
+00007ffb`72940bbd c705b53dd6ff07000000 mov dword ptr [00007ffb`726a497c],7
+00007ffb`72940bc7 c705af3dd6ff80562c9d mov dword ptr [00007ffb`726a4980],9D2C5680h
+00007ffb`72940bd1 c705a93dd6ff0f000000 mov dword ptr [00007ffb`726a4984],0Fh
+00007ffb`72940bdb c705a33dd6ff0000c6ef mov dword ptr [00007ffb`726a4988],0EFC60000h
+00007ffb`72940be5 c7059d3dd6ff12000000 mov dword ptr [00007ffb`726a498c],12h
+00007ffb`72940bef c705973dd6ff70020000 mov dword ptr [00007ffb`726a4990],270h
+00007ffb`72940bf9 c705913dd6ffffffff7f mov dword ptr [00007ffb`726a4994],7FFFFFFFh
+00007ffb`72940c03 c7058b3dd6ff00000080 mov dword ptr [00007ffb`726a4998],80000000h
+00007ffb`72940c0d 48b8705b0899d9010000 mov rax,1D999085B70h
+00007ffb`72940c17 488b00          mov     rax,qword ptr [rax]
+00007ffb`72940c1a 33d2            xor     edx,edx
+00007ffb`72940c1c 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ffb`72940c20 7205            jb      00007ffb`72940c27
+00007ffb`72940c22 e8e959915f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72940c27 488d449010      lea     rax,[rax+rdx*4+10h]
+00007ffb`72940c2c 8b5510          mov     edx,dword ptr [rbp+10h]
+00007ffb`72940c2f 8910            mov     dword ptr [rax],edx
+00007ffb`72940c31 48b8805b0899d9010000 mov rax,1D999085B80h
+00007ffb`72940c3b 48833800        cmp     qword ptr [rax],0
+00007ffb`72940c3f 0f94c0          sete    al
+00007ffb`72940c42 0fb6c0          movzx   eax,al
+00007ffb`72940c45 8945ec          mov     dword ptr [rbp-14h],eax
+00007ffb`72940c48 837dec00        cmp     dword ptr [rbp-14h],0
+00007ffb`72940c4c 0f8485000000    je      00007ffb`72940cd7
+00007ffb`72940c52 90              nop
+00007ffb`72940c53 e83888d05e      call    mscorlib_ni!System.Security.Cryptography.HashAlgorithmName.get_SHA256 (00007ffb`d1649490)
+00007ffb`72940c58 488945d0        mov     qword ptr [rbp-30h],rax
+00007ffb`72940c5c 488b4dd0        mov     rcx,qword ptr [rbp-30h]
+*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Core\43168ffb77c6f40c9a0e669ad3ead5cd\System.Core.ni.dll
+00007ffb`72940c60 e87b009f5c      call    System_Core_ni!System.Security.Cryptography.IncrementalHash.CreateHash (00007ffb`cf330ce0)
+00007ffb`72940c65 488945b8        mov     qword ptr [rbp-48h],rax
+00007ffb`72940c69 48b9805b0899d9010000 mov rcx,1D999085B80h
+00007ffb`72940c73 488b55b8        mov     rdx,qword ptr [rbp-48h]
+00007ffb`72940c77 e864cb615f      call    clr!JIT_CheckedWriteBarrier (00007ffb`d1f5d7e0)
+*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v4.0.30319_64\System\7174a6c4c985aea1ef11e5b9b4bd99dc\System.ni.dll
+00007ffb`72940c7c 48b9f08aadcffb7f0000 mov rcx,offset System_ni!EscapeString+0x6d (00007ffb`cfad8af0) (MT: System.Collections.Specialized.NotifyCollectionChangedEventHandler)
+00007ffb`72940c86 e8d5ee615f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffb`d1f5fb60)
+00007ffb`72940c8b 488945b0        mov     qword ptr [rbp-50h],rax
+00007ffb`72940c8f 49b8005c0899d9010000 mov r8,1D999085C00h
+00007ffb`72940c99 4d8b00          mov     r8,qword ptr [r8]
+00007ffb`72940c9c 4c8945a8        mov     qword ptr [rbp-58h],r8
+00007ffb`72940ca0 49b8b8ab7c72fb7f0000 mov r8,7FFB727CABB8h
+00007ffb`72940caa 488b4db0        mov     rcx,qword ptr [rbp-50h]
+00007ffb`72940cae 33d2            xor     edx,edx
+00007ffb`72940cb0 49b910097e87d9010000 mov r9,1D9877E0910h
+00007ffb`72940cba e8c1b3435e      call    mscorlib_ni!System.MulticastDelegate.CtorOpened (00007ffb`d0d7c080)
+00007ffb`72940cbf 488b4da8        mov     rcx,qword ptr [rbp-58h]
+00007ffb`72940cc3 488b55b0        mov     rdx,qword ptr [rbp-50h]
+00007ffb`72940cc7 488b45a8        mov     rax,qword ptr [rbp-58h]
+00007ffb`72940ccb 488b00          mov     rax,qword ptr [rax]
+00007ffb`72940cce 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`72940cd2 ff5020          call    qword ptr [rax+20h]
+00007ffb`72940cd5 90              nop
+00007ffb`72940cd6 90              nop
+00007ffb`72940cd7 c745e801000000  mov     dword ptr [rbp-18h],1
+00007ffb`72940cde 90              nop
+00007ffb`72940cdf e9a2000000      jmp     00007ffb`72940d86
+00007ffb`72940ce4 90              nop
+00007ffb`72940ce5 48b9705b0899d9010000 mov rcx,1D999085B70h
+00007ffb`72940cef 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`72940cf2 48894dc0        mov     qword ptr [rbp-40h],rcx
+00007ffb`72940cf6 8b4de8          mov     ecx,dword ptr [rbp-18h]
+00007ffb`72940cf9 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffb`72940cfc 48b9705b0899d9010000 mov rcx,1D999085B70h
+00007ffb`72940d06 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`72940d09 8b45e8          mov     eax,dword ptr [rbp-18h]
+00007ffb`72940d0c ffc8            dec     eax
+00007ffb`72940d0e 483b4108        cmp     rax,qword ptr [rcx+8]
+00007ffb`72940d12 7205            jb      00007ffb`72940d19
+00007ffb`72940d14 e8f758915f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72940d19 488d4c8110      lea     rcx,[rcx+rax*4+10h]
+00007ffb`72940d1e 48b8705b0899d9010000 mov rax,1D999085B70h
+00007ffb`72940d28 488b00          mov     rax,qword ptr [rax]
+00007ffb`72940d2b 8b55e8          mov     edx,dword ptr [rbp-18h]
+00007ffb`72940d2e ffca            dec     edx
+00007ffb`72940d30 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ffb`72940d34 7205            jb      00007ffb`72940d3b
+00007ffb`72940d36 e8d558915f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72940d3b 488d449010      lea     rax,[rax+rdx*4+10h]
+00007ffb`72940d40 8b00            mov     eax,dword ptr [rax]
+00007ffb`72940d42 c1e81e          shr     eax,1Eh
+00007ffb`72940d45 3301            xor     eax,dword ptr [rcx]
+00007ffb`72940d47 0faf05223cd6ff  imul    eax,dword ptr [00007ffb`726a4970]
+00007ffb`72940d4e 8bc8            mov     ecx,eax
+00007ffb`72940d50 8b45e8          mov     eax,dword ptr [rbp-18h]
+00007ffb`72940d53 4863c0          movsxd  rax,eax
+00007ffb`72940d56 4803c8          add     rcx,rax
+00007ffb`72940d59 e872bbe8ff      call    00007ffb`727cc8d0 (FlareOn.Backdoor.FLARE11.flare_45(Int64), mdToken: 000000000600007d)
+00007ffb`72940d5e 8945dc          mov     dword ptr [rbp-24h],eax
+00007ffb`72940d61 488b45c0        mov     rax,qword ptr [rbp-40h]
+00007ffb`72940d65 8b55e0          mov     edx,dword ptr [rbp-20h]
+00007ffb`72940d68 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ffb`72940d6c 7205            jb      00007ffb`72940d73
+00007ffb`72940d6e e89d58915f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72940d73 488d449010      lea     rax,[rax+rdx*4+10h]
+00007ffb`72940d78 8b55dc          mov     edx,dword ptr [rbp-24h]
+00007ffb`72940d7b 8910            mov     dword ptr [rax],edx
+00007ffb`72940d7d 90              nop
+00007ffb`72940d7e 8b45e8          mov     eax,dword ptr [rbp-18h]
+00007ffb`72940d81 ffc0            inc     eax
+00007ffb`72940d83 8945e8          mov     dword ptr [rbp-18h],eax
+00007ffb`72940d86 817de870020000  cmp     dword ptr [rbp-18h],270h
+00007ffb`72940d8d 0f9cc1          setl    cl
+00007ffb`72940d90 0fb6c9          movzx   ecx,cl
+00007ffb`72940d93 894de4          mov     dword ptr [rbp-1Ch],ecx
+00007ffb`72940d96 837de400        cmp     dword ptr [rbp-1Ch],0
+00007ffb`72940d9a 0f8544ffffff    jne     00007ffb`72940ce4
+00007ffb`72940da0 90              nop
+00007ffb`72940da1 488d65f0        lea     rsp,[rbp-10h]
+00007ffb`72940da5 5e              pop     rsi
+00007ffb`72940da6 5f              pop     rdi
+00007ffb`72940da7 5d              pop     rbp
+00007ffb`72940da8 c3              ret

@@ -1,0 +1,59 @@
+00007ffe`c0d93a70 55              push    rbp
+00007ffe`c0d93a71 57              push    rdi
+00007ffe`c0d93a72 56              push    rsi
+00007ffe`c0d93a73 4883ec40        sub     rsp,40h
+00007ffe`c0d93a77 488d6c2450      lea     rbp,[rsp+50h]
+00007ffe`c0d93a7c 488bf1          mov     rsi,rcx
+00007ffe`c0d93a7f 488d7ddc        lea     rdi,[rbp-24h]
+00007ffe`c0d93a83 b905000000      mov     ecx,5
+00007ffe`c0d93a88 33c0            xor     eax,eax
+00007ffe`c0d93a8a f3ab            rep stos dword ptr [rdi]
+00007ffe`c0d93a8c 488bce          mov     rcx,rsi
+00007ffe`c0d93a8f 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ffe`c0d93a93 48895518        mov     qword ptr [rbp+18h],rdx
+00007ffe`c0d93a97 833d220bd2ff00  cmp     dword ptr [00007ffe`c0ab45c0],0
+00007ffe`c0d93a9e 7405            je      00007ffe`c0d93aa5
+00007ffe`c0d93aa0 e80bfe8c5f      call    clr!JIT_DbgIsJustMyCode (00007fff`206638b0)
+00007ffe`c0d93aa5 90              nop
+00007ffe`c0d93aa6 488b4d18        mov     rcx,qword ptr [rbp+18h]
+00007ffe`c0d93aaa 3909            cmp     dword ptr [rcx],ecx
+00007ffe`c0d93aac e8cfa67c5d      call    System_ni!System.Collections.Specialized.NotifyCollectionChangedEventArgs.get_Action (00007fff`1e55e180)
+00007ffe`c0d93ab1 8945e4          mov     dword ptr [rbp-1Ch],eax
+00007ffe`c0d93ab4 837de401        cmp     dword ptr [rbp-1Ch],1
+00007ffe`c0d93ab8 0f94c1          sete    cl
+00007ffe`c0d93abb 0fb6c9          movzx   ecx,cl
+00007ffe`c0d93abe 894dec          mov     dword ptr [rbp-14h],ecx
+00007ffe`c0d93ac1 837dec00        cmp     dword ptr [rbp-14h],0
+00007ffe`c0d93ac5 744f            je      00007ffe`c0d93b16
+00007ffe`c0d93ac7 90              nop
+00007ffe`c0d93ac8 0fb60dd10ed2ff  movzx   ecx,byte ptr [00007ffe`c0ab49a0]
+00007ffe`c0d93acf 85c9            test    ecx,ecx
+00007ffe`c0d93ad1 7426            je      00007ffe`c0d93af9
+00007ffe`c0d93ad3 48b9005c316a62010000 mov rcx,1626A315C00h
+00007ffe`c0d93add 488b09          mov     rcx,qword ptr [rcx]
+00007ffe`c0d93ae0 3909            cmp     dword ptr [rcx],ecx
+00007ffe`c0d93ae2 e8d933e5ff      call    00007ffe`c0be6ec0 (System.Collections.ObjectModel.Collection`1[[System.Int32, mscorlib]].get_Count(), mdToken: 0000000006003882)
+00007ffe`c0d93ae7 8945dc          mov     dword ptr [rbp-24h],eax
+00007ffe`c0d93aea 837ddc00        cmp     dword ptr [rbp-24h],0
+00007ffe`c0d93aee 0f94c0          sete    al
+00007ffe`c0d93af1 0fb6c0          movzx   eax,al
+00007ffe`c0d93af4 8945e0          mov     dword ptr [rbp-20h],eax
+00007ffe`c0d93af7 eb05            jmp     00007ffe`c0d93afe
+00007ffe`c0d93af9 33c0            xor     eax,eax
+00007ffe`c0d93afb 8945e0          mov     dword ptr [rbp-20h],eax
+00007ffe`c0d93afe 8b45e0          mov     eax,dword ptr [rbp-20h]
+00007ffe`c0d93b01 0fb6c0          movzx   eax,al
+00007ffe`c0d93b04 8945e8          mov     dword ptr [rbp-18h],eax
+00007ffe`c0d93b07 837de800        cmp     dword ptr [rbp-18h],0
+00007ffe`c0d93b0b 7408            je      00007ffe`c0d93b15
+00007ffe`c0d93b0d 90              nop
+00007ffe`c0d93b0e e8c570e4ff      call    00007ffe`c0bdabd8 (FlareOn.Backdoor.FLARE14.flare_55(), mdToken: 0000000006000096)
+00007ffe`c0d93b13 90              nop
+00007ffe`c0d93b14 90              nop
+00007ffe`c0d93b15 90              nop
+00007ffe`c0d93b16 90              nop
+00007ffe`c0d93b17 488d65f0        lea     rsp,[rbp-10h]
+00007ffe`c0d93b1b 5e              pop     rsi
+00007ffe`c0d93b1c 5f              pop     rdi
+00007ffe`c0d93b1d 5d              pop     rbp
+00007ffe`c0d93b1e c3              ret

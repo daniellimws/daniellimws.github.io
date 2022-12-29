@@ -1,0 +1,26 @@
+00007ffe`4ea81460 55              push    rbp
+00007ffe`4ea81461 4883ec30        sub     rsp,30h
+00007ffe`4ea81465 488d6c2430      lea     rbp,[rsp+30h]
+00007ffe`4ea8146a 33c0            xor     eax,eax
+00007ffe`4ea8146c 488945f8        mov     qword ptr [rbp-8],rax
+00007ffe`4ea81470 488945f0        mov     qword ptr [rbp-10h],rax
+00007ffe`4ea81474 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ffe`4ea81478 833d4131e3ff00  cmp     dword ptr [00007ffe`4e8b45c0],0
+00007ffe`4ea8147f 7405            je      00007ffe`4ea81486
+00007ffe`4ea81481 e82a249f5f      call    clr!JIT_DbgIsJustMyCode (00007ffe`ae4738b0)
+00007ffe`4ea81486 90              nop
+00007ffe`4ea81487 48b90039c4310c020000 mov rcx,20C31C43900h
+00007ffe`4ea81491 488b09          mov     rcx,qword ptr [rcx]
+00007ffe`4ea81494 49b80839c4310c020000 mov r8,20C31C43908h
+00007ffe`4ea8149e 4d8b00          mov     r8,qword ptr [r8]
+00007ffe`4ea814a1 488b5510        mov     rdx,qword ptr [rbp+10h]
+00007ffe`4ea814a5 e82662cf5d      call    mscorlib_ni!System.String.Concat (00007ffe`ac7776d0)
+00007ffe`4ea814aa 488945f0        mov     qword ptr [rbp-10h],rax
+00007ffe`4ea814ae 488b45f0        mov     rax,qword ptr [rbp-10h]
+00007ffe`4ea814b2 488945f8        mov     qword ptr [rbp-8],rax
+00007ffe`4ea814b6 90              nop
+00007ffe`4ea814b7 eb00            jmp     00007ffe`4ea814b9
+00007ffe`4ea814b9 488b45f8        mov     rax,qword ptr [rbp-8]
+00007ffe`4ea814bd 488d6500        lea     rsp,[rbp]
+00007ffe`4ea814c1 5d              pop     rbp
+00007ffe`4ea814c2 c3              ret

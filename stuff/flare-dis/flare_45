@@ -1,0 +1,22 @@
+00007ff9`601becc0 55              push    rbp
+00007ff9`601becc1 4883ec30        sub     rsp,30h
+00007ff9`601becc5 488d6c2430      lea     rbp,[rsp+30h]
+00007ff9`601becca 33c0            xor     eax,eax
+00007ff9`601beccc 8945fc          mov     dword ptr [rbp-4],eax
+00007ff9`601beccf 8945f8          mov     dword ptr [rbp-8],eax
+00007ff9`601becd2 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ff9`601becd6 833de358cbff00  cmp     dword ptr [00007ff9`5fe745c0],0
+00007ff9`601becdd 7405            je      00007ff9`601bece4
+00007ff9`601becdf e8cc4b875f      call    clr!JIT_DbgIsJustMyCode (00007ff9`bfa338b0)
+00007ff9`601bece4 90              nop
+00007ff9`601bece5 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ff9`601bece9 e82268e85b      call    mscorlib_ni!System.Convert.ToUInt32 (00007ff9`bc045510)
+00007ff9`601becee 8945f8          mov     dword ptr [rbp-8],eax
+00007ff9`601becf1 8b45f8          mov     eax,dword ptr [rbp-8]
+00007ff9`601becf4 8945fc          mov     dword ptr [rbp-4],eax
+00007ff9`601becf7 90              nop
+00007ff9`601becf8 eb00            jmp     00007ff9`601becfa
+00007ff9`601becfa 8b45fc          mov     eax,dword ptr [rbp-4]
+00007ff9`601becfd 488d6500        lea     rsp,[rbp]
+00007ff9`601bed01 5d              pop     rbp
+00007ff9`601bed02 c3              ret

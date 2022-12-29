@@ -1,0 +1,105 @@
+00007ff9`6012c510 55              push    rbp
+00007ff9`6012c511 57              push    rdi
+00007ff9`6012c512 4883ec48        sub     rsp,48h
+00007ff9`6012c516 488d6c2450      lea     rbp,[rsp+50h]
+00007ff9`6012c51b 488d7dd8        lea     rdi,[rbp-28h]
+00007ff9`6012c51f b908000000      mov     ecx,8
+00007ff9`6012c524 33c0            xor     eax,eax
+00007ff9`6012c526 f3ab            rep stos dword ptr [rdi]
+00007ff9`6012c528 833d9180d4ff00  cmp     dword ptr [00007ff9`5fe745c0],0
+00007ff9`6012c52f 7405            je      00007ff9`6012c536
+00007ff9`6012c531 e87a73905f      call    clr!JIT_DbgIsJustMyCode (00007ff9`bfa338b0)
+00007ff9`6012c536 90              nop
+00007ff9`6012c537 33c0            xor     eax,eax
+00007ff9`6012c539 8945f4          mov     dword ptr [rbp-0Ch],eax
+00007ff9`6012c53c 90              nop
+00007ff9`6012c53d e913010000      jmp     00007ff9`6012c655
+00007ff9`6012c542 90              nop
+00007ff9`6012c543 48b8705b74bdf6010000 mov rax,1F6BD745B70h
+00007ff9`6012c54d 488b00          mov     rax,qword ptr [rax]
+00007ff9`6012c550 8b55f4          mov     edx,dword ptr [rbp-0Ch]
+00007ff9`6012c553 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ff9`6012c557 7205            jb      00007ff9`6012c55e
+00007ff9`6012c559 e8b2a0905f      call    clr!JIT_RngChkFail (00007ff9`bfa36610)
+00007ff9`6012c55e 488d449010      lea     rax,[rax+rdx*4+10h]
+00007ff9`6012c563 8b00            mov     eax,dword ptr [rax]
+00007ff9`6012c565 8bc8            mov     ecx,eax
+00007ff9`6012c567 230d2b84d4ff    and     ecx,dword ptr [00007ff9`5fe74998]
+00007ff9`6012c56d 8b45f4          mov     eax,dword ptr [rbp-0Ch]
+00007ff9`6012c570 ffc0            inc     eax
+00007ff9`6012c572 41b870020000    mov     r8d,270h
+00007ff9`6012c578 33d2            xor     edx,edx
+00007ff9`6012c57a 41f7f0          div     eax,r8d
+00007ff9`6012c57d 48b8705b74bdf6010000 mov rax,1F6BD745B70h
+00007ff9`6012c587 488b00          mov     rax,qword ptr [rax]
+00007ff9`6012c58a 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ff9`6012c58e 7205            jb      00007ff9`6012c595
+00007ff9`6012c590 e87ba0905f      call    clr!JIT_RngChkFail (00007ff9`bfa36610)
+00007ff9`6012c595 488d449010      lea     rax,[rax+rdx*4+10h]
+00007ff9`6012c59a 8b00            mov     eax,dword ptr [rax]
+00007ff9`6012c59c 2305f283d4ff    and     eax,dword ptr [00007ff9`5fe74994]
+00007ff9`6012c5a2 03c8            add     ecx,eax
+00007ff9`6012c5a4 8bc9            mov     ecx,ecx
+00007ff9`6012c5a6 e82503e7ff      call    00007ff9`5ff9c8d0 (FlareOn.Backdoor.FLARE11.flare_45(Int64), mdToken: 000000000600007d)
+>>> 00007ff9`6012c5ab 8945e0          mov     dword ptr [rbp-20h],eax
+00007ff9`6012c5ae 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ff9`6012c5b1 894df0          mov     dword ptr [rbp-10h],ecx
+00007ff9`6012c5b4 8b4df0          mov     ecx,dword ptr [rbp-10h]
+00007ff9`6012c5b7 d1e9            shr     ecx,1
+00007ff9`6012c5b9 894dec          mov     dword ptr [rbp-14h],ecx
+00007ff9`6012c5bc 8b4df0          mov     ecx,dword ptr [rbp-10h]
+00007ff9`6012c5bf 83e101          and     ecx,1
+00007ff9`6012c5c2 85c9            test    ecx,ecx
+00007ff9`6012c5c4 0f95c1          setne   cl
+00007ff9`6012c5c7 0fb6c9          movzx   ecx,cl
+00007ff9`6012c5ca 894de8          mov     dword ptr [rbp-18h],ecx
+00007ff9`6012c5cd 837de800        cmp     dword ptr [rbp-18h],0
+00007ff9`6012c5d1 741b            je      00007ff9`6012c5ee
+00007ff9`6012c5d3 90              nop
+00007ff9`6012c5d4 8b4dec          mov     ecx,dword ptr [rbp-14h]
+00007ff9`6012c5d7 81f1dfb00899    xor     ecx,9908B0DFh
+00007ff9`6012c5dd 8bc9            mov     ecx,ecx
+00007ff9`6012c5df e8ec02e7ff      call    00007ff9`5ff9c8d0 (FlareOn.Backdoor.FLARE11.flare_45(Int64), mdToken: 000000000600007d)
+00007ff9`6012c5e4 8945d8          mov     dword ptr [rbp-28h],eax
+00007ff9`6012c5e7 8b45d8          mov     eax,dword ptr [rbp-28h]
+00007ff9`6012c5ea 8945ec          mov     dword ptr [rbp-14h],eax
+00007ff9`6012c5ed 90              nop
+00007ff9`6012c5ee 48b8705b74bdf6010000 mov rax,1F6BD745B70h
+00007ff9`6012c5f8 488b08          mov     rcx,qword ptr [rax]
+00007ff9`6012c5fb 8b45f4          mov     eax,dword ptr [rbp-0Ch]
+00007ff9`6012c5fe 03057083d4ff    add     eax,dword ptr [00007ff9`5fe74974]
+00007ff9`6012c604 41b870020000    mov     r8d,270h
+00007ff9`6012c60a 33d2            xor     edx,edx
+00007ff9`6012c60c 41f7f0          div     eax,r8d
+00007ff9`6012c60f 483b5108        cmp     rdx,qword ptr [rcx+8]
+00007ff9`6012c613 7205            jb      00007ff9`6012c61a
+00007ff9`6012c615 e8f69f905f      call    clr!JIT_RngChkFail (00007ff9`bfa36610)
+00007ff9`6012c61a 488d4c9110      lea     rcx,[rcx+rdx*4+10h]
+00007ff9`6012c61f 8b01            mov     eax,dword ptr [rcx]
+00007ff9`6012c621 3345ec          xor     eax,dword ptr [rbp-14h]
+00007ff9`6012c624 8945dc          mov     dword ptr [rbp-24h],eax
+00007ff9`6012c627 48b8705b74bdf6010000 mov rax,1F6BD745B70h
+00007ff9`6012c631 488b00          mov     rax,qword ptr [rax]
+00007ff9`6012c634 8b55f4          mov     edx,dword ptr [rbp-0Ch]
+00007ff9`6012c637 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ff9`6012c63b 7205            jb      00007ff9`6012c642
+00007ff9`6012c63d e8ce9f905f      call    clr!JIT_RngChkFail (00007ff9`bfa36610)
+00007ff9`6012c642 488d449010      lea     rax,[rax+rdx*4+10h]
+00007ff9`6012c647 8b55dc          mov     edx,dword ptr [rbp-24h]
+00007ff9`6012c64a 8910            mov     dword ptr [rax],edx
+00007ff9`6012c64c 90              nop
+00007ff9`6012c64d 8b45f4          mov     eax,dword ptr [rbp-0Ch]
+00007ff9`6012c650 ffc0            inc     eax
+00007ff9`6012c652 8945f4          mov     dword ptr [rbp-0Ch],eax
+00007ff9`6012c655 817df470020000  cmp     dword ptr [rbp-0Ch],270h
+00007ff9`6012c65c 0f92c0          setb    al
+00007ff9`6012c65f 0fb6c0          movzx   eax,al
+00007ff9`6012c662 8945e4          mov     dword ptr [rbp-1Ch],eax
+00007ff9`6012c665 837de400        cmp     dword ptr [rbp-1Ch],0
+00007ff9`6012c669 0f85d3feffff    jne     00007ff9`6012c542
+00007ff9`6012c66f c7051783d4ff00000000 mov dword ptr [00007ff9`5fe74990],0
+00007ff9`6012c679 90              nop
+00007ff9`6012c67a 488d65f8        lea     rsp,[rbp-8]
+00007ff9`6012c67e 5f              pop     rdi
+00007ff9`6012c67f 5d              pop     rbp
+00007ff9`6012c680 c3              ret

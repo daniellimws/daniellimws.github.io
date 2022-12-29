@@ -1,0 +1,63 @@
+00007ff9`60069050 55              push    rbp
+00007ff9`60069051 57              push    rdi
+00007ff9`60069052 56              push    rsi
+00007ff9`60069053 4883ec50        sub     rsp,50h
+00007ff9`60069057 488d6c2460      lea     rbp,[rsp+60h]
+00007ff9`6006905c 488bf1          mov     rsi,rcx
+00007ff9`6006905f 488d7dc0        lea     rdi,[rbp-40h]
+00007ff9`60069063 b90c000000      mov     ecx,0Ch
+00007ff9`60069068 33c0            xor     eax,eax
+00007ff9`6006906a f3ab            rep stos dword ptr [rdi]
+00007ff9`6006906c 488bce          mov     rcx,rsi
+00007ff9`6006906f 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ff9`60069073 833d46b5e0ff00  cmp     dword ptr [00007ff9`5fe745c0],0
+00007ff9`6006907a 7405            je      00007ff9`60069081
+00007ff9`6006907c e82fa89c5f      call    clr!JIT_DbgIsJustMyCode (00007ff9`bfa338b0)
+00007ff9`60069081 90              nop
+00007ff9`60069082 c745ec01000000  mov     dword ptr [rbp-14h],1
+00007ff9`60069089 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ff9`6006908d 33c0            xor     eax,eax
+00007ff9`6006908f 488901          mov     qword ptr [rcx],rax
+00007ff9`60069092 90              nop
+00007ff9`60069093 48b9185be0b61b020000 mov rcx,21BB6E05B18h
+00007ff9`6006909d 488b09          mov     rcx,qword ptr [rcx]
+*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v4.0.30319_64\System\7174a6c4c985aea1ef11e5b9b4bd99dc\System.ni.dll
+00007ff9`600690a0 e83be3e55a      call    System_ni!System.Net.Dns.Resolve (00007ff9`baec73e0)
+00007ff9`600690a5 488945d8        mov     qword ptr [rbp-28h],rax
+00007ff9`600690a9 488b4dd8        mov     rcx,qword ptr [rbp-28h]
+00007ff9`600690ad 48894de0        mov     qword ptr [rbp-20h],rcx
+00007ff9`600690b1 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ff9`600690b5 48894dd0        mov     qword ptr [rbp-30h],rcx
+00007ff9`600690b9 488b4de0        mov     rcx,qword ptr [rbp-20h]
+00007ff9`600690bd 3909            cmp     dword ptr [rcx],ecx
+00007ff9`600690bf e88cb4ea5a      call    System_ni!System.Net.IPHostEntry.get_AddressList (00007ff9`baf14550)
+00007ff9`600690c4 488945c8        mov     qword ptr [rbp-38h],rax
+00007ff9`600690c8 488b4dc8        mov     rcx,qword ptr [rbp-38h]
+00007ff9`600690cc 33c0            xor     eax,eax
+00007ff9`600690ce 483b4108        cmp     rax,qword ptr [rcx+8]
+00007ff9`600690d2 7205            jb      00007ff9`600690d9
+00007ff9`600690d4 e837d59c5f      call    clr!JIT_RngChkFail (00007ff9`bfa36610)
+00007ff9`600690d9 488d4cc110      lea     rcx,[rcx+rax*8+10h]
+00007ff9`600690de 488b09          mov     rcx,qword ptr [rcx]
+00007ff9`600690e1 3909            cmp     dword ptr [rcx],ecx
+00007ff9`600690e3 ff150f08665a    call    qword ptr [System_ni!System.CodeDom.Compiler.ICodeCompiler.CompileAssemblyFromFileBatch+0x51 (00007ff9`ba6c98f8)] (System.Net.IPAddress.GetAddressBytes(), mdToken: 0000000006000b74)
+00007ff9`600690e9 488945c0        mov     qword ptr [rbp-40h],rax
+00007ff9`600690ed 488b4dd0        mov     rcx,qword ptr [rbp-30h]
+00007ff9`600690f1 488b55c0        mov     rdx,qword ptr [rbp-40h]
+00007ff9`600690f5 e8e6466d5f      call    clr!JIT_CheckedWriteBarrier (00007ff9`bf73d7e0)
+00007ff9`600690fa c70558b8e0ff00000000 mov dword ptr [00007ff9`5fe7495c],0
+00007ff9`60069104 e81710f3ff      call    00007ff9`5ff9a120 (FlareOn.Backdoor.FLARE03.flare_09(), mdToken: 0000000006000017)
+00007ff9`60069109 90              nop
+00007ff9`6006910a 90              nop
+00007ff9`6006910b 90              nop
+00007ff9`6006910c eb00            jmp     00007ff9`6006910e
+00007ff9`6006910e 8b45ec          mov     eax,dword ptr [rbp-14h]
+00007ff9`60069111 8945e8          mov     dword ptr [rbp-18h],eax
+00007ff9`60069114 90              nop
+00007ff9`60069115 eb00            jmp     00007ff9`60069117
+00007ff9`60069117 8b45e8          mov     eax,dword ptr [rbp-18h]
+00007ff9`6006911a 488d65f0        lea     rsp,[rbp-10h]
+00007ff9`6006911e 5e              pop     rsi
+00007ff9`6006911f 5f              pop     rdi
+00007ff9`60069120 5d              pop     rbp
+00007ff9`60069121 c3              ret

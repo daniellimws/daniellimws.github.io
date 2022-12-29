@@ -1,0 +1,69 @@
+00007ffb`728e3300 55              push    rbp
+00007ffb`728e3301 57              push    rdi
+00007ffb`728e3302 4883ec78        sub     rsp,78h
+00007ffb`728e3306 488dac2480000000 lea     rbp,[rsp+80h]
+00007ffb`728e330e 488d7da0        lea     rdi,[rbp-60h]
+00007ffb`728e3312 b916000000      mov     ecx,16h
+00007ffb`728e3317 33c0            xor     eax,eax
+00007ffb`728e3319 f3ab            rep stos dword ptr [rdi]
+00007ffb`728e331b 833d9e12dbff00  cmp     dword ptr [00007ffb`726945c0],0
+00007ffb`728e3322 7405            je      00007ffb`728e3329
+00007ffb`728e3324 e88705975f      call    clr!JIT_DbgIsJustMyCode (00007ffb`d22538b0)
+00007ffb`728e3329 90              nop
+00007ffb`728e332a 90              nop
+00007ffb`728e332b 48b9d036654fed010000 mov rcx,1ED4F6536D0h
+00007ffb`728e3335 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`728e3338 48894dd0        mov     qword ptr [rbp-30h],rcx
+00007ffb`728e333c 48b9f05a654fed010000 mov rcx,1ED4F655AF0h
+00007ffb`728e3346 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`728e3349 4883c108        add     rcx,8
+00007ffb`728e334d e86e21fe5e      call    mscorlib_ni!System.Nullable`1.get_HasValue+0x13890 (00007ffb`d18c54c0) (System.Nullable`1[[System.Int32, mscorlib]].get_HasValue(), mdToken: 00000000060015ce)
+00007ffb`728e3352 0fb6c8          movzx   ecx,al
+00007ffb`728e3355 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffb`728e3358 488b4dd0        mov     rcx,qword ptr [rbp-30h]
+00007ffb`728e335c 48894dc8        mov     qword ptr [rbp-38h],rcx
+00007ffb`728e3360 837de000        cmp     dword ptr [rbp-20h],0
+00007ffb`728e3364 751b            jne     00007ffb`728e3381
+00007ffb`728e3366 488b4dc8        mov     rcx,qword ptr [rbp-38h]
+00007ffb`728e336a 48894dc0        mov     qword ptr [rbp-40h],rcx
+00007ffb`728e336e 48b9d836654fed010000 mov rcx,1ED4F6536D8h
+00007ffb`728e3378 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`728e337b 48894db8        mov     qword ptr [rbp-48h],rcx
+00007ffb`728e337f eb34            jmp     00007ffb`728e33b5
+00007ffb`728e3381 48b9f05a654fed010000 mov rcx,1ED4F655AF0h
+00007ffb`728e338b 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`728e338e 4883c108        add     rcx,8
+00007ffb`728e3392 e8f920fe5e      call    mscorlib_ni!System.Nullable`1.get_Value+0xb16f60 (00007ffb`d18c5490) (System.Nullable`1[[System.Int32, mscorlib]].get_Value(), mdToken: 00000000060015cf)
+00007ffb`728e3397 8945dc          mov     dword ptr [rbp-24h],eax
+00007ffb`728e339a 8b4ddc          mov     ecx,dword ptr [rbp-24h]
+00007ffb`728e339d 894df0          mov     dword ptr [rbp-10h],ecx
+00007ffb`728e33a0 488b4dc8        mov     rcx,qword ptr [rbp-38h]
+00007ffb`728e33a4 48894dc0        mov     qword ptr [rbp-40h],rcx
+00007ffb`728e33a8 488d4df0        lea     rcx,[rbp-10h]
+00007ffb`728e33ac e89f1d485e      call    mscorlib_ni!System.Int32.ToString (00007ffb`d0d65150)
+00007ffb`728e33b1 488945b8        mov     qword ptr [rbp-48h],rax
+00007ffb`728e33b5 ff15f56af35d    call    qword ptr [mscorlib_ni!System.IValueTupleInternal.ToStringEnd+0xcc (00007ffb`d0819eb0)] (System.Environment.get_NewLine(), mdToken: 0000000006000e54)
+00007ffb`728e33bb 488945b0        mov     qword ptr [rbp-50h],rax
+00007ffb`728e33bf 48b94c496972fb7f0000 mov rcx,7FFB7269494Ch
+00007ffb`728e33c9 e8821d485e      call    mscorlib_ni!System.Int32.ToString (00007ffb`d0d65150)
+00007ffb`728e33ce 488945a8        mov     qword ptr [rbp-58h],rax
+00007ffb`728e33d2 488b4db8        mov     rcx,qword ptr [rbp-48h]
+00007ffb`728e33d6 488b55b0        mov     rdx,qword ptr [rbp-50h]
+00007ffb`728e33da 4c8b45a8        mov     r8,qword ptr [rbp-58h]
+00007ffb`728e33de e8ed42485e      call    mscorlib_ni!System.String.Concat (00007ffb`d0d676d0)
+00007ffb`728e33e3 488945a0        mov     qword ptr [rbp-60h],rax
+00007ffb`728e33e7 488b4dc0        mov     rcx,qword ptr [rbp-40h]
+00007ffb`728e33eb 488b55a0        mov     rdx,qword ptr [rbp-60h]
+00007ffb`728e33ef e81cd9c65e      call    mscorlib_ni!System.IO.File.WriteAllText (00007ffb`d1550d10)
+00007ffb`728e33f4 90              nop
+00007ffb`728e33f5 90              nop
+00007ffb`728e33f6 90              nop
+00007ffb`728e33f7 eb00            jmp     00007ffb`728e33f9
+00007ffb`728e33f9 c745e401000000  mov     dword ptr [rbp-1Ch],1
+00007ffb`728e3400 90              nop
+00007ffb`728e3401 eb00            jmp     00007ffb`728e3403
+00007ffb`728e3403 8b45e4          mov     eax,dword ptr [rbp-1Ch]
+00007ffb`728e3406 488d65f8        lea     rsp,[rbp-8]
+00007ffb`728e340a 5f              pop     rdi
+00007ffb`728e340b 5d              pop     rbp
+00007ffb`728e340c c3              ret

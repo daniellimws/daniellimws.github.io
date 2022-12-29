@@ -1,0 +1,208 @@
+00007ffe`4eadf3a0 55              push    rbp
+00007ffe`4eadf3a1 57              push    rdi
+00007ffe`4eadf3a2 56              push    rsi
+00007ffe`4eadf3a3 4881ecc0000000  sub     rsp,0C0h
+00007ffe`4eadf3aa c5f877          vzeroupper
+00007ffe`4eadf3ad 488dac24d0000000 lea     rbp,[rsp+0D0h]
+00007ffe`4eadf3b5 488bf1          mov     rsi,rcx
+00007ffe`4eadf3b8 488dbd58ffffff  lea     rdi,[rbp-0A8h]
+00007ffe`4eadf3bf b926000000      mov     ecx,26h
+00007ffe`4eadf3c4 33c0            xor     eax,eax
+00007ffe`4eadf3c6 f3ab            rep stos dword ptr [rdi]
+00007ffe`4eadf3c8 488bce          mov     rcx,rsi
+00007ffe`4eadf3cb 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ffe`4eadf3cf 833dea51daff00  cmp     dword ptr [00007ffe`4e8845c0],0
+00007ffe`4eadf3d6 7405            je      00007ffe`4eadf3dd
+00007ffe`4eadf3d8 e8d344995f      call    clr!JIT_DbgIsJustMyCode (00007ffe`ae4738b0)
+00007ffe`4eadf3dd 90              nop
+00007ffe`4eadf3de 48837d1000      cmp     qword ptr [rbp+10h],0
+00007ffe`4eadf3e3 7413            je      00007ffe`4eadf3f8
+00007ffe`4eadf3e5 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ffe`4eadf3e9 83780800        cmp     dword ptr [rax+8],0
+00007ffe`4eadf3ed 0f94c0          sete    al
+00007ffe`4eadf3f0 0fb6c0          movzx   eax,al
+00007ffe`4eadf3f3 8945c8          mov     dword ptr [rbp-38h],eax
+00007ffe`4eadf3f6 eb07            jmp     00007ffe`4eadf3ff
+00007ffe`4eadf3f8 c745c801000000  mov     dword ptr [rbp-38h],1
+00007ffe`4eadf3ff 8b45c8          mov     eax,dword ptr [rbp-38h]
+00007ffe`4eadf402 0fb6c0          movzx   eax,al
+00007ffe`4eadf405 8945dc          mov     dword ptr [rbp-24h],eax
+00007ffe`4eadf408 837ddc00        cmp     dword ptr [rbp-24h],0
+00007ffe`4eadf40c 743d            je      00007ffe`4eadf44b
+00007ffe`4eadf40e 90              nop
+00007ffe`4eadf40f 48b9903f28acfe7f0000 mov rcx,offset mscorlib_ni!SetSecurityInfo+0x4c (00007ffe`ac283f90) (MT: System.ArgumentNullException)
+00007ffe`4eadf419 e842076a5f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffe`ae17fb60)
+00007ffe`4eadf41e 48898558ffffff  mov     qword ptr [rbp-0A8h],rax
+00007ffe`4eadf425 48ba5039001068020000 mov rdx,26810003950h
+00007ffe`4eadf42f 488b12          mov     rdx,qword ptr [rdx]
+00007ffe`4eadf432 488b8d58ffffff  mov     rcx,qword ptr [rbp-0A8h]
+00007ffe`4eadf439 ff15e1088f5d    call    qword ptr [mscorlib_ni+0x1afd20 (00007ffe`ac3cfd20)] (System.ArgumentNullException..ctor(System.String), mdToken: 00000000060009a2)
+00007ffe`4eadf43f 488b8d58ffffff  mov     rcx,qword ptr [rbp-0A8h]
+00007ffe`4eadf446 e8658d635f      call    clr!IL_Throw (00007ffe`ae1181b0)
+00007ffe`4eadf44b 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ffe`4eadf44f c4e17857c0      vxorps  xmm0,xmm0,xmm0
+00007ffe`4eadf454 c4e17b2a4008    vcvtsi2sd xmm0,xmm0,dword ptr [rax+8]
+00007ffe`4eadf45a c4e17b5e0535020000 vdivsd xmm0,xmm0,mmword ptr [00007ffe`4eadf698]
+00007ffe`4eadf463 e8681d665f      call    clr!COMDouble::Ceil (00007ffe`ae1411d0)
+00007ffe`4eadf468 c4e17b1145c0    vmovsd  qword ptr [rbp-40h],xmm0
+00007ffe`4eadf46e c4e17b2c55c0    vcvttsd2si edx,mmword ptr [rbp-40h]
+00007ffe`4eadf474 c1e203          shl     edx,3
+00007ffe`4eadf477 8955ec          mov     dword ptr [rbp-14h],edx
+00007ffe`4eadf47a 8b55ec          mov     edx,dword ptr [rbp-14h]
+00007ffe`4eadf47d 48b96a4922acfe7f0000 mov rcx,offset mscorlib_ni!IndexOf+0x26 (00007ffe`ac22496a)
+00007ffe`4eadf487 e8c4076a5f      call    clr!JIT_NewArr1VC_MP_InlineGetThread (00007ffe`ae17fc50)
+00007ffe`4eadf48c 48894588        mov     qword ptr [rbp-78h],rax
+00007ffe`4eadf490 488b4d88        mov     rcx,qword ptr [rbp-78h]
+00007ffe`4eadf494 48894da0        mov     qword ptr [rbp-60h],rcx
+00007ffe`4eadf498 33c9            xor     ecx,ecx
+00007ffe`4eadf49a 894de8          mov     dword ptr [rbp-18h],ecx
+00007ffe`4eadf49d c745e405000000  mov     dword ptr [rbp-1Ch],5
+00007ffe`4eadf4a4 33c9            xor     ecx,ecx
+00007ffe`4eadf4a6 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffe`4eadf4a9 90              nop
+00007ffe`4eadf4aa 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ffe`4eadf4ae 48894d98        mov     qword ptr [rbp-68h],rcx
+00007ffe`4eadf4b2 33c9            xor     ecx,ecx
+00007ffe`4eadf4b4 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffe`4eadf4b7 90              nop
+00007ffe`4eadf4b8 e913010000      jmp     00007ffe`4eadf5d0
+00007ffe`4eadf4bd 488b4d98        mov     rcx,qword ptr [rbp-68h]
+00007ffe`4eadf4c1 8b45d8          mov     eax,dword ptr [rbp-28h]
+00007ffe`4eadf4c4 483b4108        cmp     rax,qword ptr [rcx+8]
+00007ffe`4eadf4c8 7205            jb      00007ffe`4eadf4cf
+00007ffe`4eadf4ca e84171995f      call    clr!JIT_RngChkFail (00007ffe`ae476610)
+00007ffe`4eadf4cf 488d4c0110      lea     rcx,[rcx+rax+10h]
+00007ffe`4eadf4d4 0fb609          movzx   ecx,byte ptr [rcx]
+00007ffe`4eadf4d7 894dd4          mov     dword ptr [rbp-2Ch],ecx
+00007ffe`4eadf4da 90              nop
+00007ffe`4eadf4db 8b4de4          mov     ecx,dword ptr [rbp-1Ch]
+00007ffe`4eadf4de f7d9            neg     ecx
+00007ffe`4eadf4e0 83c108          add     ecx,8
+00007ffe`4eadf4e3 8b45d4          mov     eax,dword ptr [rbp-2Ch]
+00007ffe`4eadf4e6 d3f8            sar     eax,cl
+00007ffe`4eadf4e8 0b45e8          or      eax,dword ptr [rbp-18h]
+00007ffe`4eadf4eb 0fb6c8          movzx   ecx,al
+00007ffe`4eadf4ee 894de8          mov     dword ptr [rbp-18h],ecx
+00007ffe`4eadf4f1 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffe`4eadf4f4 894dbc          mov     dword ptr [rbp-44h],ecx
+00007ffe`4eadf4f7 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffe`4eadf4fa ffc1            inc     ecx
+00007ffe`4eadf4fc 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffe`4eadf4ff 488b4da0        mov     rcx,qword ptr [rbp-60h]
+00007ffe`4eadf503 48894d80        mov     qword ptr [rbp-80h],rcx
+00007ffe`4eadf507 8b4de8          mov     ecx,dword ptr [rbp-18h]
+00007ffe`4eadf50a e8518dedff      call    00007ffe`4e9b8260 (FlareOn.Backdoor.FLARE01.flare_02(Byte), mdToken: 0000000006000004)
+00007ffe`4eadf50f 0fb7c8          movzx   ecx,ax
+00007ffe`4eadf512 894db8          mov     dword ptr [rbp-48h],ecx
+00007ffe`4eadf515 488b4d80        mov     rcx,qword ptr [rbp-80h]
+00007ffe`4eadf519 8b45bc          mov     eax,dword ptr [rbp-44h]
+00007ffe`4eadf51c 483b4108        cmp     rax,qword ptr [rcx+8]
+00007ffe`4eadf520 7205            jb      00007ffe`4eadf527
+00007ffe`4eadf522 e8e970995f      call    clr!JIT_RngChkFail (00007ffe`ae476610)
+00007ffe`4eadf527 488d4c4110      lea     rcx,[rcx+rax*2+10h]
+00007ffe`4eadf52c 8b45b8          mov     eax,dword ptr [rbp-48h]
+00007ffe`4eadf52f 668901          mov     word ptr [rcx],ax
+00007ffe`4eadf532 837de404        cmp     dword ptr [rbp-1Ch],4
+00007ffe`4eadf536 0f9cc1          setl    cl
+00007ffe`4eadf539 0fb6c9          movzx   ecx,cl
+00007ffe`4eadf53c 894dd0          mov     dword ptr [rbp-30h],ecx
+00007ffe`4eadf53f 837dd000        cmp     dword ptr [rbp-30h],0
+00007ffe`4eadf543 7468            je      00007ffe`4eadf5ad
+00007ffe`4eadf545 90              nop
+00007ffe`4eadf546 8b4de4          mov     ecx,dword ptr [rbp-1Ch]
+00007ffe`4eadf549 f7d9            neg     ecx
+00007ffe`4eadf54b 83c103          add     ecx,3
+00007ffe`4eadf54e 8b45d4          mov     eax,dword ptr [rbp-2Ch]
+00007ffe`4eadf551 d3f8            sar     eax,cl
+00007ffe`4eadf553 83e01f          and     eax,1Fh
+00007ffe`4eadf556 8945e8          mov     dword ptr [rbp-18h],eax
+00007ffe`4eadf559 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffe`4eadf55c 894db4          mov     dword ptr [rbp-4Ch],ecx
+00007ffe`4eadf55f 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffe`4eadf562 ffc1            inc     ecx
+00007ffe`4eadf564 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffe`4eadf567 488b4da0        mov     rcx,qword ptr [rbp-60h]
+00007ffe`4eadf56b 48898d78ffffff  mov     qword ptr [rbp-88h],rcx
+00007ffe`4eadf572 8b4de8          mov     ecx,dword ptr [rbp-18h]
+00007ffe`4eadf575 e8e68cedff      call    00007ffe`4e9b8260 (FlareOn.Backdoor.FLARE01.flare_02(Byte), mdToken: 0000000006000004)
+00007ffe`4eadf57a 0fb7c8          movzx   ecx,ax
+00007ffe`4eadf57d 894db0          mov     dword ptr [rbp-50h],ecx
+00007ffe`4eadf580 488b8d78ffffff  mov     rcx,qword ptr [rbp-88h]
+00007ffe`4eadf587 8b45b4          mov     eax,dword ptr [rbp-4Ch]
+00007ffe`4eadf58a 483b4108        cmp     rax,qword ptr [rcx+8]
+00007ffe`4eadf58e 7205            jb      00007ffe`4eadf595
+00007ffe`4eadf590 e87b70995f      call    clr!JIT_RngChkFail (00007ffe`ae476610)
+00007ffe`4eadf595 488d4c4110      lea     rcx,[rcx+rax*2+10h]
+00007ffe`4eadf59a 8b45b0          mov     eax,dword ptr [rbp-50h]
+00007ffe`4eadf59d 668901          mov     word ptr [rcx],ax
+00007ffe`4eadf5a0 8b4de4          mov     ecx,dword ptr [rbp-1Ch]
+00007ffe`4eadf5a3 83c105          add     ecx,5
+00007ffe`4eadf5a6 0fb6c9          movzx   ecx,cl
+00007ffe`4eadf5a9 894de4          mov     dword ptr [rbp-1Ch],ecx
+00007ffe`4eadf5ac 90              nop
+00007ffe`4eadf5ad 8b4de4          mov     ecx,dword ptr [rbp-1Ch]
+00007ffe`4eadf5b0 83c1fd          add     ecx,0FFFFFFFDh
+00007ffe`4eadf5b3 0fb6c9          movzx   ecx,cl
+00007ffe`4eadf5b6 894de4          mov     dword ptr [rbp-1Ch],ecx
+00007ffe`4eadf5b9 8b45d4          mov     eax,dword ptr [rbp-2Ch]
+00007ffe`4eadf5bc 8b4de4          mov     ecx,dword ptr [rbp-1Ch]
+00007ffe`4eadf5bf d3e0            shl     eax,cl
+00007ffe`4eadf5c1 83e01f          and     eax,1Fh
+00007ffe`4eadf5c4 8945e8          mov     dword ptr [rbp-18h],eax
+00007ffe`4eadf5c7 90              nop
+00007ffe`4eadf5c8 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffe`4eadf5cb ffc1            inc     ecx
+00007ffe`4eadf5cd 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffe`4eadf5d0 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffe`4eadf5d3 488b4598        mov     rax,qword ptr [rbp-68h]
+00007ffe`4eadf5d7 3b4808          cmp     ecx,dword ptr [rax+8]
+00007ffe`4eadf5da 0f8cddfeffff    jl      00007ffe`4eadf4bd
+00007ffe`4eadf5e0 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffe`4eadf5e3 3b4dec          cmp     ecx,dword ptr [rbp-14h]
+00007ffe`4eadf5e6 0f95c1          setne   cl
+00007ffe`4eadf5e9 0fb6c9          movzx   ecx,cl
+00007ffe`4eadf5ec 894dcc          mov     dword ptr [rbp-34h],ecx
+00007ffe`4eadf5ef 837dcc00        cmp     dword ptr [rbp-34h],0
+00007ffe`4eadf5f3 7449            je      00007ffe`4eadf63e
+00007ffe`4eadf5f5 90              nop
+00007ffe`4eadf5f6 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffe`4eadf5f9 894dac          mov     dword ptr [rbp-54h],ecx
+00007ffe`4eadf5fc 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffe`4eadf5ff ffc1            inc     ecx
+00007ffe`4eadf601 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffe`4eadf604 488b4da0        mov     rcx,qword ptr [rbp-60h]
+00007ffe`4eadf608 48898d60ffffff  mov     qword ptr [rbp-0A0h],rcx
+00007ffe`4eadf60f 8b4de8          mov     ecx,dword ptr [rbp-18h]
+00007ffe`4eadf612 e8498cedff      call    00007ffe`4e9b8260 (FlareOn.Backdoor.FLARE01.flare_02(Byte), mdToken: 0000000006000004)
+00007ffe`4eadf617 0fb7d0          movzx   edx,ax
+00007ffe`4eadf61a 8955a8          mov     dword ptr [rbp-58h],edx
+00007ffe`4eadf61d 488b9560ffffff  mov     rdx,qword ptr [rbp-0A0h]
+00007ffe`4eadf624 8b4dac          mov     ecx,dword ptr [rbp-54h]
+00007ffe`4eadf627 483b4a08        cmp     rcx,qword ptr [rdx+8]
+00007ffe`4eadf62b 7205            jb      00007ffe`4eadf632
+00007ffe`4eadf62d e8de6f995f      call    clr!JIT_RngChkFail (00007ffe`ae476610)
+00007ffe`4eadf632 488d544a10      lea     rdx,[rdx+rcx*2+10h]
+00007ffe`4eadf637 8b4da8          mov     ecx,dword ptr [rbp-58h]
+00007ffe`4eadf63a 66890a          mov     word ptr [rdx],cx
+00007ffe`4eadf63d 90              nop
+00007ffe`4eadf63e 488b55a0        mov     rdx,qword ptr [rbp-60h]
+00007ffe`4eadf642 33c9            xor     ecx,ecx
+00007ffe`4eadf644 e83783ecff      call    00007ffe`4e9a7980 (System.String.CtorCharArray(Char[]), mdToken: 00000000060004f6)
+00007ffe`4eadf649 48898570ffffff  mov     qword ptr [rbp-90h],rax
+00007ffe`4eadf650 49b87836001068020000 mov r8,26810003678h
+00007ffe`4eadf65a 4d8b00          mov     r8,qword ptr [r8]
+00007ffe`4eadf65d 48ba5839001068020000 mov rdx,26810003958h
+00007ffe`4eadf667 488b12          mov     rdx,qword ptr [rdx]
+00007ffe`4eadf66a 488b8d70ffffff  mov     rcx,qword ptr [rbp-90h]
+00007ffe`4eadf671 e8da04c85d      call    mscorlib_ni!System.String.Replace (00007ffe`ac75fb50)
+00007ffe`4eadf676 48898568ffffff  mov     qword ptr [rbp-98h],rax
+00007ffe`4eadf67d 488b8568ffffff  mov     rax,qword ptr [rbp-98h]
+00007ffe`4eadf684 48894590        mov     qword ptr [rbp-70h],rax
+00007ffe`4eadf688 90              nop
+00007ffe`4eadf689 eb00            jmp     00007ffe`4eadf68b
+00007ffe`4eadf68b 488b4590        mov     rax,qword ptr [rbp-70h]
+00007ffe`4eadf68f 488d65f0        lea     rsp,[rbp-10h]
+00007ffe`4eadf693 5e              pop     rsi
+00007ffe`4eadf694 5f              pop     rdi
+00007ffe`4eadf695 5d              pop     rbp
+00007ffe`4eadf696 c3              ret

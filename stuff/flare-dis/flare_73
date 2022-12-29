@@ -1,0 +1,20 @@
+00007ff9`7b52eee0 55              push    rbp
+00007ff9`7b52eee1 4883ec30        sub     rsp,30h
+00007ff9`7b52eee5 488d6c2430      lea     rbp,[rsp+30h]
+00007ff9`7b52eeea 33c0            xor     eax,eax
+00007ff9`7b52eeec 8945fc          mov     dword ptr [rbp-4],eax
+00007ff9`7b52eeef 833dca56d9ff00  cmp     dword ptr [00007ff9`7b2c45c0],0
+00007ff9`7b52eef6 7405            je      00007ff9`7b52eefd
+00007ff9`7b52eef8 e8b349975f      call    clr!JIT_DbgIsJustMyCode (00007ff9`daea38b0)
+00007ff9`7b52eefd 90              nop
+00007ff9`7b52eefe b902000000      mov     ecx,2
+00007ff9`7b52ef03 e83816eaff      call    00007ff9`7b3d0540 (FlareOn.Backdoor.FLARE15.flare_65(DT), mdToken: 00000000060000b1)
+00007ff9`7b52ef08 90              nop
+00007ff9`7b52ef09 33c0            xor     eax,eax
+00007ff9`7b52ef0b 8945fc          mov     dword ptr [rbp-4],eax
+00007ff9`7b52ef0e 90              nop
+00007ff9`7b52ef0f eb00            jmp     00007ff9`7b52ef11
+00007ff9`7b52ef11 8b45fc          mov     eax,dword ptr [rbp-4]
+00007ff9`7b52ef14 488d6500        lea     rsp,[rbp]
+00007ff9`7b52ef18 5d              pop     rbp
+00007ff9`7b52ef19 c3              ret

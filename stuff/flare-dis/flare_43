@@ -1,0 +1,67 @@
+00007ff9`60117f50 55              push    rbp
+00007ff9`60117f51 57              push    rdi
+00007ff9`60117f52 4883ec38        sub     rsp,38h
+00007ff9`60117f56 488d6c2440      lea     rbp,[rsp+40h]
+00007ff9`60117f5b 488d7de8        lea     rdi,[rbp-18h]
+00007ff9`60117f5f b904000000      mov     ecx,4
+00007ff9`60117f64 33c0            xor     eax,eax
+00007ff9`60117f66 f3ab            rep stos dword ptr [rdi]
+00007ff9`60117f68 833d51c6d5ff00  cmp     dword ptr [00007ff9`5fe745c0],0
+00007ff9`60117f6f 7405            je      00007ff9`60117f76
+00007ff9`60117f71 e83ab9915f      call    clr!JIT_DbgIsJustMyCode (00007ff9`bfa338b0)
+00007ff9`60117f76 90              nop
+00007ff9`60117f77 813d0fcad5ff70020000 cmp dword ptr [00007ff9`5fe74990],270h
+00007ff9`60117f81 0f93c0          setae   al
+00007ff9`60117f84 0fb6c0          movzx   eax,al
+00007ff9`60117f87 8945f0          mov     dword ptr [rbp-10h],eax
+00007ff9`60117f8a 837df000        cmp     dword ptr [rbp-10h],0
+00007ff9`60117f8e 7408            je      00007ff9`60117f98
+00007ff9`60117f90 90              nop
+00007ff9`60117f91 e8ea8ce8ff      call    00007ff9`5ffa0c80 (FlareOn.Backdoor.FLARE11.flare_42(), mdToken: 0000000006000077)
+>>> 00007ff9`60117f96 90              nop
+00007ff9`60117f97 90              nop
+00007ff9`60117f98 48b9705b74bdf6010000 mov rcx,1F6BD745B70h
+00007ff9`60117fa2 488b09          mov     rcx,qword ptr [rcx]
+00007ff9`60117fa5 8b05e5c9d5ff    mov     eax,dword ptr [00007ff9`5fe74990]
+00007ff9`60117fab 483b4108        cmp     rax,qword ptr [rcx+8]
+00007ff9`60117faf 7205            jb      00007ff9`60117fb6
+00007ff9`60117fb1 e85ae6915f      call    clr!JIT_RngChkFail (00007ff9`bfa36610)
+00007ff9`60117fb6 488d4c8110      lea     rcx,[rcx+rax*4+10h]
+00007ff9`60117fbb 8b09            mov     ecx,dword ptr [rcx]
+00007ff9`60117fbd 894df4          mov     dword ptr [rbp-0Ch],ecx
+00007ff9`60117fc0 8b45f4          mov     eax,dword ptr [rbp-0Ch]
+00007ff9`60117fc3 8b0dafc9d5ff    mov     ecx,dword ptr [00007ff9`5fe74978]
+00007ff9`60117fc9 d3e8            shr     eax,cl
+00007ff9`60117fcb 3345f4          xor     eax,dword ptr [rbp-0Ch]
+00007ff9`60117fce 8945f4          mov     dword ptr [rbp-0Ch],eax
+00007ff9`60117fd1 8b45f4          mov     eax,dword ptr [rbp-0Ch]
+00007ff9`60117fd4 8b0da2c9d5ff    mov     ecx,dword ptr [00007ff9`5fe7497c]
+00007ff9`60117fda d3e0            shl     eax,cl
+00007ff9`60117fdc 23059ec9d5ff    and     eax,dword ptr [00007ff9`5fe74980]
+00007ff9`60117fe2 3345f4          xor     eax,dword ptr [rbp-0Ch]
+00007ff9`60117fe5 8945f4          mov     dword ptr [rbp-0Ch],eax
+00007ff9`60117fe8 8b45f4          mov     eax,dword ptr [rbp-0Ch]
+00007ff9`60117feb 8b0d93c9d5ff    mov     ecx,dword ptr [00007ff9`5fe74984]
+00007ff9`60117ff1 d3e0            shl     eax,cl
+00007ff9`60117ff3 23058fc9d5ff    and     eax,dword ptr [00007ff9`5fe74988]
+00007ff9`60117ff9 3345f4          xor     eax,dword ptr [rbp-0Ch]
+00007ff9`60117ffc 8945f4          mov     dword ptr [rbp-0Ch],eax
+00007ff9`60117fff 8b45f4          mov     eax,dword ptr [rbp-0Ch]
+00007ff9`60118002 8b0d84c9d5ff    mov     ecx,dword ptr [00007ff9`5fe7498c]
+00007ff9`60118008 d3e8            shr     eax,cl
+00007ff9`6011800a 3345f4          xor     eax,dword ptr [rbp-0Ch]
+00007ff9`6011800d 8945f4          mov     dword ptr [rbp-0Ch],eax
+00007ff9`60118010 ff057ac9d5ff    inc     dword ptr [00007ff9`5fe74990]
+00007ff9`60118016 8b4df4          mov     ecx,dword ptr [rbp-0Ch]
+00007ff9`60118019 8bc9            mov     ecx,ecx
+00007ff9`6011801b e8b048e8ff      call    00007ff9`5ff9c8d0 (FlareOn.Backdoor.FLARE11.flare_45(Int64), mdToken: 000000000600007d)
+00007ff9`60118020 8945e8          mov     dword ptr [rbp-18h],eax
+00007ff9`60118023 8b45e8          mov     eax,dword ptr [rbp-18h]
+00007ff9`60118026 8945ec          mov     dword ptr [rbp-14h],eax
+00007ff9`60118029 90              nop
+00007ff9`6011802a eb00            jmp     00007ff9`6011802c
+00007ff9`6011802c 8b45ec          mov     eax,dword ptr [rbp-14h]
+00007ff9`6011802f 488d65f8        lea     rsp,[rbp-8]
+00007ff9`60118033 5f              pop     rdi
+00007ff9`60118034 5d              pop     rbp
+00007ff9`60118035 c3              ret

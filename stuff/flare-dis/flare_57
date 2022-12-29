@@ -1,0 +1,70 @@
+00007ffe`4eaa2e90 55              push    rbp
+00007ffe`4eaa2e91 57              push    rdi
+00007ffe`4eaa2e92 4883ec78        sub     rsp,78h
+00007ffe`4eaa2e96 488dac2480000000 lea     rbp,[rsp+80h]
+00007ffe`4eaa2e9e 488d7da8        lea     rdi,[rbp-58h]
+00007ffe`4eaa2ea2 b914000000      mov     ecx,14h
+00007ffe`4eaa2ea7 33c0            xor     eax,eax
+00007ffe`4eaa2ea9 f3ab            rep stos dword ptr [rdi]
+00007ffe`4eaa2eab 833d0e17e0ff00  cmp     dword ptr [00007ffe`4e8a45c0],0
+00007ffe`4eaa2eb2 7405            je      00007ffe`4eaa2eb9
+00007ffe`4eaa2eb4 e8f7099d5f      call    clr!JIT_DbgIsJustMyCode (00007ffe`ae4738b0)
+00007ffe`4eaa2eb9 90              nop
+00007ffe`4eaa2eba 48b9508828acfe7f0000 mov rcx,offset mscorlib_ni!UpdateIOPadBuffers+0x23 (00007ffe`ac288850) (MT: System.Diagnostics.StackTrace)
+00007ffe`4eaa2ec4 e897cc6d5f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffe`ae17fb60)
+00007ffe`4eaa2ec9 488945e0        mov     qword ptr [rbp-20h],rax
+00007ffe`4eaa2ecd 488b4de0        mov     rcx,qword ptr [rbp-20h]
+00007ffe`4eaa2ed1 e81a7f455e      call    mscorlib_ni!System.Diagnostics.StackTrace..ctor (00007ffe`acefadf0)
+00007ffe`4eaa2ed6 488b4de0        mov     rcx,qword ptr [rbp-20h]
+00007ffe`4eaa2eda 48894df0        mov     qword ptr [rbp-10h],rcx
+00007ffe`4eaa2ede 488b4df0        mov     rcx,qword ptr [rbp-10h]
+00007ffe`4eaa2ee2 ba01000000      mov     edx,1
+00007ffe`4eaa2ee7 488b45f0        mov     rax,qword ptr [rbp-10h]
+00007ffe`4eaa2eeb 488b00          mov     rax,qword ptr [rax]
+00007ffe`4eaa2eee 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffe`4eaa2ef2 ff5028          call    qword ptr [rax+28h]
+00007ffe`4eaa2ef5 488945d8        mov     qword ptr [rbp-28h],rax
+00007ffe`4eaa2ef9 488b4dd8        mov     rcx,qword ptr [rbp-28h]
+00007ffe`4eaa2efd 488b45d8        mov     rax,qword ptr [rbp-28h]
+00007ffe`4eaa2f01 488b00          mov     rax,qword ptr [rax]
+00007ffe`4eaa2f04 488b4048        mov     rax,qword ptr [rax+48h]
+00007ffe`4eaa2f08 ff5020          call    qword ptr [rax+20h]
+00007ffe`4eaa2f0b 488945d0        mov     qword ptr [rbp-30h],rax
+00007ffe`4eaa2f0f 488b4dd0        mov     rcx,qword ptr [rbp-30h]
+00007ffe`4eaa2f13 488b45d0        mov     rax,qword ptr [rbp-30h]
+00007ffe`4eaa2f17 488b00          mov     rax,qword ptr [rax]
+00007ffe`4eaa2f1a 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffe`4eaa2f1e ff10            call    qword ptr [rax]
+00007ffe`4eaa2f20 488945c8        mov     qword ptr [rbp-38h],rax
+00007ffe`4eaa2f24 488b4df0        mov     rcx,qword ptr [rbp-10h]
+00007ffe`4eaa2f28 ba02000000      mov     edx,2
+00007ffe`4eaa2f2d 488b45f0        mov     rax,qword ptr [rbp-10h]
+00007ffe`4eaa2f31 488b00          mov     rax,qword ptr [rax]
+00007ffe`4eaa2f34 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffe`4eaa2f38 ff5028          call    qword ptr [rax+28h]
+00007ffe`4eaa2f3b 488945c0        mov     qword ptr [rbp-40h],rax
+00007ffe`4eaa2f3f 488b4dc0        mov     rcx,qword ptr [rbp-40h]
+00007ffe`4eaa2f43 488b45c0        mov     rax,qword ptr [rbp-40h]
+00007ffe`4eaa2f47 488b00          mov     rax,qword ptr [rax]
+00007ffe`4eaa2f4a 488b4048        mov     rax,qword ptr [rax+48h]
+00007ffe`4eaa2f4e ff5020          call    qword ptr [rax+20h]
+00007ffe`4eaa2f51 488945b8        mov     qword ptr [rbp-48h],rax
+00007ffe`4eaa2f55 488b4db8        mov     rcx,qword ptr [rbp-48h]
+00007ffe`4eaa2f59 488b45b8        mov     rax,qword ptr [rbp-48h]
+00007ffe`4eaa2f5d 488b00          mov     rax,qword ptr [rax]
+00007ffe`4eaa2f60 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffe`4eaa2f64 ff10            call    qword ptr [rax]
+00007ffe`4eaa2f66 488945b0        mov     qword ptr [rbp-50h],rax
+00007ffe`4eaa2f6a 488b4dc8        mov     rcx,qword ptr [rbp-38h]
+00007ffe`4eaa2f6e 488b55b0        mov     rdx,qword ptr [rbp-50h]
+00007ffe`4eaa2f72 e8695bc95d      call    mscorlib_ni!System.String.Concat (00007ffe`ac738ae0)
+00007ffe`4eaa2f77 488945a8        mov     qword ptr [rbp-58h],rax
+00007ffe`4eaa2f7b 488b45a8        mov     rax,qword ptr [rbp-58h]
+00007ffe`4eaa2f7f 488945e8        mov     qword ptr [rbp-18h],rax
+00007ffe`4eaa2f83 90              nop
+00007ffe`4eaa2f84 eb00            jmp     00007ffe`4eaa2f86
+00007ffe`4eaa2f86 488b45e8        mov     rax,qword ptr [rbp-18h]
+00007ffe`4eaa2f8a 488d65f8        lea     rsp,[rbp-8]
+00007ffe`4eaa2f8e 5f              pop     rdi
+00007ffe`4eaa2f8f 5d              pop     rbp
+00007ffe`4eaa2f90 c3              ret

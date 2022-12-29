@@ -1,0 +1,48 @@
+00007ffb`72875130 55              push    rbp
+00007ffb`72875131 57              push    rdi
+00007ffb`72875132 4883ec38        sub     rsp,38h
+00007ffb`72875136 488d6c2440      lea     rbp,[rsp+40h]
+00007ffb`7287513b 488d7de0        lea     rdi,[rbp-20h]
+00007ffb`7287513f b906000000      mov     ecx,6
+00007ffb`72875144 33c0            xor     eax,eax
+00007ffb`72875146 f3ab            rep stos dword ptr [rdi]
+00007ffb`72875148 833d71f4e2ff00  cmp     dword ptr [00007ffb`726a45c0],0
+00007ffb`7287514f 7405            je      00007ffb`72875156
+00007ffb`72875151 e85ae79d5f      call    clr!JIT_DbgIsJustMyCode (00007ffb`d22538b0)
+00007ffb`72875156 90              nop
+00007ffb`72875157 48ba085b0899d9010000 mov rdx,1D999085B08h
+00007ffb`72875161 488b12          mov     rdx,qword ptr [rdx]
+00007ffb`72875164 33c9            xor     ecx,ecx
+00007ffb`72875166 e8fd50f5ff      call    00007ffb`727ca268 (FlareOn.Backdoor.FLARE05.flare_29(DomT, System.String), mdToken: 0000000006000044)
+00007ffb`7287516b 90              nop
+00007ffb`7287516c 488d4df0        lea     rcx,[rbp-10h]
+00007ffb`72875170 e80351f5ff      call    00007ffb`727ca278 (FlareOn.Backdoor.FLARE05.flare_30(Byte[] ByRef), mdToken: 0000000006000046)
+00007ffb`72875175 0fb6c8          movzx   ecx,al
+00007ffb`72875178 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffb`7287517b 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffb`7287517e 0fb6c9          movzx   ecx,cl
+00007ffb`72875181 894dec          mov     dword ptr [rbp-14h],ecx
+00007ffb`72875184 8b4dec          mov     ecx,dword ptr [rbp-14h]
+00007ffb`72875187 894de8          mov     dword ptr [rbp-18h],ecx
+00007ffb`7287518a 837de800        cmp     dword ptr [rbp-18h],0
+00007ffb`7287518e 7424            je      00007ffb`728751b4
+00007ffb`72875190 90              nop
+00007ffb`72875191 488b4df0        mov     rcx,qword ptr [rbp-10h]
+00007ffb`72875195 b803000000      mov     eax,3
+00007ffb`7287519a 483b4108        cmp     rax,qword ptr [rcx+8]
+00007ffb`7287519e 7205            jb      00007ffb`728751a5
+00007ffb`728751a0 e86b149e5f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`728751a5 488d4c0110      lea     rcx,[rcx+rax+10h]
+00007ffb`728751aa 0fb609          movzx   ecx,byte ptr [rcx]
+00007ffb`728751ad e85e4ff5ff      call    00007ffb`727ca110 (FlareOn.Backdoor.FLARE03.flare_08(Int32), mdToken: 0000000006000015)
+00007ffb`728751b2 90              nop
+00007ffb`728751b3 90              nop
+00007ffb`728751b4 8b45ec          mov     eax,dword ptr [rbp-14h]
+00007ffb`728751b7 8945e4          mov     dword ptr [rbp-1Ch],eax
+00007ffb`728751ba 90              nop
+00007ffb`728751bb eb00            jmp     00007ffb`728751bd
+00007ffb`728751bd 8b45e4          mov     eax,dword ptr [rbp-1Ch]
+00007ffb`728751c0 488d65f8        lea     rsp,[rbp-8]
+00007ffb`728751c4 5f              pop     rdi
+00007ffb`728751c5 5d              pop     rbp
+00007ffb`728751c6 c3              ret

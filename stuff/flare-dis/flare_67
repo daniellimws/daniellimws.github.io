@@ -1,0 +1,2139 @@
+00007ffb`72b31540 55              push    rbp
+00007ffb`72b31541 57              push    rdi
+00007ffb`72b31542 56              push    rsi
+00007ffb`72b31543 4881ec30030000  sub     rsp,330h
+00007ffb`72b3154a 488dac2440030000 lea     rbp,[rsp+340h]
+00007ffb`72b31552 488bf1          mov     rsi,rcx
+00007ffb`72b31555 488dbdf8fcffff  lea     rdi,[rbp-308h]
+00007ffb`72b3155c b9be000000      mov     ecx,0BEh
+00007ffb`72b31561 33c0            xor     eax,eax
+00007ffb`72b31563 f3ab            rep stos dword ptr [rdi]
+00007ffb`72b31565 488bce          mov     rcx,rsi
+00007ffb`72b31568 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ffb`72b3156c 895518          mov     dword ptr [rbp+18h],edx
+00007ffb`72b3156f 4c894520        mov     qword ptr [rbp+20h],r8
+00007ffb`72b31573 833d4630b6ff00  cmp     dword ptr [00007ffb`726945c0],0
+00007ffb`72b3157a 7405            je      00007ffb`72b31581
+00007ffb`72b3157c e82f23725f      call    clr!JIT_DbgIsJustMyCode (00007ffb`d22538b0)
+00007ffb`72b31581 90              nop
+00007ffb`72b31582 48b9402db572fb7f0000 mov rcx,7FFB72B52D40h (MT: System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]])
+00007ffb`72b3158c e8cfe5425f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffb`d1f5fb60)
+00007ffb`72b31591 48898558feffff  mov     qword ptr [rbp-1A8h],rax
+00007ffb`72b31598 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3159f e80cbcf4ff      call    00007ffb`72a7d1b0 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]]..ctor(), mdToken: 0000000006003911)
+00007ffb`72b315a4 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b315ab ba58000000      mov     edx,58h
+00007ffb`72b315b0 4533c0          xor     r8d,r8d
+00007ffb`72b315b3 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b315b5 e87ebcf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b315ba 90              nop
+00007ffb`72b315bb 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b315c2 bad6000000      mov     edx,0D6h
+00007ffb`72b315c7 4533c0          xor     r8d,r8d
+00007ffb`72b315ca 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b315cc e867bcf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b315d1 90              nop
+00007ffb`72b315d2 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b315d9 bad7000000      mov     edx,0D7h
+00007ffb`72b315de 4533c0          xor     r8d,r8d
+00007ffb`72b315e1 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b315e3 e850bcf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b315e8 90              nop
+00007ffb`72b315e9 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b315f0 ba5f000000      mov     edx,5Fh
+00007ffb`72b315f5 4533c0          xor     r8d,r8d
+00007ffb`72b315f8 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b315fa e839bcf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b315ff 90              nop
+00007ffb`72b31600 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31607 ba00fe0000      mov     edx,0FE00h
+00007ffb`72b3160c 4533c0          xor     r8d,r8d
+00007ffb`72b3160f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31611 e822bcf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31616 90              nop
+00007ffb`72b31617 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3161e ba3b000000      mov     edx,3Bh
+00007ffb`72b31623 41b803000000    mov     r8d,3
+00007ffb`72b31629 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3162b e808bcf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31630 90              nop
+00007ffb`72b31631 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31638 ba2e000000      mov     edx,2Eh
+00007ffb`72b3163d 41b802000000    mov     r8d,2
+00007ffb`72b31643 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31645 e8eebbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3164a 90              nop
+00007ffb`72b3164b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31652 ba3c000000      mov     edx,3Ch
+00007ffb`72b31657 41b803000000    mov     r8d,3
+00007ffb`72b3165d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3165f e8d4bbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31664 90              nop
+00007ffb`72b31665 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3166c ba2f000000      mov     edx,2Fh
+00007ffb`72b31671 41b802000000    mov     r8d,2
+00007ffb`72b31677 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31679 e8babbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3167e 90              nop
+00007ffb`72b3167f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31686 ba41000000      mov     edx,41h
+00007ffb`72b3168b 41b803000000    mov     r8d,3
+00007ffb`72b31691 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31693 e8a0bbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31698 90              nop
+00007ffb`72b31699 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b316a0 ba34000000      mov     edx,34h
+00007ffb`72b316a5 41b802000000    mov     r8d,2
+00007ffb`72b316ab 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b316ad e886bbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b316b2 90              nop
+00007ffb`72b316b3 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b316ba ba3d000000      mov     edx,3Dh
+00007ffb`72b316bf 41b803000000    mov     r8d,3
+00007ffb`72b316c5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b316c7 e86cbbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b316cc 90              nop
+00007ffb`72b316cd 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b316d4 ba30000000      mov     edx,30h
+00007ffb`72b316d9 41b802000000    mov     r8d,2
+00007ffb`72b316df 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b316e1 e852bbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b316e6 90              nop
+00007ffb`72b316e7 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b316ee ba42000000      mov     edx,42h
+00007ffb`72b316f3 41b803000000    mov     r8d,3
+00007ffb`72b316f9 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b316fb e838bbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31700 90              nop
+00007ffb`72b31701 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31708 ba35000000      mov     edx,35h
+00007ffb`72b3170d 41b802000000    mov     r8d,2
+00007ffb`72b31713 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31715 e81ebbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3171a 90              nop
+00007ffb`72b3171b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31722 ba3e000000      mov     edx,3Eh
+00007ffb`72b31727 41b803000000    mov     r8d,3
+00007ffb`72b3172d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3172f e804bbf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31734 90              nop
+00007ffb`72b31735 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3173c ba31000000      mov     edx,31h
+00007ffb`72b31741 41b802000000    mov     r8d,2
+00007ffb`72b31747 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31749 e8eabaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3174e 90              nop
+00007ffb`72b3174f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31756 ba43000000      mov     edx,43h
+00007ffb`72b3175b 41b803000000    mov     r8d,3
+00007ffb`72b31761 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31763 e8d0baf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31768 90              nop
+00007ffb`72b31769 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31770 ba36000000      mov     edx,36h
+00007ffb`72b31775 41b802000000    mov     r8d,2
+00007ffb`72b3177b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3177d e8b6baf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31782 90              nop
+00007ffb`72b31783 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3178a ba3f000000      mov     edx,3Fh
+00007ffb`72b3178f 41b803000000    mov     r8d,3
+00007ffb`72b31795 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31797 e89cbaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3179c 90              nop
+00007ffb`72b3179d 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b317a4 ba32000000      mov     edx,32h
+00007ffb`72b317a9 41b802000000    mov     r8d,2
+00007ffb`72b317af 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b317b1 e882baf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b317b6 90              nop
+00007ffb`72b317b7 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b317be ba44000000      mov     edx,44h
+00007ffb`72b317c3 41b803000000    mov     r8d,3
+00007ffb`72b317c9 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b317cb e868baf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b317d0 90              nop
+00007ffb`72b317d1 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b317d8 ba37000000      mov     edx,37h
+00007ffb`72b317dd 41b802000000    mov     r8d,2
+00007ffb`72b317e3 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b317e5 e84ebaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b317ea 90              nop
+00007ffb`72b317eb 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b317f2 ba40000000      mov     edx,40h
+00007ffb`72b317f7 41b803000000    mov     r8d,3
+00007ffb`72b317fd 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b317ff e834baf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31804 90              nop
+00007ffb`72b31805 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3180c ba33000000      mov     edx,33h
+00007ffb`72b31811 41b802000000    mov     r8d,2
+00007ffb`72b31817 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31819 e81abaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3181e 90              nop
+00007ffb`72b3181f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31826 ba8c000000      mov     edx,8Ch
+00007ffb`72b3182b 41b801000000    mov     r8d,1
+00007ffb`72b31831 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31833 e800baf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31838 90              nop
+00007ffb`72b31839 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31840 ba38000000      mov     edx,38h
+00007ffb`72b31845 41b803000000    mov     r8d,3
+00007ffb`72b3184b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3184d e8e6b9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31852 90              nop
+00007ffb`72b31853 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3185a ba2b000000      mov     edx,2Bh
+00007ffb`72b3185f 41b802000000    mov     r8d,2
+00007ffb`72b31865 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31867 e8ccb9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3186c 90              nop
+00007ffb`72b3186d 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31874 ba01000000      mov     edx,1
+00007ffb`72b31879 4533c0          xor     r8d,r8d
+00007ffb`72b3187c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3187e e8b5b9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31883 90              nop
+00007ffb`72b31884 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3188b ba39000000      mov     edx,39h
+00007ffb`72b31890 41b803000000    mov     r8d,3
+00007ffb`72b31896 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31898 e89bb9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3189d 90              nop
+00007ffb`72b3189e 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b318a5 ba2c000000      mov     edx,2Ch
+00007ffb`72b318aa 41b802000000    mov     r8d,2
+00007ffb`72b318b0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b318b2 e881b9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b318b7 90              nop
+00007ffb`72b318b8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b318bf ba3a000000      mov     edx,3Ah
+00007ffb`72b318c4 41b803000000    mov     r8d,3
+00007ffb`72b318ca 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b318cc e867b9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b318d1 90              nop
+00007ffb`72b318d2 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b318d9 ba2d000000      mov     edx,2Dh
+00007ffb`72b318de 41b802000000    mov     r8d,2
+00007ffb`72b318e4 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b318e6 e84db9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b318eb 90              nop
+00007ffb`72b318ec 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b318f3 ba28000000      mov     edx,28h
+00007ffb`72b318f8 41b801000000    mov     r8d,1
+00007ffb`72b318fe 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31900 e833b9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31905 90              nop
+00007ffb`72b31906 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3190d ba29000000      mov     edx,29h
+00007ffb`72b31912 41b801000000    mov     r8d,1
+00007ffb`72b31918 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3191a e819b9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3191f 90              nop
+00007ffb`72b31920 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31927 ba6f000000      mov     edx,6Fh
+00007ffb`72b3192c 41b801000000    mov     r8d,1
+00007ffb`72b31932 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31934 e8ffb8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31939 90              nop
+00007ffb`72b3193a 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31941 ba74000000      mov     edx,74h
+00007ffb`72b31946 41b801000000    mov     r8d,1
+00007ffb`72b3194c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3194e e8e5b8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31953 90              nop
+00007ffb`72b31954 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3195b ba01fe0000      mov     edx,0FE01h
+00007ffb`72b31960 4533c0          xor     r8d,r8d
+00007ffb`72b31963 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31965 e8ceb8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3196a 90              nop
+00007ffb`72b3196b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31972 ba02fe0000      mov     edx,0FE02h
+00007ffb`72b31977 4533c0          xor     r8d,r8d
+00007ffb`72b3197a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3197c e8b7b8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31981 90              nop
+00007ffb`72b31982 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31989 ba03fe0000      mov     edx,0FE03h
+00007ffb`72b3198e 4533c0          xor     r8d,r8d
+00007ffb`72b31991 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31993 e8a0b8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31998 90              nop
+00007ffb`72b31999 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b319a0 bac3000000      mov     edx,0C3h
+00007ffb`72b319a5 4533c0          xor     r8d,r8d
+00007ffb`72b319a8 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b319aa e889b8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b319af 90              nop
+00007ffb`72b319b0 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b319b7 ba04fe0000      mov     edx,0FE04h
+00007ffb`72b319bc 4533c0          xor     r8d,r8d
+00007ffb`72b319bf 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b319c1 e872b8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b319c6 90              nop
+00007ffb`72b319c7 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b319ce ba05fe0000      mov     edx,0FE05h
+00007ffb`72b319d3 4533c0          xor     r8d,r8d
+00007ffb`72b319d6 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b319d8 e85bb8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b319dd 90              nop
+00007ffb`72b319de 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b319e5 ba16fe0000      mov     edx,0FE16h
+00007ffb`72b319ea 41b801000000    mov     r8d,1
+00007ffb`72b319f0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b319f2 e841b8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b319f7 90              nop
+00007ffb`72b319f8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b319ff bad3000000      mov     edx,0D3h
+00007ffb`72b31a04 4533c0          xor     r8d,r8d
+00007ffb`72b31a07 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31a09 e82ab8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31a0e 90              nop
+00007ffb`72b31a0f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31a16 ba67000000      mov     edx,67h
+00007ffb`72b31a1b 4533c0          xor     r8d,r8d
+00007ffb`72b31a1e 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31a20 e813b8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31a25 90              nop
+00007ffb`72b31a26 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31a2d ba68000000      mov     edx,68h
+00007ffb`72b31a32 4533c0          xor     r8d,r8d
+00007ffb`72b31a35 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31a37 e8fcb7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31a3c 90              nop
+00007ffb`72b31a3d 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31a44 ba69000000      mov     edx,69h
+00007ffb`72b31a49 4533c0          xor     r8d,r8d
+00007ffb`72b31a4c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31a4e e8e5b7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31a53 90              nop
+00007ffb`72b31a54 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31a5b ba6a000000      mov     edx,6Ah
+00007ffb`72b31a60 4533c0          xor     r8d,r8d
+00007ffb`72b31a63 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31a65 e8ceb7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31a6a 90              nop
+00007ffb`72b31a6b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31a72 bad4000000      mov     edx,0D4h
+00007ffb`72b31a77 4533c0          xor     r8d,r8d
+00007ffb`72b31a7a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31a7c e8b7b7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31a81 90              nop
+00007ffb`72b31a82 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31a89 ba8a000000      mov     edx,8Ah
+00007ffb`72b31a8e 4533c0          xor     r8d,r8d
+00007ffb`72b31a91 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31a93 e8a0b7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31a98 90              nop
+00007ffb`72b31a99 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31aa0 bab3000000      mov     edx,0B3h
+00007ffb`72b31aa5 4533c0          xor     r8d,r8d
+00007ffb`72b31aa8 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31aaa e889b7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31aaf 90              nop
+00007ffb`72b31ab0 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31ab7 ba82000000      mov     edx,82h
+00007ffb`72b31abc 4533c0          xor     r8d,r8d
+00007ffb`72b31abf 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31ac1 e872b7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31ac6 90              nop
+00007ffb`72b31ac7 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31ace bab5000000      mov     edx,0B5h
+00007ffb`72b31ad3 4533c0          xor     r8d,r8d
+00007ffb`72b31ad6 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31ad8 e85bb7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31add 90              nop
+00007ffb`72b31ade 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31ae5 ba83000000      mov     edx,83h
+00007ffb`72b31aea 4533c0          xor     r8d,r8d
+00007ffb`72b31aed 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31aef e844b7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31af4 90              nop
+00007ffb`72b31af5 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31afc bab7000000      mov     edx,0B7h
+00007ffb`72b31b01 4533c0          xor     r8d,r8d
+00007ffb`72b31b04 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31b06 e82db7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31b0b 90              nop
+00007ffb`72b31b0c 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31b13 ba84000000      mov     edx,84h
+00007ffb`72b31b18 4533c0          xor     r8d,r8d
+00007ffb`72b31b1b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31b1d e816b7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31b22 90              nop
+00007ffb`72b31b23 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31b2a bab9000000      mov     edx,0B9h
+00007ffb`72b31b2f 4533c0          xor     r8d,r8d
+00007ffb`72b31b32 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31b34 e8ffb6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31b39 90              nop
+00007ffb`72b31b3a 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31b41 ba85000000      mov     edx,85h
+00007ffb`72b31b46 4533c0          xor     r8d,r8d
+00007ffb`72b31b49 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31b4b e8e8b6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31b50 90              nop
+00007ffb`72b31b51 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31b58 bad5000000      mov     edx,0D5h
+00007ffb`72b31b5d 4533c0          xor     r8d,r8d
+00007ffb`72b31b60 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31b62 e8d1b6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31b67 90              nop
+00007ffb`72b31b68 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31b6f ba8b000000      mov     edx,8Bh
+00007ffb`72b31b74 4533c0          xor     r8d,r8d
+00007ffb`72b31b77 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31b79 e8bab6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31b7e 90              nop
+00007ffb`72b31b7f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31b86 bab4000000      mov     edx,0B4h
+00007ffb`72b31b8b 4533c0          xor     r8d,r8d
+00007ffb`72b31b8e 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31b90 e8a3b6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31b95 90              nop
+00007ffb`72b31b96 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31b9d ba86000000      mov     edx,86h
+00007ffb`72b31ba2 4533c0          xor     r8d,r8d
+00007ffb`72b31ba5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31ba7 e88cb6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31bac 90              nop
+00007ffb`72b31bad 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31bb4 bab6000000      mov     edx,0B6h
+00007ffb`72b31bb9 4533c0          xor     r8d,r8d
+00007ffb`72b31bbc 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31bbe e875b6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31bc3 90              nop
+00007ffb`72b31bc4 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31bcb ba87000000      mov     edx,87h
+00007ffb`72b31bd0 4533c0          xor     r8d,r8d
+00007ffb`72b31bd3 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31bd5 e85eb6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31bda 90              nop
+00007ffb`72b31bdb 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31be2 bab8000000      mov     edx,0B8h
+00007ffb`72b31be7 4533c0          xor     r8d,r8d
+00007ffb`72b31bea 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31bec e847b6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31bf1 90              nop
+00007ffb`72b31bf2 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31bf9 ba88000000      mov     edx,88h
+00007ffb`72b31bfe 4533c0          xor     r8d,r8d
+00007ffb`72b31c01 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31c03 e830b6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31c08 90              nop
+00007ffb`72b31c09 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31c10 baba000000      mov     edx,0BAh
+00007ffb`72b31c15 4533c0          xor     r8d,r8d
+00007ffb`72b31c18 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31c1a e819b6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31c1f 90              nop
+00007ffb`72b31c20 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31c27 ba89000000      mov     edx,89h
+00007ffb`72b31c2c 4533c0          xor     r8d,r8d
+00007ffb`72b31c2f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31c31 e802b6f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31c36 90              nop
+00007ffb`72b31c37 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31c3e ba76000000      mov     edx,76h
+00007ffb`72b31c43 4533c0          xor     r8d,r8d
+00007ffb`72b31c46 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31c48 e8ebb5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31c4d 90              nop
+00007ffb`72b31c4e 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31c55 ba6b000000      mov     edx,6Bh
+00007ffb`72b31c5a 4533c0          xor     r8d,r8d
+00007ffb`72b31c5d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31c5f e8d4b5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31c64 90              nop
+00007ffb`72b31c65 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31c6c ba6c000000      mov     edx,6Ch
+00007ffb`72b31c71 4533c0          xor     r8d,r8d
+00007ffb`72b31c74 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31c76 e8bdb5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31c7b 90              nop
+00007ffb`72b31c7c 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31c83 bae0000000      mov     edx,0E0h
+00007ffb`72b31c88 4533c0          xor     r8d,r8d
+00007ffb`72b31c8b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31c8d e8a6b5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31c92 90              nop
+00007ffb`72b31c93 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31c9a bad2000000      mov     edx,0D2h
+00007ffb`72b31c9f 4533c0          xor     r8d,r8d
+00007ffb`72b31ca2 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31ca4 e88fb5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31ca9 90              nop
+00007ffb`72b31caa 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31cb1 bad1000000      mov     edx,0D1h
+00007ffb`72b31cb6 4533c0          xor     r8d,r8d
+00007ffb`72b31cb9 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31cbb e878b5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31cc0 90              nop
+00007ffb`72b31cc1 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31cc8 ba6d000000      mov     edx,6Dh
+00007ffb`72b31ccd 4533c0          xor     r8d,r8d
+00007ffb`72b31cd0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31cd2 e861b5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31cd7 90              nop
+00007ffb`72b31cd8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31cdf ba6e000000      mov     edx,6Eh
+00007ffb`72b31ce4 4533c0          xor     r8d,r8d
+00007ffb`72b31ce7 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31ce9 e84ab5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31cee 90              nop
+00007ffb`72b31cef 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31cf6 ba17fe0000      mov     edx,0FE17h
+00007ffb`72b31cfb 4533c0          xor     r8d,r8d
+00007ffb`72b31cfe 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31d00 e833b5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31d05 90              nop
+00007ffb`72b31d06 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31d0d ba70000000      mov     edx,70h
+00007ffb`72b31d12 41b801000000    mov     r8d,1
+00007ffb`72b31d18 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31d1a e819b5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31d1f 90              nop
+00007ffb`72b31d20 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31d27 ba5b000000      mov     edx,5Bh
+00007ffb`72b31d2c 4533c0          xor     r8d,r8d
+00007ffb`72b31d2f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31d31 e802b5f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31d36 90              nop
+00007ffb`72b31d37 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31d3e ba5c000000      mov     edx,5Ch
+00007ffb`72b31d43 4533c0          xor     r8d,r8d
+00007ffb`72b31d46 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31d48 e8ebb4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31d4d 90              nop
+00007ffb`72b31d4e 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31d55 ba25000000      mov     edx,25h
+00007ffb`72b31d5a 4533c0          xor     r8d,r8d
+00007ffb`72b31d5d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31d5f e8d4b4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31d64 90              nop
+00007ffb`72b31d65 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31d6c ba11fe0000      mov     edx,0FE11h
+00007ffb`72b31d71 4533c0          xor     r8d,r8d
+00007ffb`72b31d74 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31d76 e8bdb4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31d7b 90              nop
+00007ffb`72b31d7c 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31d83 badc000000      mov     edx,0DCh
+00007ffb`72b31d88 4533c0          xor     r8d,r8d
+00007ffb`72b31d8b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31d8d e8a6b4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31d92 90              nop
+00007ffb`72b31d93 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31d9a ba18fe0000      mov     edx,0FE18h
+00007ffb`72b31d9f 4533c0          xor     r8d,r8d
+00007ffb`72b31da2 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31da4 e88fb4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31da9 90              nop
+00007ffb`72b31daa 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31db1 ba15fe0000      mov     edx,0FE15h
+00007ffb`72b31db6 41b801000000    mov     r8d,1
+00007ffb`72b31dbc 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31dbe e875b4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31dc3 90              nop
+00007ffb`72b31dc4 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31dcb ba75000000      mov     edx,75h
+00007ffb`72b31dd0 41b801000000    mov     r8d,1
+00007ffb`72b31dd6 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31dd8 e85bb4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31ddd 90              nop
+00007ffb`72b31dde 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31de5 ba27000000      mov     edx,27h
+00007ffb`72b31dea 41b801000000    mov     r8d,1
+00007ffb`72b31df0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31df2 e841b4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31df7 90              nop
+00007ffb`72b31df8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31dff ba09fe0000      mov     edx,0FE09h
+00007ffb`72b31e04 41b805000000    mov     r8d,5
+00007ffb`72b31e0a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31e0c e827b4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31e11 90              nop
+00007ffb`72b31e12 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31e19 ba02000000      mov     edx,2
+00007ffb`72b31e1e 4533c0          xor     r8d,r8d
+00007ffb`72b31e21 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31e23 e810b4f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31e28 90              nop
+00007ffb`72b31e29 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31e30 ba03000000      mov     edx,3
+00007ffb`72b31e35 4533c0          xor     r8d,r8d
+00007ffb`72b31e38 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31e3a e8f9b3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31e3f 90              nop
+00007ffb`72b31e40 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31e47 ba04000000      mov     edx,4
+00007ffb`72b31e4c 4533c0          xor     r8d,r8d
+00007ffb`72b31e4f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31e51 e8e2b3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31e56 90              nop
+00007ffb`72b31e57 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31e5e ba05000000      mov     edx,5
+00007ffb`72b31e63 4533c0          xor     r8d,r8d
+00007ffb`72b31e66 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31e68 e8cbb3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31e6d 90              nop
+00007ffb`72b31e6e 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31e75 ba0e000000      mov     edx,0Eh
+00007ffb`72b31e7a 41b804000000    mov     r8d,4
+00007ffb`72b31e80 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31e82 e8b1b3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31e87 90              nop
+00007ffb`72b31e88 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31e8f ba0afe0000      mov     edx,0FE0Ah
+00007ffb`72b31e94 41b805000000    mov     r8d,5
+00007ffb`72b31e9a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31e9c e897b3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31ea1 90              nop
+00007ffb`72b31ea2 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31ea9 ba0f000000      mov     edx,0Fh
+00007ffb`72b31eae 41b804000000    mov     r8d,4
+00007ffb`72b31eb4 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31eb6 e87db3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31ebb 90              nop
+00007ffb`72b31ebc 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31ec3 ba20000000      mov     edx,20h
+00007ffb`72b31ec8 41b806000000    mov     r8d,6
+00007ffb`72b31ece 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31ed0 e863b3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31ed5 90              nop
+00007ffb`72b31ed6 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31edd ba16000000      mov     edx,16h
+00007ffb`72b31ee2 4533c0          xor     r8d,r8d
+00007ffb`72b31ee5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31ee7 e84cb3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31eec 90              nop
+00007ffb`72b31eed 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31ef4 ba17000000      mov     edx,17h
+00007ffb`72b31ef9 4533c0          xor     r8d,r8d
+00007ffb`72b31efc 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31efe e835b3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31f03 90              nop
+00007ffb`72b31f04 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31f0b ba18000000      mov     edx,18h
+00007ffb`72b31f10 4533c0          xor     r8d,r8d
+00007ffb`72b31f13 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31f15 e81eb3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31f1a 90              nop
+00007ffb`72b31f1b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31f22 ba19000000      mov     edx,19h
+00007ffb`72b31f27 4533c0          xor     r8d,r8d
+00007ffb`72b31f2a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31f2c e807b3f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31f31 90              nop
+00007ffb`72b31f32 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31f39 ba1a000000      mov     edx,1Ah
+00007ffb`72b31f3e 4533c0          xor     r8d,r8d
+00007ffb`72b31f41 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31f43 e8f0b2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31f48 90              nop
+00007ffb`72b31f49 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31f50 ba1b000000      mov     edx,1Bh
+00007ffb`72b31f55 4533c0          xor     r8d,r8d
+00007ffb`72b31f58 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31f5a e8d9b2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31f5f 90              nop
+00007ffb`72b31f60 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31f67 ba1c000000      mov     edx,1Ch
+00007ffb`72b31f6c 4533c0          xor     r8d,r8d
+00007ffb`72b31f6f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31f71 e8c2b2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31f76 90              nop
+00007ffb`72b31f77 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31f7e ba1d000000      mov     edx,1Dh
+00007ffb`72b31f83 4533c0          xor     r8d,r8d
+00007ffb`72b31f86 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31f88 e8abb2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31f8d 90              nop
+00007ffb`72b31f8e 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31f95 ba1e000000      mov     edx,1Eh
+00007ffb`72b31f9a 4533c0          xor     r8d,r8d
+00007ffb`72b31f9d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31f9f e894b2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31fa4 90              nop
+00007ffb`72b31fa5 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31fac ba15000000      mov     edx,15h
+00007ffb`72b31fb1 4533c0          xor     r8d,r8d
+00007ffb`72b31fb4 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31fb6 e87db2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31fbb 90              nop
+00007ffb`72b31fbc 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31fc3 ba1f000000      mov     edx,1Fh
+00007ffb`72b31fc8 41b804000000    mov     r8d,4
+00007ffb`72b31fce 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31fd0 e863b2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31fd5 90              nop
+00007ffb`72b31fd6 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31fdd ba21000000      mov     edx,21h
+00007ffb`72b31fe2 41b807000000    mov     r8d,7
+00007ffb`72b31fe8 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b31fea e849b2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b31fef 90              nop
+00007ffb`72b31ff0 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b31ff7 ba22000000      mov     edx,22h
+00007ffb`72b31ffc 41b806000000    mov     r8d,6
+00007ffb`72b32002 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32004 e82fb2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32009 90              nop
+00007ffb`72b3200a 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32011 ba23000000      mov     edx,23h
+00007ffb`72b32016 41b807000000    mov     r8d,7
+00007ffb`72b3201c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3201e e815b2f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32023 90              nop
+00007ffb`72b32024 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3202b baa3000000      mov     edx,0A3h
+00007ffb`72b32030 41b801000000    mov     r8d,1
+00007ffb`72b32036 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32038 e8fbb1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3203d 90              nop
+00007ffb`72b3203e 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32045 ba97000000      mov     edx,97h
+00007ffb`72b3204a 4533c0          xor     r8d,r8d
+00007ffb`72b3204d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3204f e8e4b1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32054 90              nop
+00007ffb`72b32055 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3205c ba90000000      mov     edx,90h
+00007ffb`72b32061 4533c0          xor     r8d,r8d
+00007ffb`72b32064 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32066 e8cdb1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3206b 90              nop
+00007ffb`72b3206c 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32073 ba92000000      mov     edx,92h
+00007ffb`72b32078 4533c0          xor     r8d,r8d
+00007ffb`72b3207b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3207d e8b6b1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32082 90              nop
+00007ffb`72b32083 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3208a ba94000000      mov     edx,94h
+00007ffb`72b3208f 4533c0          xor     r8d,r8d
+00007ffb`72b32092 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32094 e89fb1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32099 90              nop
+00007ffb`72b3209a 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b320a1 ba96000000      mov     edx,96h
+00007ffb`72b320a6 4533c0          xor     r8d,r8d
+00007ffb`72b320a9 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b320ab e888b1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b320b0 90              nop
+00007ffb`72b320b1 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b320b8 ba98000000      mov     edx,98h
+00007ffb`72b320bd 4533c0          xor     r8d,r8d
+00007ffb`72b320c0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b320c2 e871b1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b320c7 90              nop
+00007ffb`72b320c8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b320cf ba99000000      mov     edx,99h
+00007ffb`72b320d4 4533c0          xor     r8d,r8d
+00007ffb`72b320d7 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b320d9 e85ab1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b320de 90              nop
+00007ffb`72b320df 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b320e6 ba9a000000      mov     edx,9Ah
+00007ffb`72b320eb 4533c0          xor     r8d,r8d
+00007ffb`72b320ee 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b320f0 e843b1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b320f5 90              nop
+00007ffb`72b320f6 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b320fd ba91000000      mov     edx,91h
+00007ffb`72b32102 4533c0          xor     r8d,r8d
+00007ffb`72b32105 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32107 e82cb1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3210c 90              nop
+00007ffb`72b3210d 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32114 ba93000000      mov     edx,93h
+00007ffb`72b32119 4533c0          xor     r8d,r8d
+00007ffb`72b3211c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3211e e815b1f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32123 90              nop
+00007ffb`72b32124 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3212b ba95000000      mov     edx,95h
+00007ffb`72b32130 4533c0          xor     r8d,r8d
+00007ffb`72b32133 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32135 e8feb0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3213a 90              nop
+00007ffb`72b3213b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32142 ba8f000000      mov     edx,8Fh
+00007ffb`72b32147 41b801000000    mov     r8d,1
+00007ffb`72b3214d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3214f e8e4b0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32154 90              nop
+00007ffb`72b32155 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3215c ba7b000000      mov     edx,7Bh
+00007ffb`72b32161 41b801000000    mov     r8d,1
+00007ffb`72b32167 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32169 e8cab0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3216e 90              nop
+00007ffb`72b3216f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32176 ba7c000000      mov     edx,7Ch
+00007ffb`72b3217b 41b801000000    mov     r8d,1
+00007ffb`72b32181 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32183 e8b0b0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32188 90              nop
+00007ffb`72b32189 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32190 ba06fe0000      mov     edx,0FE06h
+00007ffb`72b32195 41b801000000    mov     r8d,1
+00007ffb`72b3219b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3219d e896b0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b321a2 90              nop
+00007ffb`72b321a3 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b321aa ba4d000000      mov     edx,4Dh
+00007ffb`72b321af 4533c0          xor     r8d,r8d
+00007ffb`72b321b2 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b321b4 e87fb0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b321b9 90              nop
+00007ffb`72b321ba 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b321c1 ba46000000      mov     edx,46h
+00007ffb`72b321c6 4533c0          xor     r8d,r8d
+00007ffb`72b321c9 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b321cb e868b0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b321d0 90              nop
+00007ffb`72b321d1 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b321d8 ba48000000      mov     edx,48h
+00007ffb`72b321dd 4533c0          xor     r8d,r8d
+00007ffb`72b321e0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b321e2 e851b0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b321e7 90              nop
+00007ffb`72b321e8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b321ef ba4a000000      mov     edx,4Ah
+00007ffb`72b321f4 4533c0          xor     r8d,r8d
+00007ffb`72b321f7 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b321f9 e83ab0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b321fe 90              nop
+00007ffb`72b321ff 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32206 ba4c000000      mov     edx,4Ch
+00007ffb`72b3220b 4533c0          xor     r8d,r8d
+00007ffb`72b3220e 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32210 e823b0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32215 90              nop
+00007ffb`72b32216 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3221d ba4e000000      mov     edx,4Eh
+00007ffb`72b32222 4533c0          xor     r8d,r8d
+00007ffb`72b32225 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32227 e80cb0f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3222c 90              nop
+00007ffb`72b3222d 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32234 ba4f000000      mov     edx,4Fh
+00007ffb`72b32239 4533c0          xor     r8d,r8d
+00007ffb`72b3223c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3223e e8f5aff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32243 90              nop
+00007ffb`72b32244 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3224b ba50000000      mov     edx,50h
+00007ffb`72b32250 4533c0          xor     r8d,r8d
+00007ffb`72b32253 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32255 e8deaff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3225a 90              nop
+00007ffb`72b3225b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32262 ba47000000      mov     edx,47h
+00007ffb`72b32267 4533c0          xor     r8d,r8d
+00007ffb`72b3226a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3226c e8c7aff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32271 90              nop
+00007ffb`72b32272 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32279 ba49000000      mov     edx,49h
+00007ffb`72b3227e 4533c0          xor     r8d,r8d
+00007ffb`72b32281 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32283 e8b0aff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32288 90              nop
+00007ffb`72b32289 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32290 ba4b000000      mov     edx,4Bh
+00007ffb`72b32295 4533c0          xor     r8d,r8d
+00007ffb`72b32298 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3229a e899aff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3229f 90              nop
+00007ffb`72b322a0 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b322a7 ba8e000000      mov     edx,8Eh
+00007ffb`72b322ac 4533c0          xor     r8d,r8d
+00007ffb`72b322af 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b322b1 e882aff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b322b6 90              nop
+00007ffb`72b322b7 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b322be ba0cfe0000      mov     edx,0FE0Ch
+00007ffb`72b322c3 41b805000000    mov     r8d,5
+00007ffb`72b322c9 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b322cb e868aff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b322d0 90              nop
+00007ffb`72b322d1 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b322d8 ba06000000      mov     edx,6
+00007ffb`72b322dd 4533c0          xor     r8d,r8d
+00007ffb`72b322e0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b322e2 e851aff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b322e7 90              nop
+00007ffb`72b322e8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b322ef ba07000000      mov     edx,7
+00007ffb`72b322f4 4533c0          xor     r8d,r8d
+00007ffb`72b322f7 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b322f9 e83aaff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b322fe 90              nop
+00007ffb`72b322ff 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32306 ba08000000      mov     edx,8
+00007ffb`72b3230b 4533c0          xor     r8d,r8d
+00007ffb`72b3230e 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32310 e823aff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32315 90              nop
+00007ffb`72b32316 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3231d ba09000000      mov     edx,9
+00007ffb`72b32322 4533c0          xor     r8d,r8d
+00007ffb`72b32325 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32327 e80caff4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3232c 90              nop
+00007ffb`72b3232d 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32334 ba11000000      mov     edx,11h
+00007ffb`72b32339 41b804000000    mov     r8d,4
+00007ffb`72b3233f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32341 e8f2aef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32346 90              nop
+00007ffb`72b32347 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3234e ba0dfe0000      mov     edx,0FE0Dh
+00007ffb`72b32353 41b805000000    mov     r8d,5
+00007ffb`72b32359 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3235b e8d8aef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32360 90              nop
+00007ffb`72b32361 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32368 ba12000000      mov     edx,12h
+00007ffb`72b3236d 41b804000000    mov     r8d,4
+00007ffb`72b32373 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32375 e8beaef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3237a 90              nop
+00007ffb`72b3237b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32382 ba14000000      mov     edx,14h
+00007ffb`72b32387 4533c0          xor     r8d,r8d
+00007ffb`72b3238a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3238c e8a7aef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32391 90              nop
+00007ffb`72b32392 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32399 ba71000000      mov     edx,71h
+00007ffb`72b3239e 41b801000000    mov     r8d,1
+00007ffb`72b323a4 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b323a6 e88daef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b323ab 90              nop
+00007ffb`72b323ac 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b323b3 ba7e000000      mov     edx,7Eh
+00007ffb`72b323b8 41b801000000    mov     r8d,1
+00007ffb`72b323be 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b323c0 e873aef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b323c5 90              nop
+00007ffb`72b323c6 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b323cd ba7f000000      mov     edx,7Fh
+00007ffb`72b323d2 41b801000000    mov     r8d,1
+00007ffb`72b323d8 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b323da e859aef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b323df 90              nop
+00007ffb`72b323e0 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b323e7 ba72000000      mov     edx,72h
+00007ffb`72b323ec 41b801000000    mov     r8d,1
+00007ffb`72b323f2 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b323f4 e83faef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b323f9 90              nop
+00007ffb`72b323fa 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32401 bad0000000      mov     edx,0D0h
+00007ffb`72b32406 41b801000000    mov     r8d,1
+00007ffb`72b3240c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3240e e825aef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32413 90              nop
+00007ffb`72b32414 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3241b ba07fe0000      mov     edx,0FE07h
+00007ffb`72b32420 41b801000000    mov     r8d,1
+00007ffb`72b32426 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32428 e80baef4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3242d 90              nop
+00007ffb`72b3242e 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32435 badd000000      mov     edx,0DDh
+00007ffb`72b3243a 41b803000000    mov     r8d,3
+00007ffb`72b32440 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32442 e8f1adf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32447 90              nop
+00007ffb`72b32448 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3244f bade000000      mov     edx,0DEh
+00007ffb`72b32454 41b802000000    mov     r8d,2
+00007ffb`72b3245a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3245c e8d7adf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32461 90              nop
+00007ffb`72b32462 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32469 ba0ffe0000      mov     edx,0FE0Fh
+00007ffb`72b3246e 4533c0          xor     r8d,r8d
+00007ffb`72b32471 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32473 e8c0adf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32478 90              nop
+00007ffb`72b32479 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32480 bac6000000      mov     edx,0C6h
+00007ffb`72b32485 41b801000000    mov     r8d,1
+00007ffb`72b3248b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3248d e8a6adf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32492 90              nop
+00007ffb`72b32493 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3249a ba5a000000      mov     edx,5Ah
+00007ffb`72b3249f 4533c0          xor     r8d,r8d
+00007ffb`72b324a2 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b324a4 e88fadf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b324a9 90              nop
+00007ffb`72b324aa 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b324b1 bad8000000      mov     edx,0D8h
+00007ffb`72b324b6 4533c0          xor     r8d,r8d
+00007ffb`72b324b9 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b324bb e878adf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b324c0 90              nop
+00007ffb`72b324c1 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b324c8 bad9000000      mov     edx,0D9h
+00007ffb`72b324cd 4533c0          xor     r8d,r8d
+00007ffb`72b324d0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b324d2 e861adf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b324d7 90              nop
+00007ffb`72b324d8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b324df ba65000000      mov     edx,65h
+00007ffb`72b324e4 4533c0          xor     r8d,r8d
+00007ffb`72b324e7 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b324e9 e84aadf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b324ee 90              nop
+00007ffb`72b324ef 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b324f6 ba8d000000      mov     edx,8Dh
+00007ffb`72b324fb 41b801000000    mov     r8d,1
+00007ffb`72b32501 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32503 e830adf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32508 90              nop
+00007ffb`72b32509 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32510 ba73000000      mov     edx,73h
+00007ffb`72b32515 41b801000000    mov     r8d,1
+00007ffb`72b3251b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3251d e816adf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32522 90              nop
+00007ffb`72b32523 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3252a ba19fe0000      mov     edx,0FE19h
+00007ffb`72b3252f 41b804000000    mov     r8d,4
+00007ffb`72b32535 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32537 e8fcacf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3253c 90              nop
+00007ffb`72b3253d 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32544 33d2            xor     edx,edx
+00007ffb`72b32546 4533c0          xor     r8d,r8d
+00007ffb`72b32549 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3254b e8e8acf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32550 90              nop
+00007ffb`72b32551 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32558 ba66000000      mov     edx,66h
+00007ffb`72b3255d 4533c0          xor     r8d,r8d
+00007ffb`72b32560 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32562 e8d1acf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32567 90              nop
+00007ffb`72b32568 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3256f ba60000000      mov     edx,60h
+00007ffb`72b32574 4533c0          xor     r8d,r8d
+00007ffb`72b32577 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32579 e8baacf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3257e 90              nop
+00007ffb`72b3257f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32586 ba26000000      mov     edx,26h
+00007ffb`72b3258b 4533c0          xor     r8d,r8d
+00007ffb`72b3258e 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32590 e8a3acf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32595 90              nop
+00007ffb`72b32596 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3259d bafe000000      mov     edx,0FEh
+00007ffb`72b325a2 4533c0          xor     r8d,r8d
+00007ffb`72b325a5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b325a7 e88cacf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b325ac 90              nop
+00007ffb`72b325ad 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b325b4 bafd000000      mov     edx,0FDh
+00007ffb`72b325b9 4533c0          xor     r8d,r8d
+00007ffb`72b325bc 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b325be e875acf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b325c3 90              nop
+00007ffb`72b325c4 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b325cb bafc000000      mov     edx,0FCh
+00007ffb`72b325d0 4533c0          xor     r8d,r8d
+00007ffb`72b325d3 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b325d5 e85eacf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b325da 90              nop
+00007ffb`72b325db 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b325e2 bafb000000      mov     edx,0FBh
+00007ffb`72b325e7 4533c0          xor     r8d,r8d
+00007ffb`72b325ea 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b325ec e847acf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b325f1 90              nop
+00007ffb`72b325f2 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b325f9 bafa000000      mov     edx,0FAh
+00007ffb`72b325fe 4533c0          xor     r8d,r8d
+00007ffb`72b32601 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32603 e830acf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32608 90              nop
+00007ffb`72b32609 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32610 baf9000000      mov     edx,0F9h
+00007ffb`72b32615 4533c0          xor     r8d,r8d
+00007ffb`72b32618 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3261a e819acf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3261f 90              nop
+00007ffb`72b32620 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32627 baf8000000      mov     edx,0F8h
+00007ffb`72b3262c 4533c0          xor     r8d,r8d
+00007ffb`72b3262f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32631 e802acf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32636 90              nop
+00007ffb`72b32637 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3263e baff000000      mov     edx,0FFh
+00007ffb`72b32643 4533c0          xor     r8d,r8d
+00007ffb`72b32646 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32648 e8ebabf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3264d 90              nop
+00007ffb`72b3264e 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32655 ba1efe0000      mov     edx,0FE1Eh
+00007ffb`72b3265a 4533c0          xor     r8d,r8d
+00007ffb`72b3265d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3265f e8d4abf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32664 90              nop
+00007ffb`72b32665 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3266c ba1dfe0000      mov     edx,0FE1Dh
+00007ffb`72b32671 4533c0          xor     r8d,r8d
+00007ffb`72b32674 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32676 e8bdabf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3267b 90              nop
+00007ffb`72b3267c 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32683 bac2000000      mov     edx,0C2h
+00007ffb`72b32688 41b801000000    mov     r8d,1
+00007ffb`72b3268e 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32690 e8a3abf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32695 90              nop
+00007ffb`72b32696 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3269d ba5d000000      mov     edx,5Dh
+00007ffb`72b326a2 4533c0          xor     r8d,r8d
+00007ffb`72b326a5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b326a7 e88cabf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b326ac 90              nop
+00007ffb`72b326ad 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b326b4 ba5e000000      mov     edx,5Eh
+00007ffb`72b326b9 4533c0          xor     r8d,r8d
+00007ffb`72b326bc 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b326be e875abf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b326c3 90              nop
+00007ffb`72b326c4 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b326cb ba2a000000      mov     edx,2Ah
+00007ffb`72b326d0 4533c0          xor     r8d,r8d
+00007ffb`72b326d3 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b326d5 e85eabf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b326da 90              nop
+00007ffb`72b326db 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b326e2 ba1afe0000      mov     edx,0FE1Ah
+00007ffb`72b326e7 4533c0          xor     r8d,r8d
+00007ffb`72b326ea 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b326ec e847abf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b326f1 90              nop
+00007ffb`72b326f2 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b326f9 ba62000000      mov     edx,62h
+00007ffb`72b326fe 4533c0          xor     r8d,r8d
+00007ffb`72b32701 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32703 e830abf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32708 90              nop
+00007ffb`72b32709 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32710 ba63000000      mov     edx,63h
+00007ffb`72b32715 4533c0          xor     r8d,r8d
+00007ffb`72b32718 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3271a e819abf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3271f 90              nop
+00007ffb`72b32720 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32727 ba64000000      mov     edx,64h
+00007ffb`72b3272c 4533c0          xor     r8d,r8d
+00007ffb`72b3272f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32731 e802abf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32736 90              nop
+00007ffb`72b32737 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3273e ba1cfe0000      mov     edx,0FE1Ch
+00007ffb`72b32743 41b801000000    mov     r8d,1
+00007ffb`72b32749 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3274b e8e8aaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32750 90              nop
+00007ffb`72b32751 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32758 ba0bfe0000      mov     edx,0FE0Bh
+00007ffb`72b3275d 41b805000000    mov     r8d,5
+00007ffb`72b32763 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32765 e8ceaaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3276a 90              nop
+00007ffb`72b3276b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32772 ba10000000      mov     edx,10h
+00007ffb`72b32777 41b804000000    mov     r8d,4
+00007ffb`72b3277d 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3277f e8b4aaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32784 90              nop
+00007ffb`72b32785 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3278c baa4000000      mov     edx,0A4h
+00007ffb`72b32791 41b801000000    mov     r8d,1
+00007ffb`72b32797 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32799 e89aaaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3279e 90              nop
+00007ffb`72b3279f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b327a6 ba9b000000      mov     edx,9Bh
+00007ffb`72b327ab 4533c0          xor     r8d,r8d
+00007ffb`72b327ae 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b327b0 e883aaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b327b5 90              nop
+00007ffb`72b327b6 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b327bd ba9c000000      mov     edx,9Ch
+00007ffb`72b327c2 4533c0          xor     r8d,r8d
+00007ffb`72b327c5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b327c7 e86caaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b327cc 90              nop
+00007ffb`72b327cd 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b327d4 ba9d000000      mov     edx,9Dh
+00007ffb`72b327d9 4533c0          xor     r8d,r8d
+00007ffb`72b327dc 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b327de e855aaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b327e3 90              nop
+00007ffb`72b327e4 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b327eb ba9e000000      mov     edx,9Eh
+00007ffb`72b327f0 4533c0          xor     r8d,r8d
+00007ffb`72b327f3 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b327f5 e83eaaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b327fa 90              nop
+00007ffb`72b327fb 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32802 ba9f000000      mov     edx,9Fh
+00007ffb`72b32807 4533c0          xor     r8d,r8d
+00007ffb`72b3280a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3280c e827aaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32811 90              nop
+00007ffb`72b32812 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32819 baa0000000      mov     edx,0A0h
+00007ffb`72b3281e 4533c0          xor     r8d,r8d
+00007ffb`72b32821 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32823 e810aaf4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32828 90              nop
+00007ffb`72b32829 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32830 baa1000000      mov     edx,0A1h
+00007ffb`72b32835 4533c0          xor     r8d,r8d
+00007ffb`72b32838 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3283a e8f9a9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3283f 90              nop
+00007ffb`72b32840 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32847 baa2000000      mov     edx,0A2h
+00007ffb`72b3284c 4533c0          xor     r8d,r8d
+00007ffb`72b3284f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32851 e8e2a9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32856 90              nop
+00007ffb`72b32857 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3285e ba7d000000      mov     edx,7Dh
+00007ffb`72b32863 41b801000000    mov     r8d,1
+00007ffb`72b32869 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3286b e8c8a9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32870 90              nop
+00007ffb`72b32871 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32878 badf000000      mov     edx,0DFh
+00007ffb`72b3287d 4533c0          xor     r8d,r8d
+00007ffb`72b32880 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32882 e8b1a9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32887 90              nop
+00007ffb`72b32888 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3288f ba52000000      mov     edx,52h
+00007ffb`72b32894 4533c0          xor     r8d,r8d
+00007ffb`72b32897 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32899 e89aa9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3289e 90              nop
+00007ffb`72b3289f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b328a6 ba53000000      mov     edx,53h
+00007ffb`72b328ab 4533c0          xor     r8d,r8d
+00007ffb`72b328ae 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b328b0 e883a9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b328b5 90              nop
+00007ffb`72b328b6 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b328bd ba54000000      mov     edx,54h
+00007ffb`72b328c2 4533c0          xor     r8d,r8d
+00007ffb`72b328c5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b328c7 e86ca9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b328cc 90              nop
+00007ffb`72b328cd 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b328d4 ba55000000      mov     edx,55h
+00007ffb`72b328d9 4533c0          xor     r8d,r8d
+00007ffb`72b328dc 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b328de e855a9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b328e3 90              nop
+00007ffb`72b328e4 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b328eb ba56000000      mov     edx,56h
+00007ffb`72b328f0 4533c0          xor     r8d,r8d
+00007ffb`72b328f3 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b328f5 e83ea9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b328fa 90              nop
+00007ffb`72b328fb 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32902 ba57000000      mov     edx,57h
+00007ffb`72b32907 4533c0          xor     r8d,r8d
+00007ffb`72b3290a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3290c e827a9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32911 90              nop
+00007ffb`72b32912 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32919 ba51000000      mov     edx,51h
+00007ffb`72b3291e 4533c0          xor     r8d,r8d
+00007ffb`72b32921 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32923 e810a9f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32928 90              nop
+00007ffb`72b32929 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32930 ba0efe0000      mov     edx,0FE0Eh
+00007ffb`72b32935 41b805000000    mov     r8d,5
+00007ffb`72b3293b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3293d e8f6a8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32942 90              nop
+00007ffb`72b32943 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3294a ba0a000000      mov     edx,0Ah
+00007ffb`72b3294f 4533c0          xor     r8d,r8d
+00007ffb`72b32952 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32954 e8dfa8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32959 90              nop
+00007ffb`72b3295a 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32961 ba0b000000      mov     edx,0Bh
+00007ffb`72b32966 4533c0          xor     r8d,r8d
+00007ffb`72b32969 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3296b e8c8a8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32970 90              nop
+00007ffb`72b32971 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32978 ba0c000000      mov     edx,0Ch
+00007ffb`72b3297d 4533c0          xor     r8d,r8d
+00007ffb`72b32980 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32982 e8b1a8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32987 90              nop
+00007ffb`72b32988 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b3298f ba0d000000      mov     edx,0Dh
+00007ffb`72b32994 4533c0          xor     r8d,r8d
+00007ffb`72b32997 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32999 e89aa8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b3299e 90              nop
+00007ffb`72b3299f 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b329a6 ba13000000      mov     edx,13h
+00007ffb`72b329ab 41b804000000    mov     r8d,4
+00007ffb`72b329b1 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b329b3 e880a8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b329b8 90              nop
+00007ffb`72b329b9 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b329c0 ba81000000      mov     edx,81h
+00007ffb`72b329c5 41b801000000    mov     r8d,1
+00007ffb`72b329cb 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b329cd e866a8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b329d2 90              nop
+00007ffb`72b329d3 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b329da ba80000000      mov     edx,80h
+00007ffb`72b329df 41b801000000    mov     r8d,1
+00007ffb`72b329e5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b329e7 e84ca8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b329ec 90              nop
+00007ffb`72b329ed 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b329f4 ba59000000      mov     edx,59h
+00007ffb`72b329f9 4533c0          xor     r8d,r8d
+00007ffb`72b329fc 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b329fe e835a8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32a03 90              nop
+00007ffb`72b32a04 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32a0b bada000000      mov     edx,0DAh
+00007ffb`72b32a10 4533c0          xor     r8d,r8d
+00007ffb`72b32a13 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32a15 e81ea8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32a1a 90              nop
+00007ffb`72b32a1b 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32a22 badb000000      mov     edx,0DBh
+00007ffb`72b32a27 4533c0          xor     r8d,r8d
+00007ffb`72b32a2a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32a2c e807a8f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32a31 90              nop
+00007ffb`72b32a32 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32a39 ba45000000      mov     edx,45h
+00007ffb`72b32a3e 41b808000000    mov     r8d,8
+00007ffb`72b32a44 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32a46 e8eda7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32a4b 90              nop
+00007ffb`72b32a4c 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32a53 ba14fe0000      mov     edx,0FE14h
+00007ffb`72b32a58 4533c0          xor     r8d,r8d
+00007ffb`72b32a5b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32a5d e8d6a7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32a62 90              nop
+00007ffb`72b32a63 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32a6a ba7a000000      mov     edx,7Ah
+00007ffb`72b32a6f 4533c0          xor     r8d,r8d
+00007ffb`72b32a72 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32a74 e8bfa7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32a79 90              nop
+00007ffb`72b32a7a 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32a81 ba12fe0000      mov     edx,0FE12h
+00007ffb`72b32a86 41b804000000    mov     r8d,4
+00007ffb`72b32a8c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32a8e e8a5a7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32a93 90              nop
+00007ffb`72b32a94 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32a9b ba79000000      mov     edx,79h
+00007ffb`72b32aa0 41b801000000    mov     r8d,1
+00007ffb`72b32aa6 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32aa8 e88ba7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32aad 90              nop
+00007ffb`72b32aae 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32ab5 baa5000000      mov     edx,0A5h
+00007ffb`72b32aba 41b801000000    mov     r8d,1
+00007ffb`72b32ac0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32ac2 e871a7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32ac7 90              nop
+00007ffb`72b32ac8 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32acf ba13fe0000      mov     edx,0FE13h
+00007ffb`72b32ad4 4533c0          xor     r8d,r8d
+00007ffb`72b32ad7 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32ad9 e85aa7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32ade 90              nop
+00007ffb`72b32adf 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32ae6 ba61000000      mov     edx,61h
+00007ffb`72b32aeb 4533c0          xor     r8d,r8d
+00007ffb`72b32aee 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32af0 e843a7f4ff      call    00007ffb`72a7d238 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].Add(UInt32, OT), mdToken: 0000000006003922)
+00007ffb`72b32af5 90              nop
+00007ffb`72b32af6 488b8d58feffff  mov     rcx,qword ptr [rbp-1A8h]
+00007ffb`72b32afd 48898df0feffff  mov     qword ptr [rbp-110h],rcx
+00007ffb`72b32b04 33c9            xor     ecx,ecx
+00007ffb`72b32b06 894dec          mov     dword ptr [rbp-14h],ecx
+00007ffb`72b32b09 33c9            xor     ecx,ecx
+00007ffb`72b32b0b 894de8          mov     dword ptr [rbp-18h],ecx
+00007ffb`72b32b0e 33c9            xor     ecx,ecx
+00007ffb`72b32b10 894de4          mov     dword ptr [rbp-1Ch],ecx
+00007ffb`72b32b13 48b9604d6972fb7f0000 mov rcx,7FFB72694D60h (MT: FlareOn.Backdoor.Program)
+00007ffb`72b32b1d e82e252d5f      call    clr!JIT_GetRuntimeType (00007ffb`d1e05050)
+00007ffb`72b32b22 488945a0        mov     qword ptr [rbp-60h],rax
+00007ffb`72b32b26 488b4da0        mov     rcx,qword ptr [rbp-60h]
+00007ffb`72b32b2a e8e178855f      call    clr!RuntimeTypeHandle::GetTypeFromHandle (00007ffb`d238a410)
+00007ffb`72b32b2f 48898550feffff  mov     qword ptr [rbp-1B0h],rax
+00007ffb`72b32b36 488b8d50feffff  mov     rcx,qword ptr [rbp-1B0h]
+00007ffb`72b32b3d 488b8550feffff  mov     rax,qword ptr [rbp-1B0h]
+00007ffb`72b32b44 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b32b47 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`72b32b4b ff10            call    qword ptr [rax]
+00007ffb`72b32b4d 48898548feffff  mov     qword ptr [rbp-1B8h],rax
+00007ffb`72b32b54 488b8d48feffff  mov     rcx,qword ptr [rbp-1B8h]
+00007ffb`72b32b5b 48898de8feffff  mov     qword ptr [rbp-118h],rcx
+00007ffb`72b32b62 488b8de8feffff  mov     rcx,qword ptr [rbp-118h]
+00007ffb`72b32b69 8b5518          mov     edx,dword ptr [rbp+18h]
+00007ffb`72b32b6c 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32b6e e8fd18f2ff      call    00007ffb`72a54470 (System.Reflection.Module.ResolveMethod(Int32), mdToken: 000000000600466e)
+00007ffb`72b32b73 48898540feffff  mov     qword ptr [rbp-1C0h],rax
+00007ffb`72b32b7a 488b9540feffff  mov     rdx,qword ptr [rbp-1C0h]
+00007ffb`72b32b81 488995e0feffff  mov     qword ptr [rbp-120h],rdx
+00007ffb`72b32b88 488b95e0feffff  mov     rdx,qword ptr [rbp-120h]
+00007ffb`72b32b8f 48b9f8089e72fb7f0000 mov rcx,7FFB729E08F8h (MT: System.Reflection.MethodInfo)
+00007ffb`72b32b99 e852aa425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b32b9e 488985d8feffff  mov     qword ptr [rbp-128h],rax
+00007ffb`72b32ba5 488b8dd8feffff  mov     rcx,qword ptr [rbp-128h]
+00007ffb`72b32bac 488b85d8feffff  mov     rax,qword ptr [rbp-128h]
+00007ffb`72b32bb3 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b32bb6 488b4050        mov     rax,qword ptr [rax+50h]
+00007ffb`72b32bba ff5038          call    qword ptr [rax+38h]
+00007ffb`72b32bbd 48898538feffff  mov     qword ptr [rbp-1C8h],rax
+00007ffb`72b32bc4 488b9538feffff  mov     rdx,qword ptr [rbp-1C8h]
+00007ffb`72b32bcb 488995d0feffff  mov     qword ptr [rbp-130h],rdx
+00007ffb`72b32bd2 488b95d0feffff  mov     rdx,qword ptr [rbp-130h]
+00007ffb`72b32bd9 8b5208          mov     edx,dword ptr [rdx+8]
+00007ffb`72b32bdc 48b9d25f8e72fb7f0000 mov rcx,7FFB728E5FD2h
+00007ffb`72b32be6 e8c5d0425f      call    clr!JIT_NewArr1OBJ_MP_InlineGetThread (00007ffb`d1f5fcb0)
+00007ffb`72b32beb 48898530feffff  mov     qword ptr [rbp-1D0h],rax
+00007ffb`72b32bf2 488b8530feffff  mov     rax,qword ptr [rbp-1D0h]
+00007ffb`72b32bf9 488985c8feffff  mov     qword ptr [rbp-138h],rax
+00007ffb`72b32c00 e8fb25f2ff      call    00007ffb`72a55200 (System.Reflection.Emit.SignatureHelper.GetLocalVarSigHelper(), mdToken: 0000000006004bd9)
+00007ffb`72b32c05 48898528feffff  mov     qword ptr [rbp-1D8h],rax
+00007ffb`72b32c0c 488b8d28feffff  mov     rcx,qword ptr [rbp-1D8h]
+00007ffb`72b32c13 48898dc0feffff  mov     qword ptr [rbp-140h],rcx
+00007ffb`72b32c1a 33c9            xor     ecx,ecx
+00007ffb`72b32c1c 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffb`72b32c1f 90              nop
+00007ffb`72b32c20 eb77            jmp     00007ffb`72b32c99
+00007ffb`72b32c22 90              nop
+00007ffb`72b32c23 488b8dc8feffff  mov     rcx,qword ptr [rbp-138h]
+00007ffb`72b32c2a 48898d20feffff  mov     qword ptr [rbp-1E0h],rcx
+00007ffb`72b32c31 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffb`72b32c34 894d9c          mov     dword ptr [rbp-64h],ecx
+00007ffb`72b32c37 488b8dd0feffff  mov     rcx,qword ptr [rbp-130h]
+00007ffb`72b32c3e 8b45e0          mov     eax,dword ptr [rbp-20h]
+00007ffb`72b32c41 483b4108        cmp     rax,qword ptr [rcx+8]
+00007ffb`72b32c45 7205            jb      00007ffb`72b32c4c
+00007ffb`72b32c47 e8c439725f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72b32c4c 488d4cc110      lea     rcx,[rcx+rax*8+10h]
+00007ffb`72b32c51 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`72b32c54 48898df8fcffff  mov     qword ptr [rbp-308h],rcx
+00007ffb`72b32c5b 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b32c62 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b32c69 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b32c6c 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b32c70 ff5020          call    qword ptr [rax+20h]
+00007ffb`72b32c73 48898518feffff  mov     qword ptr [rbp-1E8h],rax
+00007ffb`72b32c7a 488b8d20feffff  mov     rcx,qword ptr [rbp-1E0h]
+00007ffb`72b32c81 8b559c          mov     edx,dword ptr [rbp-64h]
+00007ffb`72b32c84 4c8b8518feffff  mov     r8,qword ptr [rbp-1E8h]
+00007ffb`72b32c8b e810ad425f      call    clr!JIT_Stelem_Ref (00007ffb`d1f5d9a0)
+00007ffb`72b32c90 90              nop
+00007ffb`72b32c91 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffb`72b32c94 ffc1            inc     ecx
+00007ffb`72b32c96 894de0          mov     dword ptr [rbp-20h],ecx
+00007ffb`72b32c99 8b4de0          mov     ecx,dword ptr [rbp-20h]
+00007ffb`72b32c9c 488b85c8feffff  mov     rax,qword ptr [rbp-138h]
+00007ffb`72b32ca3 3b4808          cmp     ecx,dword ptr [rax+8]
+00007ffb`72b32ca6 0f9cc1          setl    cl
+00007ffb`72b32ca9 0fb6c9          movzx   ecx,cl
+00007ffb`72b32cac 894ddc          mov     dword ptr [rbp-24h],ecx
+00007ffb`72b32caf 837ddc00        cmp     dword ptr [rbp-24h],0
+00007ffb`72b32cb3 0f8569ffffff    jne     00007ffb`72b32c22
+00007ffb`72b32cb9 488b8de0feffff  mov     rcx,qword ptr [rbp-120h]
+00007ffb`72b32cc0 488b85e0feffff  mov     rax,qword ptr [rbp-120h]
+00007ffb`72b32cc7 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b32cca 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b32cce ff5038          call    qword ptr [rax+38h]
+00007ffb`72b32cd1 48898510feffff  mov     qword ptr [rbp-1F0h],rax
+00007ffb`72b32cd8 488b8d10feffff  mov     rcx,qword ptr [rbp-1F0h]
+00007ffb`72b32cdf 48898db8feffff  mov     qword ptr [rbp-148h],rcx
+00007ffb`72b32ce6 48b97836131fb2020000 mov rcx,2B21F133678h
+00007ffb`72b32cf0 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`72b32cf3 48898d08feffff  mov     qword ptr [rbp-1F8h],rcx
+00007ffb`72b32cfa 488b8dd8feffff  mov     rcx,qword ptr [rbp-128h]
+00007ffb`72b32d01 488b85d8feffff  mov     rax,qword ptr [rbp-128h]
+00007ffb`72b32d08 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b32d0b 488b8088000000  mov     rax,qword ptr [rax+88h]
+00007ffb`72b32d12 ff10            call    qword ptr [rax]
+00007ffb`72b32d14 48898500feffff  mov     qword ptr [rbp-200h],rax
+00007ffb`72b32d1b 48b910159e72fb7f0000 mov rcx,7FFB729E1510h (MT: System.Reflection.Emit.DynamicMethod)
+00007ffb`72b32d25 e836ce425f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffb`d1f5fb60)
+00007ffb`72b32d2a 488985f8fdffff  mov     qword ptr [rbp-208h],rax
+00007ffb`72b32d31 488b8db8feffff  mov     rcx,qword ptr [rbp-148h]
+00007ffb`72b32d38 48894c2420      mov     qword ptr [rsp+20h],rcx
+00007ffb`72b32d3d c744242801000000 mov     dword ptr [rsp+28h],1
+00007ffb`72b32d45 488b8df8fdffff  mov     rcx,qword ptr [rbp-208h]
+00007ffb`72b32d4c 488b9508feffff  mov     rdx,qword ptr [rbp-1F8h]
+00007ffb`72b32d53 4c8b8500feffff  mov     r8,qword ptr [rbp-200h]
+00007ffb`72b32d5a 4c8b8dc8feffff  mov     r9,qword ptr [rbp-138h]
+00007ffb`72b32d61 e85a34f2ff      call    00007ffb`72a561c0 (System.Reflection.Emit.DynamicMethod..ctor(System.String, System.Type, System.Type[], System.Type, Boolean), mdToken: 0000000006004910)
+00007ffb`72b32d66 488b8df8fdffff  mov     rcx,qword ptr [rbp-208h]
+00007ffb`72b32d6d 48898db0feffff  mov     qword ptr [rbp-150h],rcx
+00007ffb`72b32d74 488b8db0feffff  mov     rcx,qword ptr [rbp-150h]
+00007ffb`72b32d7b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32d7d e84e60f2ff      call    00007ffb`72a58dd0 (System.Reflection.Emit.DynamicMethod.GetDynamicILInfo(), mdToken: 0000000006004932)
+00007ffb`72b32d82 488985f0fdffff  mov     qword ptr [rbp-210h],rax
+00007ffb`72b32d89 488b8df0fdffff  mov     rcx,qword ptr [rbp-210h]
+00007ffb`72b32d90 48898da8feffff  mov     qword ptr [rbp-158h],rcx
+00007ffb`72b32d97 488b8dd8feffff  mov     rcx,qword ptr [rbp-128h]
+00007ffb`72b32d9e 488b85d8feffff  mov     rax,qword ptr [rbp-128h]
+00007ffb`72b32da5 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b32da8 488b4070        mov     rax,qword ptr [rax+70h]
+00007ffb`72b32dac ff5018          call    qword ptr [rax+18h]
+00007ffb`72b32daf 488985e8fdffff  mov     qword ptr [rbp-218h],rax
+00007ffb`72b32db6 488b8de8fdffff  mov     rcx,qword ptr [rbp-218h]
+00007ffb`72b32dbd 48898da0feffff  mov     qword ptr [rbp-160h],rcx
+00007ffb`72b32dc4 90              nop
+00007ffb`72b32dc5 488b8da0feffff  mov     rcx,qword ptr [rbp-160h]
+00007ffb`72b32dcc 488b85a0feffff  mov     rax,qword ptr [rbp-160h]
+00007ffb`72b32dd3 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b32dd6 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b32dda ff5028          call    qword ptr [rax+28h]
+00007ffb`72b32ddd 488985e0fdffff  mov     qword ptr [rbp-220h],rax
+00007ffb`72b32de4 488b8de0fdffff  mov     rcx,qword ptr [rbp-220h]
+00007ffb`72b32deb 49bb60006a72fb7f0000 mov r11,7FFB726A0060h
+00007ffb`72b32df5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32df7 ff1563d2b6ff    call    qword ptr [00007ffb`726a0060]
+00007ffb`72b32dfd 488985d8fdffff  mov     qword ptr [rbp-228h],rax
+00007ffb`72b32e04 488b8dd8fdffff  mov     rcx,qword ptr [rbp-228h]
+00007ffb`72b32e0b 48898d90feffff  mov     qword ptr [rbp-170h],rcx
+00007ffb`72b32e12 90              nop
+00007ffb`72b32e13 eb73            jmp     00007ffb`72b32e88
+00007ffb`72b32e15 488b8d90feffff  mov     rcx,qword ptr [rbp-170h]
+00007ffb`72b32e1c 49bb70006a72fb7f0000 mov r11,7FFB726A0070h
+00007ffb`72b32e26 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32e28 ff1542d2b6ff    call    qword ptr [00007ffb`726a0070]
+00007ffb`72b32e2e 488985d0fdffff  mov     qword ptr [rbp-230h],rax
+00007ffb`72b32e35 488b8dd0fdffff  mov     rcx,qword ptr [rbp-230h]
+00007ffb`72b32e3c 48898d88feffff  mov     qword ptr [rbp-178h],rcx
+00007ffb`72b32e43 90              nop
+00007ffb`72b32e44 488b8dc0feffff  mov     rcx,qword ptr [rbp-140h]
+00007ffb`72b32e4b 48898dc8fdffff  mov     qword ptr [rbp-238h],rcx
+00007ffb`72b32e52 488b8d88feffff  mov     rcx,qword ptr [rbp-178h]
+00007ffb`72b32e59 488b8588feffff  mov     rax,qword ptr [rbp-178h]
+00007ffb`72b32e60 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b32e63 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b32e67 ff5020          call    qword ptr [rax+20h]
+00007ffb`72b32e6a 488985c0fdffff  mov     qword ptr [rbp-240h],rax
+00007ffb`72b32e71 488b8dc8fdffff  mov     rcx,qword ptr [rbp-238h]
+00007ffb`72b32e78 488b95c0fdffff  mov     rdx,qword ptr [rbp-240h]
+00007ffb`72b32e7f 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32e81 e8ba97f2ff      call    00007ffb`72a5c640 (System.Reflection.Emit.SignatureHelper.AddArgument(System.Type), mdToken: 0000000006004bfc)
+00007ffb`72b32e86 90              nop
+00007ffb`72b32e87 90              nop
+00007ffb`72b32e88 488b8d90feffff  mov     rcx,qword ptr [rbp-170h]
+00007ffb`72b32e8f 49bb68006a72fb7f0000 mov r11,7FFB726A0068h
+00007ffb`72b32e99 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32e9b ff15c7d1b6ff    call    qword ptr [00007ffb`726a0068]
+00007ffb`72b32ea1 0fb6c8          movzx   ecx,al
+00007ffb`72b32ea4 894d98          mov     dword ptr [rbp-68h],ecx
+00007ffb`72b32ea7 837d9800        cmp     dword ptr [rbp-68h],0
+00007ffb`72b32eab 0f8564ffffff    jne     00007ffb`72b32e15
+00007ffb`72b32eb1 90              nop
+00007ffb`72b32eb2 eb00            jmp     00007ffb`72b32eb4
+00007ffb`72b32eb4 488b8dc0feffff  mov     rcx,qword ptr [rbp-140h]
+00007ffb`72b32ebb 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32ebd e80e98f2ff      call    00007ffb`72a5c6d0 (System.Reflection.Emit.SignatureHelper.GetSignature(), mdToken: 0000000006004c03)
+00007ffb`72b32ec2 488985b8fdffff  mov     qword ptr [rbp-248h],rax
+00007ffb`72b32ec9 488b8db8fdffff  mov     rcx,qword ptr [rbp-248h]
+00007ffb`72b32ed0 48898d98feffff  mov     qword ptr [rbp-168h],rcx
+00007ffb`72b32ed7 488b8da8feffff  mov     rcx,qword ptr [rbp-158h]
+00007ffb`72b32ede 488b9598feffff  mov     rdx,qword ptr [rbp-168h]
+00007ffb`72b32ee5 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32ee7 e83498f2ff      call    00007ffb`72a5c720 (System.Reflection.Emit.DynamicILInfo.SetLocalSignature(Byte[]), mdToken: 00000000060048ee)
+00007ffb`72b32eec 90              nop
+00007ffb`72b32eed 33c9            xor     ecx,ecx
+00007ffb`72b32eef 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`72b32ef2 90              nop
+00007ffb`72b32ef3 e945090000      jmp     00007ffb`72b3383d
+00007ffb`72b32ef8 90              nop
+00007ffb`72b32ef9 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ffb`72b32efd 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b32f00 483b5108        cmp     rdx,qword ptr [rcx+8]
+00007ffb`72b32f04 7205            jb      00007ffb`72b32f0b
+00007ffb`72b32f06 e80537725f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72b32f0b 488d4c1110      lea     rcx,[rcx+rdx+10h]
+00007ffb`72b32f10 0fb609          movzx   ecx,byte ptr [rcx]
+00007ffb`72b32f13 81f9fe000000    cmp     ecx,0FEh
+00007ffb`72b32f19 0f94c1          sete    cl
+00007ffb`72b32f1c 0fb6c9          movzx   ecx,cl
+00007ffb`72b32f1f 894dd0          mov     dword ptr [rbp-30h],ecx
+00007ffb`72b32f22 837dd000        cmp     dword ptr [rbp-30h],0
+00007ffb`72b32f26 7432            je      00007ffb`72b32f5a
+00007ffb`72b32f28 90              nop
+00007ffb`72b32f29 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ffb`72b32f2d 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b32f30 ffc2            inc     edx
+00007ffb`72b32f32 483b5108        cmp     rdx,qword ptr [rcx+8]
+00007ffb`72b32f36 7205            jb      00007ffb`72b32f3d
+00007ffb`72b32f38 e8d336725f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72b32f3d 488d4c1110      lea     rcx,[rcx+rdx+10h]
+00007ffb`72b32f42 0fb609          movzx   ecx,byte ptr [rcx]
+00007ffb`72b32f45 81c100fe0000    add     ecx,0FE00h
+00007ffb`72b32f4b 894dec          mov     dword ptr [rbp-14h],ecx
+00007ffb`72b32f4e 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffb`72b32f51 ffc1            inc     ecx
+00007ffb`72b32f53 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`72b32f56 90              nop
+00007ffb`72b32f57 90              nop
+00007ffb`72b32f58 eb1f            jmp     00007ffb`72b32f79
+00007ffb`72b32f5a 90              nop
+00007ffb`72b32f5b 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ffb`72b32f5f 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b32f62 483b5108        cmp     rdx,qword ptr [rcx+8]
+00007ffb`72b32f66 7205            jb      00007ffb`72b32f6d
+00007ffb`72b32f68 e8a336725f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72b32f6d 488d4c1110      lea     rcx,[rcx+rdx+10h]
+00007ffb`72b32f72 0fb609          movzx   ecx,byte ptr [rcx]
+00007ffb`72b32f75 894dec          mov     dword ptr [rbp-14h],ecx
+00007ffb`72b32f78 90              nop
+00007ffb`72b32f79 488b8df0feffff  mov     rcx,qword ptr [rbp-110h]
+00007ffb`72b32f80 8b55ec          mov     edx,dword ptr [rbp-14h]
+00007ffb`72b32f83 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b32f85 e89ea2f4ff      call    00007ffb`72a7d228 (System.Collections.Generic.Dictionary`2[[System.UInt32, mscorlib],[FlareOn.Backdoor.FLARE06+OT, FlareOn.Backdoor]].get_Item(UInt32), mdToken: 0000000006003920)
+00007ffb`72b32f8a 894594          mov     dword ptr [rbp-6Ch],eax
+00007ffb`72b32f8d 8b4d94          mov     ecx,dword ptr [rbp-6Ch]
+00007ffb`72b32f90 894dd4          mov     dword ptr [rbp-2Ch],ecx
+00007ffb`72b32f93 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffb`72b32f96 ffc1            inc     ecx
+00007ffb`72b32f98 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`72b32f9b 8b4dd4          mov     ecx,dword ptr [rbp-2Ch]
+00007ffb`72b32f9e 894dc8          mov     dword ptr [rbp-38h],ecx
+00007ffb`72b32fa1 8b4dc8          mov     ecx,dword ptr [rbp-38h]
+00007ffb`72b32fa4 894dcc          mov     dword ptr [rbp-34h],ecx
+00007ffb`72b32fa7 837dcc08        cmp     dword ptr [rbp-34h],8
+00007ffb`72b32fab 771b            ja      00007ffb`72b32fc8
+00007ffb`72b32fad 8b4dcc          mov     ecx,dword ptr [rbp-34h]
+00007ffb`72b32fb0 8bc9            mov     ecx,ecx
+00007ffb`72b32fb2 488d1537090000  lea     rdx,[00007ffb`72b338f0]
+00007ffb`72b32fb9 8b148a          mov     edx,dword ptr [rdx+rcx*4]
+00007ffb`72b32fbc 488d05b0e5ffff  lea     rax,[00007ffb`72b31573]
+00007ffb`72b32fc3 4803d0          add     rdx,rax
+00007ffb`72b32fc6 ffe2            jmp     rdx
+00007ffb`72b32fc8 90              nop
+00007ffb`72b32fc9 e96e080000      jmp     00007ffb`72b3383c
+00007ffb`72b32fce 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffb`72b32fd1 ffc1            inc     ecx
+00007ffb`72b32fd3 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`72b32fd6 90              nop
+00007ffb`72b32fd7 e960080000      jmp     00007ffb`72b3383c
+00007ffb`72b32fdc 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffb`72b32fdf 83c104          add     ecx,4
+00007ffb`72b32fe2 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`72b32fe5 90              nop
+00007ffb`72b32fe6 e951080000      jmp     00007ffb`72b3383c
+00007ffb`72b32feb 90              nop
+00007ffb`72b32fec e94b080000      jmp     00007ffb`72b3383c
+00007ffb`72b32ff1 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffb`72b32ff4 83c108          add     ecx,8
+00007ffb`72b32ff7 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`72b32ffa 90              nop
+00007ffb`72b32ffb e93c080000      jmp     00007ffb`72b3383c
+00007ffb`72b33000 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffb`72b33003 894d90          mov     dword ptr [rbp-70h],ecx
+00007ffb`72b33006 c7458c04000000  mov     dword ptr [rbp-74h],4
+00007ffb`72b3300d 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ffb`72b33011 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b33014 e80f1bd3ff      call    00007ffb`72864b28 (FlareOn.Backdoor.FLARE15.flare_68(Byte[], Int32), mdToken: 00000000060000b7)
+00007ffb`72b33019 894588          mov     dword ptr [rbp-78h],eax
+00007ffb`72b3301c 8b4d90          mov     ecx,dword ptr [rbp-70h]
+00007ffb`72b3301f 034d8c          add     ecx,dword ptr [rbp-74h]
+00007ffb`72b33022 8b5588          mov     edx,dword ptr [rbp-78h]
+00007ffb`72b33025 8d0c91          lea     ecx,[rcx+rdx*4]
+00007ffb`72b33028 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`72b3302b 90              nop
+00007ffb`72b3302c e90b080000      jmp     00007ffb`72b3383c
+00007ffb`72b33031 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ffb`72b33035 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b33038 e8eb1ad3ff      call    00007ffb`72864b28 (FlareOn.Backdoor.FLARE15.flare_68(Byte[], Int32), mdToken: 00000000060000b7)
+00007ffb`72b3303d 894584          mov     dword ptr [rbp-7Ch],eax
+00007ffb`72b33040 8b4d84          mov     ecx,dword ptr [rbp-7Ch]
+00007ffb`72b33043 894de8          mov     dword ptr [rbp-18h],ecx
+00007ffb`72b33046 8b4de8          mov     ecx,dword ptr [rbp-18h]
+00007ffb`72b33049 81f1bda698a2    xor     ecx,0A298A6BDh
+00007ffb`72b3304f 894de8          mov     dword ptr [rbp-18h],ecx
+00007ffb`72b33052 817de800000070  cmp     dword ptr [rbp-18h],70000000h
+00007ffb`72b33059 7212            jb      00007ffb`72b3306d
+00007ffb`72b3305b 817de8ffff0070  cmp     dword ptr [rbp-18h],7000FFFFh
+00007ffb`72b33062 0f92c1          setb    cl
+00007ffb`72b33065 0fb6c9          movzx   ecx,cl
+00007ffb`72b33068 894d80          mov     dword ptr [rbp-80h],ecx
+00007ffb`72b3306b eb05            jmp     00007ffb`72b33072
+00007ffb`72b3306d 33c9            xor     ecx,ecx
+00007ffb`72b3306f 894d80          mov     dword ptr [rbp-80h],ecx
+00007ffb`72b33072 8b4d80          mov     ecx,dword ptr [rbp-80h]
+00007ffb`72b33075 0fb6c9          movzx   ecx,cl
+00007ffb`72b33078 894dc4          mov     dword ptr [rbp-3Ch],ecx
+00007ffb`72b3307b 837dc400        cmp     dword ptr [rbp-3Ch],0
+00007ffb`72b3307f 745c            je      00007ffb`72b330dd
+00007ffb`72b33081 90              nop
+00007ffb`72b33082 488b8da8feffff  mov     rcx,qword ptr [rbp-158h]
+00007ffb`72b33089 48898d20fdffff  mov     qword ptr [rbp-2E0h],rcx
+00007ffb`72b33090 488b8de8feffff  mov     rcx,qword ptr [rbp-118h]
+00007ffb`72b33097 8b55e8          mov     edx,dword ptr [rbp-18h]
+00007ffb`72b3309a 488b85e8feffff  mov     rax,qword ptr [rbp-118h]
+00007ffb`72b330a1 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b330a4 488b4048        mov     rax,qword ptr [rax+48h]
+00007ffb`72b330a8 ff5030          call    qword ptr [rax+30h]
+00007ffb`72b330ab 48898518fdffff  mov     qword ptr [rbp-2E8h],rax
+00007ffb`72b330b2 488b8d20fdffff  mov     rcx,qword ptr [rbp-2E0h]
+00007ffb`72b330b9 488b9518fdffff  mov     rdx,qword ptr [rbp-2E8h]
+00007ffb`72b330c0 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b330c2 e89903f3ff      call    00007ffb`72a63460 (System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.String), mdToken: 00000000060048f6)
+00007ffb`72b330c7 898500ffffff    mov     dword ptr [rbp-100h],eax
+00007ffb`72b330cd 8b8d00ffffff    mov     ecx,dword ptr [rbp-100h]
+00007ffb`72b330d3 894de4          mov     dword ptr [rbp-1Ch],ecx
+00007ffb`72b330d6 90              nop
+00007ffb`72b330d7 90              nop
+00007ffb`72b330d8 e9c6060000      jmp     00007ffb`72b337a3
+00007ffb`72b330dd 90              nop
+00007ffb`72b330de 488b8dd8feffff  mov     rcx,qword ptr [rbp-128h]
+00007ffb`72b330e5 488b85d8feffff  mov     rax,qword ptr [rbp-128h]
+00007ffb`72b330ec 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b330ef 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b330f3 ff5038          call    qword ptr [rax+38h]
+00007ffb`72b330f6 488985b0fdffff  mov     qword ptr [rbp-250h],rax
+00007ffb`72b330fd 488b8db0fdffff  mov     rcx,qword ptr [rbp-250h]
+00007ffb`72b33104 48898d80feffff  mov     qword ptr [rbp-180h],rcx
+00007ffb`72b3310b 33c9            xor     ecx,ecx
+00007ffb`72b3310d 48898d78feffff  mov     qword ptr [rbp-188h],rcx
+00007ffb`72b33114 33c9            xor     ecx,ecx
+00007ffb`72b33116 48898d70feffff  mov     qword ptr [rbp-190h],rcx
+00007ffb`72b3311d 488b8d80feffff  mov     rcx,qword ptr [rbp-180h]
+00007ffb`72b33124 488b8580feffff  mov     rax,qword ptr [rbp-180h]
+00007ffb`72b3312b 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b3312e 488b80b0000000  mov     rax,qword ptr [rax+0B0h]
+00007ffb`72b33135 ff5028          call    qword ptr [rax+28h]
+00007ffb`72b33138 0fb6c8          movzx   ecx,al
+00007ffb`72b3313b 898d7cffffff    mov     dword ptr [rbp-84h],ecx
+00007ffb`72b33141 83bd7cffffff00  cmp     dword ptr [rbp-84h],0
+00007ffb`72b33148 7532            jne     00007ffb`72b3317c
+00007ffb`72b3314a 488b8d80feffff  mov     rcx,qword ptr [rbp-180h]
+00007ffb`72b33151 488b8580feffff  mov     rax,qword ptr [rbp-180h]
+00007ffb`72b33158 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b3315b 488b80b0000000  mov     rax,qword ptr [rax+0B0h]
+00007ffb`72b33162 ff5030          call    qword ptr [rax+30h]
+00007ffb`72b33165 0fb6c8          movzx   ecx,al
+00007ffb`72b33168 898d04ffffff    mov     dword ptr [rbp-0FCh],ecx
+00007ffb`72b3316e 8b8d04ffffff    mov     ecx,dword ptr [rbp-0FCh]
+00007ffb`72b33174 898d78ffffff    mov     dword ptr [rbp-88h],ecx
+00007ffb`72b3317a eb0a            jmp     00007ffb`72b33186
+00007ffb`72b3317c c78578ffffff01000000 mov dword ptr [rbp-88h],1
+00007ffb`72b33186 8b8d78ffffff    mov     ecx,dword ptr [rbp-88h]
+00007ffb`72b3318c 0fb6c9          movzx   ecx,cl
+00007ffb`72b3318f 894dc0          mov     dword ptr [rbp-40h],ecx
+00007ffb`72b33192 837dc000        cmp     dword ptr [rbp-40h],0
+00007ffb`72b33196 7430            je      00007ffb`72b331c8
+00007ffb`72b33198 488b8d80feffff  mov     rcx,qword ptr [rbp-180h]
+00007ffb`72b3319f 488b8580feffff  mov     rax,qword ptr [rbp-180h]
+00007ffb`72b331a6 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b331a9 488b80d0000000  mov     rax,qword ptr [rax+0D0h]
+00007ffb`72b331b0 ff5008          call    qword ptr [rax+8]
+00007ffb`72b331b3 48898528fdffff  mov     qword ptr [rbp-2D8h],rax
+00007ffb`72b331ba 488b8d28fdffff  mov     rcx,qword ptr [rbp-2D8h]
+00007ffb`72b331c1 48898d78feffff  mov     qword ptr [rbp-188h],rcx
+00007ffb`72b331c8 488b8dd8feffff  mov     rcx,qword ptr [rbp-128h]
+00007ffb`72b331cf 488b85d8feffff  mov     rax,qword ptr [rbp-128h]
+00007ffb`72b331d6 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b331d9 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`72b331dd ff5008          call    qword ptr [rax+8]
+00007ffb`72b331e0 0fb6c8          movzx   ecx,al
+00007ffb`72b331e3 898d74ffffff    mov     dword ptr [rbp-8Ch],ecx
+00007ffb`72b331e9 83bd74ffffff00  cmp     dword ptr [rbp-8Ch],0
+00007ffb`72b331f0 752f            jne     00007ffb`72b33221
+00007ffb`72b331f2 488b8dd8feffff  mov     rcx,qword ptr [rbp-128h]
+00007ffb`72b331f9 488b85d8feffff  mov     rax,qword ptr [rbp-128h]
+00007ffb`72b33200 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b33203 488b4058        mov     rax,qword ptr [rax+58h]
+00007ffb`72b33207 ff5038          call    qword ptr [rax+38h]
+00007ffb`72b3320a 0fb6c8          movzx   ecx,al
+00007ffb`72b3320d 898d08ffffff    mov     dword ptr [rbp-0F8h],ecx
+00007ffb`72b33213 8b8d08ffffff    mov     ecx,dword ptr [rbp-0F8h]
+00007ffb`72b33219 898d70ffffff    mov     dword ptr [rbp-90h],ecx
+00007ffb`72b3321f eb0a            jmp     00007ffb`72b3322b
+00007ffb`72b33221 c78570ffffff01000000 mov dword ptr [rbp-90h],1
+00007ffb`72b3322b 8b8d70ffffff    mov     ecx,dword ptr [rbp-90h]
+00007ffb`72b33231 0fb6c9          movzx   ecx,cl
+00007ffb`72b33234 894dbc          mov     dword ptr [rbp-44h],ecx
+00007ffb`72b33237 837dbc00        cmp     dword ptr [rbp-44h],0
+00007ffb`72b3323b 742d            je      00007ffb`72b3326a
+00007ffb`72b3323d 488b8dd8feffff  mov     rcx,qword ptr [rbp-128h]
+00007ffb`72b33244 488b85d8feffff  mov     rax,qword ptr [rbp-128h]
+00007ffb`72b3324b 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b3324e 488b4058        mov     rax,qword ptr [rax+58h]
+00007ffb`72b33252 ff5030          call    qword ptr [rax+30h]
+00007ffb`72b33255 48898530fdffff  mov     qword ptr [rbp-2D0h],rax
+00007ffb`72b3325c 488b8d30fdffff  mov     rcx,qword ptr [rbp-2D0h]
+00007ffb`72b33263 48898d70feffff  mov     qword ptr [rbp-190h],rcx
+00007ffb`72b3326a 488b8d80feffff  mov     rcx,qword ptr [rbp-180h]
+00007ffb`72b33271 488b8580feffff  mov     rax,qword ptr [rbp-180h]
+00007ffb`72b33278 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b3327b 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`72b3327f ff10            call    qword ptr [rax]
+00007ffb`72b33281 488985a8fdffff  mov     qword ptr [rbp-258h],rax
+00007ffb`72b33288 488b8da8fdffff  mov     rcx,qword ptr [rbp-258h]
+00007ffb`72b3328f 8b55e8          mov     edx,dword ptr [rbp-18h]
+00007ffb`72b33292 4c8b8578feffff  mov     r8,qword ptr [rbp-188h]
+00007ffb`72b33299 4c8b8d70feffff  mov     r9,qword ptr [rbp-190h]
+00007ffb`72b332a0 488b85a8fdffff  mov     rax,qword ptr [rbp-258h]
+00007ffb`72b332a7 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b332aa 488b4048        mov     rax,qword ptr [rax+48h]
+00007ffb`72b332ae ff5020          call    qword ptr [rax+20h]
+00007ffb`72b332b1 488985a0fdffff  mov     qword ptr [rbp-260h],rax
+00007ffb`72b332b8 488b8da0fdffff  mov     rcx,qword ptr [rbp-260h]
+00007ffb`72b332bf 48898d68feffff  mov     qword ptr [rbp-198h],rcx
+00007ffb`72b332c6 488b8d68feffff  mov     rcx,qword ptr [rbp-198h]
+00007ffb`72b332cd 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b332cf e8d4cdd1ff      call    00007ffb`728500a8
+00007ffb`72b332d4 48898598fdffff  mov     qword ptr [rbp-268h],rax
+00007ffb`72b332db 488b8d98fdffff  mov     rcx,qword ptr [rbp-268h]
+00007ffb`72b332e2 488b8598fdffff  mov     rax,qword ptr [rbp-268h]
+00007ffb`72b332e9 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b332ec 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b332f0 ff5030          call    qword ptr [rax+30h]
+00007ffb`72b332f3 48898590fdffff  mov     qword ptr [rbp-270h],rax
+00007ffb`72b332fa 48baf89d131fb2020000 mov rdx,2B21F139DF8h
+00007ffb`72b33304 488b12          mov     rdx,qword ptr [rdx]
+00007ffb`72b33307 488b8d90fdffff  mov     rcx,qword ptr [rbp-270h]
+00007ffb`72b3330e e8ad77d5ff      call    00007ffb`7288aac0 (System.String.op_Equality(System.String, System.String), mdToken: 00000000060004c5)
+00007ffb`72b33313 0fb6d0          movzx   edx,al
+00007ffb`72b33316 89956cffffff    mov     dword ptr [rbp-94h],edx
+00007ffb`72b3331c 8b956cffffff    mov     edx,dword ptr [rbp-94h]
+00007ffb`72b33322 0fb6d2          movzx   edx,dl
+00007ffb`72b33325 8955b8          mov     dword ptr [rbp-48h],edx
+00007ffb`72b33328 837db800        cmp     dword ptr [rbp-48h],0
+00007ffb`72b3332c 0f84f5000000    je      00007ffb`72b33427
+00007ffb`72b33332 90              nop
+00007ffb`72b33333 488b95a8feffff  mov     rdx,qword ptr [rbp-158h]
+00007ffb`72b3333a 48899540fdffff  mov     qword ptr [rbp-2C0h],rdx
+00007ffb`72b33341 488b9568feffff  mov     rdx,qword ptr [rbp-198h]
+00007ffb`72b33348 48b960249e72fb7f0000 mov rcx,7FFB729E2460h (MT: System.Reflection.FieldInfo)
+00007ffb`72b33352 e899a2425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b33357 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b3335e 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b33365 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b3336c 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b3336f 488b4058        mov     rax,qword ptr [rax+58h]
+00007ffb`72b33373 ff5008          call    qword ptr [rax+8]
+00007ffb`72b33376 48898518ffffff  mov     qword ptr [rbp-0E8h],rax
+00007ffb`72b3337d 488b9568feffff  mov     rdx,qword ptr [rbp-198h]
+00007ffb`72b33384 48b960249e72fb7f0000 mov rcx,7FFB729E2460h (MT: System.Reflection.FieldInfo)
+00007ffb`72b3338e e85da2425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b33393 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b3339a 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b333a1 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b333a8 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b333ab 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b333af ff5038          call    qword ptr [rax+38h]
+00007ffb`72b333b2 48898538fdffff  mov     qword ptr [rbp-2C8h],rax
+00007ffb`72b333b9 488b9538fdffff  mov     rdx,qword ptr [rbp-2C8h]
+00007ffb`72b333c0 48b9e0978172fb7f0000 mov rcx,7FFB728197E0h (MT: System.Reflection.TypeInfo)
+00007ffb`72b333ca e821a2425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b333cf 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b333d6 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b333dd 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b333e4 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b333e7 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`72b333eb ff5010          call    qword ptr [rax+10h]
+00007ffb`72b333ee 48898510ffffff  mov     qword ptr [rbp-0F0h],rax
+00007ffb`72b333f5 488b8d40fdffff  mov     rcx,qword ptr [rbp-2C0h]
+00007ffb`72b333fc 488b9518ffffff  mov     rdx,qword ptr [rbp-0E8h]
+00007ffb`72b33403 4c8b8510ffffff  mov     r8,qword ptr [rbp-0F0h]
+00007ffb`72b3340a 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3340c e80fc0f2ff      call    00007ffb`72a5f420 (System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeFieldHandle, System.RuntimeTypeHandle), mdToken: 00000000060048f4)
+00007ffb`72b33411 89850cffffff    mov     dword ptr [rbp-0F4h],eax
+00007ffb`72b33417 8b8d0cffffff    mov     ecx,dword ptr [rbp-0F4h]
+00007ffb`72b3341d 894de4          mov     dword ptr [rbp-1Ch],ecx
+00007ffb`72b33420 90              nop
+00007ffb`72b33421 90              nop
+00007ffb`72b33422 e97b030000      jmp     00007ffb`72b337a2
+00007ffb`72b33427 488b8d68feffff  mov     rcx,qword ptr [rbp-198h]
+00007ffb`72b3342e 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b33430 e873ccd1ff      call    00007ffb`728500a8
+00007ffb`72b33435 48898588fdffff  mov     qword ptr [rbp-278h],rax
+00007ffb`72b3343c 488b8d88fdffff  mov     rcx,qword ptr [rbp-278h]
+00007ffb`72b33443 488b8588fdffff  mov     rax,qword ptr [rbp-278h]
+00007ffb`72b3344a 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b3344d 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b33451 ff5030          call    qword ptr [rax+30h]
+00007ffb`72b33454 48898580fdffff  mov     qword ptr [rbp-280h],rax
+00007ffb`72b3345b 48ba009e131fb2020000 mov rdx,2B21F139E00h
+00007ffb`72b33465 488b12          mov     rdx,qword ptr [rdx]
+00007ffb`72b33468 488b8d80fdffff  mov     rcx,qword ptr [rbp-280h]
+00007ffb`72b3346f e84c76d5ff      call    00007ffb`7288aac0 (System.String.op_Equality(System.String, System.String), mdToken: 00000000060004c5)
+00007ffb`72b33474 0fb6d0          movzx   edx,al
+00007ffb`72b33477 899568ffffff    mov     dword ptr [rbp-98h],edx
+00007ffb`72b3347d 8b9568ffffff    mov     edx,dword ptr [rbp-98h]
+00007ffb`72b33483 0fb6d2          movzx   edx,dl
+00007ffb`72b33486 8955b4          mov     dword ptr [rbp-4Ch],edx
+00007ffb`72b33489 837db400        cmp     dword ptr [rbp-4Ch],0
+00007ffb`72b3348d 7476            je      00007ffb`72b33505
+00007ffb`72b3348f 90              nop
+00007ffb`72b33490 488b95a8feffff  mov     rdx,qword ptr [rbp-158h]
+00007ffb`72b33497 48899548fdffff  mov     qword ptr [rbp-2B8h],rdx
+00007ffb`72b3349e 488b9568feffff  mov     rdx,qword ptr [rbp-198h]
+00007ffb`72b334a5 48b9e0978172fb7f0000 mov rcx,7FFB728197E0h (MT: System.Reflection.TypeInfo)
+00007ffb`72b334af e83ca1425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b334b4 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b334bb 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b334c2 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b334c9 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b334cc 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`72b334d0 ff5010          call    qword ptr [rax+10h]
+00007ffb`72b334d3 48898528ffffff  mov     qword ptr [rbp-0D8h],rax
+00007ffb`72b334da 488b8d48fdffff  mov     rcx,qword ptr [rbp-2B8h]
+00007ffb`72b334e1 488b9528ffffff  mov     rdx,qword ptr [rbp-0D8h]
+00007ffb`72b334e8 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b334ea e8f1a9f2ff      call    00007ffb`72a5dee0 (System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeTypeHandle), mdToken: 00000000060048f5)
+00007ffb`72b334ef 898524ffffff    mov     dword ptr [rbp-0DCh],eax
+00007ffb`72b334f5 8b8d24ffffff    mov     ecx,dword ptr [rbp-0DCh]
+00007ffb`72b334fb 894de4          mov     dword ptr [rbp-1Ch],ecx
+00007ffb`72b334fe 90              nop
+00007ffb`72b334ff 90              nop
+00007ffb`72b33500 e99d020000      jmp     00007ffb`72b337a2
+00007ffb`72b33505 488b8d68feffff  mov     rcx,qword ptr [rbp-198h]
+00007ffb`72b3350c 488b8568feffff  mov     rax,qword ptr [rbp-198h]
+00007ffb`72b33513 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b33516 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b3351a ff5030          call    qword ptr [rax+30h]
+00007ffb`72b3351d 48898578fdffff  mov     qword ptr [rbp-288h],rax
+00007ffb`72b33524 48ba089e131fb2020000 mov rdx,2B21F139E08h
+00007ffb`72b3352e 488b12          mov     rdx,qword ptr [rdx]
+00007ffb`72b33531 488b8d78fdffff  mov     rcx,qword ptr [rbp-288h]
+00007ffb`72b33538 e88375d5ff      call    00007ffb`7288aac0 (System.String.op_Equality(System.String, System.String), mdToken: 00000000060004c5)
+00007ffb`72b3353d 0fb6c8          movzx   ecx,al
+00007ffb`72b33540 898d64ffffff    mov     dword ptr [rbp-9Ch],ecx
+00007ffb`72b33546 83bd64ffffff00  cmp     dword ptr [rbp-9Ch],0
+00007ffb`72b3354d 754f            jne     00007ffb`72b3359e
+00007ffb`72b3354f 488b8d68feffff  mov     rcx,qword ptr [rbp-198h]
+00007ffb`72b33556 488b8568feffff  mov     rax,qword ptr [rbp-198h]
+00007ffb`72b3355d 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b33560 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b33564 ff5030          call    qword ptr [rax+30h]
+00007ffb`72b33567 48898550fdffff  mov     qword ptr [rbp-2B0h],rax
+00007ffb`72b3356e 48ba109e131fb2020000 mov rdx,2B21F139E10h
+00007ffb`72b33578 488b12          mov     rdx,qword ptr [rdx]
+00007ffb`72b3357b 488b8d50fdffff  mov     rcx,qword ptr [rbp-2B0h]
+00007ffb`72b33582 e83975d5ff      call    00007ffb`7288aac0 (System.String.op_Equality(System.String, System.String), mdToken: 00000000060004c5)
+00007ffb`72b33587 0fb6d0          movzx   edx,al
+00007ffb`72b3358a 899530ffffff    mov     dword ptr [rbp-0D0h],edx
+00007ffb`72b33590 8b9530ffffff    mov     edx,dword ptr [rbp-0D0h]
+00007ffb`72b33596 899560ffffff    mov     dword ptr [rbp-0A0h],edx
+00007ffb`72b3359c eb0a            jmp     00007ffb`72b335a8
+00007ffb`72b3359e c78560ffffff01000000 mov dword ptr [rbp-0A0h],1
+00007ffb`72b335a8 8b9560ffffff    mov     edx,dword ptr [rbp-0A0h]
+00007ffb`72b335ae 0fb6d2          movzx   edx,dl
+00007ffb`72b335b1 8955b0          mov     dword ptr [rbp-50h],edx
+00007ffb`72b335b4 837db000        cmp     dword ptr [rbp-50h],0
+00007ffb`72b335b8 0f84f5000000    je      00007ffb`72b336b3
+00007ffb`72b335be 90              nop
+00007ffb`72b335bf 488b95a8feffff  mov     rdx,qword ptr [rbp-158h]
+00007ffb`72b335c6 48899560fdffff  mov     qword ptr [rbp-2A0h],rdx
+00007ffb`72b335cd 488b9568feffff  mov     rdx,qword ptr [rbp-198h]
+00007ffb`72b335d4 48b9f8fa9172fb7f0000 mov rcx,7FFB7291FAF8h (MT: System.Reflection.ConstructorInfo)
+00007ffb`72b335de e80da0425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b335e3 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b335ea 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b335f1 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b335f8 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b335fb 488b4058        mov     rax,qword ptr [rax+58h]
+00007ffb`72b335ff ff5010          call    qword ptr [rax+10h]
+00007ffb`72b33602 48898540ffffff  mov     qword ptr [rbp-0C0h],rax
+00007ffb`72b33609 488b9568feffff  mov     rdx,qword ptr [rbp-198h]
+00007ffb`72b33610 48b9f8fa9172fb7f0000 mov rcx,7FFB7291FAF8h (MT: System.Reflection.ConstructorInfo)
+00007ffb`72b3361a e8d19f425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b3361f 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b33626 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b3362d 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b33634 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b33637 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b3363b ff5038          call    qword ptr [rax+38h]
+00007ffb`72b3363e 48898558fdffff  mov     qword ptr [rbp-2A8h],rax
+00007ffb`72b33645 488b9558fdffff  mov     rdx,qword ptr [rbp-2A8h]
+00007ffb`72b3364c 48b9e0978172fb7f0000 mov rcx,7FFB728197E0h (MT: System.Reflection.TypeInfo)
+00007ffb`72b33656 e8959f425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b3365b 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b33662 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b33669 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b33670 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b33673 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`72b33677 ff5010          call    qword ptr [rax+10h]
+00007ffb`72b3367a 48898538ffffff  mov     qword ptr [rbp-0C8h],rax
+00007ffb`72b33681 488b8d60fdffff  mov     rcx,qword ptr [rbp-2A0h]
+00007ffb`72b33688 488b9540ffffff  mov     rdx,qword ptr [rbp-0C0h]
+00007ffb`72b3368f 4c8b8538ffffff  mov     r8,qword ptr [rbp-0C8h]
+00007ffb`72b33696 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b33698 e8a3a4f2ff      call    00007ffb`72a5db40 (System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeMethodHandle, System.RuntimeTypeHandle), mdToken: 00000000060048f2)
+00007ffb`72b3369d 898534ffffff    mov     dword ptr [rbp-0CCh],eax
+00007ffb`72b336a3 8b9534ffffff    mov     edx,dword ptr [rbp-0CCh]
+00007ffb`72b336a9 8955e4          mov     dword ptr [rbp-1Ch],edx
+00007ffb`72b336ac 90              nop
+00007ffb`72b336ad 90              nop
+00007ffb`72b336ae e9ef000000      jmp     00007ffb`72b337a2
+00007ffb`72b336b3 90              nop
+00007ffb`72b336b4 488b95a8feffff  mov     rdx,qword ptr [rbp-158h]
+00007ffb`72b336bb 48899570fdffff  mov     qword ptr [rbp-290h],rdx
+00007ffb`72b336c2 488b9568feffff  mov     rdx,qword ptr [rbp-198h]
+00007ffb`72b336c9 48b9f8089e72fb7f0000 mov rcx,7FFB729E08F8h (MT: System.Reflection.MethodInfo)
+00007ffb`72b336d3 e8189f425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b336d8 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b336df 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b336e6 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b336ed 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b336f0 488b4058        mov     rax,qword ptr [rax+58h]
+00007ffb`72b336f4 ff5010          call    qword ptr [rax+10h]
+00007ffb`72b336f7 48898558ffffff  mov     qword ptr [rbp-0A8h],rax
+00007ffb`72b336fe 488b9568feffff  mov     rdx,qword ptr [rbp-198h]
+00007ffb`72b33705 48b9f8089e72fb7f0000 mov rcx,7FFB729E08F8h (MT: System.Reflection.MethodInfo)
+00007ffb`72b3370f e8dc9e425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b33714 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b3371b 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b33722 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b33729 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b3372c 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b33730 ff5038          call    qword ptr [rax+38h]
+00007ffb`72b33733 48898568fdffff  mov     qword ptr [rbp-298h],rax
+00007ffb`72b3373a 488b9568fdffff  mov     rdx,qword ptr [rbp-298h]
+00007ffb`72b33741 48b9e0978172fb7f0000 mov rcx,7FFB728197E0h (MT: System.Reflection.TypeInfo)
+00007ffb`72b3374b e8a09e425f      call    clr!JIT_ChkCastClass (00007ffb`d1f5d5f0)
+00007ffb`72b33750 488985f8fcffff  mov     qword ptr [rbp-308h],rax
+00007ffb`72b33757 488b8df8fcffff  mov     rcx,qword ptr [rbp-308h]
+00007ffb`72b3375e 488b85f8fcffff  mov     rax,qword ptr [rbp-308h]
+00007ffb`72b33765 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b33768 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`72b3376c ff5010          call    qword ptr [rax+10h]
+00007ffb`72b3376f 48898550ffffff  mov     qword ptr [rbp-0B0h],rax
+00007ffb`72b33776 488b8d70fdffff  mov     rcx,qword ptr [rbp-290h]
+00007ffb`72b3377d 488b9558ffffff  mov     rdx,qword ptr [rbp-0A8h]
+00007ffb`72b33784 4c8b8550ffffff  mov     r8,qword ptr [rbp-0B0h]
+00007ffb`72b3378b 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b3378d e8aea3f2ff      call    00007ffb`72a5db40 (System.Reflection.Emit.DynamicILInfo.GetTokenFor(System.RuntimeMethodHandle, System.RuntimeTypeHandle), mdToken: 00000000060048f2)
+00007ffb`72b33792 89854cffffff    mov     dword ptr [rbp-0B4h],eax
+00007ffb`72b33798 8b854cffffff    mov     eax,dword ptr [rbp-0B4h]
+00007ffb`72b3379e 8945e4          mov     dword ptr [rbp-1Ch],eax
+00007ffb`72b337a1 90              nop
+00007ffb`72b337a2 90              nop
+00007ffb`72b337a3 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ffb`72b337a7 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b337aa 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ffb`72b337ae 7205            jb      00007ffb`72b337b5
+00007ffb`72b337b0 e85b2e725f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72b337b5 488d441010      lea     rax,[rax+rdx+10h]
+00007ffb`72b337ba 8b55e4          mov     edx,dword ptr [rbp-1Ch]
+00007ffb`72b337bd 8810            mov     byte ptr [rax],dl
+00007ffb`72b337bf 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ffb`72b337c3 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b337c6 ffc2            inc     edx
+00007ffb`72b337c8 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ffb`72b337cc 7205            jb      00007ffb`72b337d3
+00007ffb`72b337ce e83d2e725f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72b337d3 488d441010      lea     rax,[rax+rdx+10h]
+00007ffb`72b337d8 8b55e4          mov     edx,dword ptr [rbp-1Ch]
+00007ffb`72b337db c1fa08          sar     edx,8
+00007ffb`72b337de 8810            mov     byte ptr [rax],dl
+00007ffb`72b337e0 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ffb`72b337e4 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b337e7 83c202          add     edx,2
+00007ffb`72b337ea 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ffb`72b337ee 7205            jb      00007ffb`72b337f5
+00007ffb`72b337f0 e81b2e725f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72b337f5 488d441010      lea     rax,[rax+rdx+10h]
+00007ffb`72b337fa 8b55e4          mov     edx,dword ptr [rbp-1Ch]
+00007ffb`72b337fd c1fa10          sar     edx,10h
+00007ffb`72b33800 8810            mov     byte ptr [rax],dl
+00007ffb`72b33802 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ffb`72b33806 8b55d8          mov     edx,dword ptr [rbp-28h]
+00007ffb`72b33809 83c203          add     edx,3
+00007ffb`72b3380c 483b5008        cmp     rdx,qword ptr [rax+8]
+00007ffb`72b33810 7205            jb      00007ffb`72b33817
+00007ffb`72b33812 e8f92d725f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`72b33817 488d441010      lea     rax,[rax+rdx+10h]
+00007ffb`72b3381c 8b55e4          mov     edx,dword ptr [rbp-1Ch]
+00007ffb`72b3381f c1fa18          sar     edx,18h
+00007ffb`72b33822 8810            mov     byte ptr [rax],dl
+00007ffb`72b33824 8b45d8          mov     eax,dword ptr [rbp-28h]
+00007ffb`72b33827 83c004          add     eax,4
+00007ffb`72b3382a 8945d8          mov     dword ptr [rbp-28h],eax
+00007ffb`72b3382d 90              nop
+00007ffb`72b3382e eb0c            jmp     00007ffb`72b3383c
+00007ffb`72b33830 8b45d8          mov     eax,dword ptr [rbp-28h]
+00007ffb`72b33833 83c002          add     eax,2
+00007ffb`72b33836 8945d8          mov     dword ptr [rbp-28h],eax
+00007ffb`72b33839 90              nop
+00007ffb`72b3383a eb00            jmp     00007ffb`72b3383c
+00007ffb`72b3383c 90              nop
+00007ffb`72b3383d 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffb`72b33840 488b5510        mov     rdx,qword ptr [rbp+10h]
+00007ffb`72b33844 3b4a08          cmp     ecx,dword ptr [rdx+8]
+00007ffb`72b33847 0f9cc1          setl    cl
+00007ffb`72b3384a 0fb6c9          movzx   ecx,cl
+00007ffb`72b3384d 894dac          mov     dword ptr [rbp-54h],ecx
+00007ffb`72b33850 837dac00        cmp     dword ptr [rbp-54h],0
+00007ffb`72b33854 0f859ef6ffff    jne     00007ffb`72b32ef8
+00007ffb`72b3385a 488b8da8feffff  mov     rcx,qword ptr [rbp-158h]
+00007ffb`72b33861 48898d10fdffff  mov     qword ptr [rbp-2F0h],rcx
+00007ffb`72b33868 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ffb`72b3386c 48898d08fdffff  mov     qword ptr [rbp-2F8h],rcx
+00007ffb`72b33873 488b8da0feffff  mov     rcx,qword ptr [rbp-160h]
+00007ffb`72b3387a 488b85a0feffff  mov     rax,qword ptr [rbp-160h]
+00007ffb`72b33881 488b00          mov     rax,qword ptr [rax]
+00007ffb`72b33884 488b4040        mov     rax,qword ptr [rax+40h]
+00007ffb`72b33888 ff5030          call    qword ptr [rax+30h]
+00007ffb`72b3388b 8985fcfeffff    mov     dword ptr [rbp-104h],eax
+00007ffb`72b33891 488b8d10fdffff  mov     rcx,qword ptr [rbp-2F0h]
+00007ffb`72b33898 488b9508fdffff  mov     rdx,qword ptr [rbp-2F8h]
+00007ffb`72b3389f 448b85fcfeffff  mov     r8d,dword ptr [rbp-104h]
+00007ffb`72b338a6 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b338a8 e883bdf2ff      call    00007ffb`72a5f630 (System.Reflection.Emit.DynamicILInfo.SetCode(Byte[], Int32), mdToken: 00000000060048ea)
+00007ffb`72b338ad 90              nop
+00007ffb`72b338ae 488b8db0feffff  mov     rcx,qword ptr [rbp-150h]
+00007ffb`72b338b5 4c8b4520        mov     r8,qword ptr [rbp+20h]
+00007ffb`72b338b9 33d2            xor     edx,edx
+00007ffb`72b338bb 3909            cmp     dword ptr [rcx],ecx
+00007ffb`72b338bd e84ebef2ff      call    00007ffb`72a5f710 (System.Reflection.MethodBase.Invoke(System.Object, System.Object[]), mdToken: 00000000060045e2)
+00007ffb`72b338c2 48898500fdffff  mov     qword ptr [rbp-300h],rax
+00007ffb`72b338c9 488b8500fdffff  mov     rax,qword ptr [rbp-300h]
+00007ffb`72b338d0 48898560feffff  mov     qword ptr [rbp-1A0h],rax
+00007ffb`72b338d7 90              nop
+00007ffb`72b338d8 eb00            jmp     00007ffb`72b338da
+00007ffb`72b338da 488b8560feffff  mov     rax,qword ptr [rbp-1A0h]
+00007ffb`72b338e1 488d65f0        lea     rsp,[rbp-10h]
+00007ffb`72b338e5 5e              pop     rsi
+00007ffb`72b338e6 5f              pop     rdi
+00007ffb`72b338e7 5d              pop     rbp
+00007ffb`72b338e8 c3              ret

@@ -1,0 +1,50 @@
+00007ff9`6016ecb0 55              push    rbp
+00007ff9`6016ecb1 57              push    rdi
+00007ff9`6016ecb2 56              push    rsi
+00007ff9`6016ecb3 4883ec40        sub     rsp,40h
+00007ff9`6016ecb7 488d6c2450      lea     rbp,[rsp+50h]
+00007ff9`6016ecbc 488bf1          mov     rsi,rcx
+00007ff9`6016ecbf 488d7dd8        lea     rdi,[rbp-28h]
+00007ff9`6016ecc3 b906000000      mov     ecx,6
+00007ff9`6016ecc8 33c0            xor     eax,eax
+00007ff9`6016ecca f3ab            rep stos dword ptr [rdi]
+00007ff9`6016eccc 488bce          mov     rcx,rsi
+00007ff9`6016eccf 894d10          mov     dword ptr [rbp+10h],ecx
+00007ff9`6016ecd2 895518          mov     dword ptr [rbp+18h],edx
+00007ff9`6016ecd5 833de458d0ff00  cmp     dword ptr [00007ff9`5fe745c0],0
+00007ff9`6016ecdc 7405            je      00007ff9`6016ece3
+00007ff9`6016ecde e8cd4b8c5f      call    clr!JIT_DbgIsJustMyCode (00007ff9`bfa338b0)
+00007ff9`6016ece3 90              nop
+00007ff9`6016ece4 8b4d10          mov     ecx,dword ptr [rbp+10h]
+00007ff9`6016ece7 3b4d18          cmp     ecx,dword ptr [rbp+18h]
+00007ff9`6016ecea 0f9fc1          setg    cl
+00007ff9`6016eced 0fb6c9          movzx   ecx,cl
+00007ff9`6016ecf0 894dec          mov     dword ptr [rbp-14h],ecx
+00007ff9`6016ecf3 837dec00        cmp     dword ptr [rbp-14h],0
+00007ff9`6016ecf7 7408            je      00007ff9`6016ed01
+00007ff9`6016ecf9 90              nop
+00007ff9`6016ecfa 8b4d18          mov     ecx,dword ptr [rbp+18h]
+00007ff9`6016ecfd 894d10          mov     dword ptr [rbp+10h],ecx
+00007ff9`6016ed00 90              nop
+00007ff9`6016ed01 48b9685be0b61b020000 mov rcx,21BB6E05B68h
+00007ff9`6016ed0b 488b09          mov     rcx,qword ptr [rcx]
+00007ff9`6016ed0e 48894dd8        mov     qword ptr [rbp-28h],rcx
+00007ff9`6016ed12 488b4dd8        mov     rcx,qword ptr [rbp-28h]
+00007ff9`6016ed16 448b4518        mov     r8d,dword ptr [rbp+18h]
+00007ff9`6016ed1a 41ffc0          inc     r8d
+00007ff9`6016ed1d 8b5510          mov     edx,dword ptr [rbp+10h]
+00007ff9`6016ed20 488b45d8        mov     rax,qword ptr [rbp-28h]
+00007ff9`6016ed24 488b00          mov     rax,qword ptr [rax]
+00007ff9`6016ed27 488b4040        mov     rax,qword ptr [rax+40h]
+00007ff9`6016ed2b ff5030          call    qword ptr [rax+30h]
+00007ff9`6016ed2e 8945e4          mov     dword ptr [rbp-1Ch],eax
+00007ff9`6016ed31 8b45e4          mov     eax,dword ptr [rbp-1Ch]
+00007ff9`6016ed34 8945e8          mov     dword ptr [rbp-18h],eax
+00007ff9`6016ed37 90              nop
+00007ff9`6016ed38 eb00            jmp     00007ff9`6016ed3a
+00007ff9`6016ed3a 8b45e8          mov     eax,dword ptr [rbp-18h]
+00007ff9`6016ed3d 488d65f0        lea     rsp,[rbp-10h]
+00007ff9`6016ed41 5e              pop     rsi
+00007ff9`6016ed42 5f              pop     rdi
+00007ff9`6016ed43 5d              pop     rbp
+00007ff9`6016ed44 c3              ret

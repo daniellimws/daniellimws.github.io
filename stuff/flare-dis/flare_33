@@ -1,0 +1,67 @@
+00007ff9`60108770 55              push    rbp
+00007ff9`60108771 57              push    rdi
+00007ff9`60108772 56              push    rsi
+00007ff9`60108773 4883ec50        sub     rsp,50h
+00007ff9`60108777 488d6c2460      lea     rbp,[rsp+60h]
+00007ff9`6010877c 488bf1          mov     rsi,rcx
+00007ff9`6010877f 488d7dc0        lea     rdi,[rbp-40h]
+00007ff9`60108783 b90c000000      mov     ecx,0Ch
+00007ff9`60108788 33c0            xor     eax,eax
+00007ff9`6010878a f3ab            rep stos dword ptr [rdi]
+00007ff9`6010878c 488bce          mov     rcx,rsi
+00007ff9`6010878f 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ff9`60108793 833d26bed6ff00  cmp     dword ptr [00007ff9`5fe745c0],0
+00007ff9`6010879a 7405            je      00007ff9`601087a1
+00007ff9`6010879c e80fb1925f      call    clr!JIT_DbgIsJustMyCode (00007ff9`bfa338b0)
+00007ff9`601087a1 90              nop
+00007ff9`601087a2 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ff9`601087a6 33d2            xor     edx,edx
+00007ff9`601087a8 483b5108        cmp     rdx,qword ptr [rcx+8]
+00007ff9`601087ac 7205            jb      00007ff9`601087b3
+00007ff9`601087ae e85dde925f      call    clr!JIT_RngChkFail (00007ff9`bfa36610)
+00007ff9`601087b3 488d4c1110      lea     rcx,[rcx+rdx+10h]
+00007ff9`601087b8 0fb609          movzx   ecx,byte ptr [rcx]
+00007ff9`601087bb 81f980000000    cmp     ecx,80h
+00007ff9`601087c1 0f9dc1          setge   cl
+00007ff9`601087c4 0fb6c9          movzx   ecx,cl
+00007ff9`601087c7 894dec          mov     dword ptr [rbp-14h],ecx
+00007ff9`601087ca 837dec00        cmp     dword ptr [rbp-14h],0
+00007ff9`601087ce 0f8487000000    je      00007ff9`6010885b
+00007ff9`601087d4 90              nop
+00007ff9`601087d5 c70585c1d6ff00000000 mov dword ptr [00007ff9`5fe74964],0
+00007ff9`601087df 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ff9`601087e3 ba01000000      mov     edx,1
+00007ff9`601087e8 e86391e9ff      call    00007ff9`5ffa1950 (System.Linq.Enumerable.Skip[[System.Byte, mscorlib]](System.Collections.Generic.IEnumerable`1<Byte>, Int32), mdToken: 0000000006000b3d)
+00007ff9`601087ed 488945d8        mov     qword ptr [rbp-28h],rax
+00007ff9`601087f1 488b4dd8        mov     rcx,qword ptr [rbp-28h]
+00007ff9`601087f5 ba03000000      mov     edx,3
+00007ff9`601087fa e86191e9ff      call    00007ff9`5ffa1960 (System.Linq.Enumerable.Take[[System.Byte, mscorlib]](System.Collections.Generic.IEnumerable`1<Byte>, Int32), mdToken: 0000000006000b37)
+00007ff9`601087ff 488945d0        mov     qword ptr [rbp-30h],rax
+00007ff9`60108803 488b4dd0        mov     rcx,qword ptr [rbp-30h]
+00007ff9`60108807 e86491e9ff      call    00007ff9`5ffa1970 (System.Linq.Enumerable.ToArray[[System.Byte, mscorlib]](System.Collections.Generic.IEnumerable`1<Byte>), mdToken: 0000000006000b6e)
+00007ff9`6010880c 488945c8        mov     qword ptr [rbp-38h],rax
+00007ff9`60108810 488b4dc8        mov     rcx,qword ptr [rbp-38h]
+00007ff9`60108814 e8f77ce7ff      call    00007ff9`5ff80510 (FlareOn.Backdoor.FLARE15.flare_62(Byte[]), mdToken: 00000000060000ab)
+00007ff9`60108819 8945e4          mov     dword ptr [rbp-1Ch],eax
+00007ff9`6010881c 8b55e4          mov     edx,dword ptr [rbp-1Ch]
+00007ff9`6010881f 89153bc1d6ff    mov     dword ptr [00007ff9`5fe74960],edx
+00007ff9`60108825 8b1535c1d6ff    mov     edx,dword ptr [00007ff9`5fe74960]
+00007ff9`6010882b 48b9ca4f2ebbf97f0000 mov rcx,offset mscorlib_ni!Sort+0x6a (00007ff9`bb2e4fca)
+00007ff9`60108835 e81674635f      call    clr!JIT_NewArr1VC_MP_InlineGetThread (00007ff9`bf73fc50)
+00007ff9`6010883a 488945c0        mov     qword ptr [rbp-40h],rax
+00007ff9`6010883e 48b9205b74bdf6010000 mov rcx,1F6BD745B20h
+00007ff9`60108848 488b55c0        mov     rdx,qword ptr [rbp-40h]
+00007ff9`6010884c e88f4f635f      call    clr!JIT_CheckedWriteBarrier (00007ff9`bf73d7e0)
+00007ff9`60108851 c745e801000000  mov     dword ptr [rbp-18h],1
+00007ff9`60108858 90              nop
+00007ff9`60108859 eb08            jmp     00007ff9`60108863
+00007ff9`6010885b 33c0            xor     eax,eax
+00007ff9`6010885d 8945e8          mov     dword ptr [rbp-18h],eax
+00007ff9`60108860 90              nop
+00007ff9`60108861 eb00            jmp     00007ff9`60108863
+00007ff9`60108863 8b45e8          mov     eax,dword ptr [rbp-18h]
+00007ff9`60108866 488d65f0        lea     rsp,[rbp-10h]
+00007ff9`6010886a 5e              pop     rsi
+00007ff9`6010886b 5f              pop     rdi
+00007ff9`6010886c 5d              pop     rbp
+00007ff9`6010886d c3              ret

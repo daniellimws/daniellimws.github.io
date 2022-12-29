@@ -1,0 +1,76 @@
+00007ffb`729f67f0 55              push    rbp
+00007ffb`729f67f1 57              push    rdi
+00007ffb`729f67f2 4883ec78        sub     rsp,78h
+00007ffb`729f67f6 488dac2480000000 lea     rbp,[rsp+80h]
+00007ffb`729f67fe 488d7da8        lea     rdi,[rbp-58h]
+00007ffb`729f6802 b914000000      mov     ecx,14h
+00007ffb`729f6807 33c0            xor     eax,eax
+00007ffb`729f6809 f3ab            rep stos dword ptr [rdi]
+00007ffb`729f680b 833daeddcaff00  cmp     dword ptr [00007ffb`726a45c0],0
+00007ffb`729f6812 7405            je      00007ffb`729f6819
+00007ffb`729f6814 e897d0855f      call    clr!JIT_DbgIsJustMyCode (00007ffb`d22538b0)
+00007ffb`729f6819 48b928809b72fb7f0000 mov rcx,7FFB729B8028h (MT: FlareOn.Backdoor.FLARE05+<>c__DisplayClass0_0)
+00007ffb`729f6823 e83893565f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffb`d1f5fb60)
+00007ffb`729f6828 488945b8        mov     qword ptr [rbp-48h],rax
+00007ffb`729f682c 488b4db8        mov     rcx,qword ptr [rbp-48h]
+00007ffb`729f6830 e8db5cddff      call    00007ffb`727cc510 (FlareOn.Backdoor.FLARE05+<>c__DisplayClass0_0..ctor(), mdToken: 0000000006000050)
+00007ffb`729f6835 488b45b8        mov     rax,qword ptr [rbp-48h]
+00007ffb`729f6839 488945c0        mov     qword ptr [rbp-40h],rax
+00007ffb`729f683d 90              nop
+00007ffb`729f683e 488b45c0        mov     rax,qword ptr [rbp-40h]
+00007ffb`729f6842 c7400801000000  mov     dword ptr [rax+8],1
+00007ffb`729f6849 e8f238ddff      call    00007ffb`727ca140 (FlareOn.Backdoor.FLARE03.flare_11(), mdToken: 000000000600001b)
+00007ffb`729f684e 488945d8        mov     qword ptr [rbp-28h],rax
+00007ffb`729f6852 488b4dd8        mov     rcx,qword ptr [rbp-28h]
+00007ffb`729f6856 48894de8        mov     qword ptr [rbp-18h],rcx
+00007ffb`729f685a 488d4de8        lea     rcx,[rbp-18h]
+00007ffb`729f685e e85decec5e      call    mscorlib_ni!System.Nullable`1.get_HasValue+0x13890 (00007ffb`d18c54c0) (System.Nullable`1[[System.Int32, mscorlib]].get_HasValue(), mdToken: 00000000060015ce)
+00007ffb`729f6863 0fb6c8          movzx   ecx,al
+00007ffb`729f6866 894dd4          mov     dword ptr [rbp-2Ch],ecx
+00007ffb`729f6869 837dd400        cmp     dword ptr [rbp-2Ch],0
+00007ffb`729f686d 7549            jne     00007ffb`729f68b8
+00007ffb`729f686f 48b9185483d0fb7f0000 mov rcx,offset mscorlib_ni!ToObject+0x50 (00007ffb`d0835418) (MT: System.Func`1[[System.Boolean, mscorlib]])
+00007ffb`729f6879 e8e292565f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffb`d1f5fb60)
+00007ffb`729f687e 488945a8        mov     qword ptr [rbp-58h],rax
+00007ffb`729f6882 49b848a27c72fb7f0000 mov r8,7FFB727CA248h
+00007ffb`729f688c 488b4da8        mov     rcx,qword ptr [rbp-58h]
+00007ffb`729f6890 33d2            xor     edx,edx
+00007ffb`729f6892 49b980097e87d9010000 mov r9,1D9877E0980h
+00007ffb`729f689c e8df57385e      call    mscorlib_ni!System.MulticastDelegate.CtorOpened (00007ffb`d0d7c080)
+00007ffb`729f68a1 488b4da8        mov     rcx,qword ptr [rbp-58h]
+00007ffb`729f68a5 e8de39ddff      call    00007ffb`727ca288 (FlareOn.Backdoor.FLARE05.flare_31(System.Func`1<Boolean>), mdToken: 0000000006000048)
+00007ffb`729f68aa 0fb6c8          movzx   ecx,al
+00007ffb`729f68ad 894dc8          mov     dword ptr [rbp-38h],ecx
+00007ffb`729f68b0 8b4dc8          mov     ecx,dword ptr [rbp-38h]
+00007ffb`729f68b3 894dd0          mov     dword ptr [rbp-30h],ecx
+00007ffb`729f68b6 eb07            jmp     00007ffb`729f68bf
+00007ffb`729f68b8 c745d001000000  mov     dword ptr [rbp-30h],1
+00007ffb`729f68bf 8b4dd0          mov     ecx,dword ptr [rbp-30h]
+00007ffb`729f68c2 0fb6c9          movzx   ecx,cl
+00007ffb`729f68c5 894df4          mov     dword ptr [rbp-0Ch],ecx
+00007ffb`729f68c8 837df400        cmp     dword ptr [rbp-0Ch],0
+00007ffb`729f68cc 743c            je      00007ffb`729f690a
+00007ffb`729f68ce 90              nop
+00007ffb`729f68cf 48b9185483d0fb7f0000 mov rcx,offset mscorlib_ni!ToObject+0x50 (00007ffb`d0835418) (MT: System.Func`1[[System.Boolean, mscorlib]])
+00007ffb`729f68d9 e88292565f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffb`d1f5fb60)
+00007ffb`729f68de 488945b0        mov     qword ptr [rbp-50h],rax
+00007ffb`729f68e2 49b818c57c72fb7f0000 mov r8,7FFB727CC518h
+00007ffb`729f68ec 488b4db0        mov     rcx,qword ptr [rbp-50h]
+00007ffb`729f68f0 488b55c0        mov     rdx,qword ptr [rbp-40h]
+00007ffb`729f68f4 e8a7b9365e      call    mscorlib_ni!System.MulticastDelegate.CtorClosed (00007ffb`d0d622a0)
+00007ffb`729f68f9 488b4db0        mov     rcx,qword ptr [rbp-50h]
+00007ffb`729f68fd e88639ddff      call    00007ffb`727ca288 (FlareOn.Backdoor.FLARE05.flare_31(System.Func`1<Boolean>), mdToken: 0000000006000048)
+00007ffb`729f6902 0fb6c0          movzx   eax,al
+00007ffb`729f6905 8945cc          mov     dword ptr [rbp-34h],eax
+00007ffb`729f6908 90              nop
+00007ffb`729f6909 90              nop
+00007ffb`729f690a 488b45c0        mov     rax,qword ptr [rbp-40h]
+00007ffb`729f690e 8b4008          mov     eax,dword ptr [rax+8]
+00007ffb`729f6911 8945e4          mov     dword ptr [rbp-1Ch],eax
+00007ffb`729f6914 90              nop
+00007ffb`729f6915 eb00            jmp     00007ffb`729f6917
+00007ffb`729f6917 8b45e4          mov     eax,dword ptr [rbp-1Ch]
+00007ffb`729f691a 488d65f8        lea     rsp,[rbp-8]
+00007ffb`729f691e 5f              pop     rdi
+00007ffb`729f691f 5d              pop     rbp
+00007ffb`729f6920 c3              ret

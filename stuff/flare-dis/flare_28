@@ -1,0 +1,19 @@
+00007ffe`4eb8b4f0 55              push    rbp
+00007ffe`4eb8b4f1 4883ec20        sub     rsp,20h
+00007ffe`4eb8b4f5 488d6c2420      lea     rbp,[rsp+20h]
+00007ffe`4eb8b4fa 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ffe`4eb8b4fe 833dbb90d0ff00  cmp     dword ptr [00007ffe`4e8945c0],0
+00007ffe`4eb8b505 7405            je      00007ffe`4eb8b50c
+00007ffe`4eb8b507 e8a4838e5f      call    clr!JIT_DbgIsJustMyCode (00007ffe`ae4738b0)
+00007ffe`4eb8b50c 90              nop
+00007ffe`4eb8b50d c7055594d0ff00000000 mov dword ptr [00007ffe`4e89496c],0
+00007ffe`4eb8b517 488b5510        mov     rdx,qword ptr [rbp+10h]
+00007ffe`4eb8b51b 8b5208          mov     edx,dword ptr [rdx+8]
+00007ffe`4eb8b51e 89154494d0ff    mov     dword ptr [00007ffe`4e894968],edx
+00007ffe`4eb8b524 48b9285ba04adc010000 mov rcx,1DC4AA05B28h
+00007ffe`4eb8b52e 488b5510        mov     rdx,qword ptr [rbp+10h]
+00007ffe`4eb8b532 e8a9225f5f      call    clr!JIT_CheckedWriteBarrier (00007ffe`ae17d7e0)
+00007ffe`4eb8b537 90              nop
+00007ffe`4eb8b538 488d6500        lea     rsp,[rbp]
+00007ffe`4eb8b53c 5d              pop     rbp
+00007ffe`4eb8b53d c3              ret

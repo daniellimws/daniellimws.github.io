@@ -1,0 +1,149 @@
+00007ff9`7b52c9f0 55              push    rbp
+00007ff9`7b52c9f1 57              push    rdi
+00007ff9`7b52c9f2 56              push    rsi
+00007ff9`7b52c9f3 4881ecc0000000  sub     rsp,0C0h
+00007ff9`7b52c9fa 488dac24d0000000 lea     rbp,[rsp+0D0h]
+00007ff9`7b52ca02 488bf1          mov     rsi,rcx
+00007ff9`7b52ca05 488dbd58ffffff  lea     rdi,[rbp-0A8h]
+00007ff9`7b52ca0c b926000000      mov     ecx,26h
+00007ff9`7b52ca11 33c0            xor     eax,eax
+00007ff9`7b52ca13 f3ab            rep stos dword ptr [rdi]
+00007ff9`7b52ca15 488bce          mov     rcx,rsi
+00007ff9`7b52ca18 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ff9`7b52ca1c 833d9d7bd9ff00  cmp     dword ptr [00007ff9`7b2c45c0],0
+00007ff9`7b52ca23 7405            je      00007ff9`7b52ca2a
+00007ff9`7b52ca25 e8866e975f      call    clr!JIT_DbgIsJustMyCode (00007ff9`daea38b0)
+00007ff9`7b52ca2a 90              nop
+00007ff9`7b52ca2b 8b0d377fd9ff    mov     ecx,dword ptr [00007ff9`7b2c4968]
+00007ff9`7b52ca31 2b0d357fd9ff    sub     ecx,dword ptr [00007ff9`7b2c496c]
+00007ff9`7b52ca37 894dec          mov     dword ptr [rbp-14h],ecx
+00007ff9`7b52ca3a 8b0d087fd9ff    mov     ecx,dword ptr [00007ff9`7b2c4948]
+00007ff9`7b52ca40 8b55ec          mov     edx,dword ptr [rbp-14h]
+00007ff9`7b52ca43 e888facd5e      call    mscorlib_ni!System.Math.Min (00007ff9`da20c4d0)
+00007ff9`7b52ca48 8945c4          mov     dword ptr [rbp-3Ch],eax
+00007ff9`7b52ca4b 8b4dc4          mov     ecx,dword ptr [rbp-3Ch]
+00007ff9`7b52ca4e 894de8          mov     dword ptr [rbp-18h],ecx
+00007ff9`7b52ca51 c745c003000000  mov     dword ptr [rbp-40h],3
+00007ff9`7b52ca58 8b0d0e7fd9ff    mov     ecx,dword ptr [00007ff9`7b2c496c]
+00007ff9`7b52ca5e e88d3aeaff      call    00007ff9`7b3d04f0 (FlareOn.Backdoor.FLARE15.flare_60(Int32), mdToken: 00000000060000a7)
+00007ff9`7b52ca63 48894598        mov     qword ptr [rbp-68h],rax
+00007ff9`7b52ca67 c745bc03000000  mov     dword ptr [rbp-44h],3
+00007ff9`7b52ca6e 48b9f85ada28c9010000 mov rcx,1C928DA5AF8h
+00007ff9`7b52ca78 488b09          mov     rcx,qword ptr [rcx]
+00007ff9`7b52ca7b 33d2            xor     edx,edx
+00007ff9`7b52ca7d 3909            cmp     dword ptr [rcx],ecx
+00007ff9`7b52ca7f e8ecbac25f      call    clr!COMString::GetCharAt (00007ff9`db158570)
+00007ff9`7b52ca84 0fb7c8          movzx   ecx,ax
+00007ff9`7b52ca87 894db8          mov     dword ptr [rbp-48h],ecx
+00007ff9`7b52ca8a 488b4d98        mov     rcx,qword ptr [rbp-68h]
+00007ff9`7b52ca8e 8b55bc          mov     edx,dword ptr [rbp-44h]
+00007ff9`7b52ca91 448b45b8        mov     r8d,dword ptr [rbp-48h]
+00007ff9`7b52ca95 3909            cmp     dword ptr [rcx],ecx
+00007ff9`7b52ca97 e8a487b55e      call    mscorlib_ni!System.String.PadLeft (00007ff9`da085240)
+00007ff9`7b52ca9c 48894590        mov     qword ptr [rbp-70h],rax
+00007ff9`7b52caa0 8b0dbe7ed9ff    mov     ecx,dword ptr [00007ff9`7b2c4964]
+00007ff9`7b52caa6 e8453aeaff      call    00007ff9`7b3d04f0 (FlareOn.Backdoor.FLARE15.flare_60(Int32), mdToken: 00000000060000a7)
+00007ff9`7b52caab 48894588        mov     qword ptr [rbp-78h],rax
+00007ff9`7b52caaf c745b403000000  mov     dword ptr [rbp-4Ch],3
+00007ff9`7b52cab6 48b9f85ada28c9010000 mov rcx,1C928DA5AF8h
+00007ff9`7b52cac0 488b09          mov     rcx,qword ptr [rcx]
+00007ff9`7b52cac3 33d2            xor     edx,edx
+00007ff9`7b52cac5 3909            cmp     dword ptr [rcx],ecx
+00007ff9`7b52cac7 e8a4bac25f      call    clr!COMString::GetCharAt (00007ff9`db158570)
+00007ff9`7b52cacc 0fb7c8          movzx   ecx,ax
+00007ff9`7b52cacf 894db0          mov     dword ptr [rbp-50h],ecx
+00007ff9`7b52cad2 488b4d88        mov     rcx,qword ptr [rbp-78h]
+00007ff9`7b52cad6 8b55b4          mov     edx,dword ptr [rbp-4Ch]
+00007ff9`7b52cad9 448b45b0        mov     r8d,dword ptr [rbp-50h]
+00007ff9`7b52cadd 3909            cmp     dword ptr [rcx],ecx
+00007ff9`7b52cadf e85c87b55e      call    mscorlib_ni!System.String.PadLeft (00007ff9`da085240)
+00007ff9`7b52cae4 48894580        mov     qword ptr [rbp-80h],rax
+00007ff9`7b52cae8 48b9285bda28c9010000 mov rcx,1C928DA5B28h
+00007ff9`7b52caf2 488b09          mov     rcx,qword ptr [rcx]
+00007ff9`7b52caf5 8b15717ed9ff    mov     edx,dword ptr [00007ff9`7b2c496c]
+00007ff9`7b52cafb e828faebff      call    00007ff9`7b3ec528 (System.Linq.Enumerable.Skip[[System.Byte, mscorlib]](System.Collections.Generic.IEnumerable`1<Byte>, Int32), mdToken: 0000000006000b3d)
+00007ff9`7b52cb00 48898578ffffff  mov     qword ptr [rbp-88h],rax
+00007ff9`7b52cb07 488b8d78ffffff  mov     rcx,qword ptr [rbp-88h]
+00007ff9`7b52cb0e 8b55e8          mov     edx,dword ptr [rbp-18h]
+00007ff9`7b52cb11 e822faebff      call    00007ff9`7b3ec538 (System.Linq.Enumerable.Take[[System.Byte, mscorlib]](System.Collections.Generic.IEnumerable`1<Byte>, Int32), mdToken: 0000000006000b37)
+00007ff9`7b52cb16 48898570ffffff  mov     qword ptr [rbp-90h],rax
+00007ff9`7b52cb1d 488b8d70ffffff  mov     rcx,qword ptr [rbp-90h]
+00007ff9`7b52cb24 e81ffaebff      call    00007ff9`7b3ec548 (System.Linq.Enumerable.ToArray[[System.Byte, mscorlib]](System.Collections.Generic.IEnumerable`1<Byte>), mdToken: 0000000006000b6e)
+00007ff9`7b52cb29 48898568ffffff  mov     qword ptr [rbp-98h],rax
+00007ff9`7b52cb30 488b8d68ffffff  mov     rcx,qword ptr [rbp-98h]
+00007ff9`7b52cb37 e824faebff      call    00007ff9`7b3ec560 (FlareOn.Backdoor.FLARE01.flare_01(Byte[]), mdToken: 0000000006000002)
+00007ff9`7b52cb3c 48898560ffffff  mov     qword ptr [rbp-0A0h],rax
+00007ff9`7b52cb43 488b4d90        mov     rcx,qword ptr [rbp-70h]
+00007ff9`7b52cb47 488b5580        mov     rdx,qword ptr [rbp-80h]
+00007ff9`7b52cb4b 4c8b8560ffffff  mov     r8,qword ptr [rbp-0A0h]
+00007ff9`7b52cb52 e879ab485e      call    mscorlib_ni!System.String.Concat (00007ff9`d99b76d0)
+00007ff9`7b52cb57 48898558ffffff  mov     qword ptr [rbp-0A8h],rax
+00007ff9`7b52cb5e 8b4dc0          mov     ecx,dword ptr [rbp-40h]
+00007ff9`7b52cb61 488b9558ffffff  mov     rdx,qword ptr [rbp-0A8h]
+00007ff9`7b52cb68 e8fbd6ebff      call    00007ff9`7b3ea268 (FlareOn.Backdoor.FLARE05.flare_29(DomT, System.String), mdToken: 0000000006000044)
+00007ff9`7b52cb6d 90              nop
+00007ff9`7b52cb6e 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ff9`7b52cb72 c70101000000    mov     dword ptr [rcx],1
+00007ff9`7b52cb78 488d4de0        lea     rcx,[rbp-20h]
+00007ff9`7b52cb7c e8f7d6ebff      call    00007ff9`7b3ea278 (FlareOn.Backdoor.FLARE05.flare_30(Byte[] ByRef), mdToken: 0000000006000046)
+00007ff9`7b52cb81 0fb6c8          movzx   ecx,al
+00007ff9`7b52cb84 894dac          mov     dword ptr [rbp-54h],ecx
+00007ff9`7b52cb87 8b4dac          mov     ecx,dword ptr [rbp-54h]
+00007ff9`7b52cb8a 0fb6c9          movzx   ecx,cl
+00007ff9`7b52cb8d 894ddc          mov     dword ptr [rbp-24h],ecx
+00007ff9`7b52cb90 8b4ddc          mov     ecx,dword ptr [rbp-24h]
+00007ff9`7b52cb93 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ff9`7b52cb96 837dd800        cmp     dword ptr [rbp-28h],0
+00007ff9`7b52cb9a 0f847f000000    je      00007ff9`7b52cc1f
+00007ff9`7b52cba0 90              nop
+00007ff9`7b52cba1 488b4de0        mov     rcx,qword ptr [rbp-20h]
+00007ff9`7b52cba5 e8eed6ebff      call    00007ff9`7b3ea298 (FlareOn.Backdoor.FLARE05.flare_32(Byte[]), mdToken: 000000000600004a)
+00007ff9`7b52cbaa 0fb6c8          movzx   ecx,al
+00007ff9`7b52cbad 894da8          mov     dword ptr [rbp-58h],ecx
+00007ff9`7b52cbb0 8b4da8          mov     ecx,dword ptr [rbp-58h]
+00007ff9`7b52cbb3 0fb6c9          movzx   ecx,cl
+00007ff9`7b52cbb6 894dd4          mov     dword ptr [rbp-2Ch],ecx
+00007ff9`7b52cbb9 837dd400        cmp     dword ptr [rbp-2Ch],0
+00007ff9`7b52cbbd 740c            je      00007ff9`7b52cbcb     ; if not done reading, take branch
+00007ff9`7b52cbbf 90              nop
+00007ff9`7b52cbc0 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ff9`7b52cbc4 c70103000000    mov     dword ptr [rcx],3     ; done reading, go to send
+00007ff9`7b52cbca 90              nop
+00007ff9`7b52cbcb 8b4de8          mov     ecx,dword ptr [rbp-18h]
+00007ff9`7b52cbce e8e5d6ebff      call    00007ff9`7b3ea2b8 (FlareOn.Backdoor.FLARE05.flare_34(Int32), mdToken: 000000000600004e)
+00007ff9`7b52cbd3 0fb6c0          movzx   eax,al
+00007ff9`7b52cbd6 8945a4          mov     dword ptr [rbp-5Ch],eax
+00007ff9`7b52cbd9 8b45a4          mov     eax,dword ptr [rbp-5Ch]
+00007ff9`7b52cbdc 0fb6c0          movzx   eax,al
+00007ff9`7b52cbdf 8945d0          mov     dword ptr [rbp-30h],eax
+00007ff9`7b52cbe2 837dd000        cmp     dword ptr [rbp-30h],0
+00007ff9`7b52cbe6 7436            je      00007ff9`7b52cc1e     ; if not done sending, take branch
+00007ff9`7b52cbe8 90              nop                           ; here, done sending
+00007ff9`7b52cbe9 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ff9`7b52cbed 833803          cmp     dword ptr [rax],3
+00007ff9`7b52cbf0 0f94c0          sete    al
+00007ff9`7b52cbf3 0fb6c0          movzx   eax,al
+00007ff9`7b52cbf6 8945cc          mov     dword ptr [rbp-34h],eax
+00007ff9`7b52cbf9 837dcc00        cmp     dword ptr [rbp-34h],0
+00007ff9`7b52cbfd 7414            je      00007ff9`7b52cc13         ; if not done reading, take branch
+00007ff9`7b52cbff 90              nop
+00007ff9`7b52cc00 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ff9`7b52cc04 c70007000000    mov     dword ptr [rax],7         ; done reading, done sending, go to processing
+00007ff9`7b52cc0a 8b45dc          mov     eax,dword ptr [rbp-24h]
+00007ff9`7b52cc0d 8945c8          mov     dword ptr [rbp-38h],eax
+00007ff9`7b52cc10 90              nop
+00007ff9`7b52cc11 eb15            jmp     00007ff9`7b52cc28
+00007ff9`7b52cc13 488b4510        mov     rax,qword ptr [rbp+10h]
+00007ff9`7b52cc17 c70005000000    mov     dword ptr [rax],5         ; not done reading, done sending, transition to read
+00007ff9`7b52cc1d 90              nop
+00007ff9`7b52cc1e 90              nop                               ; if not done sending, not done reading, reset
+00007ff9`7b52cc1f 8b45dc          mov     eax,dword ptr [rbp-24h]   ; if not done sending, done reading, go to send
+00007ff9`7b52cc22 8945c8          mov     dword ptr [rbp-38h],eax
+00007ff9`7b52cc25 90              nop
+00007ff9`7b52cc26 eb00            jmp     00007ff9`7b52cc28
+00007ff9`7b52cc28 8b45c8          mov     eax,dword ptr [rbp-38h]
+00007ff9`7b52cc2b 488d65f0        lea     rsp,[rbp-10h]
+00007ff9`7b52cc2f 5e              pop     rsi
+00007ff9`7b52cc30 5f              pop     rdi
+00007ff9`7b52cc31 5d              pop     rbp
+00007ff9`7b52cc32 c3              ret

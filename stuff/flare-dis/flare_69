@@ -1,0 +1,146 @@
+00007ffb`7286ccf0 55              push    rbp
+00007ffb`7286ccf1 57              push    rdi
+00007ffb`7286ccf2 56              push    rsi
+00007ffb`7286ccf3 4881ece0000000  sub     rsp,0E0h
+00007ffb`7286ccfa c5f877          vzeroupper
+00007ffb`7286ccfd 488dac24f0000000 lea     rbp,[rsp+0F0h]
+00007ffb`7286cd05 488bf1          mov     rsi,rcx
+00007ffb`7286cd08 488dbd38ffffff  lea     rdi,[rbp-0C8h]
+00007ffb`7286cd0f b92e000000      mov     ecx,2Eh
+00007ffb`7286cd14 33c0            xor     eax,eax
+00007ffb`7286cd16 f3ab            rep stos dword ptr [rdi]
+00007ffb`7286cd18 488bce          mov     rcx,rsi
+00007ffb`7286cd1b 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ffb`7286cd1f 833d9a78e2ff00  cmp     dword ptr [00007ffb`726945c0],0
+00007ffb`7286cd26 7405            je      00007ffb`7286cd2d
+00007ffb`7286cd28 e8836b9e5f      call    clr!JIT_DbgIsJustMyCode (00007ffb`d22538b0)
+00007ffb`7286cd2d 90              nop
+00007ffb`7286cd2e e83df6505e      call    mscorlib_ni!System.Reflection.Assembly.GetExecutingAssembly (00007ffb`d0d7c370)
+00007ffb`7286cd33 48898570ffffff  mov     qword ptr [rbp-90h],rax
+00007ffb`7286cd3a 488b8d70ffffff  mov     rcx,qword ptr [rbp-90h]
+00007ffb`7286cd41 488b8570ffffff  mov     rax,qword ptr [rbp-90h]
+00007ffb`7286cd48 488b00          mov     rax,qword ptr [rax]
+00007ffb`7286cd4b 488b4070        mov     rax,qword ptr [rax+70h]
+00007ffb`7286cd4f ff5020          call    qword ptr [rax+20h]
+00007ffb`7286cd52 48898568ffffff  mov     qword ptr [rbp-98h],rax
+00007ffb`7286cd59 488b8d68ffffff  mov     rcx,qword ptr [rbp-98h]
+00007ffb`7286cd60 48894da0        mov     qword ptr [rbp-60h],rcx
+00007ffb`7286cd64 48b9f0a66972fb7f0000 mov rcx,7FFB7269A6F0h (MT: FlareOn.Backdoor.FLARE09)
+00007ffb`7286cd6e e8ed2d6f5f      call    clr!JIT_TrialAllocSFastMP_InlineGetThread (00007ffb`d1f5fb60)
+00007ffb`7286cd73 48898560ffffff  mov     qword ptr [rbp-0A0h],rax
+00007ffb`7286cd7a 488b8d60ffffff  mov     rcx,qword ptr [rbp-0A0h]
+00007ffb`7286cd81 e85ac4f4ff      call    00007ffb`727b91e0 (FlareOn.Backdoor.FLARE09..ctor(), mdToken: 0000000006000065)
+00007ffb`7286cd86 488b8d60ffffff  mov     rcx,qword ptr [rbp-0A0h]
+00007ffb`7286cd8d 48894d98        mov     qword ptr [rbp-68h],rcx
+00007ffb`7286cd91 488b4da0        mov     rcx,qword ptr [rbp-60h]
+00007ffb`7286cd95 e896c4f4ff      call    00007ffb`727b9230 (FlareOn.Backdoor.FLARE09.flare_37(System.String), mdToken: 0000000006000059)
+00007ffb`7286cd9a 90              nop
+00007ffb`7286cd9b 33c9            xor     ecx,ecx
+00007ffb`7286cd9d 48894d90        mov     qword ptr [rbp-70h],rcx
+00007ffb`7286cda1 48b9304187d0fb7f0000 mov rcx,offset mscorlib_ni!GenerateRandomBytes+0x17 (00007ffb`d0874130) (MT: System.IO.FileStream)
+00007ffb`7286cdab e8d0ec615f      call    clr!JIT_NewCrossContext_Portable (00007ffb`d1e8ba80)
+00007ffb`7286cdb0 48898558ffffff  mov     qword ptr [rbp-0A8h],rax
+00007ffb`7286cdb7 488b8d58ffffff  mov     rcx,qword ptr [rbp-0A8h]
+00007ffb`7286cdbe 488b55a0        mov     rdx,qword ptr [rbp-60h]
+00007ffb`7286cdc2 41b803000000    mov     r8d,3
+00007ffb`7286cdc8 41b901000000    mov     r9d,1
+00007ffb`7286cdce e83dacf4ff      call    00007ffb`727b7a10
+00007ffb`7286cdd3 488b8d58ffffff  mov     rcx,qword ptr [rbp-0A8h]
+00007ffb`7286cdda 48894d88        mov     qword ptr [rbp-78h],rcx
+00007ffb`7286cdde 90              nop
+00007ffb`7286cddf 90              nop
+00007ffb`7286cde0 488b4d98        mov     rcx,qword ptr [rbp-68h]
+00007ffb`7286cde4 3909            cmp     dword ptr [rcx],ecx
+00007ffb`7286cde6 e895ccf4ff      call    00007ffb`727b9a80 (FlareOn.Backdoor.FLARE09.get_ImageSectionHeaders(), mdToken: 0000000006000063)
+00007ffb`7286cdeb 48898550ffffff  mov     qword ptr [rbp-0B0h],rax
+00007ffb`7286cdf2 488b9550ffffff  mov     rdx,qword ptr [rbp-0B0h]
+00007ffb`7286cdf9 48895580        mov     qword ptr [rbp-80h],rdx
+00007ffb`7286cdfd 33d2            xor     edx,edx
+00007ffb`7286cdff 8955ec          mov     dword ptr [rbp-14h],edx
+00007ffb`7286ce02 90              nop
+00007ffb`7286ce03 e904010000      jmp     00007ffb`7286cf0c
+00007ffb`7286ce08 488b5580        mov     rdx,qword ptr [rbp-80h]
+00007ffb`7286ce0c 8b4dec          mov     ecx,dword ptr [rbp-14h]
+00007ffb`7286ce0f 483b4a08        cmp     rcx,qword ptr [rdx+8]
+00007ffb`7286ce13 7205            jb      00007ffb`7286ce1a
+00007ffb`7286ce15 e8f6979e5f      call    clr!JIT_RngChkFail (00007ffb`d2256610)
+00007ffb`7286ce1a b828000000      mov     eax,28h
+00007ffb`7286ce1f 480fafc1        imul    rax,rcx
+00007ffb`7286ce23 488d540210      lea     rdx,[rdx+rax+10h]
+00007ffb`7286ce28 c4e17a6f02      vmovdqu xmm0,xmmword ptr [rdx]
+00007ffb`7286ce2d c4e17a7f45c0    vmovdqu xmmword ptr [rbp-40h],xmm0
+00007ffb`7286ce33 c4e17a6f4210    vmovdqu xmm0,xmmword ptr [rdx+10h]
+00007ffb`7286ce39 c4e17a7f45d0    vmovdqu xmmword ptr [rbp-30h],xmm0
+00007ffb`7286ce3f 488b4a20        mov     rcx,qword ptr [rdx+20h]
+00007ffb`7286ce43 48894de0        mov     qword ptr [rbp-20h],rcx
+00007ffb`7286ce47 90              nop
+00007ffb`7286ce48 488b5510        mov     rdx,qword ptr [rbp+10h]
+00007ffb`7286ce4c 48899548ffffff  mov     qword ptr [rbp-0B8h],rdx
+00007ffb`7286ce53 488b55c0        mov     rdx,qword ptr [rbp-40h]
+00007ffb`7286ce57 33c9            xor     ecx,ecx
+00007ffb`7286ce59 e822abf4ff      call    00007ffb`727b7980 (System.String.CtorCharArray(Char[]), mdToken: 00000000060004f6)
+00007ffb`7286ce5e 48898540ffffff  mov     qword ptr [rbp-0C0h],rax
+00007ffb`7286ce65 488b8d48ffffff  mov     rcx,qword ptr [rbp-0B8h]
+00007ffb`7286ce6c 488b9540ffffff  mov     rdx,qword ptr [rbp-0C0h]
+00007ffb`7286ce73 3909            cmp     dword ptr [rcx],ecx
+00007ffb`7286ce75 e8b68a4f5e      call    mscorlib_ni!System.String.StartsWith (00007ffb`d0d65930)
+00007ffb`7286ce7a 0fb6d0          movzx   edx,al
+00007ffb`7286ce7d 8955b8          mov     dword ptr [rbp-48h],edx
+00007ffb`7286ce80 8b55b8          mov     edx,dword ptr [rbp-48h]
+00007ffb`7286ce83 0fb6d2          movzx   edx,dl
+00007ffb`7286ce86 8955bc          mov     dword ptr [rbp-44h],edx
+00007ffb`7286ce89 837dbc00        cmp     dword ptr [rbp-44h],0
+00007ffb`7286ce8d 7474            je      00007ffb`7286cf03
+00007ffb`7286ce8f 90              nop
+00007ffb`7286ce90 488d55c0        lea     rdx,[rbp-40h]
+00007ffb`7286ce94 8b5208          mov     edx,dword ptr [rdx+8]
+00007ffb`7286ce97 48b9ca4f81d0fb7f0000 mov rcx,offset mscorlib_ni!Sort+0x6a (00007ffb`d0814fca)
+00007ffb`7286cea1 e8aa2d6f5f      call    clr!JIT_NewArr1VC_MP_InlineGetThread (00007ffb`d1f5fc50)
+00007ffb`7286cea6 48898538ffffff  mov     qword ptr [rbp-0C8h],rax
+00007ffb`7286cead 488b9538ffffff  mov     rdx,qword ptr [rbp-0C8h]
+00007ffb`7286ceb4 48895590        mov     qword ptr [rbp-70h],rdx
+00007ffb`7286ceb8 488d55c0        lea     rdx,[rbp-40h]
+00007ffb`7286cebc 8b5214          mov     edx,dword ptr [rdx+14h]
+00007ffb`7286cebf 8bd2            mov     edx,edx
+00007ffb`7286cec1 488b4d88        mov     rcx,qword ptr [rbp-78h]
+00007ffb`7286cec5 4533c0          xor     r8d,r8d
+00007ffb`7286cec8 488b4588        mov     rax,qword ptr [rbp-78h]
+00007ffb`7286cecc 488b00          mov     rax,qword ptr [rax]
+00007ffb`7286cecf 488b4058        mov     rax,qword ptr [rax+58h]
+00007ffb`7286ced3 ff5038          call    qword ptr [rax+38h]
+00007ffb`7286ced6 488945b0        mov     qword ptr [rbp-50h],rax
+00007ffb`7286ceda 90              nop
+00007ffb`7286cedb 4c8d4dc0        lea     r9,[rbp-40h]
+00007ffb`7286cedf 458b4908        mov     r9d,dword ptr [r9+8]
+00007ffb`7286cee3 488b4d88        mov     rcx,qword ptr [rbp-78h]
+00007ffb`7286cee7 488b5590        mov     rdx,qword ptr [rbp-70h]
+00007ffb`7286ceeb 4533c0          xor     r8d,r8d
+00007ffb`7286ceee 488b4588        mov     rax,qword ptr [rbp-78h]
+00007ffb`7286cef2 488b00          mov     rax,qword ptr [rax]
+00007ffb`7286cef5 488b4060        mov     rax,qword ptr [rax+60h]
+00007ffb`7286cef9 ff5008          call    qword ptr [rax+8]
+00007ffb`7286cefc 8945ac          mov     dword ptr [rbp-54h],eax
+00007ffb`7286ceff 90              nop
+00007ffb`7286cf00 90              nop
+00007ffb`7286cf01 eb19            jmp     00007ffb`7286cf1c
+00007ffb`7286cf03 90              nop
+00007ffb`7286cf04 8b45ec          mov     eax,dword ptr [rbp-14h]
+00007ffb`7286cf07 ffc0            inc     eax
+00007ffb`7286cf09 8945ec          mov     dword ptr [rbp-14h],eax
+00007ffb`7286cf0c 8b55ec          mov     edx,dword ptr [rbp-14h]
+00007ffb`7286cf0f 488b4d80        mov     rcx,qword ptr [rbp-80h]
+00007ffb`7286cf13 3b5108          cmp     edx,dword ptr [rcx+8]
+00007ffb`7286cf16 0f8cecfeffff    jl      00007ffb`7286ce08
+00007ffb`7286cf1c 90              nop
+00007ffb`7286cf1d 90              nop
+00007ffb`7286cf1e eb00            jmp     00007ffb`7286cf20
+00007ffb`7286cf20 488b4590        mov     rax,qword ptr [rbp-70h]
+00007ffb`7286cf24 48898578ffffff  mov     qword ptr [rbp-88h],rax
+00007ffb`7286cf2b 90              nop
+00007ffb`7286cf2c eb00            jmp     00007ffb`7286cf2e
+00007ffb`7286cf2e 488b8578ffffff  mov     rax,qword ptr [rbp-88h]
+00007ffb`7286cf35 488d65f0        lea     rsp,[rbp-10h]
+00007ffb`7286cf39 5e              pop     rsi
+00007ffb`7286cf3a 5f              pop     rdi
+00007ffb`7286cf3b 5d              pop     rbp
+00007ffb`7286cf3c c3              ret

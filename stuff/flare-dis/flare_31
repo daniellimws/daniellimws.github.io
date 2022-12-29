@@ -1,0 +1,77 @@
+00007ffb`72871150 55              push    rbp
+00007ffb`72871151 57              push    rdi
+00007ffb`72871152 56              push    rsi
+00007ffb`72871153 4883ec40        sub     rsp,40h
+00007ffb`72871157 488d6c2450      lea     rbp,[rsp+50h]
+00007ffb`7287115c 488bf1          mov     rsi,rcx
+00007ffb`7287115f 488d7dd0        lea     rdi,[rbp-30h]
+00007ffb`72871163 b908000000      mov     ecx,8
+00007ffb`72871168 33c0            xor     eax,eax
+00007ffb`7287116a f3ab            rep stos dword ptr [rdi]
+00007ffb`7287116c 488bce          mov     rcx,rsi
+00007ffb`7287116f 48894d10        mov     qword ptr [rbp+10h],rcx
+00007ffb`72871173 833d4634e3ff00  cmp     dword ptr [00007ffb`726a45c0],0
+00007ffb`7287117a 7405            je      00007ffb`72871181
+00007ffb`7287117c e82f279e5f      call    clr!JIT_DbgIsJustMyCode (00007ffb`d22538b0)
+00007ffb`72871181 90              nop
+00007ffb`72871182 33c9            xor     ecx,ecx
+00007ffb`72871184 894dec          mov     dword ptr [rbp-14h],ecx
+00007ffb`72871187 c705cb37e3ff00000000 mov dword ptr [00007ffb`726a495c],0
+00007ffb`72871191 90              nop
+00007ffb`72871192 eb0d            jmp     00007ffb`728711a1
+00007ffb`72871194 90              nop
+00007ffb`72871195 b903000000      mov     ecx,3
+00007ffb`7287119a e8a1f3f3ff      call    00007ffb`727b0540 (FlareOn.Backdoor.FLARE15.flare_65(DT), mdToken: 00000000060000b1)
+00007ffb`7287119f 90              nop
+00007ffb`728711a0 90              nop
+00007ffb`728711a1 488b4d10        mov     rcx,qword ptr [rbp+10h]
+00007ffb`728711a5 48894dd0        mov     qword ptr [rbp-30h],rcx
+00007ffb`728711a9 488b4dd0        mov     rcx,qword ptr [rbp-30h]
+00007ffb`728711ad 488d4908        lea     rcx,[rcx+8]
+00007ffb`728711b1 488b09          mov     rcx,qword ptr [rcx]
+00007ffb`728711b4 488b45d0        mov     rax,qword ptr [rbp-30h]
+00007ffb`728711b8 ff5018          call    qword ptr [rax+18h]
+00007ffb`728711bb 0fb6c8          movzx   ecx,al
+00007ffb`728711be 894ddc          mov     dword ptr [rbp-24h],ecx
+00007ffb`728711c1 837ddc00        cmp     dword ptr [rbp-24h],0
+00007ffb`728711c5 7517            jne     00007ffb`728711de
+00007ffb`728711c7 8b0d8f37e3ff    mov     ecx,dword ptr [00007ffb`726a495c]
+00007ffb`728711cd 3b0d6d37e3ff    cmp     ecx,dword ptr [00007ffb`726a4940]
+00007ffb`728711d3 0f9cc1          setl    cl
+00007ffb`728711d6 0fb6c9          movzx   ecx,cl
+00007ffb`728711d9 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`728711dc eb05            jmp     00007ffb`728711e3
+00007ffb`728711de 33c9            xor     ecx,ecx
+00007ffb`728711e0 894dd8          mov     dword ptr [rbp-28h],ecx
+00007ffb`728711e3 8b4dd8          mov     ecx,dword ptr [rbp-28h]
+00007ffb`728711e6 0fb6c9          movzx   ecx,cl
+00007ffb`728711e9 894de8          mov     dword ptr [rbp-18h],ecx
+00007ffb`728711ec 837de800        cmp     dword ptr [rbp-18h],0
+00007ffb`728711f0 75a2            jne     00007ffb`72871194
+00007ffb`728711f2 8b056437e3ff    mov     eax,dword ptr [00007ffb`726a495c]
+00007ffb`728711f8 3b054237e3ff    cmp     eax,dword ptr [00007ffb`726a4940]
+00007ffb`728711fe 0f9dc0          setge   al
+00007ffb`72871201 0fb6c0          movzx   eax,al
+00007ffb`72871204 8945e4          mov     dword ptr [rbp-1Ch],eax
+00007ffb`72871207 837de400        cmp     dword ptr [rbp-1Ch],0
+00007ffb`7287120b 7415            je      00007ffb`72871222
+00007ffb`7287120d 90              nop
+00007ffb`7287120e c7054437e3ff00000000 mov dword ptr [00007ffb`726a495c],0
+00007ffb`72871218 e8038ff5ff      call    00007ffb`727ca120 (FlareOn.Backdoor.FLARE03.flare_09(), mdToken: 0000000006000017)
+00007ffb`7287121d 90              nop
+00007ffb`7287121e 90              nop
+00007ffb`7287121f 90              nop
+00007ffb`72871220 eb09            jmp     00007ffb`7287122b
+00007ffb`72871222 90              nop
+00007ffb`72871223 c745ec01000000  mov     dword ptr [rbp-14h],1
+00007ffb`7287122a 90              nop
+00007ffb`7287122b 8b45ec          mov     eax,dword ptr [rbp-14h]
+00007ffb`7287122e 8945e0          mov     dword ptr [rbp-20h],eax
+00007ffb`72871231 90              nop
+00007ffb`72871232 eb00            jmp     00007ffb`72871234
+00007ffb`72871234 8b45e0          mov     eax,dword ptr [rbp-20h]
+00007ffb`72871237 488d65f0        lea     rsp,[rbp-10h]
+00007ffb`7287123b 5e              pop     rsi
+00007ffb`7287123c 5f              pop     rdi
+00007ffb`7287123d 5d              pop     rbp
+00007ffb`7287123e c3              ret
