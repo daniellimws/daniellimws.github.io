@@ -1,17 +1,17 @@
 {% if site.intro %}
     <div id="intro">
         <div class="container">
-            {% if site.profile_picture %}
+            <!-- {% if site.profile_picture %}
                 <img id="intro-img" src="{{ site.profile_picture }}">
-            {% endif %}
-            <h2>
+            {% endif %} -->
+            <h2 style="margin-top: 0; margin-bottom: 0">
                 {% if site.site_heading %}
                     {{ site.site_heading }}
                 {% else %}
                     {{ site.title }}
                 {% endif %}
             </h2>
-            <p style="margin-top: 30px;">
+            <p style="margin-top: 32px; line-height: 36px;">
                 {{ site.short_bio }}
             </p>
         </div>
