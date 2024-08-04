@@ -1,7 +1,0 @@
-machine:
-opcode - 48
-accum - 62
-imm1 - 52
-imm2 - 54
-
-f = lambda a,b: hex((0x10000-a)^b)[2:].decode('hex')[::-1]

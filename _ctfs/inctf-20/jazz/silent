@@ -1,4 +1,0 @@
-break *0x555555554000+0xced0
-commands
-silent
-end

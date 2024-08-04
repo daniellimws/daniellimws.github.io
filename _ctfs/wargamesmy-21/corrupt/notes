@@ -1,9 +1,0 @@
-extract idat
-deflate idat
-
-len of deflated is 20050 = 401 * 50
-
-educated guess that w = 400, h = 50
-1 extra byte in each row as filter type byte
-
-https://pyokagan.name/blog/2019-10-14-png/#:~:text=Reconstructing%20pixel%20data

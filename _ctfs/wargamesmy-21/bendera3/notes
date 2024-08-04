@@ -1,6 +1,0 @@
-checkout https://github.com/anestisb/vdexExtractor/pull/72
-build
-mkdir out
-vdexExtractor/bin/vdexExtractor -i bendera3 -o out
-
-use jadx to see decompiled
