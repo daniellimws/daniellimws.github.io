@@ -1,0 +1,28 @@
+\import{base-macros}
+
+\title{Toward Integration of Data Race Detection in DSM Systems}
+\date{1999-6}
+\taxon{reference}
+
+\author{Ayal Itzkovitz}
+\author{Assaf Schuster}
+\author{Oren Zeev-Ben-Mordehai}
+\tag{racepred}
+\tag{paper}
+\meta{bibtex}\verb<<<|
+@article{ITZKOVITZ1999180,
+title = {Toward Integration of Data Race Detection in DSM Systems},
+journal = {Journal of Parallel and Distributed Computing},
+volume = {59},
+number = {2},
+pages = {180-203},
+year = {1999},
+issn = {0743-7315},
+doi = {https://doi.org/10.1006/jpdc.1999.1574},
+url = {https://www.sciencedirect.com/science/article/pii/S0743731599915745},
+author = {Ayal Itzkovitz and Assaf Schuster and Oren Zeev-Ben-Mordehai},
+keywords = {distributed shared memory, parallel computation, data race detection, debugging tools},
+abstract = {We present a distributed algorithm, called djit, for detecting data races in dsm systems. djit is designed as a dsm add-on, detecting a race condition as soon as one is created. It instantly displays to the user the precise place in the program where the race occurred. There are no false detections, and no data races are missed. We have implemented djit on top of millipage—a fine granularity, page-based dsm system. Our implementation makes novel use of the operating system protection mechanisms. In particular, we propose a protection cache, which can be used for local logging of accesses to variables. As a result, our implementation does not increase the message complexity of the execution, piggybacking all its communication activity on top of the dsm-related messages. The performance figures show that our data race detection mechanism has only a minor influence on performance. The measured overheads, averaging only few percent, are two orders of magnitude smaller than those achieved in previous work. Thus, our technique makes the integration of on-the-fly data race detection during the regular dsm execution feasible for the first time.}
+}<<<
+
+\meta{doi}{10.1006/jpdc.1999.1574}

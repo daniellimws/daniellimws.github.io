@@ -1,0 +1,27 @@
+\import{base-macros}
+
+\title{MultiRace: efficient on-the-fly data race detection in multithreaded C++ programs}
+\date{2006-8}
+\taxon{reference}
+
+\author{Eli Pozniansky}
+\author{Assaf Schuster}
+\tag{racepred}
+\tag{paper}
+\meta{bibtex}\verb<<<|
+@article{https://doi.org/10.1002/cpe.1064,
+author = {Pozniansky, Eli and Schuster, Assaf},
+title = {MultiRace: efficient on-the-fly data race detection in multithreaded C++ programs},
+journal = {Concurrency and Computation: Practice and Experience},
+volume = {19},
+number = {3},
+pages = {327-340},
+keywords = {data race, concurrency, multithreading, instrumentation, synchronization},
+doi = {https://doi.org/10.1002/cpe.1064},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/cpe.1064},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/cpe.1064},
+abstract = {Abstract Data race detection is highly essential for debugging multithreaded programs and assuring their correctness. Nevertheless, there is no single universal technique capable of handling the task efficiently, since the data race detection problem is computationally hard in the general case. Thus, all currently available tools, when applied to some general case program, usually result in excessive false alarms or in a large number of undetected races. Another major drawback of many currently available tools is that they are restricted, for performance reasons, to detection units of fixed size. Thus, they all suffer from the same problem—choosing a small unit might result in missing some of the data races, while choosing a large one might lead to false detection. We present a novel testing tool, called MultiRace, which combines improved versions of Djit and Lockset—two very powerful on-the-fly algorithms for dynamic detection of apparent data races. Both extended algorithms detect races in multithreaded programs that may execute on weak consistency systems, and may use two-way as well as global synchronization primitives. By employing novel technologies, MultiRace adjusts its detection to the native granularity of objects and variables in the program under examination. In order to monitor all accesses to each of the shared locations, MultiRace instruments the C++ source code of the program. It lets the user fine-tune the detection process, but otherwise is completely automatic and transparent. This paper describes the algorithms employed in MultiRace, gives highlights of its implementation issues, and suggests some optimizations. It shows that the overheads imposed by MultiRace are often much smaller (orders of magnitude) than those obtained by other existing tools. Copyright © 2006 John Wiley \& Sons, Ltd.},
+year = {2007}
+}<<<
+
+\meta{doi}{10.1002/cpe.1064}

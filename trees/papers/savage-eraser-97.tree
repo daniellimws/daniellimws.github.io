@@ -1,0 +1,35 @@
+\import{base-macros}
+
+\title{Eraser: a dynamic data race detector for multithreaded programs}
+\date{1997-11}
+\taxon{reference}
+
+\author{Stefan Savage}
+\author{Michael Burrows}
+\author{Greg Nelson}
+\author{Patrick Sobalvarro}
+\author{Thomas Anderson}
+\tag{racepred}
+\tag{paper}
+\meta{bibtex}\verb<<<|
+@article{10.1145/265924.265927,
+author = {Savage, Stefan and Burrows, Michael and Nelson, Greg and Sobalvarro, Patrick and Anderson, Thomas},
+title = {Eraser: a dynamic data race detector for multithreaded programs},
+year = {1997},
+issue_date = {Nov. 1997},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {15},
+number = {4},
+issn = {0734-2071},
+url = {https://doi.org/10.1145/265924.265927},
+doi = {10.1145/265924.265927},
+abstract = {Multithreaded programming is difficult and error prone. It is easy to make a mistake in synchronization that produces a data race, yet it can be extremely hard to locate this mistake during debugging. This article describes a new tool, called Eraser, for dynamically detecting data races in lock-based multithreaded programs. Eraser uses binary rewriting techniques to monitor every shared-monory reference and verify that consistent locking behavior is observed. We present several case studies, including undergraduate coursework and a multithreaded Web search engine, that demonstrate the effectiveness of this approach.},
+journal = {ACM Trans. Comput. Syst.},
+month = {nov},
+pages = {391–411},
+numpages = {21},
+keywords = {binary code modification, multithreaded programming, race detection}
+}<<<
+
+\meta{doi}{10.1145/265924.265927}

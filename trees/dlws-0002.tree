@@ -1,0 +1,44 @@
+\title{public bibliographies}
+\author{daniellimws}
+\date{2024-08-23}
+
+\def\make-topic-bibliography[topic]{
+  \subtree{
+   \title{papers}
+   \query{
+    \open\query
+    \isect{\tag{\topic}}{\taxon{reference}}{\tag{paper}}
+   }
+  }
+
+
+  \subtree{
+   \title{talks}
+   \query{
+    \open\query
+    \isect{\tag{\topic}}{\taxon{reference}}{\tag{talk}}
+   }
+  }
+
+  \subtree{
+   \title{dissertations}
+   \query{
+    \open\query
+    \isect{\tag{\topic}}{\taxon{reference}}{\tag{dissertation}}
+   }
+  }
+
+  \subtree{
+   \title{people}
+   \query{
+    \open\query
+    \isect{\taxon{person}}{\tag{\topic}}
+   }
+  }
+}
+
+\p{I maintain several public bibliographies of areas that I am currently focusing in.}
+
+\transclude{dlws-0004}
+\transclude{dlws-0005}
+\transclude{dlws-0006}
