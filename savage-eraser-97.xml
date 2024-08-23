@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>440</fr:anchor><fr:addr
+type="user">savage-eraser-97</fr:addr><fr:route>savage-eraser-97.xml</fr:route><fr:title
+text="Eraser: a dynamic data race detector for multithreaded programs">Eraser: a dynamic data race detector for multithreaded programs</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>1997</fr:year><fr:month>11</fr:month></fr:date><fr:authors><fr:author>Stefan Savage</fr:author><fr:author>Michael Burrows</fr:author><fr:author>Greg Nelson</fr:author><fr:author>Patrick Sobalvarro</fr:author><fr:author>Thomas Anderson</fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[@article{10.1145/265924.265927,
+author = {Savage, Stefan and Burrows, Michael and Nelson, Greg and Sobalvarro, Patrick and Anderson, Thomas},
+title = {Eraser: a dynamic data race detector for multithreaded programs},
+year = {1997},
+issue_date = {Nov. 1997},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {15},
+number = {4},
+issn = {0734-2071},
+url = {https://doi.org/10.1145/265924.265927},
+doi = {10.1145/265924.265927},
+abstract = {Multithreaded programming is difficult and error prone. It is easy to make a mistake in synchronization that produces a data race, yet it can be extremely hard to locate this mistake during debugging. This article describes a new tool, called Eraser, for dynamically detecting data races in lock-based multithreaded programs. Eraser uses binary rewriting techniques to monitor every shared-monory reference and verify that consistent locking behavior is observed. We present several case studies, including undergraduate coursework and a multithreaded Web search engine, that demonstrate the effectiveness of this approach.},
+journal = {ACM Trans. Comput. Syst.},
+month = {nov},
+pages = {391–411},
+numpages = {21},
+keywords = {binary code modification, multithreaded programming, race detection}
+}]]></fr:meta><fr:meta
+name="doi">10.1145/265924.265927</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>

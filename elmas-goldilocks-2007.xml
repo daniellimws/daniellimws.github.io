@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:addr
+type="user">elmas-goldilocks-2007</fr:addr><fr:route>elmas-goldilocks-2007.xml</fr:route><fr:title
+text="Goldilocks: a race and transaction-aware java runtime">Goldilocks: a race and transaction-aware java runtime</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2007</fr:year><fr:month>6</fr:month></fr:date><fr:authors><fr:author>Tayfun Elmas</fr:author><fr:author>Shaz Qadeer</fr:author><fr:author>Serdar Tasiran</fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[@article{10.1145/1273442.1250762,
+author = {Elmas, Tayfun and Qadeer, Shaz and Tasiran, Serdar},
+title = {Goldilocks: a race and transaction-aware java runtime},
+year = {2007},
+issue_date = {June 2007},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {42},
+number = {6},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/1273442.1250762},
+doi = {10.1145/1273442.1250762},
+abstract = {Data races often result in unexpected and erroneous behavior. In addition to causing data corruption and leading programs to crash, the presence of data races complicates the semantics of an execution which might no longer be sequentially consistent. Motivated by these observations, we have designed and implemented a Java runtime system that monitors program executions and throws a DataRaceException when a data race is about to occur. Analogous to other runtime exceptions, the DataRaceException provides two key benefits. First, accesses causing race conditions are interruptedand handled before they cause errors that may be difficult to diagnose later. Second, if no DataRaceException is thrown in an execution, it is guaranteed to be sequentially consistent. This strong guarantee helps to rule out many concurrency-related possibilities as the cause of erroneous behavior. When a DataRaceException is caught, the operation, thread, or program causing it can be terminated gracefully. Alternatively, the DataRaceException can serve as a conflict-detection mechanism inoptimistic uses of concurrency.We start with the definition of data-race-free executions in the Java memory model. We generalize this definition to executions that use transactions in addition to locks and volatile variables for synchronization. We present a precise and efficient algorithm for dynamically verifying that an execution is free of data races. This algorithm generalizes the Goldilocks algorithm for data-race detectionby handling transactions and providing the ability to distinguish between read and write accesses. We have implemented our algorithm and the DataRaceException in the Kaffe Java Virtual Machine. We have evaluated our system on a variety of publicly available Java benchmarks and a few microbenchmarks that combine lock-based and transaction-based synchronization. Our experiments indicate that our implementation has reasonable overhead. Therefore, we believe that inaddition to being a debugging tool, the DataRaceException may be a viable mechanism to enforce the safety of executions of multithreaded Java programs.},
+journal = {SIGPLAN Not.},
+month = {jun},
+pages = {245–255},
+numpages = {11},
+keywords = {Java runtime, data-race detection, runtime monitoring, software transactions}
+}
+
+@inproceedings{10.1145/1250734.1250762,
+author = {Elmas, Tayfun and Qadeer, Shaz and Tasiran, Serdar},
+title = {Goldilocks: a race and transaction-aware java runtime},
+year = {2007},
+isbn = {9781595936332},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1250734.1250762},
+doi = {10.1145/1250734.1250762},
+abstract = {Data races often result in unexpected and erroneous behavior. In addition to causing data corruption and leading programs to crash, the presence of data races complicates the semantics of an execution which might no longer be sequentially consistent. Motivated by these observations, we have designed and implemented a Java runtime system that monitors program executions and throws a DataRaceException when a data race is about to occur. Analogous to other runtime exceptions, the DataRaceException provides two key benefits. First, accesses causing race conditions are interruptedand handled before they cause errors that may be difficult to diagnose later. Second, if no DataRaceException is thrown in an execution, it is guaranteed to be sequentially consistent. This strong guarantee helps to rule out many concurrency-related possibilities as the cause of erroneous behavior. When a DataRaceException is caught, the operation, thread, or program causing it can be terminated gracefully. Alternatively, the DataRaceException can serve as a conflict-detection mechanism inoptimistic uses of concurrency.We start with the definition of data-race-free executions in the Java memory model. We generalize this definition to executions that use transactions in addition to locks and volatile variables for synchronization. We present a precise and efficient algorithm for dynamically verifying that an execution is free of data races. This algorithm generalizes the Goldilocks algorithm for data-race detectionby handling transactions and providing the ability to distinguish between read and write accesses. We have implemented our algorithm and the DataRaceException in the Kaffe Java Virtual Machine. We have evaluated our system on a variety of publicly available Java benchmarks and a few microbenchmarks that combine lock-based and transaction-based synchronization. Our experiments indicate that our implementation has reasonable overhead. Therefore, we believe that inaddition to being a debugging tool, the DataRaceException may be a viable mechanism to enforce the safety of executions of multithreaded Java programs.},
+booktitle = {Proceedings of the 28th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {245–255},
+numpages = {11},
+keywords = {Java runtime, data-race detection, runtime monitoring, software transactions},
+location = {San Diego, California, USA},
+series = {PLDI '07}
+}]]></fr:meta><fr:meta
+name="doi">10.1145/1273442.1250762</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>

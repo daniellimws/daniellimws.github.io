@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>426</fr:anchor><fr:addr
+type="user">flanagan-freund-fasttrack-2009</fr:addr><fr:route>flanagan-freund-fasttrack-2009.xml</fr:route><fr:title
+text="FastTrack: efficient and precise dynamic race detection">FastTrack: efficient and precise dynamic race detection</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2009</fr:year><fr:month>6</fr:month></fr:date><fr:authors><fr:author>Cormac Flanagan</fr:author><fr:author>Stephen N. Freund</fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[@article{10.1145/1543135.1542490,
+author = {Flanagan, Cormac and Freund, Stephen N.},
+title = {FastTrack: efficient and precise dynamic race detection},
+year = {2009},
+issue_date = {June 2009},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {44},
+number = {6},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/1543135.1542490},
+doi = {10.1145/1543135.1542490},
+abstract = {begin{abstract}Multithreaded programs are notoriously prone to race conditions. Prior work on dynamic race detectors includes fast but imprecise race detectors that report false alarms, as well as slow but precise race detectors that never report false alarms. The latter typically use expensive vector clock operations that require time linear in the number of program threads.This paper exploits the insight that the full generality of vector clocks is unnecessary in most cases. That is, we can replace heavyweight vector clocks with an adaptive lightweight representation that, for almost all operations of the target program, requires only constant space and supports constant-time operations. This representation change significantly improves time and space performance, with no loss in precision.Experimental results on Java benchmarks including the Eclipse development environment show that our FastTrack race detector is an order of magnitude faster than a traditional vector-clock race detector, and roughly twice as fast as the high-performance DJIT+ algorithm. FastTrack is even comparable in speed to Eraser on our Java benchmarks, while never reporting false alarms.},
+journal = {SIGPLAN Not.},
+month = {jun},
+pages = {121–133},
+numpages = {13},
+keywords = {race conditions, dynamic analysis, concurrency}
+}
+
+@inproceedings{10.1145/1542476.1542490,
+author = {Flanagan, Cormac and Freund, Stephen N.},
+title = {FastTrack: efficient and precise dynamic race detection},
+year = {2009},
+isbn = {9781605583921},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1542476.1542490},
+doi = {10.1145/1542476.1542490},
+abstract = {begin{abstract}Multithreaded programs are notoriously prone to race conditions. Prior work on dynamic race detectors includes fast but imprecise race detectors that report false alarms, as well as slow but precise race detectors that never report false alarms. The latter typically use expensive vector clock operations that require time linear in the number of program threads.This paper exploits the insight that the full generality of vector clocks is unnecessary in most cases. That is, we can replace heavyweight vector clocks with an adaptive lightweight representation that, for almost all operations of the target program, requires only constant space and supports constant-time operations. This representation change significantly improves time and space performance, with no loss in precision.Experimental results on Java benchmarks including the Eclipse development environment show that our FastTrack race detector is an order of magnitude faster than a traditional vector-clock race detector, and roughly twice as fast as the high-performance DJIT+ algorithm. FastTrack is even comparable in speed to Eraser on our Java benchmarks, while never reporting false alarms.},
+booktitle = {Proceedings of the 30th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {121–133},
+numpages = {13},
+keywords = {race conditions, dynamic analysis, concurrency},
+location = {Dublin, Ireland},
+series = {PLDI '09}
+}]]></fr:meta><fr:meta
+name="doi">10.1145/1543135.1542490</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>643</fr:anchor><fr:addr
+type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:title
+text="Sampling-based race detection › talks"><fr:link
+type="local"
+href="dlws-0006.xml"
+addr="dlws-0006"
+title="Sampling-based race detection">Sampling-based race detection</fr:link> › talks</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="daniellimws.xml"
+addr="daniellimws"
+title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors><fr:parent>dlws-0006</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:info>Query returned no results</fr:info></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>645</fr:anchor><fr:addr
+type="user">dlws-0006</fr:addr><fr:route>dlws-0006.xml</fr:route><fr:title
+text="Sampling-based race detection">Sampling-based race detection</fr:title><fr:taxon>Bibliography</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>23</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="daniellimws.xml"
+addr="daniellimws"
+title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>This page collects papers and dissertations about Sampling-based Race Detection; if you have written a paper or dissertation on this topic, please <fr:link
+type="external"
+href="mailto:dws.lim@nus.edu.sg">write to me</fr:link> to have it added to this list.</fr:p><fr:p>The works in this list focus on algorithms, techniques, or probabilistic guarantees for sampling-based race detection (or prediction). See <fr:link
+type="local"
+href="dlws-0004.xml"
+addr="dlws-0004"
+title="Race prediction">Race Prediction</fr:link> for works on race prediction in general.</fr:p>
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:addr
+type="machine">#238</fr:addr><fr:route>unstable-238.xml</fr:route><fr:title
+text="Papers">Papers</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="daniellimws.xml"
+addr="daniellimws"
+title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors><fr:parent>dlws-0006</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:info>Query returned no results</fr:info></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>358</fr:anchor><fr:addr
+type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:title
+text="Talks">Talks</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="daniellimws.xml"
+addr="daniellimws"
+title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors><fr:parent>dlws-0006</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:info>Query returned no results</fr:info></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>360</fr:anchor><fr:addr
+type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:title
+text="Dissertations">Dissertations</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="daniellimws.xml"
+addr="daniellimws"
+title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors><fr:parent>dlws-0006</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:info>Query returned no results</fr:info></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
+type="machine">#241</fr:addr><fr:route>unstable-241.xml</fr:route><fr:title
+text="People">People</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="daniellimws.xml"
+addr="daniellimws"
+title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors><fr:parent>dlws-0006</fr:parent></fr:frontmatter><fr:mainmatter><fr:p><fr:info>Query returned no results</fr:info></fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

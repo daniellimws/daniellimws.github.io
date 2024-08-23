@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>412</fr:anchor><fr:addr
+type="user">kini-mathur-viswanathan-wcp-2017</fr:addr><fr:route>kini-mathur-viswanathan-wcp-2017.xml</fr:route><fr:title
+text="Dynamic race prediction in linear time">Dynamic race prediction in linear time</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2017</fr:year><fr:month>6</fr:month></fr:date><fr:authors><fr:author>Dileep Kini</fr:author><fr:author><fr:link
+type="local"
+href="umangmathur.xml"
+addr="umangmathur"
+title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
+type="local"
+href="maheshviswanathan.xml"
+addr="maheshviswanathan"
+title="Mahesh Viswanathan">Mahesh Viswanathan</fr:link></fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[@inproceedings{10.1145/3062341.3062374,
+author = {Kini, Dileep and Mathur, Umang and Viswanathan, Mahesh},
+title = {Dynamic race prediction in linear time},
+year = {2017},
+isbn = {9781450349888},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3062341.3062374},
+doi = {10.1145/3062341.3062374},
+abstract = {Writing reliable concurrent software remains a huge challenge for today's programmers. Programmers rarely reason about their code by explicitly considering different possible inter-leavings of its execution. We consider the problem of detecting data races from individual executions in a sound manner. The classical approach to solving this problem has been to use Lamport's happens-before (HB) relation. Until now HB remains the only approach that runs in linear time. Previous efforts in improving over HB such as causally-precedes (CP) and maximal causal models fall short due to the fact that they are not implementable efficiently and hence have to compromise on their race detecting ability by limiting their techniques to bounded sized fragments of the execution. We present a new relation weak-causally-precedes (WCP) that is provably better than CP in terms of being able to detect more races, while still remaining sound. Moreover, it admits a linear time algorithm which works on the entire execution without having to fragment it.},
+booktitle = {Proceedings of the 38th ACM SIGPLAN Conference on Programming Language Design and Implementation},
+pages = {157–170},
+numpages = {14},
+keywords = {Race Prediction, Online Algorithm, Concurrency},
+location = {Barcelona, Spain},
+series = {PLDI 2017}
+}
+
+@article{10.1145/3140587.3062374,
+author = {Kini, Dileep and Mathur, Umang and Viswanathan, Mahesh},
+title = {Dynamic race prediction in linear time},
+year = {2017},
+issue_date = {June 2017},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {52},
+number = {6},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/3140587.3062374},
+doi = {10.1145/3140587.3062374},
+abstract = {Writing reliable concurrent software remains a huge challenge for today's programmers. Programmers rarely reason about their code by explicitly considering different possible inter-leavings of its execution. We consider the problem of detecting data races from individual executions in a sound manner. The classical approach to solving this problem has been to use Lamport's happens-before (HB) relation. Until now HB remains the only approach that runs in linear time. Previous efforts in improving over HB such as causally-precedes (CP) and maximal causal models fall short due to the fact that they are not implementable efficiently and hence have to compromise on their race detecting ability by limiting their techniques to bounded sized fragments of the execution. We present a new relation weak-causally-precedes (WCP) that is provably better than CP in terms of being able to detect more races, while still remaining sound. Moreover, it admits a linear time algorithm which works on the entire execution without having to fragment it.},
+journal = {SIGPLAN Not.},
+month = {jun},
+pages = {157–170},
+numpages = {14},
+keywords = {Race Prediction, Online Algorithm, Concurrency}
+}]]></fr:meta><fr:meta
+name="doi">10.1145/3062341.3062374</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>399</fr:anchor><fr:addr
+type="user">mathur-pavlogiannis-2021-popl</fr:addr><fr:route>mathur-pavlogiannis-2021-popl.xml</fr:route><fr:title
+text="Dynamic Data-Race Prediction: Fundamentals, Theory and Practice">Dynamic Data-Race Prediction: Fundamentals, Theory and Practice</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2021</fr:year><fr:month>1</fr:month></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="umangmathur.xml"
+addr="umangmathur"
+title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
+type="local"
+href="andreaspavlogiannis.xml"
+addr="andreaspavlogiannis"
+title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author></fr:authors><fr:meta
+name="external">https://www.youtube.com/watch?v=5AZIQFeluIY</fr:meta><fr:meta
+name="venue">POPL 2021 Tutorial</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Till date, concurrency bugs inevitably find their way into concurrent software despite rigorous development-time testing. Data races are arguably the most insidious amongst concurrency bugs and are particularly hard to detect.</fr:p><fr:p>This tutorial focuses on recent developments in dynamic analysis techniques for detecting data races. Traditional dynamic race detection techniques, such as those based on Lamport’s happens-before (HB) partial order, are ineffective in exposing races that get ordered due to inexplicit synchronization, but can nevertheless be witnessed in alternate executions of the same underlying program. Predictive race detection techniques, on the other hand, aim to overcome this shortcoming of traditional dynamic race detectors by expose data races that can be missed by HB, without requiring a re-execution of the underlying program. The resulting promise of enhanced coverage in race detection has recently led to the development of many dynamic race prediction techniques.</fr:p><fr:p>In this tutorial we will discuss some of the state-of-the-art algorithms and techniques for dynamic data race prediction, present the foundations of race prediction in a principled manner and discuss some recent investigations on the complexity and hardness involved in reasoning about race prediction.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

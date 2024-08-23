@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>600</fr:anchor><fr:addr
+type="user">base-macros</fr:addr><fr:route>base-macros.xml</fr:route><fr:title
+text="Basic macros">Basic macros</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>This tree defines the basic notational macros used across my forest. This is copied from <fr:link
+type="external"
+href="https://git.sr.ht/~jonsterling/public-trees/tree/main/item/base-macros.tree">Jonathan Sterling's tree</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

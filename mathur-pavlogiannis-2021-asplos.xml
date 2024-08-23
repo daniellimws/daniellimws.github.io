@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr
+type="user">mathur-pavlogiannis-2021-asplos</fr:addr><fr:route>mathur-pavlogiannis-2021-asplos.xml</fr:route><fr:title
+text="Dynamic Data-Race Prediction : Fundamentals, Theory and Practice">Dynamic Data-Race Prediction : Fundamentals, Theory and Practice</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2021</fr:year><fr:month>4</fr:month></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="umangmathur.xml"
+addr="umangmathur"
+title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
+type="local"
+href="andreaspavlogiannis.xml"
+addr="andreaspavlogiannis"
+title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author></fr:authors><fr:meta
+name="external">https://www.youtube.com/watch?v=B6q2NQ5Tp2I</fr:meta><fr:meta
+name="venue">ASPLOS 2021 Tutorial</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Data races are arguably the most insidious amongst concurrency bugs and extensive research efforts have been dedicated to effectively detect them. Predictive race detection techniques aim to expose data races missed by traditional dynamic race detectors (such as those based on Happens-Before) by inferring data races in alternate executions of the underlying program, without re-executing it. The resulting promise of enhanced coverage in race detection has recently led to the development of many dynamic race prediction techniques.</fr:p><fr:p>This tutorial aims to present the foundations of race prediction in a principled manner, consolidate a decade long line of work on dynamic race prediction and discusses recent algorithmic advances that make race prediction efficient and practical. This tutorial also aims to discuss some recent results on the complexity and hardness involved in reasoning about race prediction.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>

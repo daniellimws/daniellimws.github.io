@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:addr
+type="user">ang-mathur-prefix-2024</fr:addr><fr:route>ang-mathur-prefix-2024.xml</fr:route><fr:title
+text="Predictive Monitoring with Strong Trace Prefixes">Predictive Monitoring with Strong Trace Prefixes</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month></fr:date><fr:authors><fr:author><fr:link
+type="local"
+href="zhendongang.xml"
+addr="zhendongang"
+title="Zhendong Ang">Zhendong Ang</fr:link></fr:author><fr:author><fr:link
+type="local"
+href="umangmathur.xml"
+addr="umangmathur"
+title="Umang Mathur">Umang Mathur</fr:link></fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[@InProceedings{10.1007/978-3-031-65630-9_9,
+author="Ang, Zhendong
+and Mathur, Umang",
+editor="Gurfinkel, Arie
+and Ganesh, Vijay",
+title="Predictive Monitoring with Strong Trace Prefixes",
+booktitle="Computer Aided Verification",
+year="2024",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="182--204",
+abstract="Runtime predictive analyses enhance coverage of traditional dynamic analyses based bug detection techniques by identifying a space of feasible reorderings of the observed execution and determining if any reordering in this space witnesses the violation of some desired safety property. The most popular approach for modelling the space of feasible reorderings is through Mazurkiewicz's trace equivalence. The simplicity of the framework also gives rise to efficient predictive analyses, and has been the de facto means for obtaining space and time efficient algorithms for monitoring concurrent programs.",
+isbn="978-3-031-65630-9"
+}]]></fr:meta><fr:meta
+name="doi">10.1007/978-3-031-65630-9_9</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
