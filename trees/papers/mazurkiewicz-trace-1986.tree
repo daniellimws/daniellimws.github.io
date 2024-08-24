@@ -1,0 +1,26 @@
+\import{base-macros}
+
+\title{Trace Theory}
+\date{1987}
+\taxon{reference}
+
+\author{Antoni Mazurkiewicz}
+\tag{trace}
+\tag{paper}
+\meta{bibtex}\verb<<<|
+@InProceedings{10.1007/3-540-17906-2_30,
+author="Mazurkiewicz, Antoni",
+editor="Brauer, W.
+and Reisig, W.
+and Rozenberg, G.",
+title="Trace theory",
+booktitle="Petri Nets: Applications and Relationships to Other Models of Concurrency",
+year="1987",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="278--324",
+abstract="The concept of traces has been introduced for describing non-sequential behaviour of concurrent systems via its sequential observations. Traces represent concurrent processes in the same way as strings represent sequential ones. The theory of traces can be used as a tool for reasoning about nets and it is hoped that applying this theory one can get a calculus of the concurrent processes anologous to that available for sequential systems. The following topics will be discussed: algebraic properties of traces, trace models of some concurrency phenomena, fixed-point calculus for finding the behaviour of nets, modularity, and some applications of the presented theory.",
+isbn="978-3-540-47926-0"
+}<<<
+
+\meta{doi}{10.1007/3-540-17906-2_30}

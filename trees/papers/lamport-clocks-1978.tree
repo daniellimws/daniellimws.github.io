@@ -6,6 +6,7 @@
 
 \author{Leslie Lamport}
 \tag{racepred}
+\tag{trace}
 \tag{paper}
 \meta{bibtex}\verb<<<|
 @article{10.1145/359545.359563,
