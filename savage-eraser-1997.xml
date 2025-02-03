@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>555</fr:anchor><fr:addr
-type="user">savage-eraser-1997</fr:addr><fr:route>savage-eraser-1997.xml</fr:route><fr:title
-text="Eraser: a dynamic data race detector for multithreaded programs">Eraser: a dynamic data race detector for multithreaded programs</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>1997</fr:year><fr:month>11</fr:month></fr:date><fr:authors><fr:author>Stefan Savage</fr:author><fr:author>Michael Burrows</fr:author><fr:author>Greg Nelson</fr:author><fr:author>Patrick Sobalvarro</fr:author><fr:author>Thomas Anderson</fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@article{10.1145/265924.265927,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>561</fr:anchor>
+    <fr:addr type="user">savage-eraser-1997</fr:addr>
+    <fr:route>savage-eraser-1997.xml</fr:route>
+    <fr:title text="Eraser: a dynamic data race detector for multithreaded programs">Eraser: a dynamic data race detector for multithreaded programs</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>1997</fr:year>
+      <fr:month>11</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>Stefan Savage</fr:author>
+      <fr:author>Michael Burrows</fr:author>
+      <fr:author>Greg Nelson</fr:author>
+      <fr:author>Patrick Sobalvarro</fr:author>
+      <fr:author>Thomas Anderson</fr:author>
+    </fr:authors>
+    <fr:meta name="bibtex"><![CDATA[@article{10.1145/265924.265927,
 author = {Savage, Stefan and Burrows, Michael and Nelson, Greg and Sobalvarro, Patrick and Anderson, Thomas},
 title = {Eraser: a dynamic data race detector for multithreaded programs},
 year = {1997},
@@ -28,5 +36,9 @@ month = {nov},
 pages = {391–411},
 numpages = {21},
 keywords = {binary code modification, multithreaded programming, race detection}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/265924.265927</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+    <fr:meta name="doi">10.1145/265924.265927</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>

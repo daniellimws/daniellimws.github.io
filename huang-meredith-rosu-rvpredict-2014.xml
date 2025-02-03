@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>520</fr:anchor><fr:addr
-type="user">huang-meredith-rosu-rvpredict-2014</fr:addr><fr:route>huang-meredith-rosu-rvpredict-2014.xml</fr:route><fr:title
-text="Maximal sound predictive race detection with control flow abstraction">Maximal sound predictive race detection with control flow abstraction</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2014</fr:year><fr:month>6</fr:month></fr:date><fr:authors><fr:author>Jeff Huang</fr:author><fr:author>Patrick O’Neil Meredith</fr:author><fr:author><fr:link
-type="local"
-href="grigorerosu.xml"
-addr="grigorerosu"
-title="Grigore Rosu">Grigore Rosu</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@inproceedings{10.1145/2594291.2594315,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>526</fr:anchor>
+    <fr:addr type="user">huang-meredith-rosu-rvpredict-2014</fr:addr>
+    <fr:route>huang-meredith-rosu-rvpredict-2014.xml</fr:route>
+    <fr:title text="Maximal sound predictive race detection with control flow abstraction">Maximal sound predictive race detection with control flow abstraction</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>2014</fr:year>
+      <fr:month>6</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>Jeff Huang</fr:author>
+      <fr:author>Patrick O’Neil Meredith</fr:author>
+      <fr:author>
+        <fr:link type="local" href="grigorerosu.xml" addr="grigorerosu" title="Grigore Rosu">Grigore Rosu</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:meta name="bibtex"><![CDATA[@inproceedings{10.1145/2594291.2594315,
 author = {Huang, Jeff and Meredith, Patrick O'Neil and Rosu, Grigore},
 title = {Maximal sound predictive race detection with control flow abstraction},
 year = {2014},
@@ -50,5 +54,9 @@ month = {jun},
 pages = {337–348},
 numpages = {12},
 keywords = {control flow, data race, maximal sound, prediction}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/2594291.2594315</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+    <fr:meta name="doi">10.1145/2594291.2594315</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>

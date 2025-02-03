@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>540</fr:anchor><fr:addr
-type="user">marino-musuvathi-narayanasamy-literace-2009</fr:addr><fr:route>marino-musuvathi-narayanasamy-literace-2009.xml</fr:route><fr:title
-text="LiteRace: effective sampling for lightweight data-race detection">LiteRace: effective sampling for lightweight data-race detection</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2009</fr:year><fr:month>6</fr:month></fr:date><fr:authors><fr:author>Daniel Marino</fr:author><fr:author>Madanlal Musuvathi</fr:author><fr:author>Satish Narayanasamy</fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@inproceedings{10.1145/1542476.1542491,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>546</fr:anchor>
+    <fr:addr type="user">marino-musuvathi-narayanasamy-literace-2009</fr:addr>
+    <fr:route>marino-musuvathi-narayanasamy-literace-2009.xml</fr:route>
+    <fr:title text="LiteRace: effective sampling for lightweight data-race detection">LiteRace: effective sampling for lightweight data-race detection</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>2009</fr:year>
+      <fr:month>6</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>Daniel Marino</fr:author>
+      <fr:author>Madanlal Musuvathi</fr:author>
+      <fr:author>Satish Narayanasamy</fr:author>
+    </fr:authors>
+    <fr:meta name="bibtex"><![CDATA[@inproceedings{10.1145/1542476.1542491,
 author = {Marino, Daniel and Musuvathi, Madanlal and Narayanasamy, Satish},
 title = {LiteRace: effective sampling for lightweight data-race detection},
 year = {2009},
@@ -46,5 +52,9 @@ month = {jun},
 pages = {134–143},
 numpages = {10},
 keywords = {concurrency bugs, dynamic data race detection, sampling}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/1542476.1542491</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+    <fr:meta name="doi">10.1145/1542476.1542491</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>

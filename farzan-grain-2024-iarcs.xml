@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>476</fr:anchor><fr:addr
-type="user">farzan-grain-2024-iarcs</fr:addr><fr:route>farzan-grain-2024-iarcs.xml</fr:route><fr:title
-text="Coarser Equivalences for Causal Concurrency">Coarser Equivalences for Causal Concurrency</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>4</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="azadehfarzan.xml"
-addr="azadehfarzan"
-title="Azadeh Farzan">Azadeh Farzan</fr:link></fr:author></fr:authors><fr:meta
-name="external">https://www.youtube.com/watch?v=hYJv7Pf53yU</fr:meta><fr:meta
-name="venue">IARCS Verification Seminar</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>482</fr:anchor>
+    <fr:addr type="user">farzan-grain-2024-iarcs</fr:addr>
+    <fr:route>farzan-grain-2024-iarcs.xml</fr:route>
+    <fr:title text="Coarser Equivalences for Causal Concurrency">Coarser Equivalences for Causal Concurrency</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>2024</fr:year>
+      <fr:month>4</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>
+        <fr:link type="local" href="azadehfarzan.xml" addr="azadehfarzan" title="Azadeh Farzan">Azadeh Farzan</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:meta name="external">https://www.youtube.com/watch?v=hYJv7Pf53yU</fr:meta>
+    <fr:meta name="venue">IARCS Verification Seminar</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>

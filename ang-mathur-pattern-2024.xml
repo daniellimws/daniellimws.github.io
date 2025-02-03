@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>485</fr:anchor><fr:addr
-type="user">ang-mathur-pattern-2024</fr:addr><fr:route>ang-mathur-pattern-2024.xml</fr:route><fr:title
-text="Predictive Monitoring against Pattern Regular Languages">Predictive Monitoring against Pattern Regular Languages</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>1</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="zhendongang.xml"
-addr="zhendongang"
-title="Zhendong Ang">Zhendong Ang</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="umangmathur.xml"
-addr="umangmathur"
-title="Umang Mathur">Umang Mathur</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@article{10.1145/3632915,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>491</fr:anchor>
+    <fr:addr type="user">ang-mathur-pattern-2024</fr:addr>
+    <fr:route>ang-mathur-pattern-2024.xml</fr:route>
+    <fr:title text="Predictive Monitoring against Pattern Regular Languages">Predictive Monitoring against Pattern Regular Languages</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>2024</fr:year>
+      <fr:month>1</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>
+        <fr:link type="local" href="zhendongang.xml" addr="zhendongang" title="Zhendong Ang">Zhendong Ang</fr:link>
+      </fr:author>
+      <fr:author>
+        <fr:link type="local" href="umangmathur.xml" addr="umangmathur" title="Umang Mathur">Umang Mathur</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:meta name="bibtex"><![CDATA[@article{10.1145/3632915,
 author = {Ang, Zhendong and Mathur, Umang},
 title = {Predictive Monitoring against Pattern Regular Languages},
 year = {2024},
@@ -35,5 +36,9 @@ month = {jan},
 articleno = {73},
 numpages = {35},
 keywords = {complexity, concurrency, dynamic analysis, predictive monitoring}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/3632915</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+    <fr:meta name="doi">10.1145/3632915</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>

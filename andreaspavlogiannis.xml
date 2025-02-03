@@ -1,71 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>571</fr:anchor><fr:addr
-type="user">andreaspavlogiannis</fr:addr><fr:route>andreaspavlogiannis.xml</fr:route><fr:title
-text="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
-name="external">https://pure.au.dk/portal/en/persons/pavlogiannis@cs.au.dk</fr:meta><fr:meta
-name="institution"><fr:link
-type="local"
-href="aarhus.xml"
-addr="aarhus"
-title="Aarhus University">Aarhus University</fr:link></fr:meta><fr:meta
-name="orcid">0000-0002-8943-0722</fr:meta><fr:meta
-name="position">Associate Professor</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Associate Professor at Aarhus University.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>572</fr:anchor><fr:addr
-type="user">aarhus</fr:addr><fr:route>aarhus.xml</fr:route><fr:title
-text="Aarhus University">Aarhus University</fr:title><fr:taxon>Institution</fr:taxon><fr:authors /><fr:meta
-name="external">https://international.au.dk/</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Contributions">Contributions</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>573</fr:anchor><fr:addr
-type="user">zheng-mathur-pavlogiannis-osr-2024</fr:addr><fr:route>zheng-mathur-pavlogiannis-osr-2024.xml</fr:route><fr:title
-text="Optimistic Prediction of Synchronization-Reversal Data Races">Optimistic Prediction of Synchronization-Reversal Data Races</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>4</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="zhengshi.xml"
-addr="zhengshi"
-title="Zheng Shi">Zheng Shi</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="umangmathur.xml"
-addr="umangmathur"
-title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@inproceedings{10.1145/3597503.3639099,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>577</fr:anchor>
+    <fr:addr type="user">andreaspavlogiannis</fr:addr>
+    <fr:route>andreaspavlogiannis.xml</fr:route>
+    <fr:title text="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:title>
+    <fr:taxon>Person</fr:taxon>
+    <fr:authors />
+    <fr:meta name="external">https://pure.au.dk/portal/en/persons/pavlogiannis@cs.au.dk</fr:meta>
+    <fr:meta name="institution">
+      <fr:link type="local" href="aarhus.xml" addr="aarhus" title="Aarhus University">Aarhus University</fr:link>
+    </fr:meta>
+    <fr:meta name="orcid">0000-0002-8943-0722</fr:meta>
+    <fr:meta name="position">Associate Professor</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>Associate Professor at Aarhus University.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Related">Related</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>578</fr:anchor>
+            <fr:addr type="user">aarhus</fr:addr>
+            <fr:route>aarhus.xml</fr:route>
+            <fr:title text="Aarhus University">Aarhus University</fr:title>
+            <fr:taxon>Institution</fr:taxon>
+            <fr:authors />
+            <fr:meta name="external">https://international.au.dk/</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Contributions">Contributions</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>579</fr:anchor>
+            <fr:addr type="user">zheng-mathur-pavlogiannis-osr-2024</fr:addr>
+            <fr:route>zheng-mathur-pavlogiannis-osr-2024.xml</fr:route>
+            <fr:title text="Optimistic Prediction of Synchronization-Reversal Data Races">Optimistic Prediction of Synchronization-Reversal Data Races</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:date>
+              <fr:year>2024</fr:year>
+              <fr:month>4</fr:month>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="zhengshi.xml" addr="zhengshi" title="Zheng Shi">Zheng Shi</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="umangmathur.xml" addr="umangmathur" title="Umang Mathur">Umang Mathur</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="bibtex"><![CDATA[@inproceedings{10.1145/3597503.3639099,
 author = {Shi, Zheng and Mathur, Umang and Pavlogiannis, Andreas},
 title = {Optimistic Prediction of Synchronization-Reversal Data Races},
 year = {2024},
@@ -80,34 +84,38 @@ articleno = {134},
 numpages = {13},
 location = {Lisbon, Portugal},
 series = {ICSE '24}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/3597503.3639099</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>577</fr:anchor><fr:addr
-type="user">mathur-pavlogiannis-tunç-viswanathan-treeclocks-2022</fr:addr><fr:route>mathur-pavlogiannis-tunç-viswanathan-treeclocks-2022.xml</fr:route><fr:title
-text="A tree clock data structure for causal orderings in concurrent executions">A tree clock data structure for causal orderings in concurrent executions</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2022</fr:year><fr:month>2</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="umangmathur.xml"
-addr="umangmathur"
-title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="h%C3%BCnkarcantun%C3%A7.xml"
-addr="hünkarcantunç"
-title="Hünkar Can Tunç">Hünkar Can Tunç</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="maheshviswanathan.xml"
-addr="maheshviswanathan"
-title="Mahesh Viswanathan">Mahesh Viswanathan</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@inproceedings{10.1145/3503222.3507734,
+}]]></fr:meta>
+            <fr:meta name="doi">10.1145/3597503.3639099</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>583</fr:anchor>
+            <fr:addr type="user">mathur-pavlogiannis-tunç-viswanathan-treeclocks-2022</fr:addr>
+            <fr:route>mathur-pavlogiannis-tunç-viswanathan-treeclocks-2022.xml</fr:route>
+            <fr:title text="A tree clock data structure for causal orderings in concurrent executions">A tree clock data structure for causal orderings in concurrent executions</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:date>
+              <fr:year>2022</fr:year>
+              <fr:month>2</fr:month>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="umangmathur.xml" addr="umangmathur" title="Umang Mathur">Umang Mathur</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="h%C3%BCnkarcantun%C3%A7.xml" addr="hünkarcantunç" title="Hünkar Can Tunç">Hünkar Can Tunç</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="maheshviswanathan.xml" addr="maheshviswanathan" title="Mahesh Viswanathan">Mahesh Viswanathan</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="bibtex"><![CDATA[@inproceedings{10.1145/3503222.3507734,
 author = {Mathur, Umang and Pavlogiannis, Andreas and Tun\c{c}, H\"{u}nkar Can and Viswanathan, Mahesh},
 title = {A tree clock data structure for causal orderings in concurrent executions},
 year = {2022},
@@ -123,68 +131,92 @@ numpages = {16},
 keywords = {concurrency, dynamic analyses, happens-before, vector clocks},
 location = {Lausanne, Switzerland},
 series = {ASPLOS '22}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/3503222.3507734</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>582</fr:anchor><fr:addr
-type="user">mathur-pavlogiannis-2021-asplos</fr:addr><fr:route>mathur-pavlogiannis-2021-asplos.xml</fr:route><fr:title
-text="Dynamic Data-Race Prediction : Fundamentals, Theory and Practice">Dynamic Data-Race Prediction : Fundamentals, Theory and Practice</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2021</fr:year><fr:month>4</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="umangmathur.xml"
-addr="umangmathur"
-title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author></fr:authors><fr:meta
-name="external">https://www.youtube.com/watch?v=B6q2NQ5Tp2I</fr:meta><fr:meta
-name="venue">ASPLOS 2021 Tutorial</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Data races are arguably the most insidious amongst concurrency bugs and extensive research efforts have been dedicated to effectively detect them. Predictive race detection techniques aim to expose data races missed by traditional dynamic race detectors (such as those based on Happens-Before) by inferring data races in alternate executions of the underlying program, without re-executing it. The resulting promise of enhanced coverage in race detection has recently led to the development of many dynamic race prediction techniques.</fr:p><fr:p>This tutorial aims to present the foundations of race prediction in a principled manner, consolidate a decade long line of work on dynamic race prediction and discusses recent algorithmic advances that make race prediction efficient and practical. This tutorial also aims to discuss some recent results on the complexity and hardness involved in reasoning about race prediction.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>585</fr:anchor><fr:addr
-type="user">mathur-pavlogiannis-2021-popl</fr:addr><fr:route>mathur-pavlogiannis-2021-popl.xml</fr:route><fr:title
-text="Dynamic Data-Race Prediction: Fundamentals, Theory and Practice">Dynamic Data-Race Prediction: Fundamentals, Theory and Practice</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2021</fr:year><fr:month>1</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="umangmathur.xml"
-addr="umangmathur"
-title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author></fr:authors><fr:meta
-name="external">https://www.youtube.com/watch?v=5AZIQFeluIY</fr:meta><fr:meta
-name="venue">POPL 2021 Tutorial</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Till date, concurrency bugs inevitably find their way into concurrent software despite rigorous development-time testing. Data races are arguably the most insidious amongst concurrency bugs and are particularly hard to detect.</fr:p><fr:p>This tutorial focuses on recent developments in dynamic analysis techniques for detecting data races. Traditional dynamic race detection techniques, such as those based on Lamport’s happens-before (HB) partial order, are ineffective in exposing races that get ordered due to inexplicit synchronization, but can nevertheless be witnessed in alternate executions of the same underlying program. Predictive race detection techniques, on the other hand, aim to overcome this shortcoming of traditional dynamic race detectors by expose data races that can be missed by HB, without requiring a re-execution of the underlying program. The resulting promise of enhanced coverage in race detection has recently led to the development of many dynamic race prediction techniques.</fr:p><fr:p>In this tutorial we will discuss some of the state-of-the-art algorithms and techniques for dynamic data race prediction, present the foundations of race prediction in a principled manner and discuss some recent investigations on the complexity and hardness involved in reasoning about race prediction.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>588</fr:anchor><fr:addr
-type="user">mathur-pavlogiannis-viswanathan-syncp-2021</fr:addr><fr:route>mathur-pavlogiannis-viswanathan-syncp-2021.xml</fr:route><fr:title
-text="Optimal prediction of synchronization-preserving races">Optimal prediction of synchronization-preserving races</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2021</fr:year><fr:month>1</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="umangmathur.xml"
-addr="umangmathur"
-title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="maheshviswanathan.xml"
-addr="maheshviswanathan"
-title="Mahesh Viswanathan">Mahesh Viswanathan</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@article{10.1145/3434317,
+}]]></fr:meta>
+            <fr:meta name="doi">10.1145/3503222.3507734</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>588</fr:anchor>
+            <fr:addr type="user">mathur-pavlogiannis-2021-asplos</fr:addr>
+            <fr:route>mathur-pavlogiannis-2021-asplos.xml</fr:route>
+            <fr:title text="Dynamic Data-Race Prediction : Fundamentals, Theory and Practice">Dynamic Data-Race Prediction : Fundamentals, Theory and Practice</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:date>
+              <fr:year>2021</fr:year>
+              <fr:month>4</fr:month>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="umangmathur.xml" addr="umangmathur" title="Umang Mathur">Umang Mathur</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="external">https://www.youtube.com/watch?v=B6q2NQ5Tp2I</fr:meta>
+            <fr:meta name="venue">ASPLOS 2021 Tutorial</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Data races are arguably the most insidious amongst concurrency bugs and extensive research efforts have been dedicated to effectively detect them. Predictive race detection techniques aim to expose data races missed by traditional dynamic race detectors (such as those based on Happens-Before) by inferring data races in alternate executions of the underlying program, without re-executing it. The resulting promise of enhanced coverage in race detection has recently led to the development of many dynamic race prediction techniques.</fr:p>
+            <fr:p>This tutorial aims to present the foundations of race prediction in a principled manner, consolidate a decade long line of work on dynamic race prediction and discusses recent algorithmic advances that make race prediction efficient and practical. This tutorial also aims to discuss some recent results on the complexity and hardness involved in reasoning about race prediction.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>591</fr:anchor>
+            <fr:addr type="user">mathur-pavlogiannis-2021-popl</fr:addr>
+            <fr:route>mathur-pavlogiannis-2021-popl.xml</fr:route>
+            <fr:title text="Dynamic Data-Race Prediction: Fundamentals, Theory and Practice">Dynamic Data-Race Prediction: Fundamentals, Theory and Practice</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:date>
+              <fr:year>2021</fr:year>
+              <fr:month>1</fr:month>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="umangmathur.xml" addr="umangmathur" title="Umang Mathur">Umang Mathur</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="external">https://www.youtube.com/watch?v=5AZIQFeluIY</fr:meta>
+            <fr:meta name="venue">POPL 2021 Tutorial</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Till date, concurrency bugs inevitably find their way into concurrent software despite rigorous development-time testing. Data races are arguably the most insidious amongst concurrency bugs and are particularly hard to detect.</fr:p>
+            <fr:p>This tutorial focuses on recent developments in dynamic analysis techniques for detecting data races. Traditional dynamic race detection techniques, such as those based on Lamport’s happens-before (HB) partial order, are ineffective in exposing races that get ordered due to inexplicit synchronization, but can nevertheless be witnessed in alternate executions of the same underlying program. Predictive race detection techniques, on the other hand, aim to overcome this shortcoming of traditional dynamic race detectors by expose data races that can be missed by HB, without requiring a re-execution of the underlying program. The resulting promise of enhanced coverage in race detection has recently led to the development of many dynamic race prediction techniques.</fr:p>
+            <fr:p>In this tutorial we will discuss some of the state-of-the-art algorithms and techniques for dynamic data race prediction, present the foundations of race prediction in a principled manner and discuss some recent investigations on the complexity and hardness involved in reasoning about race prediction.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>594</fr:anchor>
+            <fr:addr type="user">mathur-pavlogiannis-viswanathan-syncp-2021</fr:addr>
+            <fr:route>mathur-pavlogiannis-viswanathan-syncp-2021.xml</fr:route>
+            <fr:title text="Optimal prediction of synchronization-preserving races">Optimal prediction of synchronization-preserving races</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:date>
+              <fr:year>2021</fr:year>
+              <fr:month>1</fr:month>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="umangmathur.xml" addr="umangmathur" title="Umang Mathur">Umang Mathur</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="maheshviswanathan.xml" addr="maheshviswanathan" title="Mahesh Viswanathan">Mahesh Viswanathan</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="bibtex"><![CDATA[@article{10.1145/3434317,
 author = {Mathur, Umang and Pavlogiannis, Andreas and Viswanathan, Mahesh},
 title = {Optimal prediction of synchronization-preserving races},
 year = {2021},
@@ -201,30 +233,35 @@ month = {jan},
 articleno = {36},
 numpages = {29},
 keywords = {race detection, dynamic analysis, concurrency, complexity}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/3434317</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>592</fr:anchor><fr:addr
-type="user">mathur-pavlogiannis-viswanathan-2020</fr:addr><fr:route>mathur-pavlogiannis-viswanathan-2020.xml</fr:route><fr:title
-text="The Complexity of Dynamic Data Race Prediction">The Complexity of Dynamic Data Race Prediction</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2020</fr:year><fr:month>7</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="umangmathur.xml"
-addr="umangmathur"
-title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="maheshviswanathan.xml"
-addr="maheshviswanathan"
-title="Mahesh Viswanathan">Mahesh Viswanathan</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@inproceedings{10.1145/3373718.3394783,
+}]]></fr:meta>
+            <fr:meta name="doi">10.1145/3434317</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>598</fr:anchor>
+            <fr:addr type="user">mathur-pavlogiannis-viswanathan-2020</fr:addr>
+            <fr:route>mathur-pavlogiannis-viswanathan-2020.xml</fr:route>
+            <fr:title text="The Complexity of Dynamic Data Race Prediction">The Complexity of Dynamic Data Race Prediction</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:date>
+              <fr:year>2020</fr:year>
+              <fr:month>7</fr:month>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="umangmathur.xml" addr="umangmathur" title="Umang Mathur">Umang Mathur</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+              </fr:author>
+              <fr:author>
+                <fr:link type="local" href="maheshviswanathan.xml" addr="maheshviswanathan" title="Mahesh Viswanathan">Mahesh Viswanathan</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="bibtex"><![CDATA[@inproceedings{10.1145/3373718.3394783,
 author = {Mathur, Umang and Pavlogiannis, Andreas and Viswanathan, Mahesh},
 title = {The Complexity of Dynamic Data Race Prediction},
 year = {2020},
@@ -240,22 +277,29 @@ numpages = {15},
 keywords = {Complexity, Data Race Prediction},
 location = {Saarbr\"{u}cken, Germany},
 series = {LICS '20}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/3373718.3394783</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>596</fr:anchor><fr:addr
-type="user">pavlogiannis-m2-2019</fr:addr><fr:route>pavlogiannis-m2-2019.xml</fr:route><fr:title
-text="Fast, sound, and effectively complete dynamic race prediction">Fast, sound, and effectively complete dynamic race prediction</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2019</fr:year><fr:month>12</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@article{10.1145/3371085,
+}]]></fr:meta>
+            <fr:meta name="doi">10.1145/3373718.3394783</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>602</fr:anchor>
+            <fr:addr type="user">pavlogiannis-m2-2019</fr:addr>
+            <fr:route>pavlogiannis-m2-2019.xml</fr:route>
+            <fr:title text="Fast, sound, and effectively complete dynamic race prediction">Fast, sound, and effectively complete dynamic race prediction</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:date>
+              <fr:year>2019</fr:year>
+              <fr:month>12</fr:month>
+            </fr:date>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="bibtex"><![CDATA[@article{10.1145/3371085,
 author = {Pavlogiannis, Andreas},
 title = {Fast, sound, and effectively complete dynamic race prediction},
 year = {2019},
@@ -272,5 +316,14 @@ month = {dec},
 articleno = {17},
 numpages = {29},
 keywords = {race detection, predictive analyses, concurrency}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/3371085</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+}]]></fr:meta>
+            <fr:meta name="doi">10.1145/3371085</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

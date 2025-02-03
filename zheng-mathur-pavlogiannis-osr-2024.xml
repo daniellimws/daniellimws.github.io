@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>478</fr:anchor><fr:addr
-type="user">zheng-mathur-pavlogiannis-osr-2024</fr:addr><fr:route>zheng-mathur-pavlogiannis-osr-2024.xml</fr:route><fr:title
-text="Optimistic Prediction of Synchronization-Reversal Data Races">Optimistic Prediction of Synchronization-Reversal Data Races</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>4</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="zhengshi.xml"
-addr="zhengshi"
-title="Zheng Shi">Zheng Shi</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="umangmathur.xml"
-addr="umangmathur"
-title="Umang Mathur">Umang Mathur</fr:link></fr:author><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@inproceedings{10.1145/3597503.3639099,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>484</fr:anchor>
+    <fr:addr type="user">zheng-mathur-pavlogiannis-osr-2024</fr:addr>
+    <fr:route>zheng-mathur-pavlogiannis-osr-2024.xml</fr:route>
+    <fr:title text="Optimistic Prediction of Synchronization-Reversal Data Races">Optimistic Prediction of Synchronization-Reversal Data Races</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>2024</fr:year>
+      <fr:month>4</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>
+        <fr:link type="local" href="zhengshi.xml" addr="zhengshi" title="Zheng Shi">Zheng Shi</fr:link>
+      </fr:author>
+      <fr:author>
+        <fr:link type="local" href="umangmathur.xml" addr="umangmathur" title="Umang Mathur">Umang Mathur</fr:link>
+      </fr:author>
+      <fr:author>
+        <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:meta name="bibtex"><![CDATA[@inproceedings{10.1145/3597503.3639099,
 author = {Shi, Zheng and Mathur, Umang and Pavlogiannis, Andreas},
 title = {Optimistic Prediction of Synchronization-Reversal Data Races},
 year = {2024},
@@ -37,5 +37,9 @@ articleno = {134},
 numpages = {13},
 location = {Lisbon, Portugal},
 series = {ICSE '24}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/3597503.3639099</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+    <fr:meta name="doi">10.1145/3597503.3639099</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>

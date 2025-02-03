@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>551</fr:anchor><fr:addr
-type="user">itzkovitz-djit-1999</fr:addr><fr:route>itzkovitz-djit-1999.xml</fr:route><fr:title
-text="Toward Integration of Data Race Detection in DSM Systems">Toward Integration of Data Race Detection in DSM Systems</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>1999</fr:year><fr:month>6</fr:month></fr:date><fr:authors><fr:author>Ayal Itzkovitz</fr:author><fr:author>Assaf Schuster</fr:author><fr:author>Oren Zeev-Ben-Mordehai</fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@article{ITZKOVITZ1999180,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>557</fr:anchor>
+    <fr:addr type="user">itzkovitz-djit-1999</fr:addr>
+    <fr:route>itzkovitz-djit-1999.xml</fr:route>
+    <fr:title text="Toward Integration of Data Race Detection in DSM Systems">Toward Integration of Data Race Detection in DSM Systems</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>1999</fr:year>
+      <fr:month>6</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>Ayal Itzkovitz</fr:author>
+      <fr:author>Assaf Schuster</fr:author>
+      <fr:author>Oren Zeev-Ben-Mordehai</fr:author>
+    </fr:authors>
+    <fr:meta name="bibtex"><![CDATA[@article{ITZKOVITZ1999180,
 title = {Toward Integration of Data Race Detection in DSM Systems},
 journal = {Journal of Parallel and Distributed Computing},
 volume = {59},
@@ -23,5 +29,9 @@ url = {https://www.sciencedirect.com/science/article/pii/S0743731599915745},
 author = {Ayal Itzkovitz and Assaf Schuster and Oren Zeev-Ben-Mordehai},
 keywords = {distributed shared memory, parallel computation, data race detection, debugging tools},
 abstract = {We present a distributed algorithm, called djit, for detecting data races in dsm systems. djit is designed as a dsm add-on, detecting a race condition as soon as one is created. It instantly displays to the user the precise place in the program where the race occurred. There are no false detections, and no data races are missed. We have implemented djit on top of millipage—a fine granularity, page-based dsm system. Our implementation makes novel use of the operating system protection mechanisms. In particular, we propose a protection cache, which can be used for local logging of accesses to variables. As a result, our implementation does not increase the message complexity of the execution, piggybacking all its communication activity on top of the dsm-related messages. The performance figures show that our data race detection mechanism has only a minor influence on performance. The measured overheads, averaging only few percent, are two orders of magnitude smaller than those achieved in previous work. Thus, our technique makes the integration of on-the-fly data race detection during the regular dsm execution feasible for the first time.}
-}]]></fr:meta><fr:meta
-name="doi">10.1006/jpdc.1999.1574</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+    <fr:meta name="doi">10.1006/jpdc.1999.1574</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>

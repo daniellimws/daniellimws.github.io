@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:addr
-type="user">pavlogiannis-m2-2019</fr:addr><fr:route>pavlogiannis-m2-2019.xml</fr:route><fr:title
-text="Fast, sound, and effectively complete dynamic race prediction">Fast, sound, and effectively complete dynamic race prediction</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2019</fr:year><fr:month>12</fr:month></fr:date><fr:authors><fr:author><fr:link
-type="local"
-href="andreaspavlogiannis.xml"
-addr="andreaspavlogiannis"
-title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@article{10.1145/3371085,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>516</fr:anchor>
+    <fr:addr type="user">pavlogiannis-m2-2019</fr:addr>
+    <fr:route>pavlogiannis-m2-2019.xml</fr:route>
+    <fr:title text="Fast, sound, and effectively complete dynamic race prediction">Fast, sound, and effectively complete dynamic race prediction</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>2019</fr:year>
+      <fr:month>12</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>
+        <fr:link type="local" href="andreaspavlogiannis.xml" addr="andreaspavlogiannis" title="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:link>
+      </fr:author>
+    </fr:authors>
+    <fr:meta name="bibtex"><![CDATA[@article{10.1145/3371085,
 author = {Pavlogiannis, Andreas},
 title = {Fast, sound, and effectively complete dynamic race prediction},
 year = {2019},
@@ -31,5 +33,9 @@ month = {dec},
 articleno = {17},
 numpages = {29},
 keywords = {race detection, predictive analyses, concurrency}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/3371085</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+    <fr:meta name="doi">10.1145/3371085</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>

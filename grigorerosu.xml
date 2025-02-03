@@ -1,63 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>633</fr:anchor><fr:addr
-type="user">grigorerosu</fr:addr><fr:route>grigorerosu.xml</fr:route><fr:title
-text="Grigore Rosu">Grigore Rosu</fr:title><fr:taxon>Person</fr:taxon><fr:authors /><fr:meta
-name="external">https://fsl.cs.illinois.edu/people/grigore-rosu/</fr:meta><fr:meta
-name="institution"><fr:link
-type="local"
-href="uiuc.xml"
-addr="uiuc"
-title="University of Illinois at Urbana-Champaign, USA">University of Illinois at Urbana-Champaign, USA</fr:link></fr:meta><fr:meta
-name="orcid">0000-0002-3102-0421</fr:meta><fr:meta
-name="position">Professor</fr:meta></fr:frontmatter><fr:mainmatter><fr:p>Professor of Computer Science at University of Illinois at Urbana-Champaign.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>634</fr:anchor><fr:addr
-type="user">uiuc</fr:addr><fr:route>uiuc.xml</fr:route><fr:title
-text="University of Illinois at Urbana-Champaign, USA">University of Illinois at Urbana-Champaign, USA</fr:title><fr:taxon>Institution</fr:taxon><fr:authors /><fr:meta
-name="external">https://illinois.edu/</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="false"
-numbered="false"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
-text="Contributions">Contributions</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>635</fr:anchor><fr:addr
-type="user">huang-meredith-rosu-rvpredict-2014</fr:addr><fr:route>huang-meredith-rosu-rvpredict-2014.xml</fr:route><fr:title
-text="Maximal sound predictive race detection with control flow abstraction">Maximal sound predictive race detection with control flow abstraction</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2014</fr:year><fr:month>6</fr:month></fr:date><fr:authors><fr:author>Jeff Huang</fr:author><fr:author>Patrick O’Neil Meredith</fr:author><fr:author><fr:link
-type="local"
-href="grigorerosu.xml"
-addr="grigorerosu"
-title="Grigore Rosu">Grigore Rosu</fr:link></fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@inproceedings{10.1145/2594291.2594315,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>639</fr:anchor>
+    <fr:addr type="user">grigorerosu</fr:addr>
+    <fr:route>grigorerosu.xml</fr:route>
+    <fr:title text="Grigore Rosu">Grigore Rosu</fr:title>
+    <fr:taxon>Person</fr:taxon>
+    <fr:authors />
+    <fr:meta name="external">https://fsl.cs.illinois.edu/people/grigore-rosu/</fr:meta>
+    <fr:meta name="institution">
+      <fr:link type="local" href="uiuc.xml" addr="uiuc" title="University of Illinois at Urbana-Champaign, USA">University of Illinois at Urbana-Champaign, USA</fr:link>
+    </fr:meta>
+    <fr:meta name="orcid">0000-0002-3102-0421</fr:meta>
+    <fr:meta name="position">Professor</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>Professor of Computer Science at University of Illinois at Urbana-Champaign.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Related">Related</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>640</fr:anchor>
+            <fr:addr type="user">uiuc</fr:addr>
+            <fr:route>uiuc.xml</fr:route>
+            <fr:title text="University of Illinois at Urbana-Champaign, USA">University of Illinois at Urbana-Champaign, USA</fr:title>
+            <fr:taxon>Institution</fr:taxon>
+            <fr:authors />
+            <fr:meta name="external">https://illinois.edu/</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Contributions">Contributions</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>641</fr:anchor>
+            <fr:addr type="user">huang-meredith-rosu-rvpredict-2014</fr:addr>
+            <fr:route>huang-meredith-rosu-rvpredict-2014.xml</fr:route>
+            <fr:title text="Maximal sound predictive race detection with control flow abstraction">Maximal sound predictive race detection with control flow abstraction</fr:title>
+            <fr:taxon>Reference</fr:taxon>
+            <fr:date>
+              <fr:year>2014</fr:year>
+              <fr:month>6</fr:month>
+            </fr:date>
+            <fr:authors>
+              <fr:author>Jeff Huang</fr:author>
+              <fr:author>Patrick O’Neil Meredith</fr:author>
+              <fr:author>
+                <fr:link type="local" href="grigorerosu.xml" addr="grigorerosu" title="Grigore Rosu">Grigore Rosu</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="bibtex"><![CDATA[@inproceedings{10.1145/2594291.2594315,
 author = {Huang, Jeff and Meredith, Patrick O'Neil and Rosu, Grigore},
 title = {Maximal sound predictive race detection with control flow abstraction},
 year = {2014},
@@ -93,5 +101,14 @@ month = {jun},
 pages = {337–348},
 numpages = {12},
 keywords = {control flow, data race, maximal sound, prediction}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/2594291.2594315</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+}]]></fr:meta>
+            <fr:meta name="doi">10.1145/2594291.2594315</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter />
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>

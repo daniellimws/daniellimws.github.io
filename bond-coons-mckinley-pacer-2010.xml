@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
-<fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>530</fr:anchor><fr:addr
-type="user">bond-coons-mckinley-pacer-2010</fr:addr><fr:route>bond-coons-mckinley-pacer-2010.xml</fr:route><fr:title
-text="PACER: proportional detection of data races">PACER: proportional detection of data races</fr:title><fr:taxon>Reference</fr:taxon><fr:date><fr:year>2010</fr:year><fr:month>6</fr:month></fr:date><fr:authors><fr:author>Michael D. Bond</fr:author><fr:author>Katherine E. Coons</fr:author><fr:author>Kathryn S. McKinley</fr:author></fr:authors><fr:meta
-name="bibtex"><![CDATA[@article{10.1145/1809028.1806626,
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>536</fr:anchor>
+    <fr:addr type="user">bond-coons-mckinley-pacer-2010</fr:addr>
+    <fr:route>bond-coons-mckinley-pacer-2010.xml</fr:route>
+    <fr:title text="PACER: proportional detection of data races">PACER: proportional detection of data races</fr:title>
+    <fr:taxon>Reference</fr:taxon>
+    <fr:date>
+      <fr:year>2010</fr:year>
+      <fr:month>6</fr:month>
+    </fr:date>
+    <fr:authors>
+      <fr:author>Michael D. Bond</fr:author>
+      <fr:author>Katherine E. Coons</fr:author>
+      <fr:author>Kathryn S. McKinley</fr:author>
+    </fr:authors>
+    <fr:meta name="bibtex"><![CDATA[@article{10.1145/1809028.1806626,
 author = {Bond, Michael D. and Coons, Katherine E. and McKinley, Kathryn S.},
 title = {PACER: proportional detection of data races},
 year = {2010},
@@ -46,5 +52,9 @@ numpages = {14},
 keywords = {bugs, concurrency, data races, sampling},
 location = {Toronto, Ontario, Canada},
 series = {PLDI '10}
-}]]></fr:meta><fr:meta
-name="doi">10.1145/1809028.1806626</fr:meta></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree>
+}]]></fr:meta>
+    <fr:meta name="doi">10.1145/1809028.1806626</fr:meta>
+  </fr:frontmatter>
+  <fr:mainmatter />
+  <fr:backmatter />
+</fr:tree>
