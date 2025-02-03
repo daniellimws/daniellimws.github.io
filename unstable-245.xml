@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>790</fr:anchor>
+    <fr:anchor>802</fr:anchor>
     <fr:addr type="machine">#245</fr:addr>
     <fr:route>unstable-245.xml</fr:route>
     <fr:title text="Sampling-based race detection › people"><fr:link type="local" href="dlws-0006.xml" addr="dlws-0006" title="Sampling-based race detection">Sampling-based race detection</fr:link> › people</fr:title>
@@ -91,7 +91,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>792</fr:anchor>
+            <fr:anchor>804</fr:anchor>
             <fr:addr type="user">dlws-0006</fr:addr>
             <fr:route>dlws-0006.xml</fr:route>
             <fr:title text="Sampling-based race detection">Sampling-based race detection</fr:title>

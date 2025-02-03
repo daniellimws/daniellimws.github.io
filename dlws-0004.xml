@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>802</fr:anchor>
+    <fr:anchor>814</fr:anchor>
     <fr:addr type="user">dlws-0004</fr:addr>
     <fr:route>dlws-0004.xml</fr:route>
     <fr:title text="Race prediction">Race prediction</fr:title>
@@ -507,7 +507,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>804</fr:anchor>
+            <fr:anchor>816</fr:anchor>
             <fr:addr type="user">dlws-0002</fr:addr>
             <fr:route>dlws-0002.xml</fr:route>
             <fr:title text="Public bibliographies">Public bibliographies</fr:title>
@@ -1455,7 +1455,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>806</fr:anchor>
+            <fr:anchor>818</fr:anchor>
             <fr:addr type="user">dlws-0006</fr:addr>
             <fr:route>dlws-0006.xml</fr:route>
             <fr:title text="Sampling-based race detection">Sampling-based race detection</fr:title>
@@ -1574,7 +1574,7 @@ keywords = {concurrency bugs, dynamic data race detection, sampling}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>808</fr:anchor>
+            <fr:anchor>820</fr:anchor>
             <fr:addr type="user">dlws-0005</fr:addr>
             <fr:route>dlws-0005.xml</fr:route>
             <fr:title text="Trace theory">Trace theory</fr:title>
@@ -1881,7 +1881,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>810</fr:anchor>
+            <fr:anchor>822</fr:anchor>
             <fr:addr type="user">dlws-0006</fr:addr>
             <fr:route>dlws-0006.xml</fr:route>
             <fr:title text="Sampling-based race detection">Sampling-based race detection</fr:title>
@@ -2000,7 +2000,7 @@ keywords = {concurrency bugs, dynamic data race detection, sampling}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>812</fr:anchor>
+            <fr:anchor>824</fr:anchor>
             <fr:addr type="user">dlws-0005</fr:addr>
             <fr:route>dlws-0005.xml</fr:route>
             <fr:title text="Trace theory">Trace theory</fr:title>
