@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>615</fr:anchor>
+    <fr:anchor>621</fr:anchor>
     <fr:addr type="user">daniellimws</fr:addr>
     <fr:route>daniellimws.xml</fr:route>
     <fr:title text="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:title>
@@ -27,7 +27,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>616</fr:anchor>
+            <fr:anchor>622</fr:anchor>
             <fr:addr type="user">dlws-0003</fr:addr>
             <fr:route>dlws-0003.xml</fr:route>
             <fr:title text="Works of Daniel Lim Wee Soong">Works of <fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:title>
@@ -54,7 +54,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>618</fr:anchor>
+            <fr:anchor>624</fr:anchor>
             <fr:addr type="user">nus</fr:addr>
             <fr:route>nus.xml</fr:route>
             <fr:title text="National University of Singapore">National University of Singapore</fr:title>
@@ -76,7 +76,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>619</fr:anchor>
+            <fr:anchor>625</fr:anchor>
             <fr:addr type="user">dlws-0002</fr:addr>
             <fr:route>dlws-0002.xml</fr:route>
             <fr:title text="Public bibliographies">Public bibliographies</fr:title>
@@ -1015,7 +1015,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>621</fr:anchor>
+            <fr:anchor>627</fr:anchor>
             <fr:addr type="user">dlws-0006</fr:addr>
             <fr:route>dlws-0006.xml</fr:route>
             <fr:title text="Sampling-based race detection">Sampling-based race detection</fr:title>
@@ -1134,7 +1134,7 @@ keywords = {concurrency bugs, dynamic data race detection, sampling}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>623</fr:anchor>
+            <fr:anchor>629</fr:anchor>
             <fr:addr type="user">dlws-0005</fr:addr>
             <fr:route>dlws-0005.xml</fr:route>
             <fr:title text="Trace theory">Trace theory</fr:title>
@@ -1432,7 +1432,29 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>625</fr:anchor>
+            <fr:anchor>631</fr:anchor>
+            <fr:addr type="user">dlws-0008</fr:addr>
+            <fr:route>dlws-0008.xml</fr:route>
+            <fr:title text="Archive">Archive</fr:title>
+            <fr:authors>
+              <fr:author>
+                <fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link>
+              </fr:author>
+            </fr:authors>
+            <fr:meta name="author">false</fr:meta>
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>Earlier when I worked in security, I wrote about some technical topics and my thought processes.</fr:p>
+            <fr:ul><fr:li><fr:link type="external" href="https://starlabs.sg/blog/2022/09-step-by-step-walkthrough-of-cve-2022-32792/">Out-of-Bounds Write due to an Optimization Bug in WebKit's JIT Compiler</fr:link></fr:li>
+    <fr:li><fr:link type="external" href="https://starlabs.sg/blog/2022/09-apple-coretext-an-unexpected-journey-to-learn-about-failure/">Out-of-Bounds Write in Apple's Text Rendering Library</fr:link></fr:li>
+    <fr:li><fr:link type="external" href="https://starlabs.sg/blog/2021/08-identifying-bugs-in-router-firmware-at-scale-with-taint-analysis/">Taint Analysis for Efficient Bug Hunting in Router Firmware</fr:link></fr:li>
+    <fr:li><fr:link type="external" href="https://nusgreyhats.org/posts/writeups/basic-lldb-scripting/">LLDB Scripting Guide</fr:link></fr:li></fr:ul>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>633</fr:anchor>
             <fr:addr type="user">dlws-0001</fr:addr>
             <fr:route>dlws-0001.xml</fr:route>
             <fr:title text="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:title>
@@ -1452,7 +1474,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="true" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>627</fr:anchor>
+            <fr:anchor>635</fr:anchor>
             <fr:addr type="user">index</fr:addr>
             <fr:route>index.xml</fr:route>
             <fr:title text="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:title>
@@ -1465,13 +1487,35 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
           </fr:frontmatter>
           <fr:mainmatter>
             <fr:p>I am a Research Assistant in the <fr:link type="external" href="https://focs-lab.comp.nus.edu.sg">Foundations of Computer Systems Lab</fr:link> at the National University of Singapore, advised by <fr:link type="external" href="https://www.comp.nus.edu.sg/~umathur/">Dr. Umang Mathur</fr:link>.</fr:p>
-            <fr:p>This website is built with <fr:link type="local" href="dlws-0007.xml" addr="dlws-0007" title="Forester">Forester</fr:link>. It's really good!</fr:p>
+            <fr:p>This website is built with <fr:link type="external" href="https://www.forester-notes.org/">Forester</fr:link>. It's really good!</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>608</fr:anchor>
+                <fr:addr type="user">dlws-0008</fr:addr>
+                <fr:route>dlws-0008.xml</fr:route>
+                <fr:title text="Archive">Archive</fr:title>
+                <fr:authors>
+                  <fr:author>
+                    <fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link>
+                  </fr:author>
+                </fr:authors>
+                <fr:meta name="author">false</fr:meta>
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Earlier when I worked in security, I wrote about some technical topics and my thought processes.</fr:p>
+                <fr:ul><fr:li><fr:link type="external" href="https://starlabs.sg/blog/2022/09-step-by-step-walkthrough-of-cve-2022-32792/">Out-of-Bounds Write due to an Optimization Bug in WebKit's JIT Compiler</fr:link></fr:li>
+    <fr:li><fr:link type="external" href="https://starlabs.sg/blog/2022/09-apple-coretext-an-unexpected-journey-to-learn-about-failure/">Out-of-Bounds Write in Apple's Text Rendering Library</fr:link></fr:li>
+    <fr:li><fr:link type="external" href="https://starlabs.sg/blog/2021/08-identifying-bugs-in-router-firmware-at-scale-with-taint-analysis/">Taint Analysis for Efficient Bug Hunting in Router Firmware</fr:link></fr:li>
+    <fr:li><fr:link type="external" href="https://nusgreyhats.org/posts/writeups/basic-lldb-scripting/">LLDB Scripting Guide</fr:link></fr:li></fr:ul>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
           </fr:mainmatter>
           <fr:backmatter />
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>629</fr:anchor>
+            <fr:anchor>637</fr:anchor>
             <fr:addr type="user">dlws-0004</fr:addr>
             <fr:route>dlws-0004.xml</fr:route>
             <fr:title text="Race prediction">Race prediction</fr:title>
@@ -1971,7 +2015,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>631</fr:anchor>
+            <fr:anchor>639</fr:anchor>
             <fr:addr type="user">dlws-0003</fr:addr>
             <fr:route>dlws-0003.xml</fr:route>
             <fr:title text="Works of Daniel Lim Wee Soong">Works of <fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:title>

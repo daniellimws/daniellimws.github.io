@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>798</fr:anchor>
+    <fr:anchor>804</fr:anchor>
     <fr:addr type="machine">#250</fr:addr>
     <fr:route>unstable-250.xml</fr:route>
     <fr:title text="Race prediction › papers"><fr:link type="local" href="dlws-0004.xml" addr="dlws-0004" title="Race prediction">Race prediction</fr:link> › papers</fr:title>
@@ -1005,7 +1005,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>800</fr:anchor>
+            <fr:anchor>806</fr:anchor>
             <fr:addr type="user">dlws-0004</fr:addr>
             <fr:route>dlws-0004.xml</fr:route>
             <fr:title text="Race prediction">Race prediction</fr:title>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>782</fr:anchor>
+    <fr:anchor>788</fr:anchor>
     <fr:addr type="machine">#248</fr:addr>
     <fr:route>unstable-248.xml</fr:route>
     <fr:title text="Trace theory › dissertations"><fr:link type="local" href="dlws-0005.xml" addr="dlws-0005" title="Trace theory">Trace theory</fr:link> › dissertations</fr:title>
@@ -26,7 +26,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>784</fr:anchor>
+            <fr:anchor>790</fr:anchor>
             <fr:addr type="user">dlws-0005</fr:addr>
             <fr:route>dlws-0005.xml</fr:route>
             <fr:title text="Trace theory">Trace theory</fr:title>

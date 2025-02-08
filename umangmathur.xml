@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>709</fr:anchor>
+    <fr:anchor>715</fr:anchor>
     <fr:addr type="user">umangmathur</fr:addr>
     <fr:route>umangmathur.xml</fr:route>
     <fr:title text="Umang Mathur">Umang Mathur</fr:title>
@@ -27,7 +27,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>710</fr:anchor>
+            <fr:anchor>716</fr:anchor>
             <fr:addr type="user">nus</fr:addr>
             <fr:route>nus.xml</fr:route>
             <fr:title text="National University of Singapore">National University of Singapore</fr:title>
@@ -49,7 +49,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>711</fr:anchor>
+            <fr:anchor>717</fr:anchor>
             <fr:addr type="user">ang-mathur-prefix-2024</fr:addr>
             <fr:route>ang-mathur-prefix-2024.xml</fr:route>
             <fr:title text="Predictive Monitoring with Strong Trace Prefixes">Predictive Monitoring with Strong Trace Prefixes</fr:title>
@@ -87,7 +87,7 @@ isbn="978-3-031-65630-9"
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>714</fr:anchor>
+            <fr:anchor>720</fr:anchor>
             <fr:addr type="user">zheng-mathur-pavlogiannis-osr-2024</fr:addr>
             <fr:route>zheng-mathur-pavlogiannis-osr-2024.xml</fr:route>
             <fr:title text="Optimistic Prediction of Synchronization-Reversal Data Races">Optimistic Prediction of Synchronization-Reversal Data Races</fr:title>
@@ -130,7 +130,7 @@ series = {ICSE '24}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>718</fr:anchor>
+            <fr:anchor>724</fr:anchor>
             <fr:addr type="user">farzan-mathur-grain-2024</fr:addr>
             <fr:route>farzan-mathur-grain-2024.xml</fr:route>
             <fr:title text="Coarser Equivalences for Causal Concurrency">Coarser Equivalences for Causal Concurrency</fr:title>
@@ -172,7 +172,7 @@ keywords = {concurrency, equivalence, predictive analysis, reads-from, reduction
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>721</fr:anchor>
+            <fr:anchor>727</fr:anchor>
             <fr:addr type="user">ang-mathur-pattern-2024</fr:addr>
             <fr:route>ang-mathur-pattern-2024.xml</fr:route>
             <fr:title text="Predictive Monitoring against Pattern Regular Languages">Predictive Monitoring against Pattern Regular Languages</fr:title>
@@ -214,7 +214,7 @@ keywords = {complexity, concurrency, dynamic analysis, predictive monitoring}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>724</fr:anchor>
+            <fr:anchor>730</fr:anchor>
             <fr:addr type="user">thokair-zhang-mathur-viswanathan-rpt-2023</fr:addr>
             <fr:route>thokair-zhang-mathur-viswanathan-rpt-2023.xml</fr:route>
             <fr:title text="Dynamic Race Detection with O(1) Samples">Dynamic Race Detection with O(1) Samples</fr:title>
@@ -256,7 +256,7 @@ keywords = {Concurrency - Shared memory, Dynamic program analysis, Happens-befor
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>727</fr:anchor>
+            <fr:anchor>733</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-tunç-viswanathan-treeclocks-2022</fr:addr>
             <fr:route>mathur-pavlogiannis-tunç-viswanathan-treeclocks-2022.xml</fr:route>
             <fr:title text="A tree clock data structure for causal orderings in concurrent executions">A tree clock data structure for causal orderings in concurrent executions</fr:title>
@@ -303,7 +303,7 @@ series = {ASPLOS '22}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>732</fr:anchor>
+            <fr:anchor>738</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-2021-asplos</fr:addr>
             <fr:route>mathur-pavlogiannis-2021-asplos.xml</fr:route>
             <fr:title text="Dynamic Data-Race Prediction : Fundamentals, Theory and Practice">Dynamic Data-Race Prediction : Fundamentals, Theory and Practice</fr:title>
@@ -331,7 +331,7 @@ series = {ASPLOS '22}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>735</fr:anchor>
+            <fr:anchor>741</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-2021-popl</fr:addr>
             <fr:route>mathur-pavlogiannis-2021-popl.xml</fr:route>
             <fr:title text="Dynamic Data-Race Prediction: Fundamentals, Theory and Practice">Dynamic Data-Race Prediction: Fundamentals, Theory and Practice</fr:title>
@@ -360,7 +360,7 @@ series = {ASPLOS '22}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>738</fr:anchor>
+            <fr:anchor>744</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-viswanathan-syncp-2021</fr:addr>
             <fr:route>mathur-pavlogiannis-viswanathan-syncp-2021.xml</fr:route>
             <fr:title text="Optimal prediction of synchronization-preserving races">Optimal prediction of synchronization-preserving races</fr:title>
@@ -405,7 +405,7 @@ keywords = {race detection, dynamic analysis, concurrency, complexity}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>742</fr:anchor>
+            <fr:anchor>748</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-viswanathan-2020</fr:addr>
             <fr:route>mathur-pavlogiannis-viswanathan-2020.xml</fr:route>
             <fr:title text="The Complexity of Dynamic Data Race Prediction">The Complexity of Dynamic Data Race Prediction</fr:title>
@@ -449,7 +449,7 @@ series = {LICS '20}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>746</fr:anchor>
+            <fr:anchor>752</fr:anchor>
             <fr:addr type="user">mathur-kini-viswanathan-shb-2018</fr:addr>
             <fr:route>mathur-kini-viswanathan-shb-2018.xml</fr:route>
             <fr:title text="What happens-after the first race? Enhancing the predictive power of happens-before based dynamic race detection">What happens-after the first race? Enhancing the predictive power of happens-before based dynamic race detection</fr:title>
@@ -492,7 +492,7 @@ keywords = {Concurrency, Dynamic Program Analysis, Happens-Before, Race Detectio
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>750</fr:anchor>
+            <fr:anchor>756</fr:anchor>
             <fr:addr type="user">kini-mathur-viswanathan-wcp-2017</fr:addr>
             <fr:route>kini-mathur-viswanathan-wcp-2017.xml</fr:route>
             <fr:title text="Dynamic race prediction in linear time">Dynamic race prediction in linear time</fr:title>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>633</fr:anchor>
+    <fr:anchor>641</fr:anchor>
     <fr:addr type="user">dlws-0001</fr:addr>
     <fr:route>dlws-0001.xml</fr:route>
     <fr:title text="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:title>
@@ -27,7 +27,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>635</fr:anchor>
+            <fr:anchor>643</fr:anchor>
             <fr:addr type="user">dlws-0002</fr:addr>
             <fr:route>dlws-0002.xml</fr:route>
             <fr:title text="Public bibliographies">Public bibliographies</fr:title>
@@ -966,7 +966,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>637</fr:anchor>
+            <fr:anchor>645</fr:anchor>
             <fr:addr type="user">dlws-0007</fr:addr>
             <fr:route>dlws-0007.xml</fr:route>
             <fr:title text="Forester">Forester</fr:title>
@@ -982,7 +982,7 @@ keywords = {multiprocess systems, distributed systems, computer networks, clock 
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>639</fr:anchor>
+            <fr:anchor>647</fr:anchor>
             <fr:addr type="user">dlws-0003</fr:addr>
             <fr:route>dlws-0003.xml</fr:route>
             <fr:title text="Works of Daniel Lim Wee Soong">Works of <fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:title>
