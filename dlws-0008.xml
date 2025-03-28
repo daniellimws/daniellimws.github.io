@@ -41,7 +41,6 @@
             <fr:meta name="author">false</fr:meta>
           </fr:frontmatter>
           <fr:mainmatter>
-            <fr:p>I am a Research Assistant in the <fr:link type="external" href="https://focs-lab.comp.nus.edu.sg">Foundations of Computer Systems Lab</fr:link> at the National University of Singapore, advised by <fr:link type="external" href="https://www.comp.nus.edu.sg/~umathur/">Dr. Umang Mathur</fr:link>.</fr:p>
             <fr:p>This website is built with <fr:link type="external" href="https://www.forester-notes.org/">Forester</fr:link>. It's really good!</fr:p>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
