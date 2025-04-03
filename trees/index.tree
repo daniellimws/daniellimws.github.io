@@ -4,4 +4,6 @@
 
 \p{This website is built with [Forester](https://www.forester-notes.org/). It's really good!}
 
+\transclude{wasm-0001}
+
 \transclude{dlws-0008}
