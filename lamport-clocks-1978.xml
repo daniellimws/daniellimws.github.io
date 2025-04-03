@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>592</fr:anchor>
+    <fr:anchor>620</fr:anchor>
     <fr:addr type="user">lamport-clocks-1978</fr:addr>
     <fr:route>lamport-clocks-1978.xml</fr:route>
     <fr:title text="Time, clocks, and the ordering of events in a distributed system">Time, clocks, and the ordering of events in a distributed system</fr:title>

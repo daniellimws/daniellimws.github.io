@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>577</fr:anchor>
+    <fr:anchor>605</fr:anchor>
     <fr:addr type="user">pozniansky-schuster-djit+-2006</fr:addr>
     <fr:route>pozniansky-schuster-djit+-2006.xml</fr:route>
     <fr:title text="MultiRace: efficient on-the-fly data race detection in multithreaded C++ programs">MultiRace: efficient on-the-fly data race detection in multithreaded C++ programs</fr:title>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+  <fr:frontmatter>
+    <fr:anchor>273</fr:anchor>
+    <fr:addr type="user">syntax-semantics-0005</fr:addr>
+    <fr:route>syntax-semantics-0005.xml</fr:route>
+    <fr:title text="Statics and Dynamics">Statics and Dynamics</fr:title>
+    <fr:date>
+      <fr:year>2025</fr:year>
+      <fr:month>4</fr:month>
+      <fr:day>3</fr:day>
+    </fr:date>
+    <fr:authors />
+  </fr:frontmatter>
+  <fr:mainmatter>
+    <fr:p>Let's consider the dichotomy between sense and denotation, or syntax and semantics.</fr:p>
+    <fr:p>Denotation is <fr:em>static</fr:em> and <fr:em>infinite</fr:em>.
+Static because the meaning is "already there".
+Infinite because when we consider the symbol <fr:tex display="inline"><![CDATA[+]]></fr:tex>, it is an infinite graph with an infinite domain.</fr:p>
+    <fr:p>Sense is <fr:em>dynamic</fr:em> and <fr:em>finite</fr:em>.
+Finite and dynamic because we perform a finite number of rewriting steps to transform one form to a desired final form.</fr:p>
+    <fr:p>Notice that we have no choice but to take the finite dynamic approach to checking equality.
+We cannot know that two sides are equal from just looking at them.
+Further, the infinite <fr:tex display="inline"><![CDATA[+]]></fr:tex> graph does not immediately give us the equality either.
+And a computer cannot even load an infinite graph into memory! (Although perhaps our minds can?)
+Our finite computer (and minds?) can only perform this check by going through a finite sequence of syntactical manipulations.</fr:p>
+    <fr:p>The sense is the means for the ends which is denotation.</fr:p>
+  </fr:mainmatter>
+  <fr:backmatter>
+    <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+      <fr:frontmatter>
+        <fr:title text="Context">Context</fr:title>
+        <fr:authors />
+      </fr:frontmatter>
+      <fr:mainmatter>
+        <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+          <fr:frontmatter>
+            <fr:anchor>274</fr:anchor>
+            <fr:addr type="user">syntax-semantics-0001</fr:addr>
+            <fr:route>syntax-semantics-0001.xml</fr:route>
+            <fr:title text="Sense and Denotation">Sense and Denotation</fr:title>
+            <fr:date>
+              <fr:year>2025</fr:year>
+              <fr:month>4</fr:month>
+              <fr:day>3</fr:day>
+            </fr:date>
+            <fr:authors />
+          </fr:frontmatter>
+          <fr:mainmatter>
+            <fr:p>
+              <fr:strong>Reference: Proofs and types (Girard, 1993). Chapter 1. Sense, Denotation and Semantics.</fr:strong>
+            </fr:p>
+            <fr:p>We begin on a philosophical note, which is appropriate for setting the stage for the discussions to follow.
+After all, we are discussing the study of logic which originated from philosophy.</fr:p>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>261</fr:anchor>
+                <fr:addr type="user">syntax-semantics-0002</fr:addr>
+                <fr:route>syntax-semantics-0002.xml</fr:route>
+                <fr:title text="Sense">Sense</fr:title>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>As the name suggests, <fr:em>sense</fr:em> is what we perceive.
+Well, it is what we write on paper (or type on a computer).</fr:p>
+                <fr:p>Consider the example: <fr:tex display="inline"><![CDATA[1+2=3]]></fr:tex>.
+On the left side, we write <fr:tex display="inline"><![CDATA[1+2]]></fr:tex>, and on the right, <fr:tex display="inline"><![CDATA[3]]></fr:tex>.</fr:p>
+                <fr:p>They are just writings/symbols though. They can mean something, or nothing at all.
+It is <fr:em>meaningful</fr:em> for us to assign meaning to each symbol.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>262</fr:anchor>
+                <fr:addr type="user">syntax-semantics-0003</fr:addr>
+                <fr:route>syntax-semantics-0003.xml</fr:route>
+                <fr:title text="Denotation">Denotation</fr:title>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>By conventional knowledge, we know that the <fr:tex display="inline"><![CDATA[=]]></fr:tex> <fr:em>denotes</fr:em> an equality between the two sides.
+Furthermore, <fr:tex display="inline"><![CDATA[1]]></fr:tex> denotes the first positive integer, <fr:tex display="inline"><![CDATA[2]]></fr:tex> the second, <fr:tex display="inline"><![CDATA[3]]></fr:tex> the third,
+while one might say that <fr:tex display="inline"><![CDATA[+]]></fr:tex> denotes a function that takes two integers as input and gives an integer as output.</fr:p>
+                <fr:p>We may consider a function to be a mapping between values in a domain to values in a codomain,
+as in the conventional understanding of a total function.
+Let's not get too concerned about the technical details (e.g. a set of pairs of values) at this stage.</fr:p>
+                <fr:p>With the <fr:em>denotation</fr:em> for each symbol described above, we can proceed to say that the two sides denote the same integer.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>263</fr:anchor>
+                <fr:addr type="user">syntax-semantics-0004</fr:addr>
+                <fr:route>syntax-semantics-0004.xml</fr:route>
+                <fr:title text="Computation">Computation</fr:title>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>We know that we rely on some form of sense to describe some form of denotation.
+Perhaps one might prefer to use the terms <fr:em>syntax</fr:em> (for sense) and <fr:em>semantics</fr:em> (for denotation).
+Basically, what is written and what is meant.</fr:p>
+                <fr:p>Now, consider, is this the sole purpose of sense? For writing down some meanings?</fr:p>
+                <fr:p>There is more to it.
+How does one <fr:em>know</fr:em> for sure, that <fr:tex display="inline"><![CDATA[1+2]]></fr:tex> and <fr:tex display="inline"><![CDATA[3]]></fr:tex> denote the same integer?
+Well, they don't look the same.
+And if they do (e.g. <fr:tex display="inline"><![CDATA[3=3]]></fr:tex>), perhaps there is no point in writing the equality to begin with.</fr:p>
+                <fr:p>There is this <fr:em>finite</fr:em> <fr:em>computation</fr:em> process that we carry out (likely mentally) to check the equality in denotation between the two sides.
+We might have worked out the arithmetic with pen and paper or counted with our fingers, that allows us to "transform" <fr:tex display="inline"><![CDATA[1+2]]></fr:tex> to <fr:tex display="inline"><![CDATA[3]]></fr:tex>.</fr:p>
+                <fr:p>Looking at this from a "transformational" perspective, see that we are doing a form of <fr:em>syntactic manipulation</fr:em> based on certain rules of arithmetic or counting.</fr:p>
+                <fr:p>A more advanced example would come from high-school algebra.
+Consider the task of showing <fr:tex display="inline"><![CDATA[(x+1)^2=x^2+2x+1]]></fr:tex>.
+One would apply a certain set of <fr:em>rewriting</fr:em> rules in a particular sequence as follows.</fr:p>
+                <fr:tex display="block"><![CDATA[(x+1)^2 = (x+1)(x+1) = x^2 + x + x + 1 = x^2 + 2x + 1]]></fr:tex>
+                <fr:p>Notice that the rewriting steps follow unambiguous rules and the process terminates in a finite number of steps.
+The whole point of the demonstrations above is to show that there is more that we need (or gain) from the sense.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>264</fr:anchor>
+                <fr:addr type="user">syntax-semantics-0005</fr:addr>
+                <fr:route>syntax-semantics-0005.xml</fr:route>
+                <fr:title text="Statics and Dynamics">Statics and Dynamics</fr:title>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>Let's consider the dichotomy between sense and denotation, or syntax and semantics.</fr:p>
+                <fr:p>Denotation is <fr:em>static</fr:em> and <fr:em>infinite</fr:em>.
+Static because the meaning is "already there".
+Infinite because when we consider the symbol <fr:tex display="inline"><![CDATA[+]]></fr:tex>, it is an infinite graph with an infinite domain.</fr:p>
+                <fr:p>Sense is <fr:em>dynamic</fr:em> and <fr:em>finite</fr:em>.
+Finite and dynamic because we perform a finite number of rewriting steps to transform one form to a desired final form.</fr:p>
+                <fr:p>Notice that we have no choice but to take the finite dynamic approach to checking equality.
+We cannot know that two sides are equal from just looking at them.
+Further, the infinite <fr:tex display="inline"><![CDATA[+]]></fr:tex> graph does not immediately give us the equality either.
+And a computer cannot even load an infinite graph into memory! (Although perhaps our minds can?)
+Our finite computer (and minds?) can only perform this check by going through a finite sequence of syntactical manipulations.</fr:p>
+                <fr:p>The sense is the means for the ends which is denotation.</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
+              <fr:frontmatter>
+                <fr:anchor>265</fr:anchor>
+                <fr:addr type="user">syntax-semantics-0006</fr:addr>
+                <fr:route>syntax-semantics-0006.xml</fr:route>
+                <fr:title text="Summary">Summary</fr:title>
+                <fr:date>
+                  <fr:year>2025</fr:year>
+                  <fr:month>4</fr:month>
+                  <fr:day>3</fr:day>
+                </fr:date>
+                <fr:authors />
+              </fr:frontmatter>
+              <fr:mainmatter>
+                <fr:p>The following excerpt from the reference text [Proofs and types (Girard, 1993)] summarizes everything nicely.</fr:p>
+                <fr:p>So, one of the most fundamental distinctions in logic is that made by Frege: given a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, there are two ways of seeing it:
+<fr:ul><fr:li>as a sequence of <fr:em>instructions</fr:em>, which determine its <fr:em>sense</fr:em>, for example <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> means "<fr:tex display="inline"><![CDATA[A]]></fr:tex> or <fr:tex display="inline"><![CDATA[B]]></fr:tex>", etc..</fr:li>
+<fr:li>as the <fr:em>ideal result</fr:em> found by these operations: this is its <fr:em>denotation</fr:em>.</fr:li></fr:ul></fr:p>
+                <fr:p>"Denotation", as opposed to "notation", is what <fr:em>is denoted</fr:em>, and not what <fr:em>denotes</fr:em>.
+For example the denotation of a logical sentence is <fr:tex display="inline"><![CDATA[t]]></fr:tex> (true) or <fr:tex display="inline"><![CDATA[f]]></fr:tex> (false),
+and the denotation of <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> can be obtained from the denotations of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> by means of the truth table for disjunction.</fr:p>
+                <fr:p>Two sentences which have the same sense have the same denotation, that is obvious;
+but two sentences with the same denotation rarely have the same sense.
+For example, take a complicated mathematical equivalence <fr:tex display="inline"><![CDATA[A \iff  B]]></fr:tex>.
+The two sentences have the same denotation (they are true at the same time) but surely not the same sense,
+otherwise what is the point of showing the equivalence?</fr:p>
+              </fr:mainmatter>
+              <fr:backmatter />
+            </fr:tree>
+            <fr:p>Coming back to the realm of programming languages, there is a parallel with the topics discussed above.
+We are concerned with the following questions:
+<fr:ul><fr:li>What programs can we write? (syntax)</fr:li>
+<fr:li>What happens at each step as we execute a program? (syntactial manipulations/rewriting rules)</fr:li>
+<fr:li>What does a program do as a whole? (semantics)</fr:li></fr:ul></fr:p>
+            <fr:p>As of now, the link may seem extremely tenuous.
+The subsequent chapters will continue to develop on this link.</fr:p>
+          </fr:mainmatter>
+          <fr:backmatter />
+        </fr:tree>
+      </fr:mainmatter>
+      <fr:backmatter />
+    </fr:tree>
+  </fr:backmatter>
+</fr:tree>
