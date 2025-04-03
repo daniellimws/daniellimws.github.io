@@ -1,0 +1,19 @@
+\date{2025-04-03}
+
+\title{Denotation}
+
+\p{
+By conventional knowledge, we know that the #{=} \em{denotes} an equality between the two sides.
+Furthermore, #{1} denotes the first positive integer, #{2} the second, #{3} the third,
+while one might say that #{+} denotes a function that takes two integers as input and gives an integer as output.
+}
+
+\p{
+We may consider a function to be a mapping between values in a domain to values in a codomain,
+as in the conventional understanding of a total function.
+Let's not get too concerned about the technical details (e.g. a set of pairs of values) at this stage.
+}
+
+\p{
+With the \em{denotation} for each symbol described above, we can proceed to say that the two sides denote the same integer.
+}

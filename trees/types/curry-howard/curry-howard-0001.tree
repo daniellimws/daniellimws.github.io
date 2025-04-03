@@ -1,0 +1,23 @@
+\date{2025-04-03}
+
+\title{The Curry-Howard Isomorphism}
+
+\p{
+This is much more commonly referred to as the Curry-Howard correspondence. But I suppose that is the informal name.
+It is less commonly referred to as the Curry-Howard isomorphism, but the term "isomorphism" suggests a more formal understanding of the underlying theory.
+Thus we will use the term "isomorphism" henceforth.
+}
+
+\p{
+The Curry-Howard isomoprhism inspires the link between type theory and programming language semantics.
+Type theory gives a system for doing maths; more precisely, a system for proving theorems (or propositions).
+When designing a programming language with precise semantics, we are concerned with creating an adequately expressive type system for writing executable programs.
+The Curry-Howard isomorphism connects the two perspectives: allowing us to see \em{propositions as types} and \em{proofs as terms} (terms are programs).
+}
+
+\p{
+This chapter mostly references Girard's "Proofs and types (1993)".
+I highly recommend reading this book for a deeper understanding of the subject.
+}
+
+\transclude{syntax-semantics-0001}

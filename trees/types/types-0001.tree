@@ -1,0 +1,24 @@
+\date{2025-04-03}
+\author{daniellimws}
+\meta{author}{false}
+
+\title{Type Theory and Programming Languages}
+
+\p{
+Here are my notes on type theory and its relation with programming languages.
+Broadly, I aim to write about the application of (beautiful) concepts in type theory to the design and implementation of programming languages.
+}
+
+\p{
+In the long run, there should be a mix of theoretical results and practical real-world case studies.
+Theoretical results will be written in a less academic flavour (as this is my personal style and there are already many great works out there in the literature);
+practical case-studies will be written in an unopinionated manner (serving as a refreshing read for those who are interested).
+}
+
+\p{
+If you happen to stumble upon my writings, please do not hesitate to give me ([email](mailto:weesoong.lim@gmail.com)) feedback and criticism (harsh as you like).
+Everything I write here is out of self-study and I would really appreciate corrections, improvements and supplements to my understanding.
+}
+
+\put\transclude/expanded{false}
+\transclude{curry-howard-0001}

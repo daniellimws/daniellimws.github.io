@@ -1,0 +1,30 @@
+\date{2025-04-03}
+
+\title{Statics and Dynamics}
+
+\p{
+Let's consider the dichotomy between sense and denotation, or syntax and semantics.
+}
+
+\p{
+Denotation is \em{static} and \em{infinite}.
+Static because the meaning is "already there".
+Infinite because when we consider the symbol #{+}, it is an infinite graph with an infinite domain.
+}
+
+\p{
+Sense is \em{dynamic} and \em{finite}.
+Finite and dynamic because we perform a finite number of rewriting steps to transform one form to a desired final form.
+}
+
+\p{
+Notice that we have no choice but to take the finite dynamic approach to checking equality.
+We cannot know that two sides are equal from just looking at them.
+Further, the infinite #{+} graph does not immediately give us the equality either.
+And a computer cannot even load an infinite graph into memory! (Although perhaps our minds can?)
+Our finite computer (and minds?) can only perform this check by going through a finite sequence of syntactical manipulations.
+}
+
+\p{
+The sense is the means for the ends which is denotation.
+}

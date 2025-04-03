@@ -1,0 +1,41 @@
+\date{2025-04-03}
+\title{Computation}
+
+\p{
+We know that we rely on some form of sense to describe some form of denotation.
+Perhaps one might prefer to use the terms \em{syntax} (for sense) and \em{semantics} (for denotation).
+Basically, what is written and what is meant.
+}
+
+\p{
+Now, consider, is this the sole purpose of sense? For writing down some meanings?
+}
+
+\p{
+There is more to it.
+How does one \em{know} for sure, that #{1+2} and #{3} denote the same integer?
+Well, they don't look the same.
+And if they do (e.g. #{3=3}), perhaps there is no point in writing the equality to begin with.
+}
+
+\p{
+There is this \em{finite} \em{computation} process that we carry out (likely mentally) to check the equality in denotation between the two sides.
+We might have worked out the arithmetic with pen and paper or counted with our fingers, that allows us to "transform" #{1+2} to #{3}.
+}
+
+\p{
+Looking at this from a "transformational" perspective, see that we are doing a form of \em{syntactic manipulation} based on certain rules of arithmetic or counting.
+}
+
+\p{
+A more advanced example would come from high-school algebra.
+Consider the task of showing #{(x+1)^2=x^2+2x+1}.
+One would apply a certain set of \em{rewriting} rules in a particular sequence as follows.
+}
+
+##{(x+1)^2 = (x+1)(x+1) = x^2 + x + x + 1 = x^2 + 2x + 1}
+
+\p{
+Notice that the rewriting steps follow unambiguous rules and the process terminates in a finite number of steps.
+The whole point of the demonstrations above is to show that there is more that we need (or gain) from the sense.
+}

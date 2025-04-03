@@ -1,0 +1,33 @@
+\date{2025-04-03}
+
+\title{Sense and Denotation}
+
+\p{
+\strong{Reference: Proofs and types (Girard, 1993). Chapter 1. Sense, Denotation and Semantics.}
+}
+
+\p{
+We begin on a philosophical note, which is appropriate for setting the stage for the discussions to follow.
+After all, we are discussing the study of logic which originated from philosophy.
+}
+
+\transclude{syntax-semantics-0002}
+\transclude{syntax-semantics-0003}
+\transclude{syntax-semantics-0004}
+\transclude{syntax-semantics-0005}
+\transclude{syntax-semantics-0006}
+
+\p{
+Coming back to the realm of programming languages, there is a parallel with the topics discussed above.
+We are concerned with the following questions:
+\ul{
+\li{What programs can we write? (syntax)}
+\li{What happens at each step as we execute a program? (syntactial manipulations/rewriting rules)}
+\li{What does a program do as a whole? (semantics)}
+}
+}
+
+\p{
+As of now, the link may seem extremely tenuous.
+The subsequent chapters will continue to develop on this link.
+}

@@ -1,0 +1,27 @@
+\date{2025-04-03}
+
+\title{Summary}
+
+\p{The following excerpt from the reference text [Proofs and types (Girard, 1993)] summarizes everything nicely.}
+
+\p{
+So, one of the most fundamental distinctions in logic is that made by Frege: given a sentence #{A}, there are two ways of seeing it:
+\ul{
+\li{as a sequence of \em{instructions}, which determine its \em{sense}, for example #{A \lor B} means "#{A} or #{B}", etc..}
+\li{as the \em{ideal result} found by these operations: this is its \em{denotation}.}
+}
+}
+
+\p{
+"Denotation", as opposed to "notation", is what \em{is denoted}, and not what \em{denotes}.
+For example the denotation of a logical sentence is #{t} (true) or #{f} (false),
+and the denotation of #{A \lor B} can be obtained from the denotations of #{A} and #{B} by means of the truth table for disjunction.
+}
+
+\p{
+Two sentences which have the same sense have the same denotation, that is obvious;
+but two sentences with the same denotation rarely have the same sense.
+For example, take a complicated mathematical equivalence #{A \iff B}.
+The two sentences have the same denotation (they are true at the same time) but surely not the same sense,
+otherwise what is the point of showing the equivalence?
+}
