@@ -2,25 +2,21 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>274</fr:anchor>
-    <fr:addr type="machine">#242</fr:addr>
-    <fr:route>unstable-242.xml</fr:route>
-    <fr:title text="Wasmtime performance › writeups"><fr:link type="local" href="wasm-0001.xml" addr="wasm-0001" title="Wasmtime performance">Wasmtime performance</fr:link> › writeups</fr:title>
+    <fr:anchor>278</fr:anchor>
+    <fr:addr type="machine">#255</fr:addr>
+    <fr:route>unstable-255.xml</fr:route>
+    <fr:title text="[Wasm-0002] › writeups"><fr:link type="local" href="wasm-0002.xml" addr="wasm-0002">Untitled</fr:link> › writeups</fr:title>
     <fr:date>
       <fr:year>2025</fr:year>
       <fr:month>3</fr:month>
       <fr:day>28</fr:day>
     </fr:date>
-    <fr:authors>
-      <fr:author>
-        <fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link>
-      </fr:author>
-    </fr:authors>
+    <fr:authors />
   </fr:frontmatter>
   <fr:mainmatter>
     <fr:tree toc="false" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
-        <fr:anchor>267</fr:anchor>
+        <fr:anchor>261</fr:anchor>
         <fr:addr type="user">ffmpeg-0001</fr:addr>
         <fr:route>ffmpeg-0001.xml</fr:route>
         <fr:title text="Building FFmpeg for Wasm">Building FFmpeg for Wasm</fr:title>
@@ -52,24 +48,19 @@ It always produces a Wasm file that can only be used with a JS glue.</fr:p>
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>276</fr:anchor>
-            <fr:addr type="user">wasm-0001</fr:addr>
-            <fr:route>wasm-0001.xml</fr:route>
-            <fr:title text="Wasmtime performance">Wasmtime performance</fr:title>
+            <fr:anchor>279</fr:anchor>
+            <fr:addr type="user">wasm-0002</fr:addr>
+            <fr:route>wasm-0002.xml</fr:route>
+            <fr:taxon>Collection</fr:taxon>
             <fr:date>
               <fr:year>2025</fr:year>
               <fr:month>3</fr:month>
               <fr:day>28</fr:day>
             </fr:date>
-            <fr:authors>
-              <fr:author>
-                <fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link>
-              </fr:author>
-            </fr:authors>
-            <fr:meta name="author">false</fr:meta>
+            <fr:authors />
           </fr:frontmatter>
-          <fr:mainmatter><fr:p>I am embarking on a journey to learn more about the performance of Wasmtime and how close it is to native programs. Here lies my writings about experiments and deep dives into the inner workings of Wasmtime and Cranelift.</fr:p>
-  <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:addr type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:title text="Writeups">Writeups</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree toc="false" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:addr type="user">ffmpeg-0001</fr:addr><fr:route>ffmpeg-0001.xml</fr:route><fr:title text="Building FFmpeg for Wasm">Building FFmpeg for Wasm</fr:title><fr:taxon>Experiment</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Unfortunately, building FFmpeg 7.0 with wasi-sdk is not straightforward at the moment, and I will defer this to the future when I have more time.</fr:p><fr:p>In particular, I faced two issues.</fr:p><fr:ol><fr:li>The <fr:code>dup</fr:code> syscall is not supported by wasi-libc (as well as wasip1 and wasip2). This can be worked around by commenting out code that uses <fr:code>dup</fr:code> but I am not sure what the repercussions are.</fr:li>
+          <fr:mainmatter>
+  <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:addr type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:title text="Writeups">Writeups</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree toc="false" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:addr type="user">ffmpeg-0001</fr:addr><fr:route>ffmpeg-0001.xml</fr:route><fr:title text="Building FFmpeg for Wasm">Building FFmpeg for Wasm</fr:title><fr:taxon>Experiment</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Unfortunately, building FFmpeg 7.0 with wasi-sdk is not straightforward at the moment, and I will defer this to the future when I have more time.</fr:p><fr:p>In particular, I faced two issues.</fr:p><fr:ol><fr:li>The <fr:code>dup</fr:code> syscall is not supported by wasi-libc (as well as wasip1 and wasip2). This can be worked around by commenting out code that uses <fr:code>dup</fr:code> but I am not sure what the repercussions are.</fr:li>
 <fr:li>FFmpeg 6.0 onwards forces building with multithreading support. Although wasi support emulated threading, linking fails when building with emulated signaling, which is also needed by the project. The error given is that the signal object file is not compiled with multithreading support, and thus cannot be linked with the rest of the executable.</fr:li></fr:ol><fr:p>I also tried emscripten but I was not successful in using it to produce a standalone Wasm executable that can be executed like a normal command-line application.
 It always produces a Wasm file that can only be used with a JS glue.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
 </fr:mainmatter>

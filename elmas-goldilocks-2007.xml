@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>550</fr:anchor>
+    <fr:anchor>573</fr:anchor>
     <fr:addr type="user">elmas-goldilocks-2007</fr:addr>
     <fr:route>elmas-goldilocks-2007.xml</fr:route>
     <fr:title text="Goldilocks: a race and transaction-aware java runtime">Goldilocks: a race and transaction-aware java runtime</fr:title>

@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>577</fr:anchor>
+    <fr:anchor>600</fr:anchor>
     <fr:addr type="user">andreaspavlogiannis</fr:addr>
     <fr:route>andreaspavlogiannis.xml</fr:route>
     <fr:title text="Andreas Pavlogiannis">Andreas Pavlogiannis</fr:title>
@@ -27,7 +27,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>578</fr:anchor>
+            <fr:anchor>601</fr:anchor>
             <fr:addr type="user">aarhus</fr:addr>
             <fr:route>aarhus.xml</fr:route>
             <fr:title text="Aarhus University">Aarhus University</fr:title>
@@ -49,7 +49,7 @@
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>579</fr:anchor>
+            <fr:anchor>602</fr:anchor>
             <fr:addr type="user">zheng-mathur-pavlogiannis-osr-2024</fr:addr>
             <fr:route>zheng-mathur-pavlogiannis-osr-2024.xml</fr:route>
             <fr:title text="Optimistic Prediction of Synchronization-Reversal Data Races">Optimistic Prediction of Synchronization-Reversal Data Races</fr:title>
@@ -92,7 +92,7 @@ series = {ICSE '24}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>583</fr:anchor>
+            <fr:anchor>606</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-tunç-viswanathan-treeclocks-2022</fr:addr>
             <fr:route>mathur-pavlogiannis-tunç-viswanathan-treeclocks-2022.xml</fr:route>
             <fr:title text="A tree clock data structure for causal orderings in concurrent executions">A tree clock data structure for causal orderings in concurrent executions</fr:title>
@@ -139,7 +139,7 @@ series = {ASPLOS '22}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>588</fr:anchor>
+            <fr:anchor>611</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-2021-asplos</fr:addr>
             <fr:route>mathur-pavlogiannis-2021-asplos.xml</fr:route>
             <fr:title text="Dynamic Data-Race Prediction : Fundamentals, Theory and Practice">Dynamic Data-Race Prediction : Fundamentals, Theory and Practice</fr:title>
@@ -167,7 +167,7 @@ series = {ASPLOS '22}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>591</fr:anchor>
+            <fr:anchor>614</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-2021-popl</fr:addr>
             <fr:route>mathur-pavlogiannis-2021-popl.xml</fr:route>
             <fr:title text="Dynamic Data-Race Prediction: Fundamentals, Theory and Practice">Dynamic Data-Race Prediction: Fundamentals, Theory and Practice</fr:title>
@@ -196,7 +196,7 @@ series = {ASPLOS '22}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>594</fr:anchor>
+            <fr:anchor>617</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-viswanathan-syncp-2021</fr:addr>
             <fr:route>mathur-pavlogiannis-viswanathan-syncp-2021.xml</fr:route>
             <fr:title text="Optimal prediction of synchronization-preserving races">Optimal prediction of synchronization-preserving races</fr:title>
@@ -241,7 +241,7 @@ keywords = {race detection, dynamic analysis, concurrency, complexity}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>598</fr:anchor>
+            <fr:anchor>621</fr:anchor>
             <fr:addr type="user">mathur-pavlogiannis-viswanathan-2020</fr:addr>
             <fr:route>mathur-pavlogiannis-viswanathan-2020.xml</fr:route>
             <fr:title text="The Complexity of Dynamic Data Race Prediction">The Complexity of Dynamic Data Race Prediction</fr:title>
@@ -285,7 +285,7 @@ series = {LICS '20}
         </fr:tree>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>602</fr:anchor>
+            <fr:anchor>625</fr:anchor>
             <fr:addr type="user">pavlogiannis-m2-2019</fr:addr>
             <fr:route>pavlogiannis-m2-2019.xml</fr:route>
             <fr:title text="Fast, sound, and effectively complete dynamic race prediction">Fast, sound, and effectively complete dynamic race prediction</fr:title>
