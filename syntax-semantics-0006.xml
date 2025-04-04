@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>275</fr:anchor>
+    <fr:anchor>291</fr:anchor>
     <fr:addr type="user">syntax-semantics-0006</fr:addr>
     <fr:route>syntax-semantics-0006.xml</fr:route>
     <fr:title text="Summary">Summary</fr:title>
@@ -36,7 +36,7 @@ otherwise what is the point of showing the equivalence?</fr:p>
       <fr:mainmatter>
         <fr:tree toc="true" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
           <fr:frontmatter>
-            <fr:anchor>276</fr:anchor>
+            <fr:anchor>292</fr:anchor>
             <fr:addr type="user">syntax-semantics-0001</fr:addr>
             <fr:route>syntax-semantics-0001.xml</fr:route>
             <fr:title text="Sense and Denotation">Sense and Denotation</fr:title>
@@ -55,7 +55,7 @@ otherwise what is the point of showing the equivalence?</fr:p>
 After all, we are discussing the study of logic which originated from philosophy.</fr:p>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>261</fr:anchor>
+                <fr:anchor>276</fr:anchor>
                 <fr:addr type="user">syntax-semantics-0002</fr:addr>
                 <fr:route>syntax-semantics-0002.xml</fr:route>
                 <fr:title text="Sense">Sense</fr:title>
@@ -78,7 +78,7 @@ It is <fr:em>meaningful</fr:em> for us to assign meaning to each symbol.</fr:p>
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>262</fr:anchor>
+                <fr:anchor>277</fr:anchor>
                 <fr:addr type="user">syntax-semantics-0003</fr:addr>
                 <fr:route>syntax-semantics-0003.xml</fr:route>
                 <fr:title text="Denotation">Denotation</fr:title>
@@ -102,7 +102,7 @@ Let's not get too concerned about the technical details (e.g. a set of pairs of 
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>263</fr:anchor>
+                <fr:anchor>278</fr:anchor>
                 <fr:addr type="user">syntax-semantics-0004</fr:addr>
                 <fr:route>syntax-semantics-0004.xml</fr:route>
                 <fr:title text="Computation">Computation</fr:title>
@@ -136,7 +136,7 @@ The whole point of the demonstrations above is to show that there is more that w
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>264</fr:anchor>
+                <fr:anchor>279</fr:anchor>
                 <fr:addr type="user">syntax-semantics-0005</fr:addr>
                 <fr:route>syntax-semantics-0005.xml</fr:route>
                 <fr:title text="Statics and Dynamics">Statics and Dynamics</fr:title>
@@ -165,7 +165,7 @@ Our finite computer (and minds?) can only perform this check by going through a 
             </fr:tree>
             <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
               <fr:frontmatter>
-                <fr:anchor>265</fr:anchor>
+                <fr:anchor>280</fr:anchor>
                 <fr:addr type="user">syntax-semantics-0006</fr:addr>
                 <fr:route>syntax-semantics-0006.xml</fr:route>
                 <fr:title text="Summary">Summary</fr:title>

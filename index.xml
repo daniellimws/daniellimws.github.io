@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="true" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>702</fr:anchor>
+    <fr:anchor>710</fr:anchor>
     <fr:addr type="user">index</fr:addr>
     <fr:route>index.xml</fr:route>
     <fr:title text="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:title>
@@ -17,14 +17,14 @@
     <fr:p>This website is built with <fr:link type="external" href="https://www.forester-notes.org/">Forester</fr:link>. It's really good!</fr:p>
     <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
-        <fr:anchor>285</fr:anchor>
-        <fr:addr type="user">types-0001</fr:addr>
-        <fr:route>types-0001.xml</fr:route>
+        <fr:anchor>263</fr:anchor>
+        <fr:addr type="user">dlws-0009</fr:addr>
+        <fr:route>dlws-0009.xml</fr:route>
         <fr:title text="Type Theory and Programming Languages">Type Theory and Programming Languages</fr:title>
         <fr:date>
           <fr:year>2025</fr:year>
           <fr:month>4</fr:month>
-          <fr:day>3</fr:day>
+          <fr:day>4</fr:day>
         </fr:date>
         <fr:authors>
           <fr:author>
@@ -34,216 +34,17 @@
         <fr:meta name="author">false</fr:meta>
       </fr:frontmatter>
       <fr:mainmatter>
-        <fr:p>Here are my notes on type theory and its relation with programming languages.
-Broadly, I aim to write about the application of (beautiful) concepts in type theory to the design and implementation of programming languages.</fr:p>
-        <fr:p>In the long run, there should be a mix of theoretical results and practical real-world case studies.
-Theoretical results will be written in a less academic flavour (as this is my personal style and there are already many great works out there in the literature);
-practical case-studies will be written in an unopinionated manner (serving as a refreshing read for those who are interested).</fr:p>
-        <fr:p>If you happen to stumble upon my writings, please do not hesitate to give me (<fr:link type="external" href="mailto:weesoong.lim@gmail.com">email</fr:link>) feedback and criticism (harsh as you like).
-Everything I write here is out of self-study and I would really appreciate corrections, improvements and supplements to my understanding.</fr:p>
-        <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-          <fr:frontmatter>
-            <fr:anchor>280</fr:anchor>
-            <fr:addr type="user">curry-howard-0001</fr:addr>
-            <fr:route>curry-howard-0001.xml</fr:route>
-            <fr:title text="The Curry-Howard Isomorphism">The Curry-Howard Isomorphism</fr:title>
-            <fr:date>
-              <fr:year>2025</fr:year>
-              <fr:month>4</fr:month>
-              <fr:day>3</fr:day>
-            </fr:date>
-            <fr:authors />
-          </fr:frontmatter>
-          <fr:mainmatter>
-            <fr:p>This is much more commonly referred to as the Curry-Howard correspondence. But I suppose that is the informal name.
-It is less commonly referred to as the Curry-Howard isomorphism, but the term "isomorphism" suggests a more formal understanding of the underlying theory.
-Thus we will use the term "isomorphism" henceforth.</fr:p>
-            <fr:p>The Curry-Howard isomoprhism inspires the link between type theory and programming language semantics.
-Type theory gives a system for doing maths; more precisely, a system for proving theorems (or propositions).
-When designing a programming language with precise semantics, we are concerned with creating an adequately expressive type system for writing executable programs.
-The Curry-Howard isomorphism connects the two perspectives: allowing us to see <fr:em>propositions as types</fr:em> and <fr:em>proofs as terms</fr:em> (terms are programs).</fr:p>
-            <fr:p>This chapter mostly references Girard's "Proofs and types (1993)".
-I highly recommend reading this book for a deeper understanding of the subject.</fr:p>
-            <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-              <fr:frontmatter>
-                <fr:anchor>270</fr:anchor>
-                <fr:addr type="user">syntax-semantics-0001</fr:addr>
-                <fr:route>syntax-semantics-0001.xml</fr:route>
-                <fr:title text="Sense and Denotation">Sense and Denotation</fr:title>
-                <fr:date>
-                  <fr:year>2025</fr:year>
-                  <fr:month>4</fr:month>
-                  <fr:day>3</fr:day>
-                </fr:date>
-                <fr:authors />
-              </fr:frontmatter>
-              <fr:mainmatter>
-                <fr:p>
-                  <fr:strong>Reference: Proofs and types (Girard, 1993). Chapter 1. Sense, Denotation and Semantics.</fr:strong>
-                </fr:p>
-                <fr:p>We begin on a philosophical note, which is appropriate for setting the stage for the discussions to follow.
-After all, we are discussing the study of logic which originated from philosophy.</fr:p>
-                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-                  <fr:frontmatter>
-                    <fr:anchor>261</fr:anchor>
-                    <fr:addr type="user">syntax-semantics-0002</fr:addr>
-                    <fr:route>syntax-semantics-0002.xml</fr:route>
-                    <fr:title text="Sense">Sense</fr:title>
-                    <fr:date>
-                      <fr:year>2025</fr:year>
-                      <fr:month>4</fr:month>
-                      <fr:day>3</fr:day>
-                    </fr:date>
-                    <fr:authors />
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <fr:p>As the name suggests, <fr:em>sense</fr:em> is what we perceive.
-Well, it is what we write on paper (or type on a computer).</fr:p>
-                    <fr:p>Consider the example: <fr:tex display="inline"><![CDATA[1+2=3]]></fr:tex>.
-On the left side, we write <fr:tex display="inline"><![CDATA[1+2]]></fr:tex>, and on the right, <fr:tex display="inline"><![CDATA[3]]></fr:tex>.</fr:p>
-                    <fr:p>They are just writings/symbols though. They can mean something, or nothing at all.
-It is <fr:em>meaningful</fr:em> for us to assign meaning to each symbol.</fr:p>
-                  </fr:mainmatter>
-                  <fr:backmatter />
-                </fr:tree>
-                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-                  <fr:frontmatter>
-                    <fr:anchor>262</fr:anchor>
-                    <fr:addr type="user">syntax-semantics-0003</fr:addr>
-                    <fr:route>syntax-semantics-0003.xml</fr:route>
-                    <fr:title text="Denotation">Denotation</fr:title>
-                    <fr:date>
-                      <fr:year>2025</fr:year>
-                      <fr:month>4</fr:month>
-                      <fr:day>3</fr:day>
-                    </fr:date>
-                    <fr:authors />
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <fr:p>By conventional knowledge, we know that the <fr:tex display="inline"><![CDATA[=]]></fr:tex> <fr:em>denotes</fr:em> an equality between the two sides.
-Furthermore, <fr:tex display="inline"><![CDATA[1]]></fr:tex> denotes the first positive integer, <fr:tex display="inline"><![CDATA[2]]></fr:tex> the second, <fr:tex display="inline"><![CDATA[3]]></fr:tex> the third,
-while one might say that <fr:tex display="inline"><![CDATA[+]]></fr:tex> denotes a function that takes two integers as input and gives an integer as output.</fr:p>
-                    <fr:p>We may consider a function to be a mapping between values in a domain to values in a codomain,
-as in the conventional understanding of a total function.
-Let's not get too concerned about the technical details (e.g. a set of pairs of values) at this stage.</fr:p>
-                    <fr:p>With the <fr:em>denotation</fr:em> for each symbol described above, we can proceed to say that the two sides denote the same integer.</fr:p>
-                  </fr:mainmatter>
-                  <fr:backmatter />
-                </fr:tree>
-                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-                  <fr:frontmatter>
-                    <fr:anchor>263</fr:anchor>
-                    <fr:addr type="user">syntax-semantics-0004</fr:addr>
-                    <fr:route>syntax-semantics-0004.xml</fr:route>
-                    <fr:title text="Computation">Computation</fr:title>
-                    <fr:date>
-                      <fr:year>2025</fr:year>
-                      <fr:month>4</fr:month>
-                      <fr:day>3</fr:day>
-                    </fr:date>
-                    <fr:authors />
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <fr:p>We know that we rely on some form of sense to describe some form of denotation.
-Perhaps one might prefer to use the terms <fr:em>syntax</fr:em> (for sense) and <fr:em>semantics</fr:em> (for denotation).
-Basically, what is written and what is meant.</fr:p>
-                    <fr:p>Now, consider, is this the sole purpose of sense? For writing down some meanings?</fr:p>
-                    <fr:p>There is more to it.
-How does one <fr:em>know</fr:em> for sure, that <fr:tex display="inline"><![CDATA[1+2]]></fr:tex> and <fr:tex display="inline"><![CDATA[3]]></fr:tex> denote the same integer?
-Well, they don't look the same.
-And if they do (e.g. <fr:tex display="inline"><![CDATA[3=3]]></fr:tex>), perhaps there is no point in writing the equality to begin with.</fr:p>
-                    <fr:p>There is this <fr:em>finite</fr:em> <fr:em>computation</fr:em> process that we carry out (likely mentally) to check the equality in denotation between the two sides.
-We might have worked out the arithmetic with pen and paper or counted with our fingers, that allows us to "transform" <fr:tex display="inline"><![CDATA[1+2]]></fr:tex> to <fr:tex display="inline"><![CDATA[3]]></fr:tex>.</fr:p>
-                    <fr:p>Looking at this from a "transformational" perspective, see that we are doing a form of <fr:em>syntactic manipulation</fr:em> based on certain rules of arithmetic or counting.</fr:p>
-                    <fr:p>A more advanced example would come from high-school algebra.
-Consider the task of showing <fr:tex display="inline"><![CDATA[(x+1)^2=x^2+2x+1]]></fr:tex>.
-One would apply a certain set of <fr:em>rewriting</fr:em> rules in a particular sequence as follows.</fr:p>
-                    <fr:tex display="block"><![CDATA[(x+1)^2 = (x+1)(x+1) = x^2 + x + x + 1 = x^2 + 2x + 1]]></fr:tex>
-                    <fr:p>Notice that the rewriting steps follow unambiguous rules and the process terminates in a finite number of steps.
-The whole point of the demonstrations above is to show that there is more that we need (or gain) from the sense.</fr:p>
-                  </fr:mainmatter>
-                  <fr:backmatter />
-                </fr:tree>
-                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-                  <fr:frontmatter>
-                    <fr:anchor>264</fr:anchor>
-                    <fr:addr type="user">syntax-semantics-0005</fr:addr>
-                    <fr:route>syntax-semantics-0005.xml</fr:route>
-                    <fr:title text="Statics and Dynamics">Statics and Dynamics</fr:title>
-                    <fr:date>
-                      <fr:year>2025</fr:year>
-                      <fr:month>4</fr:month>
-                      <fr:day>3</fr:day>
-                    </fr:date>
-                    <fr:authors />
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <fr:p>Let's consider the dichotomy between sense and denotation, or syntax and semantics.</fr:p>
-                    <fr:p>Denotation is <fr:em>static</fr:em> and <fr:em>infinite</fr:em>.
-Static because the meaning is "already there".
-Infinite because when we consider the symbol <fr:tex display="inline"><![CDATA[+]]></fr:tex>, it is an infinite graph with an infinite domain.</fr:p>
-                    <fr:p>Sense is <fr:em>dynamic</fr:em> and <fr:em>finite</fr:em>.
-Finite and dynamic because we perform a finite number of rewriting steps to transform one form to a desired final form.</fr:p>
-                    <fr:p>Notice that we have no choice but to take the finite dynamic approach to checking equality.
-We cannot know that two sides are equal from just looking at them.
-Further, the infinite <fr:tex display="inline"><![CDATA[+]]></fr:tex> graph does not immediately give us the equality either.
-And a computer cannot even load an infinite graph into memory! (Although perhaps our minds can?)
-Our finite computer (and minds?) can only perform this check by going through a finite sequence of syntactical manipulations.</fr:p>
-                    <fr:p>The sense is the means for the ends which is denotation.</fr:p>
-                  </fr:mainmatter>
-                  <fr:backmatter />
-                </fr:tree>
-                <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
-                  <fr:frontmatter>
-                    <fr:anchor>265</fr:anchor>
-                    <fr:addr type="user">syntax-semantics-0006</fr:addr>
-                    <fr:route>syntax-semantics-0006.xml</fr:route>
-                    <fr:title text="Summary">Summary</fr:title>
-                    <fr:date>
-                      <fr:year>2025</fr:year>
-                      <fr:month>4</fr:month>
-                      <fr:day>3</fr:day>
-                    </fr:date>
-                    <fr:authors />
-                  </fr:frontmatter>
-                  <fr:mainmatter>
-                    <fr:p>The following excerpt from the reference text [Proofs and types (Girard, 1993)] summarizes everything nicely.</fr:p>
-                    <fr:p>So, one of the most fundamental distinctions in logic is that made by Frege: given a sentence <fr:tex display="inline"><![CDATA[A]]></fr:tex>, there are two ways of seeing it:
-<fr:ul><fr:li>as a sequence of <fr:em>instructions</fr:em>, which determine its <fr:em>sense</fr:em>, for example <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> means "<fr:tex display="inline"><![CDATA[A]]></fr:tex> or <fr:tex display="inline"><![CDATA[B]]></fr:tex>", etc..</fr:li>
-<fr:li>as the <fr:em>ideal result</fr:em> found by these operations: this is its <fr:em>denotation</fr:em>.</fr:li></fr:ul></fr:p>
-                    <fr:p>"Denotation", as opposed to "notation", is what <fr:em>is denoted</fr:em>, and not what <fr:em>denotes</fr:em>.
-For example the denotation of a logical sentence is <fr:tex display="inline"><![CDATA[t]]></fr:tex> (true) or <fr:tex display="inline"><![CDATA[f]]></fr:tex> (false),
-and the denotation of <fr:tex display="inline"><![CDATA[A \lor  B]]></fr:tex> can be obtained from the denotations of <fr:tex display="inline"><![CDATA[A]]></fr:tex> and <fr:tex display="inline"><![CDATA[B]]></fr:tex> by means of the truth table for disjunction.</fr:p>
-                    <fr:p>Two sentences which have the same sense have the same denotation, that is obvious;
-but two sentences with the same denotation rarely have the same sense.
-For example, take a complicated mathematical equivalence <fr:tex display="inline"><![CDATA[A \iff  B]]></fr:tex>.
-The two sentences have the same denotation (they are true at the same time) but surely not the same sense,
-otherwise what is the point of showing the equivalence?</fr:p>
-                  </fr:mainmatter>
-                  <fr:backmatter />
-                </fr:tree>
-                <fr:p>Coming back to the realm of programming languages, there is a parallel with the topics discussed above.
-We are concerned with the following questions:
-<fr:ul><fr:li>What programs can we write? (syntax)</fr:li>
-<fr:li>What happens at each step as we execute a program? (syntactial manipulations/rewriting rules)</fr:li>
-<fr:li>What does a program do as a whole? (semantics)</fr:li></fr:ul></fr:p>
-                <fr:p>As of now, the link may seem extremely tenuous.
-The subsequent chapters will continue to develop on this link.</fr:p>
-              </fr:mainmatter>
-              <fr:backmatter />
-            </fr:tree>
-          </fr:mainmatter>
-          <fr:backmatter />
-        </fr:tree>
+        <fr:p>I am very interested in the intersection between type theory and programming language semantics.
+Check out my <fr:link type="local" href="types-0001.xml" addr="types-0001" title="Type Theory and Programming Languages">notes</fr:link> on this subject!</fr:p>
       </fr:mainmatter>
       <fr:backmatter />
     </fr:tree>
     <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
-        <fr:anchor>287</fr:anchor>
+        <fr:anchor>265</fr:anchor>
         <fr:addr type="user">wasm-0001</fr:addr>
         <fr:route>wasm-0001.xml</fr:route>
-        <fr:title text="Wasmtime performance">Wasmtime performance</fr:title>
+        <fr:title text="Wasmtime">Wasmtime</fr:title>
         <fr:date>
           <fr:year>2025</fr:year>
           <fr:month>3</fr:month>
@@ -257,7 +58,7 @@ The subsequent chapters will continue to develop on this link.</fr:p>
         <fr:meta name="author">false</fr:meta>
       </fr:frontmatter>
       <fr:mainmatter><fr:p>I am embarking on a journey to learn more about the performance of Wasmtime and how close it is to native programs. Here lies my writings about experiments and deep dives into the inner workings of Wasmtime and Cranelift.</fr:p>
-  <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:addr type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:title text="Writeups">Writeups</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree toc="false" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:addr type="user">ffmpeg-0001</fr:addr><fr:route>ffmpeg-0001.xml</fr:route><fr:title text="Building FFmpeg for Wasm">Building FFmpeg for Wasm</fr:title><fr:taxon>Experiment</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Unfortunately, building FFmpeg 7.0 with wasi-sdk is not straightforward at the moment, and I will defer this to the future when I have more time.</fr:p><fr:p>In particular, I faced two issues.</fr:p><fr:ol><fr:li>The <fr:code>dup</fr:code> syscall is not supported by wasi-libc (as well as wasip1 and wasip2). This can be worked around by commenting out code that uses <fr:code>dup</fr:code> but I am not sure what the repercussions are.</fr:li>
+  <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:addr type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:title text="Writeups">Writeups</fr:title><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link type="local" href="daniellimws.xml" addr="daniellimws" title="Daniel Lim Wee Soong">Daniel Lim Wee Soong</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree toc="false" numbered="false" show-heading="true" show-metadata="true" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>269</fr:anchor><fr:addr type="user">ffmpeg-0001</fr:addr><fr:route>ffmpeg-0001.xml</fr:route><fr:title text="Building FFmpeg for Wasm">Building FFmpeg for Wasm</fr:title><fr:taxon>Experiment</fr:taxon><fr:date><fr:year>2025</fr:year><fr:month>3</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Unfortunately, building FFmpeg 7.0 with wasi-sdk is not straightforward at the moment, and I will defer this to the future when I have more time.</fr:p><fr:p>In particular, I faced two issues.</fr:p><fr:ol><fr:li>The <fr:code>dup</fr:code> syscall is not supported by wasi-libc (as well as wasip1 and wasip2). This can be worked around by commenting out code that uses <fr:code>dup</fr:code> but I am not sure what the repercussions are.</fr:li>
 <fr:li>FFmpeg 6.0 onwards forces building with multithreading support. Although wasi support emulated threading, linking fails when building with emulated signaling, which is also needed by the project. The error given is that the signal object file is not compiled with multithreading support, and thus cannot be linked with the rest of the executable.</fr:li></fr:ol><fr:p>I also tried emscripten but I was not successful in using it to produce a standalone Wasm executable that can be executed like a normal command-line application.
 It always produces a Wasm file that can only be used with a JS glue.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
 </fr:mainmatter>
@@ -265,7 +66,7 @@ It always produces a Wasm file that can only be used with a JS glue.</fr:p></fr:
     </fr:tree>
     <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="false" expanded="false" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
       <fr:frontmatter>
-        <fr:anchor>292</fr:anchor>
+        <fr:anchor>270</fr:anchor>
         <fr:addr type="user">dlws-0008</fr:addr>
         <fr:route>dlws-0008.xml</fr:route>
         <fr:title text="Archive">Archive</fr:title>

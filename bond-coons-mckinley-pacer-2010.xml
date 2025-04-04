@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>587</fr:anchor>
+    <fr:anchor>593</fr:anchor>
     <fr:addr type="user">bond-coons-mckinley-pacer-2010</fr:addr>
     <fr:route>bond-coons-mckinley-pacer-2010.xml</fr:route>
     <fr:title text="PACER: proportional detection of data races">PACER: proportional detection of data races</fr:title>

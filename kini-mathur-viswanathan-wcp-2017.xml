@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree toc="true" numbered="true" show-heading="true" show-metadata="true" expanded="true" root="false" xmlns:fr="http://www.jonmsterling.com/jms-005P.xml">
   <fr:frontmatter>
-    <fr:anchor>573</fr:anchor>
+    <fr:anchor>579</fr:anchor>
     <fr:addr type="user">kini-mathur-viswanathan-wcp-2017</fr:addr>
     <fr:route>kini-mathur-viswanathan-wcp-2017.xml</fr:route>
     <fr:title text="Dynamic race prediction in linear time">Dynamic race prediction in linear time</fr:title>
