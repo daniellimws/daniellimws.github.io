@@ -2,7 +2,7 @@
 \author{daniellimws}
 \meta{author}{false}
 
-\title{Wasmtime performance}
+\title{Wasmtime}
 
 \p{I am embarking on a journey to learn more about the performance of Wasmtime and how close it is to native programs. Here lies my writings about experiments and deep dives into the inner workings of Wasmtime and Cranelift.}
 
