@@ -6,6 +6,4 @@
 
 \put\transclude/expanded{false}
 
-\transclude{dlws-0009}
-\transclude{wasm-0001}
 \transclude{dlws-0008}
