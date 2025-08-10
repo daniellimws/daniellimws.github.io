@@ -1,0 +1,23 @@
+#+title: Daniel Lim Wee Soong
+#+OPTIONS: toc:nil creator:nil html-postamble:nil
+#+HTML_HEAD_EXTRA: <style>body { font-family: "Inria Sans", sans-serif; }</style>
+#+HTML_HEAD_EXTRA: <link rel="preconnect" href="https://fonts.googleapis.com">
+#+HTML_HEAD_EXTRA: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+#+HTML_HEAD_EXTRA: <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+* Me
+I am interested in type theory and high-performance systems.
+During the day, I work on a low-latency trading system at an investment bank.
+
+I am curious about ways to _ergonomically reason about the correctness_ of a _fast_ program.
+
+* Notes
+Some experiments with C++ metaprogramming are underway!
+
+* Archives
+Earlier when I worked in cybersecurity research, I wrote some technical articles.
+1. [[https://starlabs.sg/blog/2022/09-step-by-step-walkthrough-of-cve-2022-32792/][Out-of-Bounds Write due to an Optimization Bug in WebKit's JIT Compiler]]
+2. [[https://starlabs.sg/blog/2022/09-apple-coretext-an-unexpected-journey-to-learn-about-failure/][Out-of-Bounds Write in Apple's Text Rendering Library]]
+3. [[https://starlabs.sg/blog/2021/08-identifying-bugs-in-router-firmware-at-scale-with-taint-analysis/][Taint Analysis for Efficient Bug Hunting in Router Firmware]]
+4. [[https://nusgreyhats.org/posts/writeups/basic-lldb-scripting/][LLDB Scripting Guide]]
+
