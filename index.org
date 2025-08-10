@@ -7,6 +7,7 @@
 
 * Me
 I am interested in type theory and high-performance systems.
+
 During the day, I work on a low-latency trading system at an investment bank.
 
 I am curious about ways to _ergonomically reason about the correctness_ of a _fast_ program.
