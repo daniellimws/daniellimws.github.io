@@ -2,7 +2,7 @@
 #+OPTIONS: toc:nil creator:nil html-postamble:nil
 
 * Me
-I am very interested in compilers and FP but still a newbie.
+I am very interested in compilers and FP.
 
 During the day, I maintain a trading platform at an investment bank.
 
