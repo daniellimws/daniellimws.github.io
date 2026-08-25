@@ -1,0 +1,9 @@
+#+title: OCaml Study Notes 
+#+OPTIONS: toc:nil creator:nil html-postamble:nil
+
+* Notes
+Organizing my study plan by questions and answers.
+
+1. *Q: How is an OCaml source compiled to Assembly?*
+   1. [[file:ocaml/1-compilation/1-compilation-pipeline.org][The OCaml Compilation Pipeline]]
+

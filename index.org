@@ -1,19 +1,21 @@
 #+title: Daniel Lim Wee Soong
 #+OPTIONS: toc:nil creator:nil html-postamble:nil
-#+HTML_HEAD_EXTRA: <style>body { font-family: "Inria Sans", sans-serif; }</style>
-#+HTML_HEAD_EXTRA: <link rel="preconnect" href="https://fonts.googleapis.com">
-#+HTML_HEAD_EXTRA: <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-#+HTML_HEAD_EXTRA: <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 
 * Me
-I am interested in type theory and high-performance systems.
+I am very interested in compilers and FP but still a newbie.
 
-I am especially curious about ways to _ergonomically reason about the correctness_ of a _fast_ program.
+During the day, I maintain a trading platform at an investment bank.
 
-During the day, I work on a low-latency trading system at an investment bank.
+This website is written in Org Mode.
 
 * Notes
-Some experiments with C++ metaprogramming are underway!
+[[file:ocaml.org][Studying the OCaml compiler.]]
+
+* Favorite Books
+- The Dispossessed /by Ursula K. Le Guin/ (still reading)
+- The Earthsea Series /by Ursula K. Le Guin/ (still reading)
+- The Foundation series /by Isaac Asimov/
+- The Robot series /by Isaac Asimov/
 
 * Archives
 Earlier when I worked in cybersecurity research, I wrote some technical articles.
